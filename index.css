@@ -1,0 +1,98 @@
+*{
+    border: 1px solid #000;
+    margin: 0;
+    padding: 0;
+}
+ul{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+
+  }
+  ul li{
+      float: left;
+  }
+
+.body{
+    width: 100%;
+    height:100%;
+    /* background-color: aqua; */
+}
+.top{
+    width: 100%;
+    height: 34px;
+    margin-top: 12px;
+    /* background-color: red; */
+
+}
+.top .qian{
+    width: 404px;
+    height: 34px;
+    float: left;
+    /* background-color: bisque; */
+}
+.qian ul{
+    margin-top: 4px;
+    font-size: 14px;
+}
+.qian ul li{
+    float: left;
+    margin-left: 22px;
+}
+.top .hou{
+    width:368px;
+    height: 34px;
+    margin-left: 958px;
+    /* background-color: bisque; */
+}
+.hou ul{
+    float: left;
+    margin-left: 30px;
+    font-size: 12px;
+}
+.hou .tianqi li{
+    float: left;
+    margin-left: 10px;
+}
+.hou .wu{
+    width: 46px;
+    height: 26px;
+    color: #ffffff;
+    background-color: blue;
+    text-align: center;
+    border-radius:2px ;
+    
+}
+.body1{
+    width: 100%;
+    height: 478px;
+    /* background-color: antiquewhite; */
+}
+.body1 .logo{
+width: 296px;
+height: 94px;
+/* background-color: aquamarine; */
+position: absolute;
+top: 50%; 
+left: 50%; 
+transform: translate(-50%, -50%);
+}
+.body1 .input{
+width: 100%;
+height: 100%;
+/* background-color: beige; */
+position: absolute;
+top: 80%; 
+left: 50%; 
+transform: translate(-50%, -50%);
+float: left;
+}
+.input input{
+    width:548px ;
+    height:44px ;
+}
+.input button{
+    width: 108px;
+    height: 44px;
+    background-color: blue;
+}
