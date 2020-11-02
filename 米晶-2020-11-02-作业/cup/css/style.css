@@ -1,0 +1,58 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+.box {
+  width: 206px;
+  height: 300px;
+  padding: 20px 22px 19px 26px;
+  /* border: 1px solid #000000; */
+  margin: 0 auto;
+  box-shadow: 1px 0 0 0 #ebe4e4, -1px 0 0 0 #ebe4e4;
+}
+.box:hover {
+  border: 1px solid #ff5000;
+}
+.body {
+  width: 100%;
+  height: 100%;
+  /* border: 1px solid #000000; */
+}
+.body .head {
+  margin-bottom: 11px;
+}
+.body .head img {
+  width: 197px;
+  height: 197px;
+  display: block;
+  margin: 0 auto;
+}
+.foot {
+}
+.body .foot p {
+  font-size: 14px;
+  color: #666666;
+  margin-bottom: 5px;
+}
+.foot .mine {
+  margin-bottom: 5px;
+}
+.foot .mine span {
+  font-size: 12px;
+  color: #999999;
+}
+.footer .price {
+  font-size: 16px;
+  color: #ff5000;
+  font-weight: 600;
+}
+.footer .cost {
+  font-size: 9px;
+  color: #999999;
+  text-decoration: line-through;
+  margin-right: 60px;
+}
+.footer .sales {
+  font-size: 12px;
+  color: #999999;
+}
