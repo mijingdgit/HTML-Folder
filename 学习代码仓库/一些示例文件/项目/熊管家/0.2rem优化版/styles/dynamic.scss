@@ -1,0 +1,75 @@
+@import "_global-config";
+@import "_footer";
+@import "_icon";
+
+@import "_nav";
+
+.nav {
+  background-image: url(../images/public/bg.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+  height: 37.5rem;
+}
+body {
+  background-color: #f3f3f3;
+}
+main {
+  .main-list {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    background-color: #fff;
+    width: 75rem;
+    margin: 0 auto;
+    margin-top: 1.875rem;
+    &:first-child{
+      margin-top: 50px;
+    }
+
+    li {
+      // margin-top: .4rem;
+      margin-bottom: 0.625rem;
+      display: flex;
+
+      margin-left: 7.25rem;
+      p {
+        width: 55.625rem;
+      }
+
+      .main-img {
+        margin-left: -7.5rem;
+      }
+
+      .main-desc {
+        margin-left: 1.5rem;
+        color: #999;
+      }
+
+      .main-desc a {
+        color: #333;
+        font-size: 1.125rem;
+        line-height: 2.1875rem;
+      }
+      .main-desc a:hover {
+        text-decoration: underline;
+      }
+
+      .main-desc p {
+        font-size: 0.875rem;
+      }
+
+      .main-desc span {
+        font-size: 0.75rem;
+        line-height: 1.25rem;
+        margin-right: .625rem;
+      }
+
+      .main-desc .more {
+        color: $global-blue;
+        font-size: 0.75rem;
+      }
+    }
+  }
+}

@@ -1,0 +1,7 @@
+/* import fonts */
+@import url(https://fonts.googleapis.com/css?family=Lato);
+
+#info{
+    position: absolute;
+    left: 5%;
+}

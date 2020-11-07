@@ -1,0 +1,51 @@
+// Add main-num1 styles
+.main-num1 {
+  margin: 0 auto;
+  width: 1200px;
+  border: 1px solid #333333;
+  display: flex;
+  justify-content: space-around;
+  > section {
+    //  flex 布局只影响第一个子组件，不能遍历至所有子组件
+    display: flex;
+    //  更改flex布局方向
+    flex-direction: column;
+    //  将所有子组件点上的align-self值设置为一个组，
+    // align-self属性设置项目在其包含了块中在交叉轴
+    // 上方向上的对其方式
+    align-items: center;
+    // flex: 伸缩变量
+    flex: 3;
+    border: 1px solid red;
+
+    > div {
+        // justify-content:主轴对齐
+      justify-content: center;
+      border: 1px solid #666666;
+      border-radius: 50%;
+      width: 8em;
+      height: 8em;
+      background-color: pink;
+    }
+    > p {
+      border: 1px solid #6666;
+      font-size: 0.81em;
+      // text-justify: center;
+      text-align: center;
+      color: orange;
+    }
+    > text {
+      display: flex;
+      margin: auto;
+      text-align: center;
+      width: 70em;
+      // justify-content: center;
+      border: 1px solid #6666;
+      font-size: 0.3em;
+      justify-content: space-evenly;
+      color: black;
+    }
+  }
+}
+
+

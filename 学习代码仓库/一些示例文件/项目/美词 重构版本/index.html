@@ -1,0 +1,513 @@
+<!--
+ * @Date: 2020-08-15 23:53:03
+ * @LastEditors: DSCode
+ * @LastEditTime: 2020-08-16 01:22:35
+ * @FilePath: \美词 重构版本\index.html
+-->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>美词教育-首页</title>
+    <link rel="stylesheet" href="./styles/index.css">
+</head>
+
+<body>
+    <header>
+        <div class="contact">
+            <div class="wrap">
+                <div class="contact-left">
+                    <a href="#"><i class="iconfont iconhome"></i>&nbsp;美词官网</a>
+                    <span>中国高考日语教育桥接</span>
+                </div>
+                <div class="contact-right">
+                    <span>查询电话:<b>136-8888-8888</b></span>
+                    <span><i class="iconfont iconweixin"></i>&nbsp;公众号</span>
+                    <span><i class="iconfont iconshouji54"></i>&nbsp;手机版</span>
+                </div>
+            </div>
+        </div>
+        <div class="search">
+            <div class="wrap">
+                <div class="search-left">
+                    <a href="#"><img src="images/header/logo.png"></a>
+                </div>
+                <div class="search-right">
+                    <ul>
+                        <li class="erect">口语</li>
+                        <li class="erect">考题</li>
+                        <li>学习资料</li>
+                    </ul>
+                    <div class="search-right-ipt">
+                        <input type="text" placeholder="日语学习宝典" class="search-right-text" />
+                        <input type="button" value="搜索" class="search-right-btn" />
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="nav">
+            <div class="wrap">
+                <div class="nav-left">
+                    <span>教育，让世界无界</span>
+                </div>
+                <div class="nav-right">
+                    <ul>
+                        <li><a href="#">首页</a>
+                            <div class="transi current"></div>
+                        </li>
+                        <li><a href="#">美词介绍</a>
+                            <div class="transi"></div>
+                        </li>
+                        <li><a href="#">美词动态</a>
+                            <div class="transi"></div>
+                        </li>
+                        <li><a href="#">海量题库</a>
+                            <div class="transi"></div>
+                        </li>
+                        <li><a href="#">师资团队</a>
+                            <div class="transi"></div>
+                        </li>
+                        <li><a href="#">合作交流</a>
+                            <div class="transi"></div>
+                        </li>
+                        <li><a href="#">练习我们</a>
+                            <div class="transi"></div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </header>
+    <main>
+        <!-- 
+            TODO part of dynamic area
+         -->
+        <section class="top-section">
+            <div class="left-area">
+                <div class="dynamic-tit">
+                    <h2>动态</h2>
+                </div>
+                <div class="dynamic-left-top">
+                    <img src="./images/index/_9.jpg" alt="">
+                    <div class="dynamic-news-area">
+                        <span class="">· 日本幼儿日语教育：平假名练习</span><br><span class="">· 开设日语教育专业的日本大学院</span><br><span
+                            class="">· 日本名校：50所日语教育专业院校</span><br><span class="">· 日本畅销作家凑佳苗小说推荐：《反转》</span><br><span
+                            class="">· 竹内凉真x三吉彩花疫情期外出不自肃，还被曝光了恋情</span><br><span class="">·
+                            日本最新新型冠状肺炎确诊人数及地区分布：5月29日</span><br><span class="">·
+                            木村拓哉成为女儿摄影师：Cocomi美照被赞“太治愈”</span><br><span class="">· 日本全面解除紧急事态宣言&amp;拟放宽入境限制</span>
+                    </div>
+                </div>
+                <div class="dynamic-icon-area">
+                    <div class="dynamic-icon-list">
+                        <div class="dynamic-icon-tit"><img src="./images/id1.png" alt="">
+                            <h2>雄厚的师资</h2>
+                        </div>
+                        <div class="dynamic-icon-cont">
+                            <p>75人，8名留日归国教师</p>
+                        </div>
+                    </div>
+                    <div class="dynamic-icon-list">
+                        <div class="dynamic-icon-tit"><img src="./images/id2.png" alt="">
+                            <h2>蓬勃的团队</h2>
+                        </div>
+                        <div class="dynamic-icon-cont">
+                            <p>平均年龄约26</p>
+                        </div>
+                    </div>
+                    <div class="dynamic-icon-list">
+                        <div class="dynamic-icon-tit"><img src="./images/id3.png" alt="">
+                            <h2>精细化管理</h2>
+                        </div>
+                        <div class="dynamic-icon-cont">
+                            <p>成熟的管理体系</p>
+                        </div>
+                    </div>
+                    <div class="dynamic-icon-list">
+                        <div class="dynamic-icon-tit"><img src="./images/id4.png" alt="">
+                            <h2>综合管理模式</h2>
+                        </div>
+                        <div class="dynamic-icon-cont">
+                            <p>教育，让世界无界</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- TODO part of Industry-->
+                <div class="industry-area">
+                    <div class="industry-tit">
+                        <h2>行业前沿</h2>
+                    </div>
+                    <div class="industry-card">
+                        <div class="card">
+                            <img src="./images/index/Clip_gf.jpg" alt="">
+                            <div>
+                                <div class="card-tit">全新人机交互口语演练，不出国，也能说一口流利口语</div>
+                                <div class="card-cont">职场实用英语+考证，签协议，不过还能免费重读。</div>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <img src="./images/index/Clip_gl.jpg" alt="">
+                            <div>
+                                <div class="card-tit">中外教双师互动“脱口秀”，三重口语演练，带你从头开始说口语</div>
+                                <div class="card-cont">职场实用英语+考证，签协议，不过还能免费重读。</div>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <img src="./images/index/Clip_gr.jpg" alt="">
+                            <div>
+                                <div class="card-tit">2021考研蜕变计划标准班 政英+专业课1对1</div>
+                                <div class="card-cont">职场实用英语+考证，签协议，不过还能免费重读。</div>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <img src="./images/index/Clip_gx.jpg" alt="">
+                            <div>
+                                <div class="card-tit">2021考研蜕变计划标准班 政英+专业课1对1</div>
+                                <div class="card-cont">职场实用英语+考证，签协议，不过还能免费重读。</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="right-area">
+                <div class="right-top">
+                    <h2>题库</h2>
+                    <img src="./images/index/_18.jpg" alt="">
+                    <div class="search">
+                        <input type="text">
+                        <a href="#">搜索</a>
+                    </div>
+                </div>
+
+                <div class="right-bottom">
+                    <div class="right-bottom-tit">
+                        <p>热门</p>
+                    </div>
+                    <ol>
+                        <li><a href="">日本进一步扩大入境限制，最早7月份才能</a></li>
+                        <li><a href="">日语能力考证书什么时候领取？（2020）
+                            </a></li>
+                        <li><a href="">日语二级什么水平
+                            </a></li>
+                        <li><a href="">日语能力考报名网站是什么？
+                            </a></li>
+                        <li><a href="">日本留学新生必知单词
+                            </a></li>
+                        <li><a href="">日本语能力测试成绩查询时间
+                            </a></li>
+                        <li><a href="">日语能力考试成绩查询时间（2020）
+                            </a></li>
+                        <li><a href="">日本留学选专业时哪几点很重要
+                            </a></li>
+                        <li><a href="">日本留学：你知道与夏天相关的日语词汇</a></li>
+                    </ol>
+                </div>
+            </div>
+        </section>
+
+        <section class="teacher-area">
+            <!-- TODO part of teacher area -->
+            <div class="teacher-area-tit">
+                <h2>师资</h2>
+            </div>
+            <div class="teacher-list">
+                <ul>
+                    <li>
+                        <img src="./images/index/head.jpg" alt="">
+                        <div><span class="teacher-staus">归国</span>
+                            <p class="teacher-cont">杨丹</p>
+                        </div>
+                    </li>
+                    <li>
+                        <img src="./images/index/head.jpg" alt="">
+                        <div><span class="teacher-staus">归国</span>
+                            <p class="teacher-cont">杨丹</p>
+                        </div>
+                    </li>
+                    <li>
+                        <img src="./images/index/head.jpg" alt="">
+                        <div><span class="teacher-staus">归国</span>
+                            <p class="teacher-cont">杨丹</p>
+                        </div>
+                    </li>
+                    <li>
+                        <img src="./images/index/head.jpg" alt="">
+                        <div><span class="teacher-staus">归国</span>
+                            <p class="teacher-cont">杨丹</p>
+                        </div>
+                    </li>
+                    <li>
+                        <img src="./images/index/head.jpg" alt="">
+                        <div><span class="teacher-staus">归国</span>
+                            <p class="teacher-cont">杨丹</p>
+                        </div>
+                    </li>
+                    <li>
+                        <img src="./images/index/head.jpg" alt="">
+                        <div><span class="teacher-staus">归国</span>
+                            <p class="teacher-cont">杨丹</p>
+                        </div>
+                    </li>
+                    <li>
+                        <img src="./images/index/head.jpg" alt="">
+                        <div><span class="teacher-staus">归国</span>
+                            <p class="teacher-cont">杨丹</p>
+                        </div>
+                    </li>
+
+
+                </ul>
+            </div>
+        </section>
+
+        <section class="exam">
+            <!-- TODO part of exam -->
+            <div class="exam-tit">
+                <h2>高考资讯</h2>
+            </div>
+            <div class="exam-area">
+                <div class="exam-right-list">
+                    <div>
+                        <h3>· 2019年12月日本语能力测试各考点成绩单领取时间表</h3>
+                        <p>为了能让喜欢日剧，动漫的同学们突破零基础，新版标准日本语再放送这个节目就此诞生！希望同学们趁着暑假，好好学习，抓牢基础，为将来的日语学习更迈进一步~！！</p>
+                    </div>
+                    <div>
+                        <h3>· 日本进一步扩大入境限制，最早7月份才能入境</h3>
+                        <p>日本语能力测试JLPT(The Japanese-Language Proficiency
+                            Test)是由日本国际交流基金会主办的，面向母语为非日语的日语学习者的日语语言能力测试。每年7月和12月由日本组织在全球各地统一进行考试。</p>
+                    </div>
+                    <div>
+                        <h3>· 日本大阪教育大学书法专业怎么样？来看看吧！</h3>
+                        <p>国事，家事，天下事，天天都有新鲜事；你学，我学，大家学，流行日语每天说。沪江日语用独特视角整合最新鲜的资讯和最热点的元素，让你在学外语的过程中也能运筹帷幄、决胜千里。</p>
+                    </div>
+                    <div>
+                        <h3>· 2020年日语能力考人气爆款课推荐八选</h3>
+                        <p>面对求职，如何能通过自我介绍就给面试官留下好印象，脱颖而出呢？不必烦恼，今天就给大家介绍一些非常实用的自我介绍。掌握这些，相信求职中的自我介绍再也难不倒你！</p>
+                    </div>
+                    <div>
+                        <h3>·埋葬的日本公立大学—大阪府立大学</h3>
+                        <p>日语二级水平大致可以达到不带字幕看懂部分动漫和日剧；能日常简单交流；进日企的敲门砖；能达到部分理工类留学的标准。词汇量大概有7000~8000个。</p>
+                    </div>
+                    <div>
+                        <h3>· 日本留学研究生一年费用解析</h3>
+                        <p>日语n1考试题型分为四大部分：文字词汇、文法（语法）、读解、听解（听力）。新日本语能力是否合格，需要看综合得分和各单项得分。 N1日语考试内容和做题时间分配表参考</p>
+                    </div>
+                </div>
+                <div class="exam-left-list">
+                    <div>
+                        <img src="./images/index/Clip_ew.jpg" alt="">
+                        <p>初试+复试，公共课+专业课一站式规划
+                        </p>
+                    </div>
+
+                    <div>
+                        <img src="./images/index/Clip_dw.jpg" alt="">
+                        <p>初试+复试，公共课+专业课一站式规划
+                        </p>
+                    </div>
+                    <div>
+                        <img src="./images/index/Clip_fa.jpg" alt="">
+                        <p>初试+复试，公共课+专业课一站式规划
+                        </p>
+                    </div>
+                    <div>
+                        <img src="./images/index/Clip_fb.jpg" alt="">
+                        <p>初试+复试，公共课+专业课一站式规划
+                        </p>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+        <section class="japanese">
+            <!-- TODO part of japanese learn -->
+            <div class="japanese-tit">
+                <h2>日语学习</h2>
+            </div>
+            <ul class="jap-list">
+                <li>
+                    <img src="./images/index/Clip_cr.jpg" alt="">
+                    <div>
+                        <h3>全新人机交互口语演练，不出国，也能说一口流利口语
+                        </h3>
+                        <p>去日本留学教育水平比较高，而且教学的环境也非常的不错，而且距离中国也比较近，对于很多不想离家太远的同学，就可以选择去日本留学，那么...</p>
+                        <a href="#">进入学习</a>
+                    </div>
+                </li>
+                <li>
+                    <img src="./images/index/Clip_cz.jpg" alt="">
+                    <div>
+                        <h3>日语能力考证书什么时候领取
+                        </h3>
+                        <p>去日本留学教育水平比较高，而且教学的环境也非常的不错，而且距离中国也比较近，对于很多不想离家太远的同学，就可以选择去日本留学，那么...</p>
+                        <a href="#">进入学习</a>
+                    </div>
+                </li>
+                <li>
+                    <img src="./images/index/Clip_da.jpg" alt="">
+                    <div>
+                        <h3>全新人机交互口语演练，不出国，也能说一口流利口语
+                        </h3>
+                        <p>去日本留学教育水平比较高，而且教学的环境也非常的不错，而且距离中国也比较近，对于很多不想离家太远的同学，就可以选择去日本留学，那么......</p>
+                        <a href="#">进入学习</a>
+                    </div>
+                </li>
+                <li>
+                    <img src="./images/index/Clip_df.jpg" alt="">
+                    <div>
+                        <h3>全新人机交互口语演练，不出国，也能说一口流利口语
+                        </h3>
+                        <p>去日本留学教育水平比较高，而且教学的环境也非常的不错，而且距离中国也比较近，对于很多不想离家太远的同学，就可以选择去日本留学，那么...</p>
+                        <a href="#">进入学习</a>
+                    </div>
+                </li>
+                <li>
+                    <img src="./images/index/Clip_dn.jpg" alt="">
+                    <div>
+                        <h3>全新人机交互口语演练，不出国，也能说一口流利口语
+                        </h3>
+                        <p>去日本留学教育水平比较高，而且教学的环境也非常的不错，而且距离中国也比较近，对于很多不想离家太远的同学，就可以选择去日本留学，那么...</p>
+                        <a href="#">进入学习</a>
+                    </div>
+                </li>
+                <li>
+                    <img src="./images/index/Clip_dv.jpg" alt="">
+                    <div>
+                        <h3>全新人机交互口语演练，不出国，也能说一口流利口语
+                        </h3>
+                        <p>去日本留学教育水平比较高，而且教学的环境也非常的不错，而且距离中国也比较近，对于很多不想离家太远的同学，就可以选择去日本留学，那么...</p>
+                        <a href="#">进入学习</a>
+                    </div>
+                </li>
+            </ul>
+        </section>
+        <section class="study-abroad">
+            <!-- TODO part of sudy abroad -->
+            <div class="study-tit">
+                <h2>留学前沿</h2>
+            </div>
+            <div class="study-cont-area">
+                <div class="study-left">
+
+                    <ul>
+                        <li>
+                            <h5>· 考研总成绩是怎么算的？看了这个你就懂了！</h5>
+                            <p>为了能让喜欢日剧，动漫的同学们突破零基础，新版标准日本语再放送这个节目就此诞生！希望同学们趁着暑假，好好学习，抓牢基础，为将来的日语学习更迈进一步~！！</p>
+                        </li>
+
+                        <li>
+                            <h5>· 那些凭借复试成功逆袭的人，都是做对了什么？</h5>
+                            <p>为了能让喜欢日剧，动漫的同学们突破零基础，新版标准日本语再放送这个节目就此诞生！希望同学们趁着暑假，好好学习，抓牢基础，为将来的日语学习更迈进一步~！！</p>
+                        </li>
+                        <li>
+                            <h5>· 四六级词汇背诵收藏版！内附例句解读！</h5>
+                            <p>为了能让喜欢日剧，动漫的同学们突破零基础，新版标准日本语再放送这个节目就此诞生！希望同学们趁着暑假，好好学习，抓牢基础，为将来的日语学习更迈进一步~！！</p>
+                        </li>
+                        <li>
+                            <h5>· 21考研什么时候开始复习比较好？</h5>
+                            <p>为了能让喜欢日剧，动漫的同学们突破零基础，新版标准日本语再放送这个节目就此诞生！希望同学们趁着暑假，好好学习，抓牢基础，为将来的日语学习更迈进一步~！！</p>
+                        </li>
+                        <li>
+                            <h5>· 这篇文章价值50分！冲刺阶段收下这份分析题解题技</h5>
+                            <p>为了能让喜欢日剧，动漫的同学们突破零基础，新版标准日本语再放送这个节目就此诞生！希望同学们趁着暑假，好好学习，抓牢基础，为将来的日语学习更迈进一步~！！</p>
+                        </li>
+                        <li>
+                            <h5>· 最难考十个专业，有没有你的目标？</h5>
+                            <p>为了能让喜欢日剧，动漫的同学们突破零基础，新版标准日本语再放送这个节目就此诞生！希望同学们趁着暑假，好好学习，抓牢基础，为将来的日语学习更迈进一步~！！</p>
+                        </li>
+                    </ul>
+                </div>
+                <div class="study-right">
+                    <div class="tel-tit">
+                        <span>客服中心
+                            <a href="">更多</a></span>
+                    </div>
+                    <div class="contact-area">
+                        <img src="./images/_bb.png" alt="">
+                        <div>
+                            <h1>1368888888</h1>
+                            <p>周一至周日 8:30-22:00</p>
+                        </div>
+                    </div>
+                    <div class="contact-href">
+                        <a href=""><span>课程咨询</a></span>
+                        <a href=""><span>关于美词</span></a>
+                    </div>
+                    <div class="qrcode">
+                        <div><img src="./images/index/qr.jpg" alt="">
+                            <p>手机版</p>
+                        </div>
+                        <div><img src="./images/index/qr__2.jpg" alt="">
+                            <p>公众号</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="school">
+            <!-- TODO part of school -->
+            <div class="school-tit">
+                <h2>校园风采</h2>
+            </div>
+
+            <ul>
+                <li><img src="./images/index/Clip.jpg" alt=""></li>
+                <li><img src="./images/index/Clip_.jpg" alt=""></li>
+                <li><img src="./images/index/Clip_ba.jpg" alt=""></li>
+                <li><img src="./images/index/Clip_bb.jpg" alt=""></li>
+            </ul>
+        </section>
+    </main>
+    <footer>
+        <div class="footer-top">
+            <div class="wrap">
+                <div class="footer-top-left">
+                    <p>客服热线电话：400-000-00000</p>
+                    <div>
+                        <span>在线时间（9:00~22:00）</span><span class="footer-left-color">全年无休</span>
+                    </div>
+                    <div class="footer-left-qr">
+                        <img src="images/footer/qr_1.jpg">
+                        <p>手机版</p>
+                    </div>
+                    <div class="footer-left-qr">
+                        <img src="images/footer/qr_2.jpg">
+                        <p>关注公众号</p>
+                    </div>
+                </div>
+                <div class="footer-top-right">
+                    <div class="footer-right-top">
+                        <img src="images/footer/slogan.png">
+                    </div>
+                    <ul>
+                        <li><a href="#">首页</a></li>
+                        <li><a href="#">美词介绍</a></li>
+                        <li><a href="#">美词动态</a></li>
+                        <li><a href="#">海量题库</a></li>
+                        <li><a href="#">师资团队</a></li>
+                        <li><a href="#">合作交流</a></li>
+                        <li><a href="#">练习我们</a></li>
+                    </ul>
+                    <div class="footer-right-bottom">
+                        <div>
+                            <span><a href="#">客服中心</a>&nbsp;&nbsp;/&nbsp;&nbsp;<a
+                                    href="#">诚聘英才</a>&nbsp;&nbsp;/&nbsp;&nbsp;<a href="#">法律声明</a></span>
+                        </div>
+                        <div>
+                            <a href="#"><img src="images/footer/logo2.png"></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <div class="wrap">
+                版权信息&nbsp;@2020&nbsp;四川美词教育集团&nbsp;版权所有&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;蜀ICP备：000000&nbsp;&nbsp;&nbsp;技术支持
+            </div>
+        </div>
+    </footer>
+</body>
+
+
+</html>

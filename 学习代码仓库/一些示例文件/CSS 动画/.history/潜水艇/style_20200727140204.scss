@@ -1,0 +1,10 @@
+$color1: #306d85;
+$color2: #d93a54;
+
+body {
+  background: $color1;
+}
+
+*, *:before, *:after {
+    box-sizing: border-box;
+}

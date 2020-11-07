@@ -1,0 +1,114 @@
+@import url("https://fonts.googleapis.com/css?family=Gochi+Hand");
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  width: 100vw;
+  height: 100vh;
+  margin: 0;
+  padding: 0;
+  background-color: #291642;
+//   font-family: "Gochi Hand", sans-serif;
+  font-size: 130%;
+  letter-spacing: 0.1rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.wrapper {
+  width: 100%;
+  display: flex;
+  color: #fff;
+  flex-direction: column;
+  align-items: center;
+}
+
+.v-width {
+  position: relative;
+  display: flex;
+  align-items: center;
+  width: 100%;
+}
+
+.v-width::before,
+.v-width::after {
+  content: "";
+  display: block;
+  flex: 1;
+  height: 1px;
+  background-color: #fff;
+}
+
+.v-width strong,
+.v-width-value,
+.w-actual {
+  display: inline-flex;
+  background-color: #009688;
+  color: #fff;
+  padding: 10px 15px;
+  border-radius: 3px;
+  font-size: 15px;
+}
+.v-width strong {
+  margin-right: 5px;
+  background-color: #e91e63;
+}
+code {
+  display: inline-flex;
+  background-color: #ff5722;
+  font-family: "PT Mono";
+  padding: 10px 15px;
+  border-radius: 5px;
+}
+
+.dimmed {
+  opacity: 0.4;
+}
+
+.active {
+  font-weight: bold;
+}
+
+.wrapper > * + * {
+  margin-top: 1.5rem;
+}
+
+strong {
+  font-weight: bold;
+}
+
+.element {
+  min-height: 20vh;
+  border-radius: 2vh;
+  background-color: #2196f3;
+// ! 1。若window.width > 500px so element.width === 500px, whatever 50vw > 500px
+// ! 2. 
+  width: clamp(100px, 50vw, 500px);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+p {
+  display: inline-flex;
+  align-items: center;
+  white-space: nowrap;
+}
+
+@media (min-width: 1000px) {
+  .element {
+    background-color: #f36;
+  }
+}
+
+@media (max-width: 200px) {
+  .element {
+    background-color: #3f6;
+  }
+}

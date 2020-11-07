@@ -1,0 +1,127 @@
+.page5-main {
+  border: 1px solid red;
+  display: flex;
+  width: 1200px;
+  margin: 0 auto;
+  justify-content: center;
+  //   :first-child div {
+  //       border: 1px solid blue;
+  //   }
+  .layer {
+    border: 1px solid blue;
+  }
+  .layer:hover {
+    // change px to em or rem
+    // this is mouse hover style
+    //  Doesn`t work
+    // width: 60em;
+    background-color: black;
+  }
+  .header {
+    border: 1px solid red;
+    width: 200px;
+    div {
+      margin: 0.1em auto;
+      border: 1px solid red;
+      width: 120px;
+      height: 20px;
+    }
+  }
+  .container {
+    margin-top: 1em;
+    border: 1px solid red;
+    width: 200px;
+    height: 400px;
+    .container-body {
+      border: 1px solid red;
+      margin: 1em auto;
+      height: 60px;
+      div {
+        margin-left: 1em;
+      }
+      h2 {
+        border: 1px solid red;
+        width: 80px;
+        height: 20px;
+        margin-top: 2px;
+      }
+      p {
+        width: 120px;
+        height: 20px;
+        margin-top: -1em;
+        border: 1px solid red;
+      }
+    }
+  }
+}
+
+.page5-form {
+  background-color: rgb(4, 16, 20);
+  color: white;
+  margin: 2rem auto;
+  display: flex;
+  width: 1200px;
+  height: 460px;
+  justify-content: space-around;
+  .container{
+      margin: 3em;
+  }
+  .input-group {
+      display: flex;
+      justify-content: space-between;
+      input{
+          width: 240px;
+          height: 48px;
+          border-radius: 9px;
+          margin: 2em 2em 0 0 ; 
+          border: none;
+      }
+  }
+  .text{
+      margin-top: 2em;
+      border-radius: 9px;
+  }
+  .buttons{
+      margin-top: 2em;
+      button{
+          width: 12em;
+          height: 4em ;
+          font-weight: 800;
+          font-size: 14px;
+          background-color: black;
+          color: white;
+          border: 1px solid gray;
+      }
+      .active{
+          background-color: rgb(184, 29, 171);
+          color: white;
+          border: none;
+          
+      }
+  }
+  .menu-section {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 4em;
+    height: 20em;
+    .icon{
+        width: 3em;
+        height: 3em;
+        border-radius: 50%;
+        background-color: gray;
+    }
+    .icon-body{
+        // border: 1px solid red;
+        margin-top: -1.2em;
+        margin-left: 2em;
+        width: 12em;
+        height: 8em;
+        h2{
+            color:  rgb(128, 0, 68);
+        }
+        text{
+            color: gray;
+        }
+    }
+  }
+}

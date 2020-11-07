@@ -1,0 +1,110 @@
+@import "_config";
+@import "_icon";
+@import "_nav-head";
+@import "_footer";
+header{
+    background-image: url(../images/public/bg.jpg);
+}
+
+main {
+    margin: 0 auto;
+    width: 80rem;
+    margin-top: 2rem;
+    padding: 2rem;
+    background-color: #ffffff;
+
+    border-top: 0.4rem solid #e3e3e3;
+    border-bottom: 0.4rem solid #e3e3e3;
+
+    .main-tit {
+        width: 100%;
+        border-bottom: 0.1rem solid #e3e3e3;
+        height: 3rem;
+        text-align: center;
+
+        h3 {
+            font-size: 1.5rem;
+            font-weight: 400;
+
+        }
+    }
+
+    .main-info {
+        margin-top: 2.8rem;
+        color: #999999;
+        font-size: 0.8rem;
+
+        span {
+            color: $global-blue;
+        }
+    }
+
+    .main-desc {
+        color: #999;
+        border: 1px solid #e8e8e8;
+        padding: 0 2rem;
+        height: 5rem;
+
+        font-size: 0.75rem;
+        line-height: 1.375rem;
+
+    }
+
+    .main-content {
+        margin-bottom: 3.75rem;
+        margin-top: 1.875rem;
+
+        p {
+            font-size: 1rem;
+            line-height: 2.1875rem;
+            font-weight: 400;
+            margin-top: 1.875rem;
+        }
+
+        p:nth-last-child(1) {
+            margin-top: 0;
+        }
+
+        p:nth-last-child(2) {
+            margin-bottom: 0;
+        }
+
+        p :nth-child(1) {
+            margin-bottom: 0;
+        }
+
+        p:nth-child(2) {
+            margin-bottom: 0;
+        }
+
+        .content-img {
+            text-align: center;
+            padding-top: 2.5rem;
+        }
+    }
+
+    .main-bottom {
+        display: flex;
+        padding-top: 1rem;
+        border-top: 1px solid #e3e3e3;
+
+        a {
+            color: #333333;
+            font-size: 1rem;
+            line-height: 2.2rem;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+
+        span {
+            font-size: 1rem;
+            color: $global-blue;
+        }
+
+        .btn-pre {
+            flex: 1;
+        }
+    }
+}

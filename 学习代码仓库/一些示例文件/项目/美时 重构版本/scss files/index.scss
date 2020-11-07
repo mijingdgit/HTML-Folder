@@ -1,0 +1,209 @@
+@import "_global-config";
+@import "_header";
+@import "_footer";
+
+section {
+    width: 100%;
+}
+
+header {
+    background: url(../images/index/banner.jpg);
+}
+
+article {
+    width: 1320px;
+    margin: 0 auto;
+    color: #252525;
+    margin-top: 120px;
+}
+
+article h1 {
+    font-size: 38px;
+    margin-bottom: 68px;
+    cursor: pointer;
+    position: relative;
+    color: #252525;
+}
+
+h1 sup {
+    font-size: 24px;
+}
+
+h1 span {
+    font-size: 26px;
+    margin-left: 90px;
+}
+
+h1::after {
+    content: "";
+    width: 135px;
+    height: 1px;
+    background: #343434;
+    border-bottom: 1px solid #939393;
+    position: absolute;
+    bottom: -10px;
+    left: 44px;
+    visibility: hidden;
+}
+
+h1:hover::after {
+    visibility: visible;
+}
+
+article.about p {
+    font-size: 16.8px;
+    line-height: 35px;
+    margin-bottom: 50px;
+}
+
+article.about p span {
+    color: rgb(143, 192, 222);
+    cursor: pointer;
+}
+
+section img {
+    display: block;
+    width: 1320px;
+    margin: 0 auto;
+}
+
+article.news ul {
+    list-style: none;
+    display: flex;
+    flex-flow: column wrap;
+    width: 100%;
+    height: 180px;
+    position: relative;
+}
+
+article.news ul::after {
+    content: "";
+    width: 1px;
+    height: 182px;
+    background: #333333;
+    position: absolute;
+    top: 0;
+    left: 50%;
+}
+
+article.news ul li {
+    width: 625px;
+    height: 25%;
+}
+
+article.news li a {
+    display: flex;
+}
+
+article.news li a:hover>p:nth-child(1) {
+    font-size: 17px;
+}
+
+li.left {
+    margin-right: 120px;
+}
+
+article.news ul li p {
+    color: black;
+    font-size: 16.5px;
+    margin-right: 40px;
+}
+
+article.news button {
+    display: block;
+    width: 240px;
+    height: 48px;
+    background: #393438;
+    border: none;
+    outline: none;
+    color: white;
+    font-size: 18px;
+    margin: 0 auto;
+    margin-top: 60px;
+    cursor: pointer;
+}
+
+article.news button:hover {
+    background: white;
+    border: 1px solid #393438;
+    color: #393438;
+}
+
+.case {
+    height: 640px;
+    background: url(../images/index/curtain-bg.jpg);
+    background-size: 100%;
+    margin-bottom: 100px;
+}
+
+.case article {
+    padding-top: 70px;
+}
+
+.case article h1 {
+    color: white;
+}
+
+.case article h1::after {
+    background: white;
+}
+
+.case article ul {
+    width: 100%;
+    height: 305px;
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+}
+
+.case article ul li {
+    width: 313px;
+    height: 305px;
+    position: relative;
+}
+
+.case article ul li:not(:last-child) {
+    margin-right: 20px;
+}
+
+.case li img {
+    width: 313px;
+}
+
+.case li .information {
+    color: white;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background: rgba(0, 0, 0, 0.5);
+}
+
+.case li:hover .information {
+    background: none;
+}
+
+.case button {
+    display: block;
+    width: 240px;
+    height: 48px;
+    background: none;
+    border: 1px solid white;
+    outline: none;
+    color: white;
+    font-size: 18px;
+    margin: 0 auto;
+    margin-top: 50px;
+    cursor: pointer;
+}
+
+.case button:hover {
+    border: none;
+    background: white;
+    color: #393438;
+}

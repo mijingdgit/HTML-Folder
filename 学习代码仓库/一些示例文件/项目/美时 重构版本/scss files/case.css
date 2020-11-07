@@ -1,0 +1,379 @@
+/* 
+! all about global public css 
+! You can extract more public data here
+ */
+* {
+  padding: 0;
+  margin: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+}
+
+li {
+  list-style: none;
+}
+
+header {
+  width: 100%;
+  min-width: 1320px;
+  height: 850px;
+  background-image: url(../images/banner.jpg);
+  background-size: cover;
+  position: relative;
+}
+
+.nav-box {
+  width: 100%;
+  height: 120px;
+  background-color: rgba(255, 255, 255, 0.1);
+}
+
+.nav-box-wrap {
+  width: 1320px;
+  margin: 0 auto;
+}
+
+.logo {
+  display: inline-block;
+  margin-top: 28px;
+}
+
+.navigation {
+  float: right;
+}
+
+li.now {
+  border-bottom: 2px #201109 solid;
+}
+
+.navigation ul li {
+  float: left;
+  line-height: 120px;
+}
+
+.navigation ul li:not(:last-child) {
+  margin-right: 75px;
+}
+
+.navigation ul li a {
+  text-decoration: none;
+  color: #201109;
+  font-size: 18px;
+}
+
+.navigation ul li:hover {
+  border-bottom: 2px #201109 solid;
+}
+
+.navigation ul li:hover a {
+  font-weight: bold;
+}
+
+.title-box {
+  width: 1320px;
+  height: 730px;
+  position: relative;
+  margin: 0 auto;
+}
+
+.title-box img {
+  position: absolute;
+  top: 180px;
+  right: 360px;
+}
+
+.title-box .title {
+  position: absolute;
+  width: 420px;
+  right: 0;
+  top: 200px;
+}
+
+.title-box .title p:nth-child(3) {
+  position: relative;
+  top: 305px;
+  text-align: right;
+}
+
+.title-box .title p {
+  color: #fff;
+}
+
+.title-box .title p:nth-child(1) {
+  font-size: 72px;
+}
+
+.title-box .title p:nth-child(2),
+.title-box .title p:nth-child(3) {
+  font-size: 32px;
+}
+
+footer {
+  width: 100%;
+  height: 350px;
+  background-color: #454545;
+}
+
+.footer-wrap {
+  width: 1320px;
+  height: 100%;
+  margin: 0 auto;
+  /* border:1px red solid; */
+}
+
+.footer-top {
+  height: 236px;
+}
+
+.footer-left,
+.footer-right {
+  width: 50%;
+  color: #fff;
+  float: left;
+  position: relative;
+}
+
+.footer-left div {
+  margin-top: 110px;
+  margin-left: 58px;
+}
+
+.footer-left div a {
+  color: white;
+}
+
+.contactinfo {
+  display: inline-block;
+  margin-top: 70px;
+}
+
+.footer-right ul {
+  float: right;
+  position: relative;
+  left: 110px;
+}
+
+.footer-right ul li {
+  font-size: 16px;
+  width: 50%;
+  float: left;
+}
+
+.footer-right ul li p {
+  display: inline-block;
+  position: relative;
+  top: -2px;
+  left: 9px;
+  max-height: 40px;
+  overflow: hidden;
+}
+
+.footer-left p:nth-child(1) {
+  font-size: 24px;
+}
+
+.footer-left p:nth-child(2) {
+  font-size: 22px;
+}
+
+.footer-right p:nth-child(1) {
+  font-size: 24px;
+  margin-bottom: 38px;
+  margin-left: 110px;
+}
+
+.footer-bottom {
+  width: 100%;
+  height: 114px;
+  color: #d1cfcf;
+  line-height: 114px;
+  text-align: center;
+}
+
+.line {
+  width: 2px;
+  height: 100%;
+  background-color: #d1cfcf;
+  position: absolute;
+  right: 0;
+  top: -76px;
+  margin-top: -50%;
+}
+
+.midbigbox {
+  width: 100%;
+  height: 1597px;
+}
+
+.midbigbox p a {
+  color: black;
+}
+
+.midbigbox p a:hover {
+  font-weight: bold;
+}
+
+.country-bank-box {
+  width: 1320px;
+  height: 1550px;
+  margin: 0 auto;
+  margin-top: 45px;
+}
+
+.midmidbox {
+  width: 1328px;
+  height: 1270px;
+  margin-top: 50px;
+}
+
+.midmidbox li a {
+  color: black;
+}
+
+.midmidbox li:hover {
+  cursor: pointer;
+  -webkit-box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+          box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+.printblock {
+  width: 315px;
+  height: 333px;
+}
+
+.midmidbox > ul > li {
+  width: 315px;
+  height: 388px;
+  float: left;
+  margin-left: 20px;
+  margin-top: 50px;
+  background-color: whitesmoke;
+}
+
+.midmidbox > ul > li > a {
+  padding-top: 10px;
+  margin-left: 10px;
+}
+
+.midmidbox > ul > li > a > P {
+  margin-left: 10px;
+}
+
+.midmidbox > ul > li:nth-child(1) {
+  margin-left: 0px;
+}
+
+.midmidbox > ul > li:nth-child(5) {
+  margin-left: 0px;
+}
+
+.midmidbox > ul > li:nth-child(9) {
+  margin-left: 0px;
+}
+
+.midmidbox > ul > li:nth-child(1) {
+  margin-top: 0px;
+}
+
+.midmidbox > ul > li:nth-child(2) {
+  margin-top: 0px;
+}
+
+.midmidbox > ul > li:nth-child(3) {
+  margin-top: 0px;
+}
+
+.midmidbox > ul > li:nth-child(4) {
+  margin-top: 0px;
+}
+
+.bottomselect {
+  width: 335px;
+  height: 30px;
+  margin: 0 auto;
+  margin-top: 55px;
+}
+
+.up-page,
+.number1,
+.number2,
+.number3,
+.number4,
+.next-page {
+  border-radius: 3px;
+  cursor: pointer;
+}
+
+.up-page {
+  width: 82px;
+  height: 30px;
+  float: left;
+  text-align: center;
+  line-height: 30px;
+  background-color: #efefef;
+  color: rgba(0, 0, 0, 0.2);
+}
+
+.number1 {
+  margin-left: 92px;
+  width: 30px;
+  height: 30px;
+  text-align: center;
+  line-height: 30px;
+  background-color: black;
+  color: white;
+}
+
+.number2 {
+  margin-left: 132px;
+  width: 30px;
+  height: 30px;
+  text-align: center;
+  line-height: 30px;
+  margin-top: -31px;
+  border: 1px solid rgba(0, 0, 0, 0.2);
+}
+
+.number3 {
+  margin-left: 172px;
+  width: 30px;
+  height: 30px;
+  border: 1px solid rgba(0, 0, 0, 0.3);
+  text-align: center;
+  line-height: 30px;
+  margin-top: -32px;
+}
+
+.number4 {
+  margin-left: 212px;
+  width: 30px;
+  height: 30px;
+  border: 1px solid rgba(0, 0, 0, 0.3);
+  text-align: center;
+  line-height: 30px;
+  margin-top: -32px;
+}
+
+.next-page {
+  width: 82px;
+  height: 30px;
+  border: 1px solid rgba(0, 0, 0, 0.2);
+  float: right;
+  text-align: center;
+  line-height: 30px;
+  margin-top: -32px;
+}
+
+.number1:hover,
+.number2:hover,
+.number3:hover,
+.number4:hover,
+.next-page:hover {
+  background: black;
+  color: white;
+}
+/*# sourceMappingURL=case.css.map */

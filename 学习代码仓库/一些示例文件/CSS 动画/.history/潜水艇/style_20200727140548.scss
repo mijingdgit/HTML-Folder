@@ -1,0 +1,27 @@
+$color1: #306d85;
+$color2: #d93a54;
+
+body {
+  background-color: $color1;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+}
+
+.sea {
+  margin: 40px auto 0 auto;
+  overflow: hidden;
+  .bubble {
+    position: absolute;
+    width: 7px;
+    height: 7px;
+    border-radius: 50%;
+    background-color: lighten($color1, 25%);
+    opacity: 0.9;
+    animation: bubble-h-movement 1s ease-in infinite,
+      bubble-v-movement 300ms ease-in-out;
+  }
+}

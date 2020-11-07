@@ -1,0 +1,107 @@
+<!--
+ * @Author: DsCode
+ * @Date: 2020-07-31 12:57:36
+ * @LastEditors: DsCode
+ * @LastEditTime: 2020-07-31 14:11:19
+ * @FilePath: \CSS 可视化\基本图表\index.html
+-->
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8" />
+    <title></title>
+    <link rel="stylesheet" href="./style.css" />
+    <script src="https://cdn.jsdelivr.net/npm/d3-hierarchy@1.1.9/dist/d3-hierarchy.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/lodash@4.17.15/lodash.min.js"></script>
+  </head>
+  <body>
+    <h1>CSS 简单绘图</h1>
+    <main>
+      <div>
+        <h2>柱状图</h2>
+        <div class="bargraph">
+          <div></div>
+          <div></div>
+          <div></div>
+          <div></div>
+          <div></div>
+        </div>
+      </div>
+      <div>
+        <h2>饼图</h2>
+        <div class="piegraph"></div>
+      </div>
+
+      <div>
+        <h2>SVG 柱状图</h2>
+
+        <!--
+      dataset = {
+        total: [25, 26, 40, 45, 68],
+        current: [15, 11, 17, 25, 37],
+      }
+  -->
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          width="120px"
+          height="240px"
+          viewBox="0 0 60 100"
+        >
+          <g transform="translate(0, 100) scale(1, -1)">
+            <g>
+              <rect x="1" y="0" width="10" height="25" fill="#37c" />
+              <rect x="13" y="0" width="10" height="26" fill="#37c" />
+              <rect x="25" y="0" width="10" height="40" fill="#37c" />
+              <rect x="37" y="0" width="10" height="45" fill="#37c" />
+              <rect x="49" y="0" width="10" height="68" fill="#37c" />
+            </g>
+            <g>
+              <rect x="1" y="0" width="10" height="15" fill="#3c7" />
+              <rect x="13" y="0" width="10" height="11" fill="#3c7" />
+              <rect x="25" y="0" width="10" height="17" fill="#3c7" />
+              <rect x="37" y="0" width="10" height="25" fill="#3c7" />
+              <rect x="49" y="0" width="10" height="37" fill="#3c7" />
+            </g>
+          </g>
+        </svg>
+      </div>
+
+      <div class="city">
+        <h2>Canvas 绘图</h2>
+        <canvas id="under" width="800" height="800"></canvas>
+        <canvas id="over" width="800" height="800"></canvas>
+      </div>
+    </main>
+
+    <p>
+      HTML+CSS 的优点是方便，不需要第三方依赖，甚至不需要 JavaScript
+      代码。如果我们要绘制少量常见的图表，可以直接采用 HTML 和 CSS。它的缺点是
+      CSS 属性不能直观体现数据，绘制起来也相对麻烦，图形复杂会导致 HTML
+      元素多，而消耗性能。
+    </p>
+    <p>
+      <br />
+      SVG 是对 HTML/CSS 的增强，弥补了 HTML
+      绘制不规则图形的能力。它通过属性设置图形，可以直观地体现数据，使用起来非常方便。但是
+      SVG 也有和 HTML/CSS 同样的问题，图形复杂时需要的 SVG
+      元素太多，也非常消耗性能。
+    </p>
+    <p>
+      <br />
+      Canvas2D
+      是浏览器提供的简便快捷的指令式图形系统，它通过一些简单的指令就能快速绘制出复杂的图形。由于它直接操作绘图上下文，因此没有
+      HTML/CSS 和 SVG
+      绘图因为元素多导致消耗性能的问题，性能要比前两者快得多。但是如果要绘制的图形太多，或者处理大量的像素计算时，
+      Canvas2D 依然会遇到性能瓶颈。
+    </p>
+    <p>
+      <br />
+      WebGL
+      是浏览器提供的功能强大的绘图系统，它使用比较复杂，但是功能强大，能够充分利用
+      GPU
+      并行计算的能力，来快速、精准地操作图像的像素，在同一时间完成数十万或数百万次计算。另外，它还内置了对
+      3D 物体的投影、深度检测等处理，这让它更适合绘制 3D 场景。
+    </p>
+    <script src="./main.js"></script>
+  </body>
+</html>
