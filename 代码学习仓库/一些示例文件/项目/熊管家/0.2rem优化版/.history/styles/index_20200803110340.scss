@@ -1,0 +1,340 @@
+// ! import another scss
+@import "_global-config";
+@import "_footer";
+@import "_icon";
+
+.header {
+  overflow: hidden;
+  position: relative;
+  background-image: url(../images/index/bg-top.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: start;
+}
+
+.header .side-nav {
+  background-color: $global-gray-05;
+  width: 18.75rem;
+  text-align: center;
+
+  box-sizing: border-box;
+
+  .logo {
+    // 定位方式不设置, top无效
+    position: relative;
+    background-color: $global-white;
+    width: 18.75rem;
+    height: 6.25rem;
+    top: 6.25rem;
+    // 隐藏右上角正方形
+    overflow: hidden;
+    border-bottom: 0.1875rem solid $global-blue;
+
+    .logo-icon {
+      // 绝对定位,脱离当前文档流
+      position: absolute;
+      top: 1.25rem;
+      left: 3.125rem;
+    }
+  }
+
+  // 右上角三角
+  .logo::after {
+    position: absolute;
+    left: 18rem;
+    top: -1.25rem;
+    display: block;
+    content: "";
+    width: 1.9375rem;
+    height: 1.9375rem;
+    background: $global-blue;
+    transform: rotate(45deg);
+  }
+
+  .nav-list {
+    margin-top: 11.25rem;
+
+    li {
+      line-height: 2.1875rem;
+      margin-bottom: 0.625rem;
+      height: 2.8125rem;
+    }
+
+    a {
+      display: inline-block;
+      width: 8.5rem;
+      color: $global-white;
+      font-size: 1.125rem;
+      padding-top: 0.1875rem;
+
+      box-sizing: border-box;
+    }
+
+    a:hover {
+      background-color: $global-white;
+      color: $global-blue;
+      border-top-left-radius: 0.625rem;
+      border-bottom-right-radius: 0.625rem;
+    }
+
+    .active {
+      background-color: $global-white;
+      color: $global-blue;
+      border-top-left-radius: 0.625rem;
+      border-bottom-right-radius: 0.625rem;
+    }
+  }
+
+  .phone {
+    position: relative;
+    margin: auto;
+    display: flex;
+    width: 14.625rem;
+    margin-top: 5rem;
+    border: 0.0625rem solid $phone-border;
+    color: $phone-color;
+    font-size: 1.375rem;
+    font-weight: bold;
+    box-sizing: border-box;
+    font-family: Arial;
+    overflow: hidden;
+    box-sizing: border-box;
+
+    .icon-phone {
+      margin: auto 0.9375rem;
+      padding-left: 30;
+      width: 2.5rem;
+      height: 1.625rem;
+      text-align: center;
+    }
+
+    .phone-temp {
+      width: 13.75rem;
+      text-align: left;
+      margin: 0.9375rem -1.5625rem;
+      padding-left: 1.875rem;
+      z-index: 1;
+    }
+  }
+
+  .icon-list {
+    padding-top: 0.625rem;
+    padding-bottom: 12.5rem;
+    position: relative;
+
+    a:nth-child(1):hover .qrcode {
+      display: block;
+    }
+
+    .qrcode {
+      position: absolute;
+      // hide qr
+      display: none;
+      width: 9.375rem;
+      height: 9.375rem;
+      top: 3.125rem;
+      background-color: $global-white;
+    }
+
+    // 三角
+    .qrcode::after {
+      position: absolute;
+      content: "";
+      width: 0;
+      height: 0;
+      border: 0.625rem solid $global-white;
+      left: 0.3rem;
+      top: -9px;
+      transform: rotate(45deg);
+    }
+
+    .qrcode-img {
+      padding-top: 0.5rem;
+    }
+  }
+
+  .icon-list-bottom {
+    position: absolute;
+    margin: 0 auto;
+    bottom: 5rem;
+    left: 49%;
+
+    span:nth-child(1) {
+      background-color: $global-blue;
+    }
+
+    span {
+      display: inline-block;
+      width: 0.5rem;
+      height: 0.5rem;
+      background-color: $global-white;
+      border-radius: 50%;
+      margin-left: 0.1875rem;
+    }
+  }
+}
+
+// 中部container
+.container {
+  width: 100%;
+  background-image: url(../images/index/main-bg.png);
+  position: relative;
+
+  .container-top {
+    display: flex;
+    justify-content: center;
+    padding-top: 6.25rem;
+
+    .wel-left {
+      width: 31.0625rem;
+      height: 26.4375rem;
+      position: relative;
+    }
+
+    .wel-content {
+      position: relative;
+      width: 31.25rem;
+      height: 12.9375rem;
+      padding-top: 0.125rem;
+      margin-top: 6.25rem;
+      font-weight: unset;
+      overflow: hidden;
+    }
+
+    .wel-content p {
+      // padding-left: 15rem;
+      font-size: 1rem;
+      font-family: "微软雅黑";
+    }
+
+    .contact-us {
+      position: absolute;
+      display: block;
+      width: 10.25rem;
+      height: 2.125rem;
+      background-color: $global-white;
+      color: $global-blue;
+      border-radius: 6.25rem;
+      display: flex;
+      justify-content: center;
+      box-shadow: 0.0625rem 0.0625rem 0.625rem rgba(11, 2, 5, 0.31);
+      font-size: 1.5rem;
+      font-weight: bold;
+      bottom: -1.25rem;
+      left: 20rem;
+    }
+
+    .contact-us:hover {
+      color: $global-white;
+      background-color: $global-blue;
+    }
+
+    .contact-us:hover::after {
+      border-left: 0.3125rem solid $global-white;
+    }
+
+    // 绘制箭头
+    .contact-us::after {
+      content: "";
+      position: absolute;
+      display: block;
+      width: 0;
+      height: 0;
+      border: 0.3125rem solid transparent;
+      border-left: 0.3125rem solid $global-blue;
+      left: 8.625rem;
+      top: 0.75rem;
+    }
+
+    .wel-right-img {
+      // float: right;
+      margin-left: 1.875rem;
+      position: relative;
+      width: 41.875rem;
+      height: 28.75rem;
+      overflow: hidden;
+      box-shadow: 0.0625rem 0.0625rem 1.5rem rgba(11, 2, 5, 0.31);
+      border-bottom: 0.1875rem solid $global-blue;
+    }
+  }
+
+  .container-bottom {
+    display: flex;
+    margin: 0 auto;
+    flex-direction: column;
+    padding-top: 6.25rem;
+    align-items: center;
+    width: 75rem;
+
+    .container-bottom-logo {
+      width: 100%;
+      // width: 75rem;
+    }
+
+    ul {
+      display: flex;
+      margin-top: 3.75rem;
+      width: 75rem;
+      justify-content: space-around;
+
+      // .container-bottom-li {
+      //   margin-top: 3.75rem;
+      // }
+    }
+
+    ul li {
+      flex: 1;
+      // width: auto;
+      // height: 12.5rem;
+      overflow: hidden;
+      display: flex;
+      justify-content: space-around;
+    }
+
+    ul li img {
+      // margin-left: -4px;
+    }
+
+    ul li {
+      position: relative;
+      margin: 0.625rem;
+    }
+
+    .container-bottom-context {
+      position: absolute;
+      display: inline-block;
+      width: 100%;
+      background-color: $global-blue;
+      // margin-left: 0.3125rem;
+      height: 3.875rem;
+      color: $global-white;
+
+      // 置底
+
+      /* 
+      对于绝对定位的元素，元素下外边距边界与其包含块下边界之间的偏移。
+      对于相对定位定位的元素，元素的下边界离开其正常位置的偏移。 */
+      bottom: 0;
+      display: none;
+    }
+
+    ul li:hover .container-bottom-context {
+      display: block;
+    }
+
+    .container-bottom-context h4 {
+      font-size: 1.25rem;
+      font-weight: unset;
+      margin-left: 0.3125rem;
+      margin-top: 0.625rem;
+    }
+
+    .container-bottom-context p {
+      margin-left: 0.3125rem;
+      font-size: 0.75rem;
+    }
+  }
+}

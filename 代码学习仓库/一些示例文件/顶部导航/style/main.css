@@ -1,0 +1,368 @@
+@charset "UTF-8";
+@import url("https://fonts.googleapis.com/css?family=Poppins:400,500,600,700&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  /* 
+    在 CSS 盒子模型的默认定义里，你对一个元素所设置的 width 与 height 只会应用到这个元素的内容区。
+    如果这个元素有任何的 border 或 padding ，绘制到屏幕上时的盒子宽度和高度会加上设置的边框和内边距值。
+    这意味着当你调整一个元素的宽度和高度时需要时刻注意到这个元素的边框和内边距。当我们实现响应式布局时，这个特点尤其烦人。
+
+    box-sizing 属性可以被用来调整这些表现:
+ 
+    content-box  是默认值。如果你设置一个元素的宽为100px，那么这个元素的内容区会有100px 宽，
+    并且任何边框和内边距的宽度都会被增加到最后绘制出来的元素宽度中。
+
+    border-box 告诉浏览器：你想要设置的边框和内边距的值是包含在width内的。
+    也就是说，如果你将一个元素的width设为100px，那么这100px会包含它的border和padding，
+    
+    内容区的实际宽度是width减去(border + padding)的值。
+    大多数情况下，这使得我们更容易地设定一个元素的宽高。
+    注: border-box不包含margin
+     */
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  list-style: none;
+  text-decoration: none;
+}
+
+.page1 {
+  background: #0082e6;
+  height: 80px;
+  width: 100%;
+}
+
+.page1 label.logo {
+  background: #f2f2f2;
+  font-size: 33px;
+  line-height: 80px;
+  padding: 0 140px;
+  font-weight: 600;
+  font-family: "Poppins", Arial, Helvetica, sans-serif;
+  border: none;
+}
+
+.page1 ul {
+  float: right;
+  margin-right: 60px;
+}
+
+.page1 ul li {
+  display: inline-block;
+  line-height: 80px;
+  margin: 0 2px;
+}
+
+.page1 ul li a {
+  color: #f2f2f2;
+  font-weight: 500;
+  font-size: 20px;
+  padding: 7px 13px;
+  border-radius: 3px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.page1 ul li a.active,
+.page1 a:hover {
+  background: #1b9bff;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+.page1 .checkbtn {
+  font-size: 30px;
+  color: white;
+  float: right;
+  line-height: 80px;
+  margin-right: 40px;
+  cursor: pointer;
+  display: none;
+}
+
+@media (max-width: 858px) {
+  .page1 .checkbtn {
+    display: block;
+  }
+}
+
+.page1 #check {
+  display: none;
+}
+
+@media (max-width: 952px) {
+  .page1 label.logo {
+    font-size: 27px;
+    padding-left: 25px;
+  }
+  .page1 nav ul li a {
+    font-size: 16px;
+  }
+}
+
+@media (max-width: 858px) {
+  .page1 ul {
+    /* 
+    static
+    该关键字指定元素使用正常的布局行为，即元素在文档常规流中当前的布局位置。
+    此时 top, right, bottom, left 和 z-index 属性无效。
+
+    relative
+    该关键字下，元素先放置在未添加定位时的位置，再在不改变页面布局的前提下调整元素位置
+    （因此会在此元素未添加定位时所在位置留下空白）。
+        position:relative 对 table-*-group, table-row, table-column, table-cell, table-caption 元素无效。
+
+    absolute
+    元素会被移出正常文档流，并不为元素预留空间，通过指定元素相对于最近的非 static 定位祖先元素的偏移，
+    来确定元素位置。绝对定位的元素可以设置外边距（margins），且不会与其他边距合并。
+
+    fixed
+    元素会被移出正常文档流，并不为元素预留空间，而是通过指定元素相对于屏幕视口（viewport）
+    的位置来指定元素位置。元素的位置在屏幕滚动时不会改变。打印时，元素会出现在的每页的固定位置。fixed 属性会创建新的层叠上下文。当元素祖先的 transform, perspective 或 filter 属性非 none 时，容器由视口改为该祖先。
+
+    sticky
+    元素根据正常文档流进行定位，然后相对它的最近滚动祖先（nearest scrolling ancestor）和 containing block (最近块级祖先 nearest block-level ancestor)，包括table-related元素，基于top, right, bottom, 和 left的值进行偏移。偏移值不会影响任何其他元素的位置。
+    该值总是创建一个新的层叠上下文（stacking context）。注意，一个sticky元素会“固定”在离它最近的一个拥有“滚动机制”的祖先上（当该祖先的overflow 是 hidden, scroll, auto, 或 overlay时），即便这个祖先不是最近的真实可滚动祖先。这有效地抑制了任何“sticky”行为（详情见Github issue on W3C CSSWG）。 */
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+    background: #2c3e50;
+    top: 80px;
+    left: -100%;
+    text-align: center;
+    -webkit-transition: all 0.5s;
+    transition: all 0.5s;
+  }
+  .page1 ul li {
+    display: block;
+    margin: 50px 0;
+    line-height: 30px;
+  }
+  .page1 ul li a {
+    font-size: 20px;
+  }
+  .page1 ul li a.active,
+  .page1 ul li a:hover {
+    background: none;
+    color: #0082e6;
+  }
+  .page1 #check:checked ~ ul {
+    left: 0;
+  }
+}
+
+body {
+  background: #f2f2f2;
+}
+
+.page2 {
+  background: #1b1b1b;
+}
+
+.page2 .logo {
+  float: left;
+  color: white;
+  font-size: 27px;
+  font-weight: 600;
+  line-height: 70px;
+  padding-left: 60px;
+}
+
+.page2 ul {
+  float: right;
+  margin-right: 40px;
+  list-style: none;
+  position: relative;
+}
+
+.page2 ul li {
+  float: left;
+  display: inline-block;
+  background: #1b1b1b;
+  margin: 22px;
+}
+
+.page2 ul li a {
+  color: white;
+  text-decoration: none;
+  font-size: 18px;
+  padding: 8px 15px;
+}
+
+.page2 ul li a:hover {
+  color: cyan;
+  border-radius: 5px;
+  -webkit-box-shadow: 0 0 5px #33ffff, 0 0 10px #66ffff;
+          box-shadow: 0 0 5px #33ffff, 0 0 10px #66ffff;
+}
+
+.page2 ul ul li a:hover {
+  -webkit-box-shadow: none;
+          box-shadow: none;
+}
+
+.page2 ul ul {
+  margin-top: -20px;
+  position: absolute;
+  top: 90px;
+  border-top: 3px solid cyan;
+  opacity: 0;
+  visibility: hidden;
+  -webkit-transition: top 0.3s;
+  transition: top 0.3s;
+}
+
+.page2 ul ul ul {
+  border-top: none;
+}
+
+.page2 ul ul ul li {
+  position: relative;
+  top: -60px;
+  left: 150px;
+}
+
+.page2 ul ul li {
+  position: relative;
+  margin: 0px;
+  width: 130px;
+  float: none;
+  display: list-item;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.3);
+}
+
+.page2 ul ul li a {
+  line-height: 50px;
+}
+
+.page2 ul li:hover > ul {
+  top: 70px;
+  opacity: 1;
+  visibility: visible;
+}
+
+.page2 .show {
+  display: none;
+}
+
+@media all and (max-width: 968px) {
+  .page2 .show {
+    border: 1px solid red;
+    display: block;
+    color: white;
+    font-size: 18px;
+    padding: 0 20px;
+    line-height: 70px;
+    cursor: pointer;
+  }
+}
+
+.page2 .icon,
+.page2 input {
+  display: none;
+}
+
+.page2 .fa-plus {
+  font-size: 15px;
+  margin-left: 40px;
+}
+
+.page2 .last-menu {
+  margin-left: -20px;
+}
+
+@media all and (max-width: 968px) {
+  .page2 ul {
+    margin-right: 0px;
+    float: left;
+  }
+  .page2 .last-menu {
+    margin-left: -20px;
+  }
+  .page2 .logo {
+    padding-left: 30px;
+    width: 100%;
+  }
+  .page2 .show + a,
+  .page2 ul {
+    display: none;
+  }
+  .page2 .show:hover {
+    color: cyan;
+  }
+  .page2 .iocn {
+    display: block;
+    color: white;
+    position: absolute;
+    top: 0;
+    right: 40px;
+    line-height: 70px;
+    cursor: pointer;
+    font-size: 25px;
+  }
+  .page2 ul li,
+  .page2 ul ul li {
+    display: block;
+    width: 100%;
+  }
+  .page2 ul li a:hover {
+    -webkit-box-shadow: none;
+            box-shadow: none;
+  }
+  .page2 ul ul {
+    top: 70px;
+    border-top: 0px;
+    float: none;
+    position: static;
+    display: none;
+    opacity: 1;
+    visibility: visible;
+  }
+  .page2 ul ul a {
+    padding-left: 40px;
+  }
+  .page2 ul ul ul li {
+    position: static;
+  }
+  .page2 [id^="btn"]:checked + ul {
+    display: block;
+  }
+  .page2 ul ul li {
+    border-bottom: 0px;
+  }
+  .page2 span.cancel::before {
+    content: "\f00d";
+  }
+}
+
+.page2 .content {
+  z-index: -1;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+.page2 header {
+  font-size: 35px;
+  font-weight: 600;
+  padding: 10px 0;
+}
+
+.page2 p {
+  font-size: 30px;
+  font-weight: 500;
+}
+
+.page2:after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+.content {
+  text-align: center;
+  margin: 40px;
+}
+/*# sourceMappingURL=main.css.map */

@@ -1,0 +1,55 @@
+main {
+  padding: 0 auto;
+}
+
+main ul {
+  position: relative;
+}
+
+main li {
+  list-style: none;
+}
+
+main li:hover .right {
+  display: block;
+}
+
+main a {
+  text-decoration: none;
+}
+
+main a:hover {
+  text-decoration: underline;
+}
+
+main .left {
+  width: 200px;
+}
+
+main .right {
+  width: 320px;
+}
+
+main .left {
+  background-color: red;
+  height: 26px;
+  text-align: center;
+}
+
+main .left a {
+  color: white;
+  font-size: 16px;
+}
+
+main .left:hover {
+  cursor: pointer;
+}
+
+main .right {
+  position: absolute;
+  left: 240px;
+  top: 0;
+  display: none;
+  background-color: rgba(0, 0, 0, 0.2);
+}
+/*# sourceMappingURL=style.css.map */

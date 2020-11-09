@@ -1,0 +1,85 @@
+@import "_global-config";
+@import "_header";
+@import "_footer";
+
+section {
+    width: 1320px;
+    margin: 0 auto;
+    /* border: 1px solid black; */
+}
+
+.site {
+    margin: 50px 0px 20px 0px;
+    clear: both;
+}
+
+.site span {
+    margin: 20px 15px 20px 0px;
+}
+
+.site a {
+    display: inline-block;
+    color: black;
+}
+
+.site a:hover {
+    font-weight: bold;
+}
+
+.mintitle {
+    font-size: 18px;
+    font-weight: bold;
+    text-align: center;
+    margin-top: 50px;
+}
+
+.contentcmp,
+.descriptionef,
+.descriptioncon,
+.descriptionef2 {
+    line-height: 28px;
+    font-size: 14px;
+}
+
+.contentch {
+    line-height: 28px;
+    font-size: 14px;
+    margin-top: 46px;
+}
+
+.descriptionef {
+    padding-top: 30px;
+}
+
+.descriptioncon,
+.descriptionef2 {
+    padding-top: 27px;
+}
+
+section img {
+    margin-top: 25px;
+}
+
+.skip {
+    width: 1320px;
+    margin: 0 auto;
+    margin-top: 50px;
+    /* border: 1px solid black; */
+    height: 95px;
+}
+
+.skip1 {
+    float: left;
+}
+
+.skip2 {
+    float: right;
+}
+
+.skip span {
+    color: black;
+}
+
+.skip span:hover {
+    color: rgb(143, 192, 222);
+}

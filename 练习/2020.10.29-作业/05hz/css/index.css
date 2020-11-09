@@ -1,0 +1,56 @@
+body {
+  margin: 0;
+  padding: 0;
+}
+ul {
+  list-style-type: none;
+}
+.bai {
+  width: 669px;
+  height: 423px;
+  margin: 0 auto;
+  padding-top: 20px;
+}
+.neibu {
+  width: 646px;
+  height: 399px;
+  margin: 0 auto;
+}
+.zuo {
+  width: 317px;
+  height: 399px;
+  float: left;
+  background-color: #ff709d;
+  color: #ffffff;
+}
+.zuo .biaoti {
+  width: 96px;
+  height: 24px;
+  margin-left: 20px;
+  font-size: 23px;
+  margin-top: 24px;
+}
+.zuo .duanluo {
+  width: 268px;
+  height: 34px;
+  font-size: 12px;
+  margin-left: 20px;
+}
+.zuo button {
+  width: 76px;
+  height: 32px;
+  border-radius: 2px;
+  color: #ffffff;
+  float: right;
+  margin-top: 260px;
+  margin-right: 20px;
+  background-color: #fa3778;
+  border: none;
+  text-align: center;
+}
+.you {
+  width: 329px;
+  height: 399px;
+  float: right;
+  /* background-image:url(hz\img\img1.jpg); */
+}

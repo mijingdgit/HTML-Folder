@@ -1,0 +1,82 @@
+@import "_global-config";
+@import "_header";
+@import "_footer";
+
+article {
+    width: 1320px;
+    margin: 0 auto;
+    margin-top: 50px;
+    margin-bottom: 100px;
+}
+
+.contact-title {
+    text-align: center;
+    height: 94px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    position: relative;
+    margin-bottom: 50px;
+}
+
+.contact-title h1 {
+    font-size: 28px;
+}
+
+.contact-title p {
+    font-size: 24px;
+    color: #adadad;
+}
+
+.contact-title span {
+    font-size: 108px;
+    position: absolute;
+    left: 50%;
+    margin-left: -36px;
+    color: #f2f2f2;
+    z-index: -1;
+}
+
+.information {
+    display: flex;
+}
+
+.information-left {
+    width: 650px;
+}
+
+.information-left img {
+    width: 100%;
+}
+
+.information-right {
+    margin-left: 100px;
+}
+
+.information-right a {
+    text-decoration: none;
+}
+
+.information-right h1 {
+    font-size: 24px;
+    line-height: 100px;
+    color: black;
+}
+
+.information-right li {
+    font-size: 18px;
+    line-height: 46px;
+    color: #666666;
+    cursor: pointer;
+}
+
+.information-right li:hover {
+    color: black;
+}
+
+#container {
+    width: 1320px;
+    height: 550px;
+    margin: 0 auto;
+    margin-bottom: 100px;
+}

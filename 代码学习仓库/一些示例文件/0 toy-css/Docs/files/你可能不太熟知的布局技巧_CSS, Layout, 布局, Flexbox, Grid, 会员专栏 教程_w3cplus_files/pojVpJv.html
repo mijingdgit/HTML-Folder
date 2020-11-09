@@ -1,0 +1,325 @@
+<!DOCTYPE html>
+<!-- saved from url=(0082)https://codepen.io/airen/embed/pojVpJv?height=500&theme-id=3655&default-tab=result -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+<meta name="viewport" content="width=device-width">
+<title>CodePen Embed - clamp() Function</title>
+<meta name="csrf-param" content="authenticity_token">
+<meta name="csrf-token" content="/u/RwsC11Xc8dP8dCYWdg+7vbi+R32j2ANSKTnpVU8oKShDWQTgVc5vP75w+Nu1XRL/2a1EI3mEindh1FltHXQ==">
+<link rel="stylesheet" media="all" href="./embed-2e2d532b5652f06bfee2af536a079de363d3fec8b0c41897cfe425c7cc9dc8fc.css">
+<style>
+    .hide {
+      display: none !important;
+    }
+
+    #result-box {
+      background: #3d3d3e;
+      color: #76daff;
+    }
+    .embed-footer,
+    .embed-nav {
+      background: #3d3d3e;
+      
+    }
+    .embed-nav .code-types a,
+    .embed-nav .result-button-list a,
+    .action-button {
+      color: #76daff;
+      background-color: #666666;
+    }
+    .embed-nav .code-types a.active,
+    .embed-nav .result-button-list a.active,
+    .action-button.active {
+      background: #cccccc;
+      color: #000000;
+      box-shadow: inset 0px 3px #dddddd;
+    }
+    .embed-nav .logo-wrap .edit-on-codepen {
+      color: #ffffff;
+    }
+
+    .embed-nav svg {
+      stroke: #ffffff !important;
+    }
+  </style>
+<link rel="stylesheet" media="all" href="./twilight-bbb3d58f8024c27567f788f3990f2dce8754c2b67246bf12ad766768fe51955b.css">
+<meta name="monetization" content="$ilp.uphold.com/biyqg2MkQKbe">
+</head>
+<body id="the-body" style="--borderWidth: 0;" class="codepen-embed-body single-output static results-active">
+<nav class="embed-nav group" id="embed-nav">
+<ul class="code-types">
+<li class="code-type">
+<a id="html-link" href="https://codepen.io/airen/embed/pojVpJv?height=500&amp;theme-id=3655&amp;default-tab=result#html-box" role="button" aria-pressed="false">
+HTML
+</a>
+</li>
+<li class="code-type">
+<a id="css-link" href="https://codepen.io/airen/embed/pojVpJv?height=500&amp;theme-id=3655&amp;default-tab=result#css-box" role="button" aria-pressed="false">
+PostCSS
+</a>
+</li>
+<li class="code-type">
+<a id="js-link" href="https://codepen.io/airen/embed/pojVpJv?height=500&amp;theme-id=3655&amp;default-tab=result#js-box" role="button" aria-pressed="false">
+JS
+</a>
+</li>
+</ul>
+<ul class="result-button-list">
+<li class="results results-type">
+<a id="result-link" href="https://codepen.io/airen/embed/pojVpJv?height=500&amp;theme-id=3655&amp;default-tab=result#result-box" class="active" aria-pressed="false" role="button">
+Result
+</a>
+</li>
+</ul>
+<div class="logo-wrap" id="edit-area">
+<a class="edit-on-codepen" target="_blank" rel="noopener" href="https://codepen.io/airen/pen/pojVpJv" title="Edit on CodePen">
+<div class="large-logo">
+<span id="edit-on-text" class="open-on">EDIT ON</span>
+<svg id="embed-codepen-logo" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 138 26" fill="none" stroke="#000" stroke-width="2.3" stroke-linecap="round" stroke-linejoin="round">
+<path d="M80 6h-9v14h9m34-14h-9v14h9m-3-7h-6m-28 0h-6m51 7V6l11 14V6M22 16.7L33 24l11-7.3V9.3L33 2 22 9.3v7.4zm22 0L33 9.3l-11 7.4m0-7.4l11 7.3 11-7.3M33 2v7.3m0 7.4V24m55-10h6c2.2 0 4-1.8 4-4s-1.8-4-4-4h-6v14M15 8c-1.3-1.3-3-2-5-2-4 0-7 3-7 7s3 7 7 7c2 0 3.7-.8 5-2m49-5c0 4-3 7-7 7h-5V6h5c4 0 7 3 7 7z"></path>
+</svg>
+</div>
+<div class="box-logo">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="20 0 26 26" fill="none" stroke="#000" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.3">
+<path id="icon-codepen-box" d="M22 16.7L33 24l11-7.3V9.3L33 2 22 9.3v7.4zm22 0L33 9.3l-11 7.4m0-7.4l11 7.3 11-7.3M33 2v7.3m0 7.4V24"></path>
+</svg>
+</div>
+</a>
+</div>
+</nav>
+<div id="output" data-border-style="none" data-header="true">
+<div id="html-box" class="code-wrap code-box box" role="region" aria-label="HTML">
+<pre><code data-lang="htmlmixed" id="actual-html-code" class=" cm-s-default"><span class="cm-tag cm-bracket">&lt;</span><span class="cm-tag">div</span> <span class="cm-attribute">class</span>=<span class="cm-string">"wrapper"</span><span class="cm-tag cm-bracket">&gt;</span>
+  <span class="cm-tag cm-bracket">&lt;</span><span class="cm-tag">div</span> <span class="cm-attribute">class</span>=<span class="cm-string">"v-width"</span><span class="cm-tag cm-bracket">&gt;</span><span class="cm-tag cm-bracket">&lt;</span><span class="cm-tag">strong</span><span class="cm-tag cm-bracket">&gt;</span>Viewport width<span class="cm-tag cm-bracket">&lt;/</span><span class="cm-tag">strong</span><span class="cm-tag cm-bracket">&gt;</span>:<span class="cm-tag cm-bracket">&lt;</span><span class="cm-tag">span</span> <span class="cm-attribute">class</span>=<span class="cm-string">"v-width-value"</span><span class="cm-tag cm-bracket">&gt;</span>1000px<span class="cm-tag cm-bracket">&lt;/</span><span class="cm-tag">span</span><span class="cm-tag cm-bracket">&gt;</span><span class="cm-tag cm-bracket">&lt;/</span><span class="cm-tag">div</span><span class="cm-tag cm-bracket">&gt;</span>
+  <span class="cm-tag cm-bracket">&lt;</span><span class="cm-tag">div</span> <span class="cm-attribute">class</span>=<span class="cm-string">"element"</span><span class="cm-tag cm-bracket">&gt;</span>Element<span class="cm-tag cm-bracket">&lt;/</span><span class="cm-tag">div</span><span class="cm-tag cm-bracket">&gt;</span>
+  <span class="cm-tag cm-bracket">&lt;</span><span class="cm-tag">div</span> <span class="cm-attribute">class</span>=<span class="cm-string">"e-width"</span><span class="cm-tag cm-bracket">&gt;</span><span class="cm-tag cm-bracket">&lt;</span><span class="cm-tag">code</span><span class="cm-tag cm-bracket">&gt;</span>width: clamp(<span class="cm-tag cm-bracket">&lt;</span><span class="cm-tag">span</span> <span class="cm-attribute">class</span>=<span class="cm-string">"val-1"</span><span class="cm-tag cm-bracket">&gt;</span>100px<span class="cm-tag cm-bracket">&lt;/</span><span class="cm-tag">span</span><span class="cm-tag cm-bracket">&gt;</span>, <span class="cm-tag cm-bracket">&lt;</span><span class="cm-tag">span</span> <span class="cm-attribute">class</span>=<span class="cm-string">"val-2"</span><span class="cm-tag cm-bracket">&gt;</span>50vw<span class="cm-tag cm-bracket">&lt;/</span><span class="cm-tag">span</span><span class="cm-tag cm-bracket">&gt;</span>, <span class="cm-tag cm-bracket">&lt;</span><span class="cm-tag">span</span> <span class="cm-attribute">class</span>=<span class="cm-string">"val-3"</span><span class="cm-tag cm-bracket">&gt;</span>500px<span class="cm-tag cm-bracket">&lt;/</span><span class="cm-tag">span</span><span class="cm-tag cm-bracket">&gt;</span>)<span class="cm-tag cm-bracket">&lt;/</span><span class="cm-tag">code</span><span class="cm-tag cm-bracket">&gt;</span><span class="cm-tag cm-bracket">&lt;/</span><span class="cm-tag">div</span><span class="cm-tag cm-bracket">&gt;</span>
+  <span class="cm-tag cm-bracket">&lt;</span><span class="cm-tag">p</span><span class="cm-tag cm-bracket">&gt;</span><span class="cm-tag cm-bracket">&lt;</span><span class="cm-tag">code</span><span class="cm-tag cm-bracket">&gt;</span>.element<span class="cm-tag cm-bracket">&lt;/</span><span class="cm-tag">code</span><span class="cm-tag cm-bracket">&gt;</span> width is <span class="cm-tag cm-bracket">&lt;</span><span class="cm-tag">span</span> <span class="cm-attribute">class</span>=<span class="cm-string">"w-actual"</span><span class="cm-tag cm-bracket">&gt;</span><span class="cm-tag cm-bracket">&lt;/</span><span class="cm-tag">span</span><span class="cm-tag cm-bracket">&gt;</span><span class="cm-tag cm-bracket">&lt;/</span><span class="cm-tag">p</span><span class="cm-tag cm-bracket">&gt;</span>
+<span class="cm-tag cm-bracket">&lt;/</span><span class="cm-tag">div</span><span class="cm-tag cm-bracket">&gt;</span></code></pre>
+</div>
+<div id="css-box" class="code-wrap code-box box" role="region" aria-label="CSS">
+<pre><code data-lang="text/x-sass" id="actual-css-code" class=" cm-s-default"><span class="cm-def">@import</span> <span class="cm-atom">url</span><span class="cm-operator">(</span><span class="cm-string">"</span><span class="cm-string">h</span><span class="cm-string">t</span><span class="cm-string">t</span><span class="cm-string">p</span><span class="cm-string">s</span><span class="cm-string">:</span><span class="cm-string">/</span><span class="cm-string">/</span><span class="cm-string">f</span><span class="cm-string">o</span><span class="cm-string">n</span><span class="cm-string">t</span><span class="cm-string">s</span><span class="cm-string">.</span><span class="cm-string">g</span><span class="cm-string">o</span><span class="cm-string">o</span><span class="cm-string">g</span><span class="cm-string">l</span><span class="cm-string">e</span><span class="cm-string">a</span><span class="cm-string">p</span><span class="cm-string">i</span><span class="cm-string">s</span><span class="cm-string">.</span><span class="cm-string">c</span><span class="cm-string">o</span><span class="cm-string">m</span><span class="cm-string">/</span><span class="cm-string">c</span><span class="cm-string">s</span><span class="cm-string">s</span><span class="cm-string">?</span><span class="cm-string">f</span><span class="cm-string">a</span><span class="cm-string">m</span><span class="cm-string">i</span><span class="cm-string">l</span><span class="cm-string">y</span><span class="cm-string">=</span><span class="cm-string">G</span><span class="cm-string">o</span><span class="cm-string">c</span><span class="cm-string">h</span><span class="cm-string">i</span><span class="cm-string">+</span><span class="cm-string">H</span><span class="cm-string">a</span><span class="cm-string">n</span><span class="cm-string">d"</span><span class="cm-operator">)</span><span class="cm-operator">;</span>
+
+<span class="cm-operator">*</span> <span class="cm-operator">{</span>
+  <span class="cm-property">box-sizing</span><span class="cm-operator">:</span> <span class="cm-atom">border-box</span><span class="cm-operator">;</span>
+  <span class="cm-property">margin</span><span class="cm-operator">:</span> <span class="cm-number">0</span><span class="cm-operator">;</span>
+  <span class="cm-property">padding</span><span class="cm-operator">:</span> <span class="cm-number">0</span><span class="cm-operator">;</span>
+<span class="cm-operator">}</span>
+
+<span class="cm-tag">body</span> <span class="cm-operator">{</span>
+  <span class="cm-property">width</span><span class="cm-operator">:</span> <span class="cm-number">100</span><span class="cm-tag">vw</span><span class="cm-operator">;</span>
+  <span class="cm-property">height</span><span class="cm-operator">:</span> <span class="cm-number">100</span><span class="cm-tag">vh</span><span class="cm-operator">;</span>
+  <span class="cm-property">margin</span><span class="cm-operator">:</span> <span class="cm-number">0</span><span class="cm-operator">;</span>
+  <span class="cm-property">padding</span><span class="cm-operator">:</span> <span class="cm-number">0</span><span class="cm-operator">;</span>
+  <span class="cm-property">background-color</span><span class="cm-operator">:</span> <span class="cm-number">#291642</span><span class="cm-operator">;</span>
+  <span class="cm-property">font-family</span><span class="cm-operator">:</span> <span class="cm-string">"</span><span class="cm-string">G</span><span class="cm-string">o</span><span class="cm-string">c</span><span class="cm-string">h</span><span class="cm-string">i</span><span class="cm-string"> </span><span class="cm-string">H</span><span class="cm-string">a</span><span class="cm-string">n</span><span class="cm-string">d"</span>, <span class="cm-atom">sans-serif</span><span class="cm-operator">;</span>
+  <span class="cm-property">font-size</span><span class="cm-operator">:</span> <span class="cm-number">130</span><span class="cm-operator">%</span><span class="cm-operator">;</span>
+  <span class="cm-property">letter-spacing</span><span class="cm-operator">:</span> <span class="cm-number">0.1</span><span class="cm-tag">rem</span><span class="cm-operator">;</span>
+  <span class="cm-property">display</span><span class="cm-operator">:</span> <span class="cm-atom">flex</span><span class="cm-operator">;</span>
+  <span class="cm-property">align-items</span><span class="cm-operator">:</span> <span class="cm-atom">center</span><span class="cm-operator">;</span>
+  <span class="cm-property">justify-content</span><span class="cm-operator">:</span> <span class="cm-atom">center</span><span class="cm-operator">;</span>
+  <span class="cm-property">flex-direction</span><span class="cm-operator">:</span> <span class="cm-atom">column</span><span class="cm-operator">;</span>
+<span class="cm-operator">}</span>
+
+<span class="cm-qualifier">.wrapper</span> <span class="cm-operator">{</span>
+  <span class="cm-property">width</span><span class="cm-operator">:</span> <span class="cm-number">100</span><span class="cm-operator">%</span><span class="cm-operator">;</span>
+  <span class="cm-property">display</span><span class="cm-operator">:</span> <span class="cm-atom">flex</span><span class="cm-operator">;</span>
+  <span class="cm-property">color</span><span class="cm-operator">:</span> <span class="cm-number">#fff</span><span class="cm-operator">;</span>
+  <span class="cm-property">flex-direction</span><span class="cm-operator">:</span> <span class="cm-atom">column</span><span class="cm-operator">;</span>
+  <span class="cm-property">align-items</span><span class="cm-operator">:</span> <span class="cm-atom">center</span><span class="cm-operator">;</span>
+<span class="cm-operator">}</span>
+
+<span class="cm-qualifier">.v-width</span> <span class="cm-operator">{</span>
+  <span class="cm-property">position</span><span class="cm-operator">:</span> <span class="cm-atom">relative</span><span class="cm-operator">;</span>
+  <span class="cm-property">display</span><span class="cm-operator">:</span> <span class="cm-atom">flex</span><span class="cm-operator">;</span>
+  <span class="cm-property">align-items</span><span class="cm-operator">:</span> <span class="cm-atom">center</span><span class="cm-operator">;</span>
+  <span class="cm-property">width</span><span class="cm-operator">:</span> <span class="cm-number">100</span><span class="cm-operator">%</span><span class="cm-operator">;</span>
+<span class="cm-operator">}</span>
+
+<span class="cm-qualifier">.v-width</span><span class="cm-variable-3">::before</span>,
+<span class="cm-qualifier">.v-width</span><span class="cm-variable-3">::after</span><span class="cm-operator">{</span>
+  <span class="cm-property">content</span><span class="cm-operator">:</span> <span class="cm-string">"</span><span class="cm-string">"</span><span class="cm-operator">;</span>
+  <span class="cm-property">display</span><span class="cm-operator">:</span> <span class="cm-atom">block</span><span class="cm-operator">;</span>
+  <span class="cm-property">flex</span><span class="cm-operator">:</span> <span class="cm-number">1</span><span class="cm-operator">;</span>
+  <span class="cm-property">height</span><span class="cm-operator">:</span> <span class="cm-number">1</span><span class="cm-unit">px</span><span class="cm-operator">;</span>
+  <span class="cm-property">background-color</span><span class="cm-operator">:</span> <span class="cm-number">#fff</span><span class="cm-operator">;</span>
+<span class="cm-operator">}</span>
+
+<span class="cm-qualifier">.v-width</span> <span class="cm-tag">strong</span>,
+<span class="cm-qualifier">.v-width-value</span>,
+<span class="cm-qualifier">.w-actual</span> <span class="cm-operator">{</span>
+  <span class="cm-property">display</span><span class="cm-operator">:</span> <span class="cm-atom">inline-flex</span><span class="cm-operator">;</span>
+  <span class="cm-property">background-color</span><span class="cm-operator">:</span> <span class="cm-number">#009688</span><span class="cm-operator">;</span>
+  <span class="cm-property">color</span><span class="cm-operator">:</span> <span class="cm-number">#fff</span><span class="cm-operator">;</span>
+  <span class="cm-property">padding</span><span class="cm-operator">:</span> <span class="cm-number">10</span><span class="cm-unit">px</span> <span class="cm-number">15</span><span class="cm-unit">px</span><span class="cm-operator">;</span>
+  <span class="cm-property">border-radius</span><span class="cm-operator">:</span> <span class="cm-number">3</span><span class="cm-unit">px</span><span class="cm-operator">;</span>
+  <span class="cm-property">font-size</span><span class="cm-operator">:</span> <span class="cm-number">15</span><span class="cm-unit">px</span><span class="cm-operator">;</span>
+<span class="cm-operator">}</span>
+<span class="cm-qualifier">.v-width</span> <span class="cm-tag">strong</span> <span class="cm-operator">{</span>
+  <span class="cm-property">margin-right</span><span class="cm-operator">:</span> <span class="cm-number">5</span><span class="cm-unit">px</span><span class="cm-operator">;</span>
+  <span class="cm-property">background-color</span><span class="cm-operator">:</span> <span class="cm-number">#E91E63</span><span class="cm-operator">;</span>
+<span class="cm-operator">}</span>
+<span class="cm-tag">code</span> <span class="cm-operator">{</span>
+  <span class="cm-property">display</span><span class="cm-operator">:</span> <span class="cm-atom">inline-flex</span><span class="cm-operator">;</span>
+  <span class="cm-property">background-color</span><span class="cm-operator">:</span> <span class="cm-number">#FF5722</span><span class="cm-operator">;</span>
+  <span class="cm-property">font-family</span><span class="cm-operator">:</span> <span class="cm-string">"</span><span class="cm-string">P</span><span class="cm-string">T</span><span class="cm-string"> </span><span class="cm-string">M</span><span class="cm-string">o</span><span class="cm-string">n</span><span class="cm-string">o"</span><span class="cm-operator">;</span>
+  <span class="cm-property">padding</span><span class="cm-operator">:</span> <span class="cm-number">10</span><span class="cm-unit">px</span> <span class="cm-number">15</span><span class="cm-unit">px</span><span class="cm-operator">;</span>
+  <span class="cm-property">border-radius</span><span class="cm-operator">:</span> <span class="cm-number">5</span><span class="cm-unit">px</span><span class="cm-operator">;</span>
+<span class="cm-operator">}</span>
+
+<span class="cm-qualifier">.dimmed</span> <span class="cm-operator">{</span>
+  <span class="cm-property">opacity</span><span class="cm-operator">:</span> <span class="cm-number">0.4</span><span class="cm-operator">;</span>
+<span class="cm-operator">}</span>
+
+<span class="cm-qualifier">.active</span> <span class="cm-operator">{</span>
+  <span class="cm-property">font-weight</span><span class="cm-operator">:</span> <span class="cm-atom">bold</span><span class="cm-operator">;</span>
+<span class="cm-operator">}</span>
+
+<span class="cm-qualifier">.wrapper</span> <span class="cm-operator">&gt;</span> <span class="cm-operator">*</span> <span class="cm-operator">+</span> <span class="cm-operator">*</span> <span class="cm-operator">{</span>
+  <span class="cm-property">margin-top</span><span class="cm-operator">:</span> <span class="cm-number">1.5</span><span class="cm-tag">rem</span><span class="cm-operator">;</span>
+<span class="cm-operator">}</span>
+
+<span class="cm-tag">strong</span> <span class="cm-operator">{</span>
+  <span class="cm-property">font-weight</span><span class="cm-operator">:</span> <span class="cm-atom">bold</span><span class="cm-operator">;</span>
+<span class="cm-operator">}</span>
+
+<span class="cm-qualifier">.element</span> <span class="cm-operator">{</span>
+  <span class="cm-property">min-height</span><span class="cm-operator">:</span> <span class="cm-number">20</span><span class="cm-tag">vh</span><span class="cm-operator">;</span>
+  <span class="cm-property">border-radius</span><span class="cm-operator">:</span> <span class="cm-number">2</span><span class="cm-tag">vh</span><span class="cm-operator">;</span>
+  <span class="cm-property">background-color</span><span class="cm-operator">:</span> <span class="cm-number">#2196f3</span><span class="cm-operator">;</span>
+  <span class="cm-property">width</span><span class="cm-operator">:</span> <span class="cm-tag">clamp</span><span class="cm-operator">(</span><span class="cm-number">100</span><span class="cm-unit">px</span>,<span class="cm-number">50</span><span class="cm-tag">vw</span>, <span class="cm-number">500</span><span class="cm-unit">px</span><span class="cm-operator">)</span><span class="cm-operator">;</span>
+  <span class="cm-property">display</span><span class="cm-operator">:</span> <span class="cm-atom">flex</span><span class="cm-operator">;</span>
+  <span class="cm-property">justify-content</span><span class="cm-operator">:</span> <span class="cm-atom">center</span><span class="cm-operator">;</span>
+  <span class="cm-property">align-items</span><span class="cm-operator">:</span> <span class="cm-atom">center</span><span class="cm-operator">;</span>
+<span class="cm-operator">}</span>
+
+<span class="cm-tag">p</span> <span class="cm-operator">{</span>
+  <span class="cm-property">display</span><span class="cm-operator">:</span> <span class="cm-atom">inline-flex</span><span class="cm-operator">;</span>
+  <span class="cm-property">align-items</span><span class="cm-operator">:</span> <span class="cm-atom">center</span><span class="cm-operator">;</span>
+  <span class="cm-property">white-space</span><span class="cm-operator">:</span> <span class="cm-atom">nowrap</span><span class="cm-operator">;</span>
+<span class="cm-operator">}</span>
+
+<span class="cm-def">@media</span> <span class="cm-operator">(</span><span class="cm-property">min-width</span><span class="cm-operator">:</span> <span class="cm-number">1000</span><span class="cm-unit">px</span><span class="cm-operator">)</span> <span class="cm-operator">{</span>
+  <span class="cm-qualifier">.element</span> <span class="cm-operator">{</span>
+    <span class="cm-property">background-color</span><span class="cm-operator">:</span> <span class="cm-number">#f36</span><span class="cm-operator">;</span>
+  <span class="cm-operator">}</span>
+<span class="cm-operator">}</span>
+
+<span class="cm-def">@media</span> <span class="cm-operator">(</span><span class="cm-property">max-width</span><span class="cm-operator">:</span> <span class="cm-number">200</span><span class="cm-unit">px</span><span class="cm-operator">)</span> <span class="cm-operator">{</span>
+  <span class="cm-qualifier">.element</span> <span class="cm-operator">{</span>
+    <span class="cm-property">background-color</span><span class="cm-operator">:</span> <span class="cm-number">#3f6</span><span class="cm-operator">;</span>
+  <span class="cm-operator">}</span>
+<span class="cm-operator">}</span>
+</code></pre>
+<a href="https://codepen.io/airen/embed/pojVpJv?height=500&amp;theme-id=3655&amp;default-tab=result#0" id="view-css-compiled-button" class="action-button bottom right view-compiled-button" data-type="css">
+View Compiled
+</a>
+</div>
+<div id="js-box" class="code-wrap code-box box" role="region" aria-label="JS">
+<pre><code data-lang="javascript" id="actual-js-code" class=" cm-s-default"><span class="cm-keyword">let</span> <span class="cm-def">vWidthElm</span> <span class="cm-operator">=</span> <span class="cm-variable">document</span>.<span class="cm-property">querySelector</span>(<span class="cm-string">".v-width-value"</span>);
+<span class="cm-keyword">let</span> <span class="cm-def">firstVal</span> <span class="cm-operator">=</span> <span class="cm-variable">document</span>.<span class="cm-property">querySelector</span>(<span class="cm-string">".val-1"</span>);
+<span class="cm-keyword">let</span> <span class="cm-def">secondVal</span> <span class="cm-operator">=</span> <span class="cm-variable">document</span>.<span class="cm-property">querySelector</span>(<span class="cm-string">".val-2"</span>);
+<span class="cm-keyword">let</span> <span class="cm-def">threeVal</span> <span class="cm-operator">=</span> <span class="cm-variable">document</span>.<span class="cm-property">querySelector</span>(<span class="cm-string">".val-3"</span>);
+<span class="cm-keyword">let</span> <span class="cm-def">elm</span> <span class="cm-operator">=</span> <span class="cm-variable">document</span>.<span class="cm-property">querySelector</span>(<span class="cm-string">".element"</span>);
+<span class="cm-keyword">let</span> <span class="cm-def">actualWidth</span> <span class="cm-operator">=</span> <span class="cm-variable">document</span>.<span class="cm-property">querySelector</span>(<span class="cm-string">".w-actual"</span>);
+
+<span class="cm-keyword">function</span> <span class="cm-def">resizeWindow</span>() {
+  <span class="cm-keyword">let</span> <span class="cm-def">vWidth</span> <span class="cm-operator">=</span> <span class="cm-variable">window</span>.<span class="cm-property">innerWidth</span>;
+  <span class="cm-variable">vWidthElm</span>.<span class="cm-property">innerHTML</span> <span class="cm-operator">=</span> <span class="cm-variable-2">vWidth</span> <span class="cm-operator">+</span> <span class="cm-string">"px"</span>;
+
+  <span class="cm-keyword">if</span> (<span class="cm-variable-2">vWidth</span> <span class="cm-operator">&lt;</span> <span class="cm-number">1000</span> <span class="cm-operator">&amp;</span><span class="cm-operator">&amp;</span> <span class="cm-variable-2">vWidth</span> <span class="cm-operator">&gt;</span> <span class="cm-number">200</span>) {
+    <span class="cm-variable">firstVal</span>.<span class="cm-property">classList</span>.<span class="cm-property">add</span>(<span class="cm-string">"dimmed"</span>);
+    <span class="cm-variable">secondVal</span>.<span class="cm-property">classList</span>.<span class="cm-property">add</span>(<span class="cm-string">"active"</span>);
+    <span class="cm-variable">threeVal</span>.<span class="cm-property">classList</span>.<span class="cm-property">add</span>(<span class="cm-string">"dimmed"</span>);
+
+    <span class="cm-variable">firstVal</span>.<span class="cm-property">classList</span>.<span class="cm-property">remove</span>(<span class="cm-string">"active"</span>);
+    <span class="cm-variable">secondVal</span>.<span class="cm-property">classList</span>.<span class="cm-property">remove</span>(<span class="cm-string">"dimmed"</span>);
+    <span class="cm-variable">threeVal</span>.<span class="cm-property">classList</span>.<span class="cm-property">remove</span>(<span class="cm-string">"active"</span>);
+  } <span class="cm-keyword">else</span> <span class="cm-keyword">if</span> (<span class="cm-variable-2">vWidth</span> <span class="cm-operator">&lt;</span> <span class="cm-number">200</span>) {
+    <span class="cm-variable">firstVal</span>.<span class="cm-property">classList</span>.<span class="cm-property">add</span>(<span class="cm-string">"active"</span>);
+    <span class="cm-variable">secondVal</span>.<span class="cm-property">classList</span>.<span class="cm-property">add</span>(<span class="cm-string">"dimmed"</span>);
+    <span class="cm-variable">threeVal</span>.<span class="cm-property">classList</span>.<span class="cm-property">add</span>(<span class="cm-string">"dimmed"</span>);
+
+    <span class="cm-variable">firstVal</span>.<span class="cm-property">classList</span>.<span class="cm-property">remove</span>(<span class="cm-string">"dimmed"</span>);
+    <span class="cm-variable">secondVal</span>.<span class="cm-property">classList</span>.<span class="cm-property">remove</span>(<span class="cm-string">"active"</span>);
+    <span class="cm-variable">threeVal</span>.<span class="cm-property">classList</span>.<span class="cm-property">remove</span>(<span class="cm-string">"active"</span>);
+  } <span class="cm-keyword">else</span> {
+    <span class="cm-variable">firstVal</span>.<span class="cm-property">classList</span>.<span class="cm-property">add</span>(<span class="cm-string">"dimmed"</span>);
+    <span class="cm-variable">secondVal</span>.<span class="cm-property">classList</span>.<span class="cm-property">add</span>(<span class="cm-string">"dimmed"</span>);
+    <span class="cm-variable">threeVal</span>.<span class="cm-property">classList</span>.<span class="cm-property">add</span>(<span class="cm-string">"active"</span>);
+
+    <span class="cm-variable">firstVal</span>.<span class="cm-property">classList</span>.<span class="cm-property">remove</span>(<span class="cm-string">"active"</span>);
+    <span class="cm-variable">secondVal</span>.<span class="cm-property">classList</span>.<span class="cm-property">remove</span>(<span class="cm-string">"active"</span>);
+    <span class="cm-variable">threeVal</span>.<span class="cm-property">classList</span>.<span class="cm-property">remove</span>(<span class="cm-string">"dimmed"</span>);
+  }
+
+  <span class="cm-variable">actualWidth</span>.<span class="cm-property">innerHTML</span> <span class="cm-operator">=</span> <span class="cm-variable">elm</span>.<span class="cm-property">getBoundingClientRect</span>().<span class="cm-property">width</span> <span class="cm-operator">+</span> <span class="cm-string">"px"</span>;
+}
+
+<span class="cm-variable">resizeWindow</span>();
+
+<span class="cm-variable">window</span>.<span class="cm-property">addEventListener</span>(<span class="cm-string">"resize"</span>, <span class="cm-variable">resizeWindow</span>);
+</code></pre>
+</div>
+<div id="result-box" class="code-box active" role="region" aria-label="Result">
+<iframe allow="accelerometer; ambient-light-sensor; camera; encrypted-media; geolocation; gyroscope; microphone; midi; payment; vr" allowfullscreen="true" allowpaymentrequest="true" allowtransparency="true" class="result-iframe " frameborder="0" id="result-iframe" name="CodePen Preview for clamp() Function" sandbox="allow-downloads allow-forms allow-modals allow-pointer-lock allow-popups allow-presentation allow-same-origin allow-scripts allow-top-navigation-by-user-activation" scrolling="yes" tabindex="-1" title="CodePen Preview for clamp() Function" data-src="https://cdpn.io/airen/fullembedgrid/pojVpJv?animations=stop-after-5&amp;type=embed" src="./pojVpJv(1).html">
+  </iframe>
+</div>
+<div id="about-box">
+<div class="about-container">
+<div class="about-user">
+<a href="https://codepen.io/airen" target="_blank" rel="noopener"><img src="./default.png" loading="lazy" alt="" class="about-image"></a>
+<div class="about-user-info">
+<p>
+This Pen is owned by <a href="https://codepen.io/airen" target="_blank" rel="noopener">Airen</a> on <a href="https://codepen.io/" target="_blank" rel="noopener">CodePen</a>.
+</p>
+<p>
+<a href="https://codepen.io/airen" target="_blank" rel="noopener" class="about-user-more">
+See more by @airen on CodePen
+</a>
+</p>
+</div>
+</div>
+</div>
+</div>
+<div id="resources-box" class="resources-box">
+<h3>External CSS</h3>
+<p>
+This Pen doesn't use any external CSS resources.
+</p>
+<h3>External JavaScript</h3>
+<p>
+This Pen doesn't use any external JavaScript resources.
+</p>
+</div>
+</div>
+<footer class="embed-footer" id="embed-footer">
+<button id="resources-link" class="resources-link action-button bottom left" href="#resources-box" aria-pressed="false" role="button">
+Resources
+</button>
+<ul class="scaling-choices bottom right">
+<li><button class="action-button active" id="zoom-button-1">1×</button></li><li><button class="action-button" id="zoom-button-05">0.5×</button></li><li><button class="action-button" id="zoom-button-025">0.25×</button></li>
+</ul>
+<button id="rerun-button" class="action-button rerun-button bottom right">
+Rerun
+</button>
+</footer>
+<script>
+    __processedPen = {"html":"&lt;div class=&quot;wrapper&quot;&gt;\n  &lt;div class=&quot;v-width&quot;&gt;&lt;strong&gt;Viewport width&lt;/strong&gt;:&lt;span class=&quot;v-width-value&quot;&gt;1000px&lt;/span&gt;&lt;/div&gt;\n  &lt;div class=&quot;element&quot;&gt;Element&lt;/div&gt;\n  &lt;div class=&quot;e-width&quot;&gt;&lt;code&gt;width: clamp(&lt;span class=&quot;val-1&quot;&gt;100px&lt;/span&gt;, &lt;span class=&quot;val-2&quot;&gt;50vw&lt;/span&gt;, &lt;span class=&quot;val-3&quot;&gt;500px&lt;/span&gt;)&lt;/code&gt;&lt;/div&gt;\n  &lt;p&gt;&lt;code&gt;.element&lt;/code&gt; width is &lt;span class=&quot;w-actual&quot;&gt;&lt;/span&gt;&lt;/p&gt;\n&lt;/div&gt;","css":"@import url(&quot;https://fonts.googleapis.com/css?family=Gochi+Hand&quot;);\n\n* {\n  box-sizing: border-box;\n  margin: 0;\n  padding: 0;\n}\n\nbody {\n  width: 100vw;\n  height: 100vh;\n  margin: 0;\n  padding: 0;\n  background-color: #291642;\n  font-family: &quot;Gochi Hand&quot;, sans-serif;\n  font-size: 130%;\n  letter-spacing: 0.1rem;\n  display: -webkit-box;\n  display: flex;\n  -webkit-box-align: center;\n          align-items: center;\n  -webkit-box-pack: center;\n          justify-content: center;\n  -webkit-box-orient: vertical;\n  -webkit-box-direction: normal;\n          flex-direction: column;\n}\n\n.wrapper {\n  width: 100%;\n  display: -webkit-box;\n  display: flex;\n  color: #fff;\n  -webkit-box-orient: vertical;\n  -webkit-box-direction: normal;\n          flex-direction: column;\n  -webkit-box-align: center;\n          align-items: center;\n}\n\n.v-width {\n  position: relative;\n  display: -webkit-box;\n  display: flex;\n  -webkit-box-align: center;\n          align-items: center;\n  width: 100%;\n}\n\n.v-width::before,\n.v-width::after{\n  content: &quot;&quot;;\n  display: block;\n  -webkit-box-flex: 1;\n          flex: 1;\n  height: 1px;\n  background-color: #fff;\n}\n\n.v-width strong,\n.v-width-value,\n.w-actual {\n  display: -webkit-inline-box;\n  display: inline-flex;\n  background-color: #009688;\n  color: #fff;\n  padding: 10px 15px;\n  border-radius: 3px;\n  font-size: 15px;\n}\n.v-width strong {\n  margin-right: 5px;\n  background-color: #E91E63;\n}\ncode {\n  display: -webkit-inline-box;\n  display: inline-flex;\n  background-color: #FF5722;\n  font-family: &quot;PT Mono&quot;;\n  padding: 10px 15px;\n  border-radius: 5px;\n}\n\n.dimmed {\n  opacity: 0.4;\n}\n\n.active {\n  font-weight: bold;\n}\n\n.wrapper &gt; * + * {\n  margin-top: 1.5rem;\n}\n\nstrong {\n  font-weight: bold;\n}\n\n.element {\n  min-height: 20vh;\n  border-radius: 2vh;\n  background-color: #2196f3;\n  width: clamp(100px,50vw, 500px);\n  display: -webkit-box;\n  display: flex;\n  -webkit-box-pack: center;\n          justify-content: center;\n  -webkit-box-align: center;\n          align-items: center;\n}\n\np {\n  display: -webkit-inline-box;\n  display: inline-flex;\n  -webkit-box-align: center;\n          align-items: center;\n  white-space: nowrap;\n}\n\n@media (min-width: 1000px) {\n  .element {\n    background-color: #f36;\n  }\n}\n\n@media (max-width: 200px) {\n  .element {\n    background-color: #3f6;\n  }\n}","js":"let vWidthElm = document.querySelector(&quot;.v-width-value&quot;);\nlet firstVal = document.querySelector(&quot;.val-1&quot;);\nlet secondVal = document.querySelector(&quot;.val-2&quot;);\nlet threeVal = document.querySelector(&quot;.val-3&quot;);\nlet elm = document.querySelector(&quot;.element&quot;);\nlet actualWidth = document.querySelector(&quot;.w-actual&quot;);\n\nfunction resizeWindow() {\n  let vWidth = window.innerWidth;\n  vWidthElm.innerHTML = vWidth + &quot;px&quot;;\n\n  if (vWidth &lt; 1000 &amp;&amp; vWidth &gt; 200) {\n    firstVal.classList.add(&quot;dimmed&quot;);\n    secondVal.classList.add(&quot;active&quot;);\n    threeVal.classList.add(&quot;dimmed&quot;);\n\n    firstVal.classList.remove(&quot;active&quot;);\n    secondVal.classList.remove(&quot;dimmed&quot;);\n    threeVal.classList.remove(&quot;active&quot;);\n  } else if (vWidth &lt; 200) {\n    firstVal.classList.add(&quot;active&quot;);\n    secondVal.classList.add(&quot;dimmed&quot;);\n    threeVal.classList.add(&quot;dimmed&quot;);\n\n    firstVal.classList.remove(&quot;dimmed&quot;);\n    secondVal.classList.remove(&quot;active&quot;);\n    threeVal.classList.remove(&quot;active&quot;);\n  } else {\n    firstVal.classList.add(&quot;dimmed&quot;);\n    secondVal.classList.add(&quot;dimmed&quot;);\n    threeVal.classList.add(&quot;active&quot;);\n\n    firstVal.classList.remove(&quot;active&quot;);\n    secondVal.classList.remove(&quot;active&quot;);\n    threeVal.classList.remove(&quot;dimmed&quot;);\n  }\n\n  actualWidth.innerHTML = elm.getBoundingClientRect().width + &quot;px&quot;;\n}\n\nresizeWindow();\n\nwindow.addEventListener(&quot;resize&quot;, resizeWindow);"};
+    __preprocessors = {
+      "html": "none",
+      "css": "postcss",
+      "js": "none"
+    };
+    __preprocessorNames = {
+      "html": "HTML",
+      "css": "PostCSS",
+      "js": "JS"
+    };
+    __pageType = "embed";
+    __editable = false;
+    __embed_prefill = false;
+  </script>
+<script src="./embed-38a163bf47775725508cdf8a8f5cac7bbac97ef0be44672ef22f5c21b5f6c1e9.js"></script>
+
+
+</body></html>

@@ -1,0 +1,149 @@
+@import "_nav.css";
+@import "_layout.css";
+@import "_public.css";
+@import "_reset.css";
+@import "_footer.css";
+
+.top {
+  background-image: url(../images/about/bg.jpg);
+  background-repeat: no-repeat;
+  height: 600px;
+  position: relative;
+  background-position: -20px -20px;
+}
+.nav .login-list {
+  margin-top: -5px;
+  margin-right: 25px;
+}
+.top .ide-content {
+  background: rgba(65, 165, 133, 0.8);
+}
+
+.main {
+  width: 1200px;
+  margin: 0 auto;
+}
+.resume {
+  background: #f3f3f3;
+  margin: 0 -240px;
+  padding-top: 50px;
+}
+.main-tit {
+  text-align: center;
+  margin-bottom: 20px;
+}
+.time-clock {
+  width: 30px;
+  height: 27px;
+  background-position: -152px -2px;
+}
+.main-tit h4 {
+  line-height: 35px;
+  font-size: 32px;
+  font-weight: 400;
+}
+.main-about {
+  display: inline-block;
+  width: 180px;
+  height: 26px;
+  border: 1px solid #b6b6b6;
+  margin-top: 10px;
+}
+.main-about a {
+  color: #666666;
+  font-size: 12px;
+  font-weight: 400;
+}
+.resume-img {
+  position: relative;
+  width: 1200px;
+  height: 470px;
+  margin: 0 auto;
+}
+.side-desc {
+  position: absolute;
+  top: 0;
+  width: 324px;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  color: #fff;
+  box-sizing: border-box;
+}
+.side-desc-tit {
+  margin-top: 40px;
+  margin-left: 30px;
+  padding-bottom: 5px;
+  width: 263px;
+  border-bottom: 1px solid #fff;
+  box-sizing: content-box;
+}
+.side-desc-tit-ch {
+  font-size: 27px;
+  line-height: 35px;
+}
+.side-desc-tit-en {
+  font-size: 14px;
+  line-height: 35px;
+}
+.side-desc-con {
+  padding: 20px 30px;
+}
+.side-desc-con p {
+  margin: 0;
+  line-height: 30px;
+  text-indent: 2em;
+  font-size: 14px;
+}
+.side-desc-con p:nth-child(1) {
+  text-indent: 0;
+}
+.tim-show {
+  margin-top: 40px;
+  margin-bottom: 40px;
+}
+.team {
+  width: 52px;
+  height: 26px;
+  background-position: -145px -58px;
+}
+.tim-show-img {
+  position: relative;
+  height: 467px;
+  box-shadow: 1px 1px 22px rgba(44, 150, 117, 0.15);
+}
+.gold {
+  position: absolute;
+  width: 100%;
+  height: 95px;
+  background: rgba(0, 0, 0, 0.5);
+  left: 0;
+  bottom: 0;
+  z-index: 5;
+  color: #fff;
+  text-align: center;
+}
+.gold-ch {
+  padding-top: 20px;
+  font-size: 25px;
+  line-height: 25px;
+}
+.gold-en {
+  font-size: 14px;
+  line-height: 35px;
+}
+.tim-show-img span {
+  width: 42px;
+  height: 42px;
+}
+.goto-left {
+  position: absolute;
+  background-position: -151px -332px;
+  left: -82px;
+  top: 50%;
+}
+.goto-right {
+  position: absolute;
+  background-position: -151px -397px;
+  right: -82px;
+  top: 50%;
+}

@@ -1,0 +1,168 @@
+@import "_global-config";
+@import "_header";
+@import "_footer";
+
+
+section {
+    width: 1320px;
+    margin: 0 auto;
+    /* border: 1px solid black; */
+}
+
+.site {
+    margin: 50px 0px 20px 0px;
+}
+
+.site span {
+    margin: 20px 15px 20px 0px;
+}
+
+.site a {
+    display: inline-block;
+    color: black;
+}
+
+.site a:hover {
+    font-weight: bold;
+}
+
+.news {
+    margin-bottom: 51px;
+}
+
+.news ul {
+    position: relative;
+}
+
+.news li {
+    width: 1320px;
+    display: flex;
+    padding: 30px 0px;
+    border-bottom: 1px rgb(156, 155, 153) dashed;
+    /* border: 1px solid black; */
+}
+
+.news ul img {
+    width: 314px;
+    height: 314px;
+    background-color: black;
+    border-radius: 10px;
+}
+
+ul img:hover {
+    transform: scale(1.1, 1.1);
+}
+
+
+.minp1 a {
+    font-size: 24px;
+    color: black;
+}
+
+.mainrightp {
+    margin-left: 20px;
+    padding-top: 30px;
+}
+
+.minp1 a:hover {
+    color: rgb(143, 192, 222);
+}
+
+.minp2 {
+    margin-top: 23px;
+}
+
+.minp2,
+.minp3 {
+    color: rgb(120, 120, 120);
+    font-size: 14px;
+}
+
+.minp2 {
+    line-height: 28px;
+}
+
+.minp3 {
+    margin-top: 100px;
+}
+
+.minp3 span {
+    float: right;
+    margin-left: 20px;
+}
+
+.skip {
+    width: 1320px;
+    height: 30px;
+    font-size: 14px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.nextbtn {
+    font-size: 14px;
+    width: 79px;
+    height: 29px;
+    color: rgb(204, 204, 204);
+    background-color: rgb(239, 239, 239);
+    outline: none;
+    border: none;
+}
+
+.previousbtn {
+    font-size: 14px;
+    width: 79px;
+    height: 29px;
+    border: 1px solid rgb(120, 120, 120);
+    background-color: #fff;
+    outline: none;
+}
+
+.first,
+.second,
+.third,
+.fourth {
+    width: 29px;
+    height: 29px;
+    background-color: #fff;
+    outline: none;
+    border: 1px solid rgb(120, 120, 120);
+}
+
+.first {
+    color: white;
+    background: black;
+}
+
+.first:hover {
+    color: #fff;
+    background-color: #000;
+}
+
+.second:hover {
+    color: #fff;
+    background-color: #000;
+}
+
+.third:hover {
+    color: #fff;
+    background-color: #000;
+}
+
+.fourth:hover {
+    color: #fff;
+    background-color: #000;
+}
+
+.previousbtn:hover {
+    color: #fff;
+    background-color: #000;
+}
+
+.skip {
+    margin-bottom: 115px;
+}
+
+.skip button {
+    cursor: pointer;
+}

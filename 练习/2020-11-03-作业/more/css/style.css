@@ -1,0 +1,39 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+.box {
+  width: 899px;
+  height: 290px;
+  padding: 50px 40px;
+  line-height: 38px;
+  margin: 0 auto;
+  position: relative;
+  /* border: 1px solid #000000; */
+}
+.box:hover .delta {
+  display: block;
+}
+.box:hover a {
+  display: block;
+}
+.delta {
+  border-top: 35px solid transparent;
+  border-right: 35px solid #ff9933;
+  border-bottom: 35px solid #ff9933;
+  border-left: 35px solid transparent;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  display: none;
+}
+.box a {
+  font-size: 12px;
+  font-weight: 600;
+  color: #000000;
+  text-decoration: none;
+  position: absolute;
+  bottom: 1px;
+  right: 9px;
+  display: none;
+}

@@ -1,0 +1,81 @@
+@import "_global-config";
+@import "_header";
+@import "_footer";
+
+.midbigbox {
+    width: 100%;
+    height: 1542px;
+}
+
+.midbigbox p a {
+    color: black;
+}
+
+.midbigbox p a:hover {
+    font-weight: bold;
+}
+
+.country-bank-box {
+    width: 1320px;
+    height: 1540px;
+    margin: 0 auto;
+    margin-top: 45px;
+}
+
+.midmidbox {
+    width: 1320px;
+    height: 1165px;
+    margin-top: 50px;
+}
+
+.midmidbox h3 {
+    text-align: center;
+}
+
+.midmidbox p {
+    font-size: 14.3px;
+    margin-top: 45px;
+    line-height: 30px;
+}
+
+.police-office {
+    width: 655px;
+    height: 880px;
+    margin: 0px auto;
+    margin-top: 50px;
+}
+
+.police-office>img {
+    width: 655px;
+    height: 880px;
+}
+
+.sizeheight {
+    margin-top: 50px;
+}
+
+.sizeheight>p {
+    font-size: 14.3px;
+}
+
+
+.up-chapter>a {
+    position: absolute;
+    margin-top: 165px;
+    color: rgba(0, 0, 0, 0.5);
+}
+
+.up-chapter>a:hover {
+    color: black;
+}
+
+.next-chapter>a {
+    position: absolute;
+    margin-top: 165px;
+    margin-left: 1120px;
+    color: rgba(0, 0, 0, 0.5);
+}
+
+.next-chapter>a:hover {
+    color: black;
+}

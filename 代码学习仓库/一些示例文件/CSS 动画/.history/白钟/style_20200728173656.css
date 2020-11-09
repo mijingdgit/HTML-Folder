@@ -1,0 +1,64 @@
+body {
+  background: url("http://paper-backgrounds.com/textureimages/2012/05/white-concrete-wall-texture-background-hd.jpg");
+}
+
+section {
+  width: 80vmin;
+  height: 80vmin;
+  margin: auto;
+  background: #fff
+    url("http://travisdarnell.com/wp-content/uploads/2013/12/white-linen-paper-texture1.jpg")
+    center center;
+  border: 3vmin solid #000;
+  border-radius: 50%;
+  margin-top: 3vmin;
+  box-shadow: inset 40px 40px 90px rgba(0, 0, 0, 0.2),
+    inset 10px 10px 30px rgba(0, 0, 0, 0.5), 20px 20px 30px rgba(0, 0, 0, 0.4),
+    40px 40px 60px rgba(0, 0, 0, 0.4);
+
+    position: relative;
+    z-index: 1;
+}
+
+
+section::before{
+    content: "";
+    width: 95%;
+    height: 95%;
+    border-radius: 50%;
+    display: block;
+    background: transparent;
+    border: 2vmin solid white;
+}
+
+/* highlight at top left of black outline */
+section::after{
+    content: "";
+    width: 105%;
+    height: 105%;
+    border-radius: 50%;
+    display: block;
+    background: transparent;
+    top: -2.5%;
+    left: -2.5%;
+    box-shadow: -3px -3px 9px rgba(255, 255, 255,0.8);
+    position: absolute;
+}
+
+.label{
+    position: absolute;
+    top: 19vmin;
+    left: 46%;
+    font-size: 2.5vmin;
+}
+
+.hourhand,
+.secondhand,
+.minutehand{
+    width: 25vmin;
+    height: 2vmin;
+    background: #000;
+    position: absolute;
+    top: 40vmin;
+    left: calc(50% - 3.5vmin);
+}

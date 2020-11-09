@@ -1,0 +1,70 @@
+@import "_footer.css";
+@import "_layout.css";
+@import "_nav.css";
+@import "_public.css";
+@import "_reset.css";
+
+body {
+  background: #f9f9f9;
+}
+.top {
+  background-image: url(../images/share/bg.jpg);
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  height: 600px;
+  position: relative;
+}
+.nav .login-list {
+  margin-top: -5px;
+  margin-right: 25px;
+}
+.main {
+  width: 1200px;
+  margin: 0 auto;
+  padding-bottom: 40px;
+  margin-top: 25px;
+}
+.share-list li {
+  position: relative;
+  float: left;
+  width: 50%;
+}
+.share-list li:hover .rhombus {
+  display: none;
+}
+.share-list li:hover .change {
+  display: inline-block;
+}
+.change {
+  display: none;
+  position: absolute;
+  text-align: center;
+  font-size: 27px;
+  line-height: 35px;
+  color: #fff;
+  width: 530px;
+  height: 170px;
+  padding-top: 170px;
+  left: 25px;
+  top: 25px;
+  right: 25px;
+  bottom: 25px;
+  background: rgba(0, 0, 0, 0.7);
+  z-index: 2;
+}
+.share-list li img {
+  width: 100%;
+  height: 100%;
+}
+.rhombus {
+  position: absolute;
+  left: 565px;
+  top: -15px;
+  width: 31px;
+  height: 31px;
+  background: rgba(20, 145, 106, 0.5);
+  transform: rotate(45deg);
+}
+.ide-content {
+  background: rgba(65, 165, 133, 0.7);
+}

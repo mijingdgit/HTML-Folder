@@ -1,0 +1,44 @@
+html,
+body {
+    background: #ffeead;
+}
+
+h1 {
+    color: #ff6f69;
+    text-align: center;
+}
+
+ul {
+    list-style-type: none;
+    padding-left: 0;
+}
+
+li {
+    background-color: #88d8b0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #ffeead;
+    font-weight: 800;
+    letter-spacing: 1px;
+}
+
+.list {
+    padding-left: 0;
+    display: grid;
+    gap: 2px;
+    grid-template-columns: 1fr 1fr;
+    grid-auto-rows: 80px;
+}
+
+.list :nth-child(1) {
+    grid-column: 1/span 2;
+}
+
+.list :nth-child(6) {
+    grid-column: 1 / span 2;
+}
+
+li:hover {
+    background-color: #ff6f69;
+}

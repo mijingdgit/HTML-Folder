@@ -1,0 +1,380 @@
+/* 
+! all about global public css 
+! You can extract more public data here
+ */
+* {
+  padding: 0;
+  margin: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+}
+
+li {
+  list-style: none;
+}
+
+header {
+  width: 100%;
+  min-width: 1320px;
+  height: 850px;
+  background-image: url(../images/banner.jpg);
+  background-size: cover;
+  position: relative;
+}
+
+.nav-box {
+  width: 100%;
+  height: 120px;
+  background-color: rgba(255, 255, 255, 0.1);
+}
+
+.nav-box-wrap {
+  width: 1320px;
+  margin: 0 auto;
+}
+
+.logo {
+  display: inline-block;
+  margin-top: 28px;
+}
+
+.navigation {
+  float: right;
+}
+
+li.now {
+  border-bottom: 2px #201109 solid;
+}
+
+.navigation ul li {
+  float: left;
+  line-height: 120px;
+}
+
+.navigation ul li:not(:last-child) {
+  margin-right: 75px;
+}
+
+.navigation ul li a {
+  text-decoration: none;
+  color: #201109;
+  font-size: 18px;
+}
+
+.navigation ul li:hover {
+  border-bottom: 2px #201109 solid;
+}
+
+.navigation ul li:hover a {
+  font-weight: bold;
+}
+
+.title-box {
+  width: 1320px;
+  height: 730px;
+  position: relative;
+  margin: 0 auto;
+}
+
+.title-box img {
+  position: absolute;
+  top: 180px;
+  right: 360px;
+}
+
+.title-box .title {
+  position: absolute;
+  width: 420px;
+  right: 0;
+  top: 200px;
+}
+
+.title-box .title p:nth-child(3) {
+  position: relative;
+  top: 305px;
+  text-align: right;
+}
+
+.title-box .title p {
+  color: #fff;
+}
+
+.title-box .title p:nth-child(1) {
+  font-size: 72px;
+}
+
+.title-box .title p:nth-child(2),
+.title-box .title p:nth-child(3) {
+  font-size: 32px;
+}
+
+footer {
+  width: 100%;
+  height: 350px;
+  background-color: #454545;
+}
+
+.footer-wrap {
+  width: 1320px;
+  height: 100%;
+  margin: 0 auto;
+  /* border:1px red solid; */
+}
+
+.footer-top {
+  height: 236px;
+}
+
+.footer-left,
+.footer-right {
+  width: 50%;
+  color: #fff;
+  float: left;
+  position: relative;
+}
+
+.footer-left div {
+  margin-top: 110px;
+  margin-left: 58px;
+}
+
+.footer-left div a {
+  color: white;
+}
+
+.contactinfo {
+  display: inline-block;
+  margin-top: 70px;
+}
+
+.footer-right ul {
+  float: right;
+  position: relative;
+  left: 110px;
+}
+
+.footer-right ul li {
+  font-size: 16px;
+  width: 50%;
+  float: left;
+}
+
+.footer-right ul li p {
+  display: inline-block;
+  position: relative;
+  top: -2px;
+  left: 9px;
+  max-height: 40px;
+  overflow: hidden;
+}
+
+.footer-left p:nth-child(1) {
+  font-size: 24px;
+}
+
+.footer-left p:nth-child(2) {
+  font-size: 22px;
+}
+
+.footer-right p:nth-child(1) {
+  font-size: 24px;
+  margin-bottom: 38px;
+  margin-left: 110px;
+}
+
+.footer-bottom {
+  width: 100%;
+  height: 114px;
+  color: #d1cfcf;
+  line-height: 114px;
+  text-align: center;
+}
+
+.line {
+  width: 2px;
+  height: 100%;
+  background-color: #d1cfcf;
+  position: absolute;
+  right: 0;
+  top: -76px;
+  margin-top: -50%;
+}
+
+.navigation ul li:nth-child(5) {
+  border-bottom: 2px #201109 solid;
+}
+
+.middle-area .wrap {
+  width: 1320px;
+  margin: 0 auto;
+  position: relative;
+}
+
+.middle-area .title {
+  padding: 50px 0 0px;
+  font-size: 24px;
+}
+
+.middle-area .title a {
+  width: 300px;
+  line-height: 60px;
+  text-align: center;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  display: inline-block;
+  color: #727171;
+  margin-right: -8px;
+  position: relative;
+}
+
+.middle-area .title > a:nth-child(1) {
+  border-left: 1px solid #c0c5ce;
+}
+
+.middle-area .title > a:last-child {
+  border-right: 1px solid #c0c5ce;
+}
+
+.middle-area .title a:not(:last-child)::after {
+  content: "";
+  display: inline-block;
+  width: 0;
+  border-left: 1px solid #c0c5ce;
+  border-top: 28px solid #c0c5ce;
+  position: absolute;
+  right: 0;
+  top: 50%;
+  margin-top: -14px;
+}
+
+.middle-area .title a:hover {
+  color: #fff;
+  background-color: #242424;
+  font-weight: bold;
+}
+
+.middle-area .title a:hover::after {
+  display: none;
+}
+
+.middle-area .images {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.middle-area .images > div {
+  width: 315px;
+  margin-top: 48px;
+  color: #252525;
+}
+
+.middle-area .images .images-box {
+  overflow: hidden;
+}
+
+.middle-area .images img {
+  display: block;
+  -webkit-transition: all .2s linear;
+  transition: all .2s linear;
+}
+
+.middle-area .images > div a {
+  color: #252525;
+}
+
+.middle-area .images img:hover {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+}
+
+.middle-area .images > div .title-bottom {
+  margin-top: 6px;
+}
+
+.middle-area .images > div .time {
+  margin-top: 3px;
+}
+
+.middle-area .images > div .title-bottom .title-bottom-a {
+  font-size: 18px;
+}
+
+.middle-area .images > div a:hover {
+  color: #8fc0de;
+}
+
+.middle-area .wrap .paging {
+  height: 186px;
+  line-height: 186px;
+  text-align: center;
+}
+
+.middle-area .wrap .paging button {
+  height: 30px;
+  color: #666666;
+  font-size: 16px;
+  border: 1px solid #d6d6d6;
+  background-color: #fff;
+  cursor: pointer;
+  outline: none;
+  margin: 0 4px;
+  line-height: 30px;
+}
+
+.middle-area .wrap .paging button.next-page:hover {
+  color: white;
+  background: #000000;
+}
+
+.middle-area .wrap .paging a {
+  display: inline-block;
+  height: 30px;
+  width: 30px;
+  margin: 0 2px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  color: #666666;
+  font-size: 16px;
+  border: 1px solid #d6d6d6;
+  line-height: 30px;
+}
+
+.middle-area .wrap .paging a:visited {
+  background-color: #252525;
+}
+
+.middle-area .wrap .paging a:hover {
+  color: white;
+  background: black;
+}
+
+.middle-area .wrap .paging a:active {
+  background-color: #252525;
+  color: #fff;
+}
+
+.middle-area .wrap .paging a:nth-of-type(1) {
+  background-color: #252525;
+  color: #fff;
+}
+
+.middle-area .wrap .paging .last-page,
+.middle-area .wrap .paging .next-page {
+  width: 78px;
+}
+
+.middle-area .wrap .paging .last-page {
+  background-color: #efefef;
+  color: #c9c9c9;
+}
+/*# sourceMappingURL=pro-center.css.map */

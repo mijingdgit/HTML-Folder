@@ -1,0 +1,121 @@
+<!--
+ * @Author: DsCode
+ * @Date: 2020-07-26 22:06:46
+ * @LastEditors: DsCode
+ * @LastEditTime: 2020-07-26 23:05:18
+ * @FilePath: \Animated Website Design Using HTML And CSS\button.html
+-->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      * {
+        padding: 0;
+        margin: 0;
+        font-family: sans-serif;
+      }
+      body {
+        background: #e3edf7;
+      }
+      h1 {
+        font-weight: normal;
+        font-size: 25px;
+        letter-spacing: 4px;
+        padding: 200px 0 100px;
+        color: #555;
+        text-align: center;
+      }
+
+      .buttons {
+        display: flex;
+        justify-content: center;
+      }
+      button {
+        display: flex;
+        background: #ddd;
+        height: 60px;
+        width: 60px;
+        margin: 0 15px;
+        border-radius: 8px;
+        border: 1px solid #ffffff;
+        justify-content: center;
+        box-shadow: 6px 6px 10px -1px rgba(0, 0, 0, 0.15),
+          -6px -6px 10px -1px rgba(255, 255, 255, 0.7);
+
+        transition: transform 0.5s;
+      }
+      a {
+        margin: auto;
+        height: 50px;
+        width: 50px;
+        border-radius: 50%;
+        background: #777;
+        display: flex;
+        justify-content: space-around;
+        text-align: center;
+      }
+      a img {
+        width: 50px;
+        height: 50px;
+        margin: 0 auto;
+
+        transition: transform 0.5s;
+      }
+
+      button:hover {
+        box-shadow: inset 4px 4px 6px -1px rgba(0, 0, 0, 0.2),
+          inset -4px -4px 6px -1px rgba(255, 255, 255, 0.7),
+          -0.5px -0.5px 0px rgba(255, 255, 255, 1),
+          0.5px 0.5px 0px rgba(0, 0, 0, 0.15),
+          0px 12px 10px -10px rgba(0, 0, 0, 0.05);
+
+        border: 1px solid rgba(0, 0, 0, 0.01);
+
+        transform: translateY(2px);
+      }
+
+      a:hover img {
+        transform: scale(0.9);
+      }
+
+      button:hover .tw {
+        background: #00acee;
+      }
+      button:hover .ig {
+        background: #f14843;
+      }
+      button:hover .fb {
+        background: #3b5998;
+      }
+      button:hover .info {
+        background: #4fce5d;
+      }
+      button:hover .share {
+        background: rgb(127, 167, 63);
+      }
+    </style>
+  </head>
+  <body>
+    <h1>All of buttons</h1>
+    <div class="buttons">
+      <button>
+        <a href="" class="tw"> <img src="./img/tw.png" alt="" /></a>
+      </button>
+      <button>
+        <a href="" class="ig"> <img src="./img/ig.png" alt="" /></a>
+      </button>
+      <button>
+        <a href="" class="fb"> <img src="./img/fb.png" alt="" /></a>
+      </button>
+      <button>
+        <a href="" class="info"> <img src="./img/info.png" alt="" /></a>
+      </button>
+      <button>
+        <a href="" class="share"> <img src="./img/share.png" alt="" /></a>
+      </button>
+    </div>
+  </body>
+</html>
