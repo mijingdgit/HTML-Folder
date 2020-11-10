@@ -1,15 +1,13 @@
 header {
   width: 100%;
   height: 900px;
-  background: url(../../static/img/banner.jpg);
+  background: url(../../../static/img/banner.jpg);
   background-repeat: no-repeat;
 
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
-
-  border: 1px solid #000;
 
   .nav {
     // TODO 适配
