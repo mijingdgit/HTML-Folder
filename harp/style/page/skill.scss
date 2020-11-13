@@ -1,0 +1,181 @@
+// TODO 导入公共样式
+@import "../config/_config";
+@import "../header/_header";
+@import "../footer/_footer";
+
+main {
+  width: 100%;
+  // height: 1272px;
+  .cont {
+    width: 1400px;
+    // height:1272px;
+    margin: 0 auto;
+    .top {
+      width: 172px;
+      height: 50px;
+      margin: 0 auto;
+      margin-top: 120px;
+      border-left: 4px solid #000;
+      margin-bottom: 70px;
+    }
+    .top p {
+      margin-left: 15px;
+    }
+
+    .top .cn {
+      font-size: 25px;
+      color: #292929;
+      margin-bottom: 6px;
+    }
+
+    .top .en {
+      font-size: 13px;
+      color: #d2d2d2;
+      margin-bottom: 70px;
+    }
+  }
+
+  .cont .con-nav {
+    width: 100%;
+    height: 77px;
+    margin-top: 52px;
+
+    li {
+      width: 669px;
+      height: 77px;
+      float: left;
+      background-color: #af1415;
+    }
+    li .one {
+      width: 100%;
+      height: 65px;
+      background-color: #f3f2f3;
+      font-size: 18px;
+      text-align: center;
+      line-height: 65px;
+
+      a {
+        color: #626162;
+      }
+    }
+
+    li .two {
+      width: 100%;
+      height: 65px;
+      background-color: #242424;
+      font-size: 18px;
+      text-align: center;
+      line-height: 65px;
+
+      a {
+        color: #dfdfdf;
+      }
+    }
+
+    li:hover .one,
+    li:hover a {
+      background-color: #242424;
+      color: #dfdfdf;
+    }
+
+    .to {
+      margin-right: 10px;
+    }
+  }
+
+  .ac {
+    width: 1479px;
+    height: 363px;
+    margin: 0 auto;
+    margin-bottom: 144px;
+
+    // .ac-cont {
+    //     width: 121px;
+    //     height: 50px;
+    //     // border-left: 4px solid #333333;
+    //     margin: 0 auto;
+    //     margin-bottom: 69px;
+    //     text-align: center;
+
+    //     p {
+    //         margin-left: 14px;
+    //     }
+
+    //     .con-one {
+    //         font-size: 24px;
+    //         color: #2a2a2a;
+    //     }
+
+    //     .con-two {
+    //         font-size: 13px;
+    //         color: #c8c8c8;
+
+    //     }
+    // }
+
+    .ac-conter {
+      width: 1479px;
+      height: 367px;
+      // border: 1px solid #000;
+      margin: 0 auto;
+
+      .tr {
+        margin-right: -1px;
+      }
+
+      ul {
+        float: left;
+      }
+
+      li {
+        width: 740px;
+        // height: 147px;
+        border: 1px solid #e5e5e5;
+        padding: 35px 70px;
+        margin-top: -1px;
+      }
+
+      li .tr-t {
+        position: relative;
+      }
+
+      li .tr-t .icon {
+        width: 48px;
+        height: 48px;
+        background-image: url(/img/news-1.png);
+        position: absolute;
+        top: 0;
+        left: 30;
+      }
+
+      li .tr-t .ac-con1 {
+        margin-left: 60px;
+      }
+      li .tr-t .ac-con1 .ac-cont1 {
+        font-size: 13px;
+        color: #444444;
+        margin-bottom: 8px;
+      }
+
+      li .tr-t .ac-con1 .ac-cont2 {
+        font-size: 18px;
+        color: #444444;
+        font-weight: 600;
+        margin-bottom: 13px;
+      }
+
+      li:hover .icon {
+        background-position-x: -48px;
+      }
+      li:hover .tr-t .ac-con1 .ac-cont1 {
+        color: #d11618;
+      }
+      li:hover .tr-t .ac-con1 .ac-cont2 {
+        color: #d11618;
+      }
+      li:hover .tr-t p {
+        color: #d11618;
+      }
+    }
+  }
+}

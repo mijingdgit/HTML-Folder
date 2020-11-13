@@ -1,0 +1,93 @@
+{
+  "id": "2191265",
+  "name": "demo01",
+  "font_family": "iconfont",
+  "css_prefix_text": "icon-",
+  "description": "",
+  "glyphs": [
+    {
+      "icon_id": "630126",
+      "name": "眼睛",
+      "font_class": "yanjing",
+      "unicode": "e661",
+      "unicode_decimal": 58977
+    },
+    {
+      "icon_id": "1025568",
+      "name": "时间",
+      "font_class": "shijian",
+      "unicode": "e61f",
+      "unicode_decimal": 58911
+    },
+    {
+      "icon_id": "12842735",
+      "name": "w_地址-140",
+      "font_class": "w_dizhi-",
+      "unicode": "e66e",
+      "unicode_decimal": 58990
+    },
+    {
+      "icon_id": "1511902",
+      "name": "电话",
+      "font_class": "phone-channel",
+      "unicode": "e686",
+      "unicode_decimal": 59014
+    },
+    {
+      "icon_id": "5651343",
+      "name": "电话",
+      "font_class": "dianhua1",
+      "unicode": "e657",
+      "unicode_decimal": 58967
+    },
+    {
+      "icon_id": "354262",
+      "name": "淘宝",
+      "font_class": "iconfonttaobao",
+      "unicode": "e603",
+      "unicode_decimal": 58883
+    },
+    {
+      "icon_id": "1582415",
+      "name": "icon_电话",
+      "font_class": "icon_dianhua",
+      "unicode": "e63d",
+      "unicode_decimal": 58941
+    },
+    {
+      "icon_id": "4933248",
+      "name": "电话",
+      "font_class": "dianhua",
+      "unicode": "e704",
+      "unicode_decimal": 59140
+    },
+    {
+      "icon_id": "6129264",
+      "name": "225电话、拨打、通话-线性",
+      "font_class": "dianhuabodatonghua-xianxing",
+      "unicode": "e7c4",
+      "unicode_decimal": 59332
+    },
+    {
+      "icon_id": "4152720",
+      "name": "淘宝_1",
+      "font_class": "taobao_",
+      "unicode": "e631",
+      "unicode_decimal": 58929
+    },
+    {
+      "icon_id": "12979672",
+      "name": "淘宝_1",
+      "font_class": "taobao_1",
+      "unicode": "e608",
+      "unicode_decimal": 58888
+    },
+    {
+      "icon_id": "15543300",
+      "name": "sousuo-xianxing",
+      "font_class": "sousuo-xianxing",
+      "unicode": "e63e",
+      "unicode_decimal": 58942
+    }
+  ]
+}

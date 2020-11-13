@@ -1,0 +1,742 @@
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+li {
+  list-style: none;
+}
+
+header {
+  width: 100%;
+  height: 858px;
+  background-image: url(../../img/banner.jpg);
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  margin-bottom: 170px;
+}
+
+header .wrepper {
+  width: 1400px;
+  margin: 0 auto;
+}
+
+header .wrepper nav {
+  height: 60px;
+  padding-top: 35px;
+}
+
+header .wrepper nav .logo {
+  float: left;
+}
+
+header .wrepper nav ul {
+  float: right;
+}
+
+header .wrepper nav ul a {
+  font-size: 16px;
+  color: #fff;
+}
+
+header .wrepper nav ul li {
+  height: 25px;
+  float: left;
+  padding-bottom: 5px;
+  margin-right: 46px;
+}
+
+header .wrepper nav ul .s {
+  border-bottom: 1px solid #fff;
+}
+
+header .wrepper nav ul .c {
+  border-bottom: 1px solid #fff;
+}
+
+header .wrepper nav ul .z {
+  border-bottom: 1px solid #fff;
+}
+
+header .wrepper nav ul .f {
+  border-bottom: 1px solid #fff;
+}
+
+header .wrepper nav ul .g {
+  border-bottom: 1px solid #fff;
+}
+
+header .wrepper nav ul li:hover {
+  border-bottom: 1px solid #fff;
+}
+
+header .wrepper .content {
+  margin-top: 165px;
+  margin-left: 116px;
+}
+
+header .wrepper .content .con-title .sharp {
+  font-size: 48px;
+  color: #fff;
+}
+
+header .wrepper .content .con-title .en {
+  font-size: 13px;
+  color: #fff;
+}
+
+header .wrepper .content .con-id {
+  font-size: 90px;
+  color: #fff;
+  margin-bottom: 10px;
+}
+
+header .wrepper .content .con-name {
+  width: 354px;
+  height: 58px;
+  font-size: 34px;
+  color: #fff;
+  text-align: center;
+  line-height: 54px;
+  border-top: 2px solid #fff;
+  border-bottom: 2px solid #fefefe;
+  margin-bottom: 13px;
+}
+
+header .wrepper .content .con-news {
+  font-size: 12px;
+  color: #fff;
+  margin-bottom: 32px;
+}
+
+header .wrepper .content .con-news li {
+  margin-bottom: 6px;
+}
+
+header .wrepper .content .con-news li span {
+  margin-right: 9px;
+}
+
+header .wrepper .content .con-check {
+  width: 180px;
+  height: 40px;
+  border-radius: 12px;
+  background-color: #fff;
+  font-size: 23px;
+  text-align: center;
+  line-height: 40px;
+}
+
+header .wrepper .content .con-check a {
+  color: #a90e10;
+}
+
+header .wrepper .icon {
+  width: 50px;
+  height: 120px;
+  position: fixed;
+  top: 65%;
+  right: 0;
+  background-color: #333;
+  color: #fff;
+}
+
+header .wrepper .icon li span {
+  font-size: 28px;
+  width: 50px;
+  height: 50px;
+  margin-left: 10px;
+  line-height: 60px;
+}
+
+header .wrepper .icon .phone {
+  border-bottom: 2px solid #fff;
+  position: relative;
+}
+
+header .wrepper .icon .phone .number {
+  width: 170px;
+  height: 60px;
+  background-color: #333;
+  color: #fff;
+  font-size: 16px;
+  position: absolute;
+  top: 0;
+  right: 50px;
+  line-height: 60px;
+  text-align: center;
+  display: none;
+}
+
+header .wrepper .icon .phone:hover .number {
+  display: block;
+}
+
+header .wrepper .icon a {
+  color: #fff;
+}
+
+header .wrepper .icon .taobao {
+  position: relative;
+}
+
+header .wrepper .icon .taobao .tao {
+  width: 170px;
+  height: 58px;
+  background-color: #333;
+  color: #fff;
+  font-size: 16px;
+  position: absolute;
+  top: 0;
+  right: 50px;
+  line-height: 60px;
+  text-align: center;
+  display: none;
+}
+
+header .wrepper .icon .taobao:hover .tao {
+  display: block;
+}
+
+header .round {
+  position: absolute;
+  bottom: -45px;
+  right: 50%;
+  -webkit-transform: translate(50%, 50%);
+          transform: translate(50%, 50%);
+}
+
+header .round li {
+  float: left;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background-color: #d1d1d1;
+  margin-right: 44px;
+}
+
+header .round .po {
+  border: 2px solid #000;
+  background-color: #fff;
+}
+
+header .round li:hover {
+  border: 2px solid #4d4d4d;
+  background-color: #fff;
+}
+
+footer {
+  width: 100%;
+  height: 638px;
+  background-color: #161616;
+}
+
+footer .top {
+  width: 1400px;
+  height: 514px;
+  margin: 0 auto;
+}
+
+footer .top .l {
+  width: 456px;
+  height: 276px;
+  border-right: 1px solid #8b8b8b;
+  float: left;
+  margin-top: 119px;
+}
+
+footer .top .l .serve {
+  margin-top: 41px;
+  margin-right: 85px;
+}
+
+footer .top .l .on {
+  margin-top: 41px;
+}
+
+footer .top .phone {
+  float: left;
+  margin-top: 160px;
+  margin-left: 82px;
+}
+
+footer .top .phone .contact {
+  margin-right: 85px;
+}
+
+footer .top .phone .contact .iconfont {
+  color: #999999;
+  margin-right: 10px;
+}
+
+footer .top .phone .id .iconfont {
+  color: #999999;
+  margin-right: 10px;
+}
+
+footer .top ul {
+  color: #cccccc;
+  float: left;
+}
+
+footer .top ul p {
+  font-size: 16px;
+  margin-bottom: 30px;
+}
+
+footer .top ul li {
+  margin-bottom: 14px;
+  font-size: 14px;
+  color: #999999;
+}
+
+footer .top ul li a {
+  color: #999999;
+}
+
+footer .bottom {
+  width: 100%;
+  height: 124px;
+  background-color: #760100;
+}
+
+footer .bottom p {
+  font-size: 10px;
+  color: #fff;
+  line-height: 124px;
+  text-align: center;
+}
+
+main {
+  width: 100%;
+  height: 3236px;
+}
+
+main .serve {
+  width: 100%;
+  height: 1114px;
+  margin-bottom: 125px;
+}
+
+main .serve .ser-top {
+  width: 143px;
+  height: 50px;
+  margin: 0 auto;
+  border-left: 4px solid #333333;
+  margin-bottom: 69px;
+}
+
+main .serve .ser-top .ser-con1 {
+  font-size: 25px;
+  color: #2a2a2a;
+  margin-left: 14px;
+}
+
+main .serve .ser-top .ser-con2 {
+  font-size: 13px;
+  color: #c9c9c9;
+  margin-left: 16px;
+}
+
+main .serve .ser-mian {
+  width: 1400px;
+  height: 243px;
+  margin: 0 auto;
+  border: 1px solid #e5e5e5;
+  margin-bottom: 120px;
+}
+
+main .serve .ser-mian ul li {
+  float: left;
+  width: 33.3333%;
+  height: 243px;
+  border: 1px solid #e5e5e5;
+}
+
+main .serve .ser-mian ul li .icon {
+  height: 167px;
+  border-bottom: 2px solid #e5e5e5;
+}
+
+main .serve .ser-mian ul li .ser-24th {
+  background-color: #333333;
+}
+
+main .serve .ser-mian ul li .ser-24th img {
+  width: 78px;
+  height: 46px;
+  margin: 60px 193px;
+}
+
+main .serve .ser-mian ul li .ser-24th:hover {
+  background-color: #525252;
+}
+
+main .serve .ser-mian ul li .ser-icon1 {
+  background-color: #f3f3f3;
+}
+
+main .serve .ser-mian ul li .ser-icon1 img {
+  width: 50px;
+  height: 57px;
+  margin: 53px 208px;
+}
+
+main .serve .ser-mian ul li .ser-icon1:hover {
+  background-color: #bbbbbb;
+}
+
+main .serve .ser-mian ul li .ser-icon2 {
+  background-color: #d11618;
+}
+
+main .serve .ser-mian ul li .ser-icon2 img {
+  width: 54px;
+  height: 50px;
+  margin: 60px 204px;
+}
+
+main .serve .ser-mian ul li .ser-icon2:hover {
+  background-color: #f78686;
+}
+
+main .serve .ser-mian ul li .iconr {
+  height: 71px;
+  background-color: #f7f7f7;
+  font-size: 15px;
+  text-align: center;
+  color: #323232;
+  line-height: 71px;
+  font-weight: 600;
+}
+
+main .serve .ser-bottom {
+  width: 100%;
+}
+
+main .serve .ser-bottom ul li {
+  height: 634px;
+  float: left;
+  width: 33.333%;
+  text-align: center;
+  color: #fff;
+}
+
+main .serve .ser-bottom ul li .cn {
+  font-size: 50px;
+  margin-top: 257px;
+}
+
+main .serve .ser-bottom ul li .en {
+  font-size: 20px;
+  margin-top: 50px;
+}
+
+main .serve .ser-bottom ul .sharp {
+  background-color: #d11618;
+  border-right: 5px solid #fff;
+}
+
+main .serve .ser-bottom ul .sharp:hover {
+  background-color: #e29091;
+}
+
+main .serve .ser-bottom ul .founder {
+  background-color: #f6b753;
+  border-left: 5px solid #fff;
+  border-right: 5px solid #fff;
+}
+
+main .serve .ser-bottom ul .founder:hover {
+  background-color: #fdd28b;
+}
+
+main .serve .ser-bottom ul .jinchi {
+  background-color: #333333;
+  border-left: 5px solid #fff;
+}
+
+main .serve .ser-bottom ul .jinchi:hover {
+  background-color: #5e5d5d;
+}
+
+main .trends {
+  width: 100%;
+  height: 1274px;
+  margin-bottom: 120px;
+}
+
+main .trends .tr-top {
+  width: 121px;
+  height: 50px;
+  margin: 0 auto;
+  border-left: 4px solid #333;
+  text-align: center;
+  margin-bottom: 69px;
+}
+
+main .trends .tr-top .tr-cn {
+  font-size: 25px;
+  margin-bottom: 12px;
+}
+
+main .trends .tr-top .tr-en {
+  font-size: 13px;
+  color: #cacaca;
+}
+
+main .trends .tr-mian {
+  width: 1400px;
+  margin: 0 auto;
+  margin-bottom: 143px;
+}
+
+main .trends .tr-mian ul {
+  margin-bottom: 10px;
+  overflow: hidden;
+}
+
+main .trends .tr-mian ul li {
+  -webkit-box-sizing: content-box;
+          box-sizing: content-box;
+  float: left;
+  width: 454px;
+  height: 290px;
+  border: 1px solid #e5e5e5;
+  margin-right: 10px;
+  position: relative;
+}
+
+main .trends .tr-mian ul li img {
+  display: block;
+  width: 454px;
+  height: 290px;
+}
+
+main .trends .tr-mian ul li .shady {
+  width: 454px;
+  height: 290px;
+  background-color: #fff;
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: none;
+}
+
+main .trends .tr-mian ul li .shady .con-p {
+  width: 121px;
+  height: 167px;
+  margin: 0 auto;
+  margin-top: 67px;
+  text-align: center;
+}
+
+main .trends .tr-mian ul li .shady .con-p p {
+  color: #434343;
+}
+
+main .trends .tr-mian ul li .shady .con-p .p-1 {
+  font-size: 25px;
+  font-weight: 600;
+  margin-bottom: 12px;
+}
+
+main .trends .tr-mian ul li .shady .con-p .p-2 {
+  font-size: 13px;
+  font-weight: 600;
+  margin-bottom: 72px;
+}
+
+main .trends .tr-mian ul li .shady .con-p .btn-e {
+  width: 121px;
+  height: 46px;
+  border: 1px solid #000;
+  font-size: 17px;
+  font-weight: 600;
+  color: #424242;
+  line-height: 46px;
+}
+
+main .trends .tr-mian ul li:hover .shady {
+  display: block;
+}
+
+main .trends .tr-bottom {
+  width: 100%;
+  height: 412px;
+  background-image: url(/img/home/strore.png);
+  background-size: 100% 100%;
+  border: 1px solid #000;
+  position: relative;
+}
+
+main .trends .tr-bottom .shade {
+  width: 100%;
+  height: 100%;
+  background-color: #000;
+  opacity: .5;
+}
+
+main .trends .tr-bottom .shade .content {
+  width: 547px;
+  height: 190px;
+  margin-left: 980px;
+  padding-top: 121px;
+}
+
+main .trends .tr-bottom .shade .content .title {
+  font-size: 21px;
+  color: #fff;
+  margin-bottom: 26px;
+}
+
+main .trends .tr-bottom .shade .content .container {
+  font-size: 12px;
+  color: #fff;
+  line-height: 20px;
+  margin-bottom: 10px;
+}
+
+main .trends .tr-bottom .shade .content .btn {
+  float: right;
+  width: 105px;
+  height: 34px;
+  border: 1px solid #887045;
+  color: #887045;
+  line-height: 34px;
+  text-align: center;
+}
+
+main .trends .tr-bottom .red {
+  width: 540px;
+  height: 412px;
+  background-color: red;
+  opacity: .5;
+  position: absolute;
+  top: 0;
+  left: 283px;
+}
+
+main .trends .tr-bottom .red .stroy {
+  width: 148px;
+  height: 50px;
+  border-left: 4px solid #fff;
+  margin: 181px 197px;
+}
+
+main .trends .tr-bottom .red .stroy p {
+  margin-left: 14px;
+}
+
+main .trends .tr-bottom .red .stroy .cn {
+  font-size: 25px;
+  color: #fff;
+  margin-bottom: 10px;
+}
+
+main .trends .tr-bottom .red .stroy .en {
+  font-size: 13px;
+  color: #fff;
+}
+
+main .ac {
+  width: 1479px;
+  height: 363px;
+  margin: 0 auto;
+}
+
+main .ac .ac-cont {
+  width: 121px;
+  height: 50px;
+  margin: 0 auto;
+  margin-bottom: 69px;
+  text-align: center;
+}
+
+main .ac .ac-cont p {
+  margin-left: 14px;
+}
+
+main .ac .ac-cont .con-one {
+  font-size: 24px;
+  color: #2a2a2a;
+}
+
+main .ac .ac-cont .con-two {
+  font-size: 13px;
+  color: #c8c8c8;
+}
+
+main .ac .ac-conter {
+  width: 1479px;
+  height: 367px;
+  margin: 0 auto;
+}
+
+main .ac .ac-conter .tr {
+  margin-right: -1px;
+}
+
+main .ac .ac-conter ul {
+  float: left;
+}
+
+main .ac .ac-conter li {
+  width: 738px;
+  border: 1px solid #e5e5e5;
+  padding: 35px 70px;
+  margin-top: -1px;
+}
+
+main .ac .ac-conter li .tr-t {
+  position: relative;
+}
+
+main .ac .ac-conter li .tr-t .icon {
+  width: 48px;
+  height: 48px;
+  background-image: url(/img/news-1.png);
+  position: absolute;
+  top: 0;
+  left: 30;
+}
+
+main .ac .ac-conter li .tr-t .ac-con1 {
+  margin-left: 60px;
+}
+
+main .ac .ac-conter li .tr-t .ac-con1 .ac-cont1 {
+  font-size: 13px;
+  color: #444444;
+  margin-bottom: 8px;
+}
+
+main .ac .ac-conter li .tr-t .ac-con1 .ac-cont2 {
+  font-size: 18px;
+  color: #444444;
+  font-weight: 600;
+  margin-bottom: 13px;
+}
+
+main .ac .ac-conter li:hover .icon {
+  background-position-x: -48px;
+}
+
+main .ac .ac-conter li:hover .tr-t .ac-con1 .ac-cont1 {
+  color: #d11618;
+}
+
+main .ac .ac-conter li:hover .tr-t .ac-con1 .ac-cont2 {
+  color: #d11618;
+}
+
+main .ac .ac-conter li:hover .tr-t p {
+  color: #d11618;
+}
+/*# sourceMappingURL=home.css.map */

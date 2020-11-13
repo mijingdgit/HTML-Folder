@@ -1,0 +1,392 @@
+// TODO 导入公共样式
+@import "../config/_config";
+@import "../header/_header";
+@import "../footer/_footer";
+
+
+main {
+    width: 100%;
+
+    // height: 1272px;
+    .cont {
+        width: 1400px;
+        // height:1272px;
+        margin: 0 auto;
+
+        .con-nav {
+            width: 100%;
+            height: 77px;
+            margin-top: 52px;
+
+            li {
+                width: 460px;
+                height: 77px;
+                float: left;
+                background-color: #af1415;
+
+                .one {
+                    width: 100%;
+                    height: 65px;
+                    background-color: #f3f2f3;
+                    font-size: 18px;
+                    text-align: center;
+                    line-height: 65px;
+
+                    a {
+                        color: #626162;
+                    }
+                }
+
+                .three {
+                    width: 100%;
+                    height: 65px;
+                    background-color: #f3f2f3;
+                    font-size: 18px;
+                    text-align: center;
+                    line-height: 65px;
+
+
+                    a {
+                        color: #626162;
+                    }
+                }
+
+                .two {
+                    width: 100%;
+                    height: 65px;
+                    background-color: #242424;
+                    font-size: 18px;
+                    text-align: center;
+                    line-height: 65px;
+
+                    a {
+                        color: #dfdfdf;
+                    }
+                }
+            }
+
+            li:hover .one,
+            li:hover .three,
+            li:hover a {
+                background-color: #242424;
+                color: #dfdfdf;
+            }
+
+            .to {
+                margin-right: 10px;
+
+            }
+
+        }
+
+        .top {
+            width: 172px;
+            height: 50px;
+            margin: 0 auto;
+            margin-top: 120px;
+            border-left: 4px solid #000;
+            margin-bottom: 143px;
+
+            p {
+                margin-left: 15px;
+            }
+
+            .cn {
+                font-size: 25px;
+                color: #292929;
+                margin-bottom: 6px;
+
+            }
+
+            .en {
+                font-size: 13px;
+                color: #d2d2d2;
+                margin-bottom: 70px;
+            }
+
+        }
+
+        .content {
+            font-size: 18px;
+            color: #424242;
+            text-align: center;
+            line-height: 40px;
+            margin-bottom: 80px;
+        }
+
+        .move {
+            width: 118px;
+            height: 46px;
+            margin: 0 auto;
+            background-color: #ad1515;
+            font-size: 16px;
+            color: #fff;
+            text-align: center;
+            line-height: 46px;
+            margin-bottom: 120px;
+        }
+
+    }
+
+    .about {
+        width: 100%;
+        height: 824px;
+        background-color: #f3f2f3;
+        padding-top: 30px;
+
+        .aboutr {
+            width: 172px;
+            height: 50px;
+            margin: 0 auto;
+            margin-top: 120px;
+            border-left: 4px solid #000;
+            margin-bottom: 100px;
+
+            p {
+                margin-left: 15px;
+            }
+
+            .cn {
+                font-size: 25px;
+                color: #292929;
+                margin-bottom: 6px;
+
+            }
+
+            .en {
+                font-size: 13px;
+                color: #d2d2d2;
+                margin-bottom: 70px;
+            }
+
+        }
+
+    }
+
+    .about .abr {
+        width: 1403px;
+        height: 370px;
+        margin: 0 auto;
+
+    }
+
+    .abr .ab {
+        width: 238px;
+        height: 370px;
+        margin-right: 112px;
+        float: left;
+
+        // border: 1px solid #000;
+        .pr {
+            width: 237px;
+            height: 318px;
+            background-color: #ea5236;
+            border-left: 1px solid #efb0a4;
+        }  
+         .pr:hover{
+        background-color: #ffb8ac;
+
+    }
+
+        .con {
+            color: #424242;
+            text-align: center;
+            line-height: 30px;
+            font-weight: 500;
+
+            .cn {
+                font-size: 18px;
+            }
+
+            .en {
+                font-size: 15px;
+            }
+        }
+    }
+ 
+
+    .ab ab-4 {
+        margin-right: 0;
+    }
+
+    .id {
+        width: 100%;
+        height: 535px;
+        .con{
+            float: left;
+        }
+        
+
+        .left {
+            width: 960px;
+            height: 535px;
+            background-color: #f6b753;
+
+            ::before {
+                content: '';
+                display: table;
+
+            }
+
+            position: relative;
+
+            .conty {
+                margin-left: 283px;
+            }
+
+            .top {
+                width: 172px;
+                height: 50px;
+                // margin-left:283px;
+                margin-top: 300px;
+                border-left: 4px solid #000;
+                margin-bottom: 63px;
+
+                p {
+                    margin-left: 15px;
+                }
+
+                .cn {
+                    font-size: 25px;
+                    color: #fff;
+                    margin-bottom: 6px;
+
+                }
+
+                .en {
+                    font-size: 13px;
+                    color: #fff;
+                    margin-bottom: 70px;
+                }
+            }
+
+            .bot {
+                font-size: 18px;
+                color: #fff;
+            }
+
+            .hello {
+                width: 380px;
+                height: 190px;
+                border-radius: 10px;
+                background-color: #edae3c;
+                position: absolute;
+                right: 0;
+                font-size: 63px;
+                color: #f1d096;
+                text-align: center;
+                line-height: 190px;
+                margin-top: 78px;
+                margin-right: 82px;
+
+            }
+
+            .op::before {
+                content: '';
+                border: 50px solid transparent;
+                border-top-color: #edae3c;
+                position: absolute;
+                bottom: -51px;
+                left: 50px;
+                transform: rotateZ(-64deg);
+            }
+
+        }
+        .right{
+            width:935px ;
+            height: 535px;
+            background-image: url(../../img/id.png);
+            background-repeat: no-repeat;
+            background-size: contain;
+            
+
+        }
+    }
+
+    .message {
+        width: 100%;
+
+        .top {
+            width: 172px;
+            height: 50px;
+            margin: 0 auto;
+            // margin-left:283px;
+            margin-top: 300px;
+            border-left: 4px solid #000;
+            margin-bottom: 70px;
+
+            p {
+                margin-left: 15px;
+            }
+
+            .cn {
+                font-size: 25px;
+                color: #000;
+                margin-bottom: 6px;
+
+            }
+
+            .en {
+                font-size: 13px;
+                color: #cacaca;
+                margin-bottom: 70px;
+            }
+        }
+    }
+ .wessage{
+    width: 891px;
+    margin: 0 auto;
+    font-size: 16px;
+    span{
+        display: inline-block;
+        width: 100px;
+    }
+    p{
+        float: left;
+        width: 100px;
+    }
+    input{
+        margin-bottom:45px ;
+    }
+    .name{
+        width: 783px;
+        height: 34px;
+        color: #ccc;
+    }
+    .phone{
+        width: 783px;
+        height: 34px;
+        color: #ccc;
+
+    }
+
+    .inport{
+        // float: left;
+        width: 783px;
+        height: 258px;
+        color: #ccc;
+    }
+    .btn{
+        margin-left: 674px;
+        margin-top: 48px;
+        .btn-1{
+            width:102px;
+            height: 46px;
+            background-color: #000;
+            font-size: 16px;
+            color: #fff;
+        }
+        .btn-1:hover{
+            background-color:#ad1515 ;
+        }
+        .btn-2{
+            width:102px;
+            height: 46px;
+            background-color: #ad1515;
+            font-size: 16px;
+            color: #fff;
+        }
+
+    }
+}
+}

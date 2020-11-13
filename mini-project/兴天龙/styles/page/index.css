@@ -1,0 +1,167 @@
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+header {
+  width: 100%;
+  height: 900px;
+  background: url(../../static/img/banner.jpg);
+  background-repeat: no-repeat;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border: 1px solid #000;
+}
+
+header .nav {
+  margin-top: 35px;
+  max-width: 1400px;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+header .nav .logo {
+  color: #ffffff;
+}
+
+header .nav ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  gap: 50px;
+}
+
+header .nav ul a {
+  color: #ffffff;
+}
+
+header .nav ul li {
+  height: 30px;
+  line-height: 26px;
+  text-align: center;
+}
+
+header .nav ul li:hover {
+  border-bottom: 2px solid #fff;
+}
+
+header .header-content {
+  width: 100%;
+  max-width: 1120px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 36px;
+}
+
+header .header-content .header-con-tit h2 {
+  font-size: 72px;
+  color: #fff;
+}
+
+header .header-content .header-con-tit h5 {
+  font-size: 16px;
+  color: #fff;
+}
+
+header .header-content .header-con-id h1 {
+  font-size: 90px;
+  color: #fff;
+}
+
+header .header-content .header-con-des {
+  height: 60px;
+  max-width: 355px;
+  color: #fff;
+  font-size: 34px;
+  border-top: 1px solid #fff;
+  border-bottom: 1px solid #f3f3f3;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+header .header-content .header-con-tel {
+  font-size: 12px;
+  color: #949494;
+}
+
+header .header-content .header-con-deatails {
+  height: 36px;
+  width: 180px;
+}
+
+header .header-content .header-con-deatails a {
+  color: #af1c1e;
+}
+
+header .header-swipper ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 42px;
+}
+
+header .header-swipper ul li {
+  background-color: #333;
+  height: 10px;
+  width: 10px;
+  border: 1px solid #000;
+  border-radius: 50%;
+}
+
+header .header-swipper ul .li-active {
+  background-color: #ffffff;
+}
+/*# sourceMappingURL=index.css.map */
