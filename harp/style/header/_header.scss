@@ -76,7 +76,7 @@ header {
 
         .en {
           font-size: 13px;
-          color: #fff;
+          color: #d6a6a1;
         }
       }
 
@@ -105,15 +105,17 @@ header {
 
         li {
           margin-bottom: 6px;
-
+          color: #d8a4a3;
           span {
             margin-right: 9px;
+            
           }
         }
       }
 
       .con-check {
-        width: 180px;
+        width: 154px;
+
         height: 40px;
         border-radius: 12px;
         background-color: #fff;
@@ -193,10 +195,9 @@ header {
   }
 
   .round {
-    position: absolute;
-    bottom: -45px;
-    right: 50%;
-    transform: translate(50%,50%);
+      width: 216px;
+      height: 10px;
+      margin: 254px auto;
       li {
         float: left;
         width: 10px;

@@ -13,6 +13,9 @@ main {
         width: 1400px;
         // height:1272px;
         margin: 0 auto;
+        .navy{
+            color: #939393;
+        }
 
         .con-nav {
             width: 100%;
@@ -90,6 +93,12 @@ main {
                     font-size: 15px;
                     color: #cacaca;
                 }
+                .iconfont{
+                    margin-right: 5px;
+                }
+                .time{
+                    margin-right: 14px;
+                }
             }
 
         }
@@ -102,7 +111,7 @@ main {
                 height: 1129px;
                 background-image: url(../../img/bg.jpg);
                 background-repeat: no-repeat;
-                box-shadow: 0 3px 3px 0 #d5d5d5, 0 30px 3px -25px #e2e2e2, 0 50px 3px -45px #eeeeee, 0 70px 3px -65px #f1f1f1, 0 90px 3px -85px #f3f3f3, 0 110px 3px -105px #f6f6f6;
+                box-shadow: 0 6px 3px -3px #d5d5d5, 0 30px 3px -25px #e2e2e2, 0 50px 3px -45px #eeeeee, 0 70px 3px -65px #f1f1f1, 0 90px 3px -85px #f3f3f3, 0 110px 3px -105px #f6f6f6;
                 padding: 87px 77px;
 
                 h1 {
@@ -208,7 +217,7 @@ main {
 
             .hot {
                 height: 1238px;
-                box-shadow: 0 3px 3px 0 #d5d5d5, 0 30px 3px -25px #e2e2e2, 0 50px 3px -45px #eeeeee, 0 70px 3px -65px #f1f1f1, 0 90px 3px -85px #f3f3f3, 0 110px 3px -105px #f6f6f6;
+                box-shadow: 0 6px 3px -3px #d5d5d5, 0 30px 3px -25px #e2e2e2, 0 50px 3px -45px #eeeeee, 0 70px 3px -65px #f1f1f1, 0 90px 3px -85px #f3f3f3, 0 110px 3px -105px #f6f6f6;
 
                 h1 {
 
@@ -218,12 +227,15 @@ main {
                     margin-top: 50px;
 
                     span {
-                        font-weight: 400;
+                        font-weight: 300;
+                    }
+                    .sp{
+                        margin-right: 28px;
                     }
                 }
 
                 .hot-one {
-                    width: 368px;
+                    width: 347px;
                     height: 33px;
                     margin: 0 auto;
                     background-color: #000;
@@ -233,6 +245,10 @@ main {
                     line-height: 33px;
                     margin-top: 10px;
                     margin-bottom: 50px;
+                    box-shadow: 0 18px 5px -15px #000;
+                    span{
+                        margin-left: 9px;
+                    }
                 }
 
                 ul {
@@ -310,7 +326,7 @@ main {
                 }
             }
             .nav-top:hover{
-                color: red;
+                color: #c72a2a;
             }
 
             .nav-bottom {
@@ -322,7 +338,7 @@ main {
 
             }
             .nav-bottom:hover{
-                color: red;
+                color:#c72a2a;
             }
         }
 

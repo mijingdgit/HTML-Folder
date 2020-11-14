@@ -55,12 +55,17 @@ footer {
             li {
                 margin-bottom: 14px;
                 font-size:14px ;
-                color:#999999 ;
+                // color:#999999 ;
 
                 a {
                     color:#999999 ;
-                }
+                }  
+            a:hover {
+                color: #fff;
+            }        
             }
+
+
         }
 
     }

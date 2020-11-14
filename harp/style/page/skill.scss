@@ -5,11 +5,17 @@
 
 main {
   width: 100%;
+
   // height: 1272px;
   .cont {
     width: 1400px;
     // height:1272px;
     margin: 0 auto;
+
+    .navy {
+      color: #939393;
+    }
+
     .top {
       width: 172px;
       height: 50px;
@@ -18,6 +24,7 @@ main {
       border-left: 4px solid #000;
       margin-bottom: 70px;
     }
+
     .top p {
       margin-left: 15px;
     }
@@ -46,6 +53,7 @@ main {
       float: left;
       background-color: #af1415;
     }
+
     li .one {
       width: 100%;
       height: 65px;
@@ -115,7 +123,7 @@ main {
 
     .ac-conter {
       width: 1479px;
-      height: 367px;
+      height: 431px;
       // border: 1px solid #000;
       margin: 0 auto;
 
@@ -151,6 +159,7 @@ main {
       li .tr-t .ac-con1 {
         margin-left: 60px;
       }
+
       li .tr-t .ac-con1 .ac-cont1 {
         font-size: 13px;
         color: #444444;
@@ -167,15 +176,48 @@ main {
       li:hover .icon {
         background-position-x: -48px;
       }
+
       li:hover .tr-t .ac-con1 .ac-cont1 {
         color: #d11618;
       }
+
       li:hover .tr-t .ac-con1 .ac-cont2 {
         color: #d11618;
       }
+
       li:hover .tr-t p {
         color: #d11618;
       }
+    }
+
+    .navu {
+      width: 161px;
+      height: 20px;
+      margin: 28px auto;
+      font-size: 13px;
+      color: #a1a1a1;
+      text-align: center;
+      span{
+        // display: block;
+        // margin: 0 50px;
+        // float: left;
+      }
+      .hov {
+        width: 24px;
+        height: 22px;
+        display: inline;
+      }
+      .hov .hov1{
+        margin:  0 30px 0 35px;
+        border-bottom: 4px solid #ad1515;
+      }
+      .hov .hov2{
+        margin-right: 35px;
+      }
+      .lo:hover{
+        color: #ad1515;
+      }
+
     }
   }
 }

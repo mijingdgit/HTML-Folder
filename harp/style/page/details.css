@@ -88,7 +88,7 @@ header .wrepper .content .con-title .sharp {
 
 header .wrepper .content .con-title .en {
   font-size: 13px;
-  color: #fff;
+  color: #d6a6a1;
 }
 
 header .wrepper .content .con-id {
@@ -117,6 +117,7 @@ header .wrepper .content .con-news {
 
 header .wrepper .content .con-news li {
   margin-bottom: 6px;
+  color: #d8a4a3;
 }
 
 header .wrepper .content .con-news li span {
@@ -124,7 +125,7 @@ header .wrepper .content .con-news li span {
 }
 
 header .wrepper .content .con-check {
-  width: 180px;
+  width: 154px;
   height: 40px;
   border-radius: 12px;
   background-color: #fff;
@@ -205,11 +206,9 @@ header .wrepper .icon .taobao:hover .tao {
 }
 
 header .round {
-  position: absolute;
-  bottom: -45px;
-  right: 50%;
-  -webkit-transform: translate(50%, 50%);
-          transform: translate(50%, 50%);
+  width: 216px;
+  height: 10px;
+  margin: 254px auto;
 }
 
 header .round li {
@@ -293,11 +292,14 @@ footer .top ul p {
 footer .top ul li {
   margin-bottom: 14px;
   font-size: 14px;
-  color: #999999;
 }
 
 footer .top ul li a {
   color: #999999;
+}
+
+footer .top ul li a:hover {
+  color: #fff;
 }
 
 footer .bottom {
@@ -320,6 +322,10 @@ main {
 main .cont {
   width: 1400px;
   margin: 0 auto;
+}
+
+main .cont .navy {
+  color: #939393;
 }
 
 main .cont .con-nav {
@@ -399,6 +405,14 @@ main .cont .top .en span {
   color: #cacaca;
 }
 
+main .cont .top .en .iconfont {
+  margin-right: 5px;
+}
+
+main .cont .top .en .time {
+  margin-right: 14px;
+}
+
 main .cont .content {
   width: 790px;
   margin: 0 auto;
@@ -408,8 +422,8 @@ main .cont .content .wb {
   height: 1129px;
   background-image: url(../../img/bg.jpg);
   background-repeat: no-repeat;
-  -webkit-box-shadow: 0 3px 3px 0 #d5d5d5, 0 30px 3px -25px #e2e2e2, 0 50px 3px -45px #eeeeee, 0 70px 3px -65px #f1f1f1, 0 90px 3px -85px #f3f3f3, 0 110px 3px -105px #f6f6f6;
-          box-shadow: 0 3px 3px 0 #d5d5d5, 0 30px 3px -25px #e2e2e2, 0 50px 3px -45px #eeeeee, 0 70px 3px -65px #f1f1f1, 0 90px 3px -85px #f3f3f3, 0 110px 3px -105px #f6f6f6;
+  -webkit-box-shadow: 0 6px 3px -3px #d5d5d5, 0 30px 3px -25px #e2e2e2, 0 50px 3px -45px #eeeeee, 0 70px 3px -65px #f1f1f1, 0 90px 3px -85px #f3f3f3, 0 110px 3px -105px #f6f6f6;
+          box-shadow: 0 6px 3px -3px #d5d5d5, 0 30px 3px -25px #e2e2e2, 0 50px 3px -45px #eeeeee, 0 70px 3px -65px #f1f1f1, 0 90px 3px -85px #f3f3f3, 0 110px 3px -105px #f6f6f6;
   padding: 87px 77px;
 }
 
@@ -509,8 +523,8 @@ main .cont .content .wb .oval .btn-4 {
 
 main .cont .content .hot {
   height: 1238px;
-  -webkit-box-shadow: 0 3px 3px 0 #d5d5d5, 0 30px 3px -25px #e2e2e2, 0 50px 3px -45px #eeeeee, 0 70px 3px -65px #f1f1f1, 0 90px 3px -85px #f3f3f3, 0 110px 3px -105px #f6f6f6;
-          box-shadow: 0 3px 3px 0 #d5d5d5, 0 30px 3px -25px #e2e2e2, 0 50px 3px -45px #eeeeee, 0 70px 3px -65px #f1f1f1, 0 90px 3px -85px #f3f3f3, 0 110px 3px -105px #f6f6f6;
+  -webkit-box-shadow: 0 6px 3px -3px #d5d5d5, 0 30px 3px -25px #e2e2e2, 0 50px 3px -45px #eeeeee, 0 70px 3px -65px #f1f1f1, 0 90px 3px -85px #f3f3f3, 0 110px 3px -105px #f6f6f6;
+          box-shadow: 0 6px 3px -3px #d5d5d5, 0 30px 3px -25px #e2e2e2, 0 50px 3px -45px #eeeeee, 0 70px 3px -65px #f1f1f1, 0 90px 3px -85px #f3f3f3, 0 110px 3px -105px #f6f6f6;
 }
 
 main .cont .content .hot h1 {
@@ -521,11 +535,15 @@ main .cont .content .hot h1 {
 }
 
 main .cont .content .hot h1 span {
-  font-weight: 400;
+  font-weight: 300;
+}
+
+main .cont .content .hot h1 .sp {
+  margin-right: 28px;
 }
 
 main .cont .content .hot .hot-one {
-  width: 368px;
+  width: 347px;
   height: 33px;
   margin: 0 auto;
   background-color: #000;
@@ -535,6 +553,12 @@ main .cont .content .hot .hot-one {
   line-height: 33px;
   margin-top: 10px;
   margin-bottom: 50px;
+  -webkit-box-shadow: 0 18px 5px -15px #000;
+          box-shadow: 0 18px 5px -15px #000;
+}
+
+main .cont .content .hot .hot-one span {
+  margin-left: 9px;
 }
 
 main .cont .content .hot ul {
@@ -604,7 +628,7 @@ main .cont .nav-y .nav-top .left {
 }
 
 main .cont .nav-y .nav-top:hover {
-  color: red;
+  color: #c72a2a;
 }
 
 main .cont .nav-y .nav-bottom {
@@ -616,6 +640,6 @@ main .cont .nav-y .nav-bottom .right {
 }
 
 main .cont .nav-y .nav-bottom:hover {
-  color: red;
+  color: #c72a2a;
 }
 /*# sourceMappingURL=details.css.map */

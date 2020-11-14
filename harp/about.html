@@ -16,7 +16,7 @@
             <!--导航 -->
             <nav>
                 <div class="logo">
-                    <img src="img/home/logo.png" alt="" />
+                   <a href="home.html"> <img src="img/home/logo.png" alt="" /></a>
                 </div>
                 <div class="subnav">
                     <ul>
@@ -91,7 +91,7 @@
     <!-- TODO 主体 -->
     <main>
         <div class="cont">
-            <p>您当前的位置>首页>关于>公司概况</p>
+            <p class="navy">您当前的位置>首页>关于>公司概况</p>
             <div class="con-nav">
                 <ul>
                     <li class="to">
@@ -190,12 +190,17 @@
                 <p class="en">WESSAGE</p>
             </div>
             <div class="wessage">
-                <div> <span> 姓名：</span><input type="text" placeholder="请输入您的姓名" class="name"></div>
-                <div> <span> 联系电话：</span><input type="text" placeholder="请输入您的联系电话" class="phone"></div>
-                <div> <p>问题描述：</p> <textarea placeholder="请描述您的问题" class="inport"></textarea></div>
-                <div class="btn"> <input type="button" value="重置" class="btn-1">
-                <input type="button" value="确认" class="btn-2"></div>
-            </div>
+                <form>
+                    <div> <span> 姓名：</span><input type="text" placeholder="请输入您的姓名" class="name"></div>
+                    <div> <span> 联系电话：</span><input type="text" placeholder="请输入您的联系电话" class="phone"></div>
+                    <div> <p>问题描述：</p> <textarea   placeholder="请描述您的问题"></textarea></div>
+                    <div class="btn"> 
+                        <button type="reset" value="重置" class="btn-1">重置</button>
+                        <button type="submit" value="确认" class="btn-2">确认</button>
+                    </div>
+                
+                </form>
+               </div>
 
         </div>
     </main>
@@ -212,7 +217,7 @@
                     </ul>
                     <ul class="on">
                         <p>关于</p>
-                        <li><a href="#">公司简介</a></li>
+                        <li><a href="about.html">公司简介</a></li>
                         <li><a href="#">资质荣誉</a></li>
                         <li><a href="#">联系我们</a></li>
                         <li><a href="#">留言反馈</a></li>
@@ -246,7 +251,7 @@
                 </div>
             </div>
             <div class="bottom">
-                <p>版权所有 成都兴天龙数码办公设备有限公司 违者必究 蜀ICP备案09876097423号 技术支持：万息科技</p>
+                <p>版权所有 成都兴天龙数码办公设备有限公司 违者必究 &nbsp; 蜀ICP备案09876097423号 技术支持：万息科技</p>
             </div>
         </div>
     </footer>

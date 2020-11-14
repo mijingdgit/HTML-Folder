@@ -88,7 +88,7 @@ header .wrepper .content .con-title .sharp {
 
 header .wrepper .content .con-title .en {
   font-size: 13px;
-  color: #fff;
+  color: #d6a6a1;
 }
 
 header .wrepper .content .con-id {
@@ -117,6 +117,7 @@ header .wrepper .content .con-news {
 
 header .wrepper .content .con-news li {
   margin-bottom: 6px;
+  color: #d8a4a3;
 }
 
 header .wrepper .content .con-news li span {
@@ -124,7 +125,7 @@ header .wrepper .content .con-news li span {
 }
 
 header .wrepper .content .con-check {
-  width: 180px;
+  width: 154px;
   height: 40px;
   border-radius: 12px;
   background-color: #fff;
@@ -205,11 +206,9 @@ header .wrepper .icon .taobao:hover .tao {
 }
 
 header .round {
-  position: absolute;
-  bottom: -45px;
-  right: 50%;
-  -webkit-transform: translate(50%, 50%);
-          transform: translate(50%, 50%);
+  width: 216px;
+  height: 10px;
+  margin: 254px auto;
 }
 
 header .round li {
@@ -293,11 +292,14 @@ footer .top ul p {
 footer .top ul li {
   margin-bottom: 14px;
   font-size: 14px;
-  color: #999999;
 }
 
 footer .top ul li a {
   color: #999999;
+}
+
+footer .top ul li a:hover {
+  color: #fff;
 }
 
 footer .bottom {
@@ -320,6 +322,10 @@ main {
 main .cont {
   width: 1400px;
   margin: 0 auto;
+}
+
+main .cont .navy {
+  color: #939393;
 }
 
 main .cont .con-nav {
@@ -488,17 +494,18 @@ main .abr .ab .pr:hover {
 
 main .abr .ab .con {
   color: #424242;
-  text-align: center;
   line-height: 30px;
   font-weight: 500;
 }
 
 main .abr .ab .con .cn {
+  text-align: center;
   font-size: 18px;
 }
 
 main .abr .ab .con .en {
   font-size: 15px;
+  margin-left: 80px;
 }
 
 main .ab ab-4 {
@@ -515,7 +522,7 @@ main .id .con {
 }
 
 main .id .left {
-  width: 960px;
+  width: 885px;
   height: 535px;
   background-color: #f6b753;
   position: relative;
@@ -586,11 +593,11 @@ main .id .left .op::before {
 }
 
 main .id .right {
-  width: 935px;
+  width: 634px;
   height: 535px;
   background-image: url(../../img/id.png);
   background-repeat: no-repeat;
-  background-size: contain;
+  background-size: 100% 100%;
 }
 
 main .message {
@@ -626,6 +633,7 @@ main .wessage {
   width: 891px;
   margin: 0 auto;
   font-size: 16px;
+  margin-bottom: 120px;
 }
 
 main .wessage span {
@@ -646,18 +654,24 @@ main .wessage .name {
   width: 783px;
   height: 34px;
   color: #ccc;
+  padding-left: 26px;
 }
 
 main .wessage .phone {
   width: 783px;
   height: 34px;
   color: #ccc;
+  padding-left: 26px;
 }
 
-main .wessage .inport {
+main .wessage textarea {
   width: 783px;
   height: 258px;
   color: #ccc;
+  resize: none;
+  padding-left: 26px;
+  padding-top: 10px;
+  font-size: 16px;
 }
 
 main .wessage .btn {
@@ -671,6 +685,7 @@ main .wessage .btn .btn-1 {
   background-color: #000;
   font-size: 16px;
   color: #fff;
+  border: none;
 }
 
 main .wessage .btn .btn-1:hover {
@@ -683,5 +698,6 @@ main .wessage .btn .btn-2 {
   background-color: #ad1515;
   font-size: 16px;
   color: #fff;
+  border: none;
 }
 /*# sourceMappingURL=about.css.map */

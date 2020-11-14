@@ -88,7 +88,7 @@ header .wrepper .content .con-title .sharp {
 
 header .wrepper .content .con-title .en {
   font-size: 13px;
-  color: #fff;
+  color: #d6a6a1;
 }
 
 header .wrepper .content .con-id {
@@ -117,6 +117,7 @@ header .wrepper .content .con-news {
 
 header .wrepper .content .con-news li {
   margin-bottom: 6px;
+  color: #d8a4a3;
 }
 
 header .wrepper .content .con-news li span {
@@ -124,7 +125,7 @@ header .wrepper .content .con-news li span {
 }
 
 header .wrepper .content .con-check {
-  width: 180px;
+  width: 154px;
   height: 40px;
   border-radius: 12px;
   background-color: #fff;
@@ -205,11 +206,9 @@ header .wrepper .icon .taobao:hover .tao {
 }
 
 header .round {
-  position: absolute;
-  bottom: -45px;
-  right: 50%;
-  -webkit-transform: translate(50%, 50%);
-          transform: translate(50%, 50%);
+  width: 216px;
+  height: 10px;
+  margin: 254px auto;
 }
 
 header .round li {
@@ -293,11 +292,14 @@ footer .top ul p {
 footer .top ul li {
   margin-bottom: 14px;
   font-size: 14px;
-  color: #999999;
 }
 
 footer .top ul li a {
   color: #999999;
+}
+
+footer .top ul li a:hover {
+  color: #fff;
 }
 
 footer .bottom {
@@ -319,7 +321,11 @@ main {
 
 main .cont {
   width: 1400px;
-  margin: 0 auto;
+  margin: 0 auto 82px;
+}
+
+main .cont .navy {
+  color: #939393;
 }
 
 main .cont .con-nav {
@@ -415,12 +421,14 @@ main .cont .main ul li {
   border: 1px solid #e5e5e5;
   margin-right: 10px;
   position: relative;
+  background-color: #f3f3f3;
 }
 
 main .cont .main ul li img {
   display: block;
-  width: 454px;
-  height: 290px;
+  width: 190px;
+  height: 190px;
+  margin: 50px auto;
 }
 
 main .cont .main ul li .shady {

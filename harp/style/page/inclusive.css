@@ -88,7 +88,7 @@ header .wrepper .content .con-title .sharp {
 
 header .wrepper .content .con-title .en {
   font-size: 13px;
-  color: #fff;
+  color: #d6a6a1;
 }
 
 header .wrepper .content .con-id {
@@ -117,6 +117,7 @@ header .wrepper .content .con-news {
 
 header .wrepper .content .con-news li {
   margin-bottom: 6px;
+  color: #d8a4a3;
 }
 
 header .wrepper .content .con-news li span {
@@ -124,7 +125,7 @@ header .wrepper .content .con-news li span {
 }
 
 header .wrepper .content .con-check {
-  width: 180px;
+  width: 154px;
   height: 40px;
   border-radius: 12px;
   background-color: #fff;
@@ -205,11 +206,9 @@ header .wrepper .icon .taobao:hover .tao {
 }
 
 header .round {
-  position: absolute;
-  bottom: -45px;
-  right: 50%;
-  -webkit-transform: translate(50%, 50%);
-          transform: translate(50%, 50%);
+  width: 216px;
+  height: 10px;
+  margin: 254px auto;
 }
 
 header .round li {
@@ -293,11 +292,14 @@ footer .top ul p {
 footer .top ul li {
   margin-bottom: 14px;
   font-size: 14px;
-  color: #999999;
 }
 
 footer .top ul li a {
   color: #999999;
+}
+
+footer .top ul li a:hover {
+  color: #fff;
 }
 
 footer .bottom {
@@ -320,6 +322,10 @@ main {
 main .cont {
   width: 1400px;
   margin: 0 auto;
+}
+
+main .cont .navy {
+  color: #939393;
 }
 
 main .cont .con-nav {
@@ -404,6 +410,7 @@ main .cont .treaty {
 
 main .cont .treaty p {
   font-size: 18px;
+  line-height: 38px;
 }
 
 main .cont .treaty span {
@@ -434,7 +441,7 @@ main .cont .table .rt {
 }
 
 main .cont .table .row {
-  line-height: 30px;
+  line-height: 40px;
 }
 
 main .cont .table .row td p {
@@ -447,9 +454,14 @@ main .cont .table .row td .data-1 {
 
 main .cont .table .row td .data-2 {
   margin-left: 234px;
+  margin-bottom: 35px;
+}
+
+main .cont .table .row .row-1 .nail {
+  margin-top: -70px;
 }
 
 main .cont .table .row .row-2 {
-  padding-top: 35px;
+  padding-top: 14px;
 }
 /*# sourceMappingURL=inclusive.css.map */

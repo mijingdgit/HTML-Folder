@@ -12,6 +12,9 @@ main {
         width: 1400px;
         // height:1272px;
         margin: 0 auto;
+        .navy{
+            color: #939393;
+        }
 
         .con-nav {
             width: 100%;
@@ -190,16 +193,18 @@ main {
 
         .con {
             color: #424242;
-            text-align: center;
+            
             line-height: 30px;
             font-weight: 500;
 
             .cn {
+                text-align: center;
                 font-size: 18px;
             }
 
             .en {
                 font-size: 15px;
+                margin-left: 80px;
             }
         }
     }
@@ -218,7 +223,7 @@ main {
         
 
         .left {
-            width: 960px;
+            width: 885px;
             height: 535px;
             background-color: #f6b753;
 
@@ -293,11 +298,11 @@ main {
 
         }
         .right{
-            width:935px ;
+            width:634px ;
             height: 535px;
             background-image: url(../../img/id.png);
             background-repeat: no-repeat;
-            background-size: contain;
+            background-size: 100% 100%;
             
 
         }
@@ -337,6 +342,7 @@ main {
     width: 891px;
     margin: 0 auto;
     font-size: 16px;
+    margin-bottom: 120px;
     span{
         display: inline-block;
         width: 100px;
@@ -352,32 +358,44 @@ main {
         width: 783px;
         height: 34px;
         color: #ccc;
+        padding-left: 26px;
     }
     .phone{
         width: 783px;
         height: 34px;
         color: #ccc;
+        padding-left:26px;
 
     }
 
-    .inport{
+    textarea{
         // float: left;
         width: 783px;
         height: 258px;
         color: #ccc;
+        resize: none;
+        padding-left: 26px;
+        padding-top: 10px;
+        font-size: 16px;
+
+        // padding:5px 10px ;
+
     }
     .btn{
         margin-left: 674px;
         margin-top: 48px;
+        // border: none;
         .btn-1{
             width:102px;
             height: 46px;
             background-color: #000;
             font-size: 16px;
             color: #fff;
+            border: none;
         }
         .btn-1:hover{
             background-color:#ad1515 ;
+
         }
         .btn-2{
             width:102px;
@@ -385,6 +403,7 @@ main {
             background-color: #ad1515;
             font-size: 16px;
             color: #fff;
+            border: none;
         }
 
     }
