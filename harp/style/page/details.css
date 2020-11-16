@@ -619,6 +619,10 @@ main .cont .nav-y {
   margin-top: 68px;
 }
 
+main .cont .nav-y a {
+  color: #999;
+}
+
 main .cont .nav-y .nav-top {
   float: left;
 }
@@ -631,6 +635,10 @@ main .cont .nav-y .nav-top:hover {
   color: #c72a2a;
 }
 
+main .cont .nav-y .nav-top:hover a {
+  color: #c72a2a;
+}
+
 main .cont .nav-y .nav-bottom {
   float: right;
 }
@@ -640,6 +648,10 @@ main .cont .nav-y .nav-bottom .right {
 }
 
 main .cont .nav-y .nav-bottom:hover {
+  color: #c72a2a;
+}
+
+main .cont .nav-y .nav-bottom:hover a {
   color: #c72a2a;
 }
 /*# sourceMappingURL=details.css.map */

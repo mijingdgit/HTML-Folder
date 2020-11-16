@@ -150,7 +150,7 @@ main {
       li .tr-t .icon {
         width: 48px;
         height: 48px;
-        background-image: url(/img/news-1.png);
+        background-image: url(../../img/news-1.png);
         position: absolute;
         top: 0;
         left: 30;
@@ -197,11 +197,7 @@ main {
       font-size: 13px;
       color: #a1a1a1;
       text-align: center;
-      span{
-        // display: block;
-        // margin: 0 50px;
-        // float: left;
-      }
+
       .hov {
         width: 24px;
         height: 22px;
@@ -213,6 +209,9 @@ main {
       }
       .hov .hov2{
         margin-right: 35px;
+      }
+      a{
+        color: #939393;
       }
       .lo:hover{
         color: #ad1515;

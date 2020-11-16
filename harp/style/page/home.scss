@@ -188,18 +188,23 @@ main {
             height: 50px;
             margin: 0 auto;
             border-left: 4px solid #333;
-            text-align: center;
+            // text-align: center;
             margin-bottom: 69px;
+            // margin-left: 1px;
 
             .tr-cn {
                 font-size: 25px;
-                margin-bottom: 12px;
+                margin-bottom: 4px;
+                // text-align: center;
+                margin-left: 15px;
+
 
             }
 
             .tr-en {
                 font-size: 13px;
                 color: #cacaca;
+                margin-left: 15px;
             }
         }
 
@@ -387,7 +392,8 @@ main {
             // border-left: 4px solid #333333;
             margin: 0 auto;
             margin-bottom: 69px;
-            text-align: center;
+            // text-align: center;
+            border-left: 4px solid #000;
             
 
             p {
@@ -435,7 +441,7 @@ main {
             li .tr-t .icon {
               width: 48px;
               height: 48px;
-              background-image: url(/img/news-1.png);
+              background-image: url(../../img/news-1.png);
               position: absolute;
               top: 0;
               left: 30;

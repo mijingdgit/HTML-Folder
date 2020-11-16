@@ -317,7 +317,9 @@ main {
             font-size: 15px;
             color: #999;
             margin-top: 68px;
-
+            a{
+                color: #999 ;
+            }
             .nav-top {
                 float: left;
 
@@ -326,6 +328,10 @@ main {
                 }
             }
             .nav-top:hover{
+                color: #c72a2a;
+                
+            }
+            .nav-top:hover a{
                 color: #c72a2a;
             }
 
@@ -338,6 +344,9 @@ main {
 
             }
             .nav-bottom:hover{
+                color:#c72a2a;
+            }
+            .nav-bottom:hover a{
                 color:#c72a2a;
             }
         }

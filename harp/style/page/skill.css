@@ -437,7 +437,7 @@ main .ac .ac-conter li .tr-t {
 main .ac .ac-conter li .tr-t .icon {
   width: 48px;
   height: 48px;
-  background-image: url(/img/news-1.png);
+  background-image: url(../../img/news-1.png);
   position: absolute;
   top: 0;
   left: 30;
@@ -498,6 +498,10 @@ main .ac .navu .hov .hov1 {
 
 main .ac .navu .hov .hov2 {
   margin-right: 35px;
+}
+
+main .ac .navu a {
+  color: #939393;
 }
 
 main .ac .navu .lo:hover {
