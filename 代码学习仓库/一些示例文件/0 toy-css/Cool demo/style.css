@@ -168,83 +168,83 @@ body {
 }
 
 .bubbles .bubble:nth-child(1) {
-  width: 41px;
-  height: 41px;
+  width: 29px;
+  height: 29px;
   left: -5px;
+  -webkit-animation: scaleBubble 3s 1.2s linear infinite;
+          animation: scaleBubble 3s 1.2s linear infinite;
+}
+
+.bubbles .bubble:nth-child(2) {
+  width: 43px;
+  height: 43px;
+  left: 0px;
+  -webkit-animation: scaleBubble 3s 1.2s linear infinite;
+          animation: scaleBubble 3s 1.2s linear infinite;
+}
+
+.bubbles .bubble:nth-child(3) {
+  width: 24px;
+  height: 24px;
+  left: 5px;
   -webkit-animation: scaleBubble 1s 0.2s linear infinite;
           animation: scaleBubble 1s 0.2s linear infinite;
 }
 
-.bubbles .bubble:nth-child(2) {
-  width: 49px;
-  height: 49px;
-  left: 0px;
-  -webkit-animation: scaleBubble 3s 0.2s linear infinite;
-          animation: scaleBubble 3s 0.2s linear infinite;
-}
-
-.bubbles .bubble:nth-child(3) {
-  width: 20px;
-  height: 20px;
-  left: 5px;
-  -webkit-animation: scaleBubble 3s 0.2s linear infinite;
-          animation: scaleBubble 3s 0.2s linear infinite;
-}
-
 .bubbles .bubble:nth-child(4) {
-  width: 46px;
-  height: 46px;
+  width: 27px;
+  height: 27px;
   left: 10px;
+  -webkit-animation: scaleBubble 2s 0.2s linear infinite;
+          animation: scaleBubble 2s 0.2s linear infinite;
+}
+
+.bubbles .bubble:nth-child(5) {
+  width: 26px;
+  height: 26px;
+  left: 15px;
+  -webkit-animation: scaleBubble 2s 0.2s linear infinite;
+          animation: scaleBubble 2s 0.2s linear infinite;
+}
+
+.bubbles .bubble:nth-child(6) {
+  width: 27px;
+  height: 27px;
+  left: 20px;
   -webkit-animation: scaleBubble 1s 1.2s linear infinite;
           animation: scaleBubble 1s 1.2s linear infinite;
 }
 
-.bubbles .bubble:nth-child(5) {
-  width: 45px;
-  height: 45px;
-  left: 15px;
-  -webkit-animation: scaleBubble 1s 0.2s linear infinite;
-          animation: scaleBubble 1s 0.2s linear infinite;
-}
-
-.bubbles .bubble:nth-child(6) {
-  width: 43px;
-  height: 43px;
-  left: 20px;
-  -webkit-animation: scaleBubble 3s 0.2s linear infinite;
-          animation: scaleBubble 3s 0.2s linear infinite;
-}
-
 .bubbles .bubble:nth-child(7) {
-  width: 43px;
-  height: 43px;
+  width: 38px;
+  height: 38px;
   left: 25px;
   -webkit-animation: scaleBubble 2s 1.2s linear infinite;
           animation: scaleBubble 2s 1.2s linear infinite;
 }
 
 .bubbles .bubble:nth-child(8) {
-  width: 21px;
-  height: 21px;
+  width: 37px;
+  height: 37px;
   left: 30px;
-  -webkit-animation: scaleBubble 3s 0.2s linear infinite;
-          animation: scaleBubble 3s 0.2s linear infinite;
+  -webkit-animation: scaleBubble 2s 0.2s linear infinite;
+          animation: scaleBubble 2s 0.2s linear infinite;
 }
 
 .bubbles .bubble:nth-child(9) {
   width: 41px;
   height: 41px;
   left: 35px;
-  -webkit-animation: scaleBubble 3s 1.2s linear infinite;
-          animation: scaleBubble 3s 1.2s linear infinite;
+  -webkit-animation: scaleBubble 1s 1.2s linear infinite;
+          animation: scaleBubble 1s 1.2s linear infinite;
 }
 
 .bubbles .bubble:nth-child(10) {
-  width: 49px;
-  height: 49px;
+  width: 24px;
+  height: 24px;
   left: 40px;
-  -webkit-animation: scaleBubble 2s 1.2s linear infinite;
-          animation: scaleBubble 2s 1.2s linear infinite;
+  -webkit-animation: scaleBubble 3s 1.2s linear infinite;
+          animation: scaleBubble 3s 1.2s linear infinite;
 }
 
 @-webkit-keyframes scaleBubble {
@@ -520,8 +520,8 @@ body {
 }
 
 .switch .screen .river .flow-container .flow:nth-child(0) {
-  -webkit-animation: flow 2s 0s linear infinite;
-          animation: flow 2s 0s linear infinite;
+  -webkit-animation: flow 3s 0s linear infinite;
+          animation: flow 3s 0s linear infinite;
 }
 
 .switch .screen .river .flow-container .flow:nth-child(1) {
@@ -530,13 +530,13 @@ body {
 }
 
 .switch .screen .river .flow-container .flow:nth-child(2) {
-  -webkit-animation: flow 5s 0.2s linear infinite;
-          animation: flow 5s 0.2s linear infinite;
+  -webkit-animation: flow 4s 0.2s linear infinite;
+          animation: flow 4s 0.2s linear infinite;
 }
 
 .switch .screen .river .flow-container .flow:nth-child(3) {
-  -webkit-animation: flow 5s 0.3s linear infinite;
-          animation: flow 5s 0.3s linear infinite;
+  -webkit-animation: flow 4s 0.3s linear infinite;
+          animation: flow 4s 0.3s linear infinite;
 }
 
 .switch .screen .river .flow-container .flow:nth-child(4) {
@@ -545,18 +545,18 @@ body {
 }
 
 .switch .screen .river .flow-container .flow:nth-child(5) {
-  -webkit-animation: flow 5s 0.5s linear infinite;
-          animation: flow 5s 0.5s linear infinite;
+  -webkit-animation: flow 4s 0.5s linear infinite;
+          animation: flow 4s 0.5s linear infinite;
 }
 
 .switch .screen .river .flow-container .flow:nth-child(6) {
-  -webkit-animation: flow 2s 0.6s linear infinite;
-          animation: flow 2s 0.6s linear infinite;
+  -webkit-animation: flow 5s 0.6s linear infinite;
+          animation: flow 5s 0.6s linear infinite;
 }
 
 .switch .screen .river .flow-container .flow:nth-child(7) {
-  -webkit-animation: flow 4s 0.7s linear infinite;
-          animation: flow 4s 0.7s linear infinite;
+  -webkit-animation: flow 5s 0.7s linear infinite;
+          animation: flow 5s 0.7s linear infinite;
 }
 
 .switch .screen .river .flow-container .flow:nth-child(8) {
@@ -618,33 +618,33 @@ body {
 }
 
 .switch .screen .river .river-row:nth-child(1) > .streak:nth-child(2) {
-  -webkit-animation: streak 3s 0s linear infinite;
-          animation: streak 3s 0s linear infinite;
+  -webkit-animation: streak 2s 1s linear infinite;
+          animation: streak 2s 1s linear infinite;
 }
 
 .switch .screen .river .river-row:nth-child(1) > .streak:nth-child(3) {
-  -webkit-animation: streak 1s 1s linear infinite;
-          animation: streak 1s 1s linear infinite;
+  -webkit-animation: streak 1s 0s linear infinite;
+          animation: streak 1s 0s linear infinite;
 }
 
 .switch .screen .river .river-row:nth-child(1) > .streak:nth-child(4) {
-  -webkit-animation: streak 3s 0s linear infinite;
-          animation: streak 3s 0s linear infinite;
+  -webkit-animation: streak 2s 0s linear infinite;
+          animation: streak 2s 0s linear infinite;
 }
 
 .switch .screen .river .river-row:nth-child(1) > .streak:nth-child(5) {
-  -webkit-animation: streak 1s 1s linear infinite;
-          animation: streak 1s 1s linear infinite;
+  -webkit-animation: streak 1s 0s linear infinite;
+          animation: streak 1s 0s linear infinite;
 }
 
 .switch .screen .river .river-row:nth-child(1) > .streak:nth-child(6) {
-  -webkit-animation: streak 3s 0s linear infinite;
-          animation: streak 3s 0s linear infinite;
+  -webkit-animation: streak 2s 1s linear infinite;
+          animation: streak 2s 1s linear infinite;
 }
 
 .switch .screen .river .river-row:nth-child(1) > .streak:nth-child(7) {
-  -webkit-animation: streak 2s 1s linear infinite;
-          animation: streak 2s 1s linear infinite;
+  -webkit-animation: streak 1s 0s linear infinite;
+          animation: streak 1s 0s linear infinite;
 }
 
 .switch .screen .river .river-row:nth-child(2) {
@@ -652,18 +652,18 @@ body {
 }
 
 .switch .screen .river .river-row:nth-child(2) > .streak:nth-child(1) {
-  -webkit-animation: streak 3s 0s linear infinite;
-          animation: streak 3s 0s linear infinite;
-}
-
-.switch .screen .river .river-row:nth-child(2) > .streak:nth-child(2) {
   -webkit-animation: streak 1s 1s linear infinite;
           animation: streak 1s 1s linear infinite;
 }
 
+.switch .screen .river .river-row:nth-child(2) > .streak:nth-child(2) {
+  -webkit-animation: streak 1s 0s linear infinite;
+          animation: streak 1s 0s linear infinite;
+}
+
 .switch .screen .river .river-row:nth-child(2) > .streak:nth-child(3) {
-  -webkit-animation: streak 3s 1s linear infinite;
-          animation: streak 3s 1s linear infinite;
+  -webkit-animation: streak 1s 1s linear infinite;
+          animation: streak 1s 1s linear infinite;
 }
 
 .switch .screen .river .river-row:nth-child(2) > .streak:nth-child(4) {
@@ -672,18 +672,18 @@ body {
 }
 
 .switch .screen .river .river-row:nth-child(2) > .streak:nth-child(5) {
-  -webkit-animation: streak 2s 0s linear infinite;
-          animation: streak 2s 0s linear infinite;
+  -webkit-animation: streak 2s 1s linear infinite;
+          animation: streak 2s 1s linear infinite;
 }
 
 .switch .screen .river .river-row:nth-child(2) > .streak:nth-child(6) {
-  -webkit-animation: streak 3s 1s linear infinite;
-          animation: streak 3s 1s linear infinite;
+  -webkit-animation: streak 2s 1s linear infinite;
+          animation: streak 2s 1s linear infinite;
 }
 
 .switch .screen .river .river-row:nth-child(2) > .streak:nth-child(7) {
-  -webkit-animation: streak 2s 1s linear infinite;
-          animation: streak 2s 1s linear infinite;
+  -webkit-animation: streak 3s 0s linear infinite;
+          animation: streak 3s 0s linear infinite;
 }
 
 @-webkit-keyframes streak {
@@ -2138,151 +2138,151 @@ body {
 }
 
 .grass-triangles .grass-triangle:nth-child(1) {
-  border-bottom: 18px solid #6ecdbf;
-  border-left: 4px solid transparent;
-  border-right: 14px solid transparent;
-  -webkit-transform: rotate(6deg);
-          transform: rotate(6deg);
-  left: 20px;
-  top: 0px;
-}
-
-.grass-triangles .grass-triangle:nth-child(2) {
-  border-bottom: 16px solid #6ecdbf;
-  border-left: 14px solid transparent;
-  border-right: 7px solid transparent;
-  -webkit-transform: rotate(-40deg);
-          transform: rotate(-40deg);
-  left: 30px;
-  top: 64px;
-}
-
-.grass-triangles .grass-triangle:nth-child(3) {
-  border-bottom: 19px solid #6ecdbf;
-  border-left: 14px solid transparent;
-  border-right: 14px solid transparent;
-  -webkit-transform: rotate(-11deg);
-          transform: rotate(-11deg);
-  left: 50px;
+  border-bottom: 20px solid #6ecdbf;
+  border-left: 10px solid transparent;
+  border-right: 10px solid transparent;
+  -webkit-transform: rotate(-17deg);
+          transform: rotate(-17deg);
+  left: 16px;
   top: 48px;
 }
 
-.grass-triangles .grass-triangle:nth-child(4) {
-  border-bottom: 10px solid #6ecdbf;
-  border-left: 13px solid transparent;
-  border-right: 11px solid transparent;
-  -webkit-transform: rotate(-8deg);
-          transform: rotate(-8deg);
-  left: 10px;
-  top: 14px;
+.grass-triangles .grass-triangle:nth-child(2) {
+  border-bottom: 17px solid #6ecdbf;
+  border-left: 5px solid transparent;
+  border-right: 7px solid transparent;
+  -webkit-transform: rotate(14deg);
+          transform: rotate(14deg);
+  left: 22px;
+  top: 46px;
 }
 
-.grass-triangles .grass-triangle:nth-child(5) {
-  border-bottom: 19px solid #6ecdbf;
-  border-left: 12px solid transparent;
+.grass-triangles .grass-triangle:nth-child(3) {
+  border-bottom: 11px solid #6ecdbf;
+  border-left: 5px solid transparent;
   border-right: 4px solid transparent;
-  -webkit-transform: rotate(-11deg);
-          transform: rotate(-11deg);
-  left: 66px;
-  top: 13px;
+  -webkit-transform: rotate(-15deg);
+          transform: rotate(-15deg);
+  left: 14px;
+  top: 28px;
+}
+
+.grass-triangles .grass-triangle:nth-child(4) {
+  border-bottom: 15px solid #6ecdbf;
+  border-left: 10px solid transparent;
+  border-right: 5px solid transparent;
+  -webkit-transform: rotate(-4deg);
+          transform: rotate(-4deg);
+  left: 22px;
+  top: 39px;
 }
 
 .grass-triangles .grass-triangle:nth-child(5) {
-  border-bottom: 17px solid #ffd286;
+  border-bottom: 18px solid #6ecdbf;
+  border-left: 9px solid transparent;
+  border-right: 9px solid transparent;
+  -webkit-transform: rotate(-25deg);
+          transform: rotate(-25deg);
+  left: 61px;
+  top: 4px;
+}
+
+.grass-triangles .grass-triangle:nth-child(5) {
+  border-bottom: 20px solid #ffd286;
 }
 
 .grass-triangles .grass-triangle:nth-child(6) {
-  border-bottom: 17px solid #6ecdbf;
-  border-left: 6px solid transparent;
-  border-right: 10px solid transparent;
-  -webkit-transform: rotate(-25deg);
-          transform: rotate(-25deg);
-  left: 44px;
-  top: 6px;
+  border-bottom: 13px solid #6ecdbf;
+  border-left: 7px solid transparent;
+  border-right: 6px solid transparent;
+  -webkit-transform: rotate(-11deg);
+          transform: rotate(-11deg);
+  left: 0px;
+  top: 60px;
 }
 
 .grass-triangles .grass-triangle:nth-child(7) {
-  border-bottom: 19px solid #6ecdbf;
-  border-left: 6px solid transparent;
-  border-right: 13px solid transparent;
-  -webkit-transform: rotate(30deg);
-          transform: rotate(30deg);
-  left: 22px;
-  top: 54px;
+  border-bottom: 16px solid #6ecdbf;
+  border-left: 3px solid transparent;
+  border-right: 6px solid transparent;
+  -webkit-transform: rotate(-38deg);
+          transform: rotate(-38deg);
+  left: 7px;
+  top: 5px;
 }
 
 .grass-triangles .grass-triangle:nth-child(8) {
-  border-bottom: 15px solid #6ecdbf;
-  border-left: 14px solid transparent;
-  border-right: 4px solid transparent;
-  -webkit-transform: rotate(2deg);
-          transform: rotate(2deg);
-  left: 57px;
-  top: 62px;
+  border-bottom: 14px solid #6ecdbf;
+  border-left: 12px solid transparent;
+  border-right: 9px solid transparent;
+  -webkit-transform: rotate(-25deg);
+          transform: rotate(-25deg);
+  left: 59px;
+  top: 52px;
 }
 
 .grass-triangles .grass-triangle:nth-child(9) {
-  border-bottom: 11px solid #6ecdbf;
-  border-left: 15px solid transparent;
-  border-right: 6px solid transparent;
-  -webkit-transform: rotate(24deg);
-          transform: rotate(24deg);
-  left: 44px;
-  top: 57px;
+  border-bottom: 14px solid #6ecdbf;
+  border-left: 11px solid transparent;
+  border-right: 7px solid transparent;
+  -webkit-transform: rotate(-18deg);
+          transform: rotate(-18deg);
+  left: 56px;
+  top: 60px;
 }
 
 .grass-triangles .grass-triangle:nth-child(10) {
-  border-bottom: 18px solid #6ecdbf;
-  border-left: 5px solid transparent;
-  border-right: 11px solid transparent;
-  -webkit-transform: rotate(-30deg);
-          transform: rotate(-30deg);
-  left: 58px;
-  top: 0px;
+  border-bottom: 16px solid #6ecdbf;
+  border-left: 12px solid transparent;
+  border-right: 15px solid transparent;
+  -webkit-transform: rotate(-15deg);
+          transform: rotate(-15deg);
+  left: 59px;
+  top: 68px;
 }
 
 .grass-triangles .grass-triangle:nth-child(10) {
-  border-bottom: 19px solid #ffd286;
+  border-bottom: 14px solid #ffd286;
 }
 
 .grass-triangles .grass-triangle:nth-child(11) {
-  border-bottom: 11px solid #6ecdbf;
-  border-left: 12px solid transparent;
-  border-right: 7px solid transparent;
-  -webkit-transform: rotate(-21deg);
-          transform: rotate(-21deg);
-  left: 45px;
-  top: 55px;
+  border-bottom: 14px solid #6ecdbf;
+  border-left: 14px solid transparent;
+  border-right: 11px solid transparent;
+  -webkit-transform: rotate(-22deg);
+          transform: rotate(-22deg);
+  left: 66px;
+  top: 69px;
 }
 
 .grass-triangles .grass-triangle:nth-child(12) {
-  border-bottom: 12px solid #6ecdbf;
-  border-left: 6px solid transparent;
-  border-right: 9px solid transparent;
-  -webkit-transform: rotate(2deg);
-          transform: rotate(2deg);
-  left: 8px;
-  top: 8px;
+  border-bottom: 15px solid #6ecdbf;
+  border-left: 4px solid transparent;
+  border-right: 8px solid transparent;
+  -webkit-transform: rotate(15deg);
+          transform: rotate(15deg);
+  left: 70px;
+  top: 57px;
 }
 
 .grass-triangles .grass-triangle:nth-child(13) {
-  border-bottom: 16px solid #6ecdbf;
-  border-left: 9px solid transparent;
-  border-right: 5px solid transparent;
-  -webkit-transform: rotate(2deg);
-          transform: rotate(2deg);
-  left: 39px;
-  top: 25px;
+  border-bottom: 15px solid #6ecdbf;
+  border-left: 12px solid transparent;
+  border-right: 11px solid transparent;
+  -webkit-transform: rotate(-11deg);
+          transform: rotate(-11deg);
+  left: 49px;
+  top: 53px;
 }
 
 .grass-triangles .grass-triangle:nth-child(14) {
-  border-bottom: 12px solid #6ecdbf;
-  border-left: 9px solid transparent;
-  border-right: 13px solid transparent;
-  -webkit-transform: rotate(-35deg);
-          transform: rotate(-35deg);
-  left: 31px;
-  top: 29px;
+  border-bottom: 20px solid #6ecdbf;
+  border-left: 8px solid transparent;
+  border-right: 15px solid transparent;
+  -webkit-transform: rotate(-11deg);
+          transform: rotate(-11deg);
+  left: 66px;
+  top: 58px;
 }
 
 .triangles {
