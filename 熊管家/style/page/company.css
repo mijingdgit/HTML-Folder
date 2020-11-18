@@ -1,0 +1,118 @@
+@import "../header/_header.css";
+@import "../nav/_nav.css";
+@import "../config/_config.css";
+@import"../footer/_footer.css";
+
+main .imgt img{
+    width: 100%;
+    height: 100%;
+ 
+}
+main .home{
+    width: 100%;
+    margin-top: 20px;
+}
+main .home h6{
+    font-size: 1.5625rem;
+    text-align: center;
+}
+.home .en{
+    width: 21.25rem;
+    height: 2.625rem;
+    margin: 1rem auto;
+    font-size: 0.9375rem;
+    color: #d3d3d3;
+    text-align: center;
+    line-height: 2.625rem;
+    border: 0.0625rem solid #d3d3d3;
+    border-top-left-radius: 1.5625rem;
+    border-bottom-right-radius: 1.5625rem;
+}
+.home .en .box-g{
+    width: 7.4375rem;
+    height: 0;
+    border: 0.125rem solid rgb(20, 146, 104);
+    margin: 0 auto;
+    margin-top: -0.25rem;
+    background-color: #149268;
+}
+.content .news{
+    width: 100%;
+    height: 9.0625rem;
+    color: #333333;
+    font-size: 35px;
+    background-color: #fafafa;
+    border-top:1px solid #eeeeee;
+    border-bottom: 1px solid #eee;
+    padding:32px 21px;
+    box-sizing: border-box;
+}
+.time{
+    font-size: 19px;
+}
+.time span{
+    color: #149268;
+    margin-right: 2px;
+}
+.content .con{
+    font-size: 23px;
+    color: #333333;
+     padding: 30px 21px;
+     box-sizing: border-box;
+}
+.content img {
+    margin-bottom:30px;
+}
+.content .con p{
+    margin-bottom: 50px;
+}
+.btn{
+    width: 100%;
+    padding: 0 20px;
+    padding-bottom: 40px;
+    box-sizing: border-box;
+    font-size:26px;
+    /* text-align: center; */
+    line-height: 60px;
+}
+.btn .bg-1{
+    width: 100%;
+    height: 60px;
+    border-top-left-radius: 25px;
+    border-bottom-right-radius: 25px;
+    background-color: #149268;
+    margin-bottom: 20px;
+    display: flex;
+    /* justify-content: space-around; */
+}
+.top{
+    padding-right: 30px;
+    /* margin-right:16px ; */
+    margin-left: 38px;
+    border-right: 1px solid #fff;
+}
+.top-l{
+    margin-left: 17px;
+}
+.bottom-l{
+    padding-left:17px;
+}
+.bottom{
+    margin-left: 38px;
+    padding-right: 30px;
+    border-right: 1px solid #fff;
+}
+.btn .bg-2{
+    width: 100%;
+    height: 60px;
+    border-top-left-radius: 25px;
+    border-bottom-right-radius: 25px;
+    background-color: #149268;
+    margin-bottom: 20px;
+    display: flex;
+    /* justify-content: space-around; */
+}
+.btn a{
+    color: #fff;
+}
+
