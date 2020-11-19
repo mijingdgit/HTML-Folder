@@ -178,3 +178,32 @@ main .decoration h6{
     color: #666666;
 }
 
+@media screen and (max-width:767px){
+*{
+    font-size: 12px;
+}
+.news{
+    width: 100%;
+    height: 18.75rem;
+    background-color: #f6f6f6;
+   font-size: 1.5rem;
+   padding: 0 1.5rem;
+   box-sizing: border-box;
+    margin-bottom: 3.375rem;
+
+}
+  footer .img img {
+    width: 50%;
+    height: 50%;
+  }
+  footer .nav-y ul {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  footer .copyright p{
+    font-size: 0.75rem;
+  }
+ coration .cap{
+      height: 22.4375;
+  }
+}

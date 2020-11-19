@@ -111,10 +111,8 @@ footer .logo-y {
 }
 
 .nav-y ul li {
-    float: left;
-    width: 7.325rem;
-    /* display: flex; */
-    /* justify-content:center; */
+    /* float: left;
+    width: 7.325rem; */
 }
 
 .nav-y ul li a {

@@ -1,0 +1,196 @@
+@import "../header/_header.css";
+@import "../nav/_nav.css";
+@import "../config/_config.css";
+@import"../footer/_footer.css";
+
+main .imgt img{
+    width: 100%;
+    height: 100%;
+ 
+}
+main .home{
+    width: 100%;
+    margin-top: 1.25rem;
+}
+main .home h6{
+    font-size: 1.5625rem;
+    text-align: center;
+}
+.home .en{
+    width: 21.25rem;
+    height: 2.625rem;
+    margin: 1rem auto;
+    font-size: 0.9375rem;
+    color: #d3d3d3;
+    text-align: center;
+    line-height: 2.625rem;
+    border: 0.0625rem solid #d3d3d3;
+    border-top-left-radius: 1.5625rem;
+    border-bottom-right-radius: 1.5625rem;
+}
+.home .en .box-g{
+    width: 7.4375rem;
+    height: 0;
+    border: 0.125rem solid rgb(20, 146, 104);
+    margin: 0 auto;
+    margin-top: -0.25rem;
+    background-color: #149268;
+}
+.news {
+    margin: 2.5rem 1.25rem;
+}
+
+.news li {
+    display: flex;
+    margin-top: 1.25rem;
+    border-bottom: 0.0625rem solid #999;
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 1.25rem;
+}
+.news-img {
+    width: 12.375rem;
+}
+.news-img img{
+    width: 100%;
+    height: 100%;
+}
+.news-text {
+    height: 8.75rem;
+    width:31rem ;
+    /* background: #999; */
+    display: flex;
+    flex-wrap: wrap;
+    align-content: space-between;
+}
+.news-sh{
+    font-size:1.75rem;
+    color: #333333;
+}
+.news-read {
+    font-size:0.9375rem ;
+    color: #999999;
+}
+main .btn{
+    width: 100%;
+    padding: 0 1.25rem;
+    padding-bottom: 2.5rem;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: space-between;
+    
+}
+main .btn .top{
+    /* float: left; */
+    width: 10.75rem;
+    height: 3.75rem;
+    background-color: #14926a;
+    border-top-left-radius: 1.5625rem;
+    border-bottom-right-radius: 1.5625rem;
+    font-size: 1.625rem;
+    text-align: center;
+    line-height: 3.75rem;
+}
+main .btn .top a{
+    color: #fff;
+}
+main .btn .bottom{
+    /* float: right; */
+    width: 10.75rem;
+    height: 3.75rem;
+    background-color: #14926a;
+    border-top-left-radius: 1.5625rem;
+    border-bottom-right-radius: 1.5625rem;
+    font-size: 1.625rem;
+    text-align: center;
+    line-height: 3.75rem;
+}
+main .btn .bottom a{
+    color: #fff;
+}
+@media screen and (max-width:767px){
+    *{
+        font-size: 12px;
+    }
+    main .home h6{
+        font-size: 0.78125rem;
+        text-align: center;
+    }
+    .home .en{
+        width: 50%;
+        height: 50%;
+        margin: 0.5rem auto;
+        font-size: 0.46875rem;
+        color: #d3d3d3;
+        text-align: center;
+        line-height: 1.3125rem;
+        border: 0.03125rem solid #d3d3d3;
+        border-top-left-radius: 0.78125rem;
+        border-bottom-right-radius:  0.78125rem;
+    }
+    .home .en .box-g{
+        width: 3.71875rem;
+        height: 0;
+        border: 0.0625rem solid rgb(20, 146, 104);
+        margin: 0 auto;
+        margin-top: -0.125rem;
+        background-color: #149268;
+    }
+    .news {
+        margin: 1.25rem 0.625rem;
+    }
+    
+    .news li {
+        display: flex;
+        margin-top: 0.3125rem;
+        border-bottom: 0.03125rem solid #999;
+        display: flex;
+        justify-content: space-between;
+        padding-bottom: 0.625rem;
+    }
+    .news-img {
+        width: 6.1875rem;
+    }
+    .news-img img{
+        width: 100%;
+        height: 100%;
+    }
+    .news-text {
+        height: 3.75rem;
+        width:22rem ;
+        /* background: #999; */
+        display: flex;
+        flex-wrap: wrap;
+        align-content: space-between;
+    }
+    .news-sh{
+        font-size:0.875rem;
+        color: #333333;
+    }
+    .news-read {
+        font-size:0.46875rem ;
+        color: #999999;
+    }
+    main .btn .top{
+        /* float: right; */
+        width: 5.375rem;
+        height: 1.875rem;
+        background-color: #14926a;
+        border-top-left-radius: 0.78125rem;
+        border-bottom-right-radius: 0.78125rem;
+        font-size: 0.8125rem;
+        text-align: center;
+        line-height: 1.875rem;
+    }
+    main .btn .bottom{
+        /* float: right; */
+        width: 5.375rem;
+        height: 1.875rem;
+        background-color: #14926a;
+        border-top-left-radius: 0.78125rem;
+        border-bottom-right-radius: 0.78125rem;
+        font-size: 0.8125rem;
+        text-align: center;
+        line-height: 1.875rem;
+    }
+}
