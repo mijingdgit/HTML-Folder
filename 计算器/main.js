@@ -77,7 +77,7 @@ function getResult(val, secondVal, firstVal) {
           result = Number(firstVal) - Number(secondVal);
           break;
         case "*":
-          console.log(firstVal, secondVal);
+          result = Number(firstVal) * Number(secondVal);
           break;
         case "/":
           result = Number(firstVal) / Number(secondVal);
