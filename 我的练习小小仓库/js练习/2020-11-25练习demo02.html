@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>2020-11-25练习dome02 if条件语句</title>
+</head>
+<style>
+    #box_2 {
+        width: 100px;
+        height: 100px;
+        border: 4px solid skyblue;
+    }
+</style>
+
+<body>
+    <input type="text" id="text1">
+    <div id="box_2"></div>
+    <button id="btn">显示</button>
+</body>
+
+</html>
+<script>
+    var text1 = document.getElementById('text1');
+    var box_2 = document.getElementById('box_2');
+    var btn = document.getElementById('btn');
+    btn.addEventListener("click", function () {
+        // text1.value = box_2.innerHTML;
+        console.log(text1.value);
+
+        // （1）嵌套(从大到小、从小到大)；
+
+        // if (text1.value>=0 && text1.value<=100) {
+        //     if (text1.value > 3) {
+        //         if (text1.value > 12) {
+        //             if (text1.value > 18) {
+        //                 if (text1.value > 30) {
+        //                     if (text1.value > 60) {
+        //                         if (text1.value > 100) {
+
+        //                         } else {
+        //                             box_2.innerHTML = "你是老年"
+        //                         }
+        //                     } else {
+        //                         box.innerHTML = "你是中年"
+        //                     }
+        //                 } else {
+        //                     box_2.innerHTML = "你是青年"
+        //                 }
+        //             } else {
+        //                 box_2.innerHTML = "你是少年"
+        //             }
+        //         } else {
+        //             box_2.innerHTML = "你是儿童"
+        //         }
+        //     } else {
+        //         box_2.innerHTML = "你是婴儿"
+        //     }
+        // } else {
+        //     box_2.innerHTML = "您已去世"
+        // }
+
+
+        // （2）独立分段(从大到小、从小到大)；
+
+        // if(text1.value>100 || text1.value<0){
+        //     box_2.innerHTML = "你已经去世了"
+        // }
+        // if(text1.value>=0 && text1.value<4){
+        //     box_2.innerHTML = "你是婴儿"
+        // }
+        // if(text1.value>=4 && text1.value<12){
+        //     box_2.innerHTML = "你是儿童"
+        // }
+        // if(text1.value>=12 && text1.value<18){
+        //     box_2.innerHTML = "你是少年"
+        // }
+        // if(text1.value>=18 && text1.value<30){
+        //     box_2.innerHTML = "你是青年"
+        // }
+        // if(text1.value>=30 && text1.value<60){
+        //     box_2.innerHTML = "你是中年"
+        // }
+        // if(text1.value>=60 && text1.value<=100){
+        //     box_2.innerHTML = "你是老年"
+        // }
+
+        // （3）复式分段(从大到小、从小到大)；
+
+        // if(text1.value >=0 && text1.value<4){
+        //     box_2.innerHTML = "你是婴儿";
+        // }else if(text1.value>=4&&text1.value<12){
+        //     box_2.innerHTML = "你是儿童";
+        // }else if(text1.value>=12&&text1.value<18){
+        //     box_2.innerHTML = "你是少年";
+        // }else if(text1.value>=18&&text1.value<30){
+        //     box_2.innerHTML = "你是青年";
+        // }else if(text1.value>=30&&text1.value<60){
+        //     box_2.innerHTML = "你是中年";
+        // }else if(text1.value>=60&&text1.value<=100){
+        //     box_2.innerHTML = "你是老年";
+        // }else{
+        //     box_2.innerHTML = "你已经去世了"
+        // }
+
+
+        // （4）三目运算(从大到小、从小到大)。
+
+        text1.value>=0 && text1.value<=100 ?(
+            text1.value>=0 && text1.value<4 ? box_2.innerHTML = "婴儿" :(
+                text1.value>=4 && text1.value<13 ? box_2.innerHTML = "儿童" :(
+                    text1.value>=13 && text1.value<18 ? box_2.innerHTML = "少年" :(
+                        text1.value>=18 && text1.value<30 ? box_2.innerHTML = "青年" :(
+                            text1.value>=30 && text1.value<60? box_2.innerHTML = "中年" : box_2.innerHTML = "老年" 
+                        )
+                    )
+                )
+            )
+        ) :
+         box_2.innerHTML = "你已经去世了"
+            
+       
+
+    })
+</script>
