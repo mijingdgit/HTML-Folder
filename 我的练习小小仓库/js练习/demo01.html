@@ -7,80 +7,96 @@
     <title>1124-demo</title>
 </head>
 <body>
-    <script>
-  
-            1.js Object对象类型
-                对象是由大括号包裹的，由键值对构成的，键值对以逗号分隔的，键与值之间用冒号分隔的数据结构
-                对象的键也被称为（键名，属性，属性名..）,约定：必须使用引号包裹（字符串类型）
-                对象的值也被称为（键值，属性值..），键值可以是任意数据类型
-                ps：扩展：散列值表  引用类型的内存存储方式
-
-            2.对象的基本操作
-                对象属性的读取，对象属性的赋值，对象属性的删除
-                eg:
-                    var peo = {
-                        "pname" :"张明",
-                        "page":18,
-                        "pmarried":false
-                    };
-                    peo.wife = "luna";
-                    console.log(peo);
-                    delete peo.pmarried;
-                    console.log(peo);
-
-                    num = 100;
-                    delete num;
-                    console.log(num);
-
-            3.Number对象
-                var pai = 3.1415926535798;
-                console.log(pai);
-                var result = pai.toFixed(2);
-                console.log(pai);
-                console.log(result);
-
-            4.String对象
-                var str = "hello world! hello Frank!";
-                console.log(str.length);
-                var result = str.split("hello");
-                console.log(str);
-                console.log(result);
-
-            5.Date对象
-                日期对象在内存中如何存储
-                    js中日期对象的存储是存的
-                        【日期距离1970年1月1日0点0分0秒0毫秒 的毫秒数】
-                    但是输出日期对象却是以字符串的形式输出
-                如何创建日期对象
-                    var now = new Date(); //当前日期对象
-                    var tomorrow = new Date("2020,11,25 11:30:25");
-                如何计算日期对象
-                    日期支持加减法?
-                    加法：日期字符串拼接
-                    减法：日期整数相减差值
-                        var now = new Date();
-                        var tomorrow = new Date("2020,11,25 11:30:25");
-                        console.log(tomorrow - now);
-
-            // 6.JSON对象
-            //     JSON：Javascript Object Notation（js对象标记）
-            //     说明：JSON是一种数据表达格式，格式采用了JS中的对象结构
-            //           JSON约定使用双引号包裹的JS对象结构，成为JSON字符串（JSON数据）
-
-                //JSON解析：把JSON字符串转换成js对象
-                var js对象 = JSON.parse(JSON字符串)
-                //JSON封装：把js对象转换成JSON字符串
-                var JSON字符串 = JSON.stringify(js对象)
-
-                var peo = {
-                    "pname" :"张明",
-                    "page":18,
-                    "pmarried":false
-                };
-                var jsonStr = JSON.stringify(peo);
-                console.log(jsonStr);
-                var dataObj = JSON.parse(jsonStr);
-                console.log(dataObj);
-    </script>
+    <!-- <input id="text1" type="text" value="">
+    <input id="text2" type="text" value="">
+    <!-- show()是一个函数名  -->
+    <!-- <button id="btn" onclick="show()">确认</button> -->
 </body>
 </html>
+
+<script>
+    // 一、数字
+//     1、写3个不同类型数据转换为数字
+        
+    //    //字符串转换为数字
+    //     var a = '3.1415926';
+    //     console.log(parseInt(a));//字符串转换为数值类型//整型
+    //     console.log(parseFloat(a));//字符串转换为数值类型//浮点型
+    //     console.log(Number(a));//强制转换
+    //    console.log(a*1);//隐式转换
+
+    //  数值类型转换为数字
+    //   var b = 3.154;
+    //   console.log(parseInt(b));//字符串转换为数值类型//整型
+    //   console.log(parseFloat(b));//字符串转换为数值类型//浮点型
+    //   console.log(Number(b));//强制转换
+    //   console.log(b*1);//隐式转换
+
+    //布尔值类型转数字
+    // var c = true;
+    // console.log(parseInt(c));//字符串转换为数值类型//整型
+    // console.log(parseFloat(c));//字符串转换为数值类型//浮点型
+    // console.log(Number(c));//强制转换
+    // console.log(c*1);//隐式转换
+
+
+
+
+
+
+    // 2、多位小数转指定小数位数
+
+    // var d = 3.141592637358902;
+    // console.log(d.toFixed(2));
+
+        
+
+
+
+// 二、字符串
+//    1.显示字符串长度。
+
+        // var e = 'hello wolde';
+        // console.log(e.length);
+
+
+
+    //    2.“我们的产品全国第一”，根据广告法其中”第一”是禁用词，请将其替换为”**”。
+    // 获取按钮
+        // var btn = document.getElementById('btn');
+        // // 获取文本
+        // var text1 = document.getElementById('text1');
+        // var text2 = document.getElementById('text2');
+        // // btn.addEventListener("click",function(){
+        // //     // text1.value
+        // //     console.log(text1.value);
+        // // })
+        // // click是执行函数的条件，show()是函数名
+        // function show(){
+        //     // console.log(text1.value);
+        //     // replace是替换文本中的敏感词
+        //     text2.value = text1.value.replace("第一","**");
+            
+        // }
+
+
+
+        
+// 3、国家信息安全法规定公布手机号不能显示全部位数，请将一个完整手机号输出为以下格式136****8095。
+// (1)找到星号对应的几位，替换为”****”。
+// (2)找前3位后4位，并使用contact拼接。
+
+    // function formatTel(tel) {
+    //     // substr() 从起始索引号提取字符串中指定数目的字符。
+    //     // substring() 提取字符串中两个指定的索引号之间的字符。
+    //         return tel.substring(0, 3) + "****" + tel.substr(tel.length - 4);
+    //     }
+    //     //测试
+    //     var tel = "12345678911";
+    //     console.log(formatTel(tel));//123*****8911
+
+        
+
+
+
+</script>
