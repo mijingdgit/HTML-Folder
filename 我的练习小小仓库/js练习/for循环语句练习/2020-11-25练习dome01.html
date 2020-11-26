@@ -6,14 +6,17 @@
     <title>2020-11-25练习demo04 for循环九九乘法表</title>
     <!-- 输出九九乘法表 -->
     <style>
-        /* div{
-            margin: 5px;
-        }
+     
         span{
+            /* list-style: none; */
+            width: 50px;
+            /* float: left; */
             padding: 5px;
-            margin: 2px;
-            border: 2px solid pink;
-        } */
+            margin: 5px;
+            /* border: 1px solid #000; */
+            box-sizing: border-box;
+            /* text-align: center; */
+        }
     </style>
 </head>
 <body>
@@ -24,15 +27,14 @@
 <script>
     var box_5 = document.getElementById("box_5");
     for(var i=1; i<10; i++){
-        for(var j=1; j<10; j++){
+        for(var j=1; j<=i; j++){
             // box_5.innerHTML = a,"×",b,"=",a*b;
-            document.write(j+ "*" + i+ "=" + (i*j ) + "<span>&nbsp;</span>");
+            box_5.innerHTML += ("<span>"+j+ "*" + i+ "=" + (i*j ) + "</span>");
 
         // document.write("<br>");
-           
-            
+                       
         } 
         
-        document.write("<br>");
+        box_5.innerHTML += "</br>";
     }
 </script>
