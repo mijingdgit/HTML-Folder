@@ -6,29 +6,61 @@
     <title>2020-11-25练习dome02 for循环</title>
 </head>
 <style>
-    ul{
-        list-style: none;
-        
+    *{
+        margin: 0;
+        padding: 0;
+    }
+    .wrap {
+      flex-direction: column;
+      align-items: center;
+      display: flex; 
+    }
+    .wrap .topdiv a{
+      display: inline-block;
+      background-color: red;
+      width: 36px;
+      height: 36px;
+      border-radius: 50%;
+      margin: 0 3px;
+      background-color: transparent;
+    }
+    .wrap .topdiv span{
+      display: inline-block;
+      width: 36px;
+      height: 36px;
+      background-color: #fff100;
+      border-radius: 50%;
+      margin: 0 3px ;
     }
 </style>
 <body>
 
-    <div id="sanjiao"></div>
+    <div class="wrap"></div>
 </body>
 </html>
 <script>
-    var box = document.getElementById("sanjiao");
+    var wrap = document.querySelector('.wrap');
+    var div = document.createElement('div');
+    div.className = 'topdiv'
     for(var i=1;i<=4;i++){
-        document.write += "<ul></ul>"
-        for(var j=4;j>=1;j--){
+       var inner_div = document.createElement('div');
+       
+        for(var j=0;j<4-i;j++){
+            var space = document.createElement('a')
+            inner_div.appendChild(space);
             
-       document.write += "<li></li>"
+      
         }
-        for(var p=1;p<2*i-1;){
-            document.write += "<li></li>"
+        for(var p=0;p<2*i-1;p++){
+          var span = document.createElement('span');
+          inner_div.appendChild(span);
+
+            
         }
-        
+        div.appendChild(inner_div);
+
     }
+    wrap.appendChild(div);
 
     
 
