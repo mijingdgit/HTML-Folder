@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>轮播demo01 2.0</title>
+  </head>
+  <style>
+    .wrapper {
+      width: 600px;
+      height: 300px;
+      margin: 100px auto;
+      border: 4px solid pink;
+      background-color: skyblue;
+      position: relative;
+    }
+
+    .item {
+      width: 100%;
+      height: 100%;
+    }
+
+    .con {
+      width: 100%;
+      height: 100%;
+      font-size: 50px;
+      text-align: center;
+      line-height: 300px;
+      position: absolute;
+      opacity: 0;
+    }
+
+    .con.curr {
+      opacity: 1;
+    }
+
+    .btn {
+      width: 100px;
+      height: 50px;
+      border-radius: 50%;
+      background: pink;
+      font-size: 20px;
+      text-align: center;
+      line-height: 50px;
+      color: skyblue;
+      position: absolute;
+      top: 45%;
+    }
+
+    .rightbtn {
+      right: 0;
+    }
+
+    .pages {
+      list-style: none;
+      position: absolute;
+      left: 35%;
+      bottom: 15px;
+    }
+
+    .pages-con {
+      width: 15px;
+      height: 15px;
+      border-radius: 50%;
+      background: pink;
+      float: left;
+      margin-right: 10px;
+    }
+
+    .pages-con.curr {
+      background: rgb(235, 213, 173);
+    }
+  </style>
+
+  <body>
+    <div class="wrapper">
+      <div class="item">
+        <div class="con">1</div>
+        <div class="con">2</div>
+        <div class="con">3</div>
+        <div class="con">4</div>
+      </div>
+      <div class="btn leftbtn">上一页</div>
+      <div class="btn rightbtn">下一页</div>
+      <ul class="pages">
+        <li class="pages-con"></li>
+        <li class="pages-con"></li>
+        <li class="pages-con"></li>
+        <li class="pages-con"></li>
+      </ul>
+    </div>
+  </body>
+</html>
+<script>
+  // 框架
+  function $(selector) {
+    let elment = document.querySelectorAll(selector);
+    if (elment.length === 1) {
+      return elment[0];
+    } else {
+      return elment;
+    }
+  }
+  // 获取页面元素
+  var item = $(".con");
+  var leftBtn = $(".leftbtn");
+  var rightBtn = $(".rightbtn");
+  var pages = $(".pages-con");
+  // 当 idx=0 时页面显示为1
+  var idx = 0;
+  // 给第一个页面添加样式将隐藏的显现出来
+  item[0].classList.add("curr");
+  // 给第一个原点添加样式替换背景
+  pages[0].classList.add("curr");
+  // 添加点击事件（左）
+  // leftBtn.onclick = function(){
+  //     item.forEach((items,_idx) => {
+
+  //     });
+  // }  
+  leftBtn.onclick = function () {
+    item.forEach((item, _idx) => {
+      item.classList.remove("curr");
+      pages[_idx].classList.remove("curr");
+    });
+    // 如果idx小于等于0，那么idx=3，否则idx--；
+    if (idx <= 0) {
+      idx = 3;
+    } else {
+      idx--;
+    }
+    item[idx].classList.add("curr");
+    pages[idx].classList.add("curr");
+  };
+  // 添加点击事件（右）
+
+  rightBtn.onclick = function () {
+    item.forEach((items, _idx) => {
+      items.classList.remove("curr");
+      pages[_idx].classList.remove("curr");
+    });
+    // 如果idx小于等于0，那么idx=3，否则idx--；
+    if (idx >= 3) {
+      idx = 0;
+    } else {
+      idx++;
+    }
+    item[idx].classList.add("curr");
+    pages[idx].classList.add("curr");
+  };
+  // 循环绑定
+  for(let i=0; i < pages.length; i++){
+    pages[i].onmouseenter = function(){
+      // 隐藏所有图片
+      item.forEach((items,_idx) => {
+        items.classList.remove("curr");
+        pages[_idx].classList.remove("curr");
+      })
+      idx=i;
+      item[idx].classList.add("curr");
+      pages[idx].classList.add("curr");
+    }
+  }
+  
+</script>

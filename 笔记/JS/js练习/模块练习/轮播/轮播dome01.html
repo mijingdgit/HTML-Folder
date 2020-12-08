@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>轮播dome01</title>
+</head>
+<style>
+    html{
+        margin: 0;
+        padding: 0;
+    }
+    ul li{
+        list-style: none;
+    }
+
+    .wrapper{
+        width: 500px;
+        height: 300px;
+        border: 4px solid skyblue;
+        margin: 100px auto; 
+        position: relative;
+    }
+    .itme{
+        width: 100%;
+        height: 100%;
+        position: relative;
+    }
+    .it-con{
+        width: 100%;
+        height: 100%;
+        font-size: 50px;
+        text-align: center;
+        line-height: 300px;
+        color: pink;
+        position: absolute;
+        opacity: 0;
+    }
+    .it-con.curre{
+        opacity: 1;
+    }
+
+    .btn{
+        width: 100px;
+        height: 50px;
+        border-radius: 30px;
+        background:palegreen;
+        text-align: center;
+        line-height: 50px;
+        font-size: 20px;
+        color: green;
+        position: absolute;
+        top: 45%;
+
+    }
+    .btn-right{
+        right: 0;
+        
+    }
+    .pages{
+        position: absolute;
+        left: 30%;
+        bottom: 10px;
+    }
+    .pages-bd{
+        width: 20px;
+        height: 20px;
+        border-radius: 50%;
+        background-color: slateblue;
+        float: left;
+        margin-right: 10px;
+        
+    }
+    .pages-bd.curre{
+        background-color: plum;
+    }
+    
+    
+</style>
+<body>
+    <div class="wrapper">
+        <div class="itme">
+            <div class="it-con">1</div>
+            <div class="it-con">2</div>
+            <div class="it-con">3</div>
+            <div class="it-con">4</div>
+        </div>
+        <div class="btn btn-left">上一页</div>
+        <div class="btn btn-right">下一页</div>
+        <ul class="pages">
+            <li class="pages-bd";></li>
+            <li class="pages-bd";></li>
+            <li class="pages-bd";></li>
+            <li class="pages-bd";></li>
+        </ul>
+    </div>
+</body>
+</html>
+<script>
+    // js框架获取页面元素
+    function $(selector){
+        let elment = document.querySelectorAll(selector);
+        if(elment.length===1){
+            return elment[0];
+        }else{
+            return elment;
+        }
+    }
+    // 获取页面元素
+    var con = $(".it-con");
+    var page = $(".pages-bd");
+    var leftBtn = $(".btn-left"); 
+    var rightBtn = $(".btn-right"); 
+    //idx是表示当前加载的轮播图片序号，默认是0，表示第一张
+    var idx = 0;
+    con[0].classList.add("curre");
+    page[0].classList.add("curre");
+// 右点击事件
+rightBtn.onclick = function(){
+    // forEach() 方法用于调用数组的每个元素，并将元素传递给回调函数。
+    con.forEach((cons,_idx) => {
+        cons.classList.remove("curre");
+        page[_idx].classList.remove("curre");
+    });
+    // idx要发生的改变
+    if(idx >= 3){
+        idx = 0;
+    }else{
+        idx++;
+    }
+    // 当前这张图片的下一张图片显示
+    con[idx].classList.add("curre");
+    page[idx].classList.add("curre");
+}
+// 左点击事件
+leftBtn.onclick = function(){
+    con.forEach((cons,_idx) => {
+        cons.classList.remove("curre");
+        page[_idx].classList.remove("curre");
+    });
+    // idx要发生的改变
+    if(idx <= 0){
+        idx = 3;
+       idx--;
+    }
+    // 当前这张图片的下一张图片显示
+    con[idx].classList.add("curre");
+    page[idx].classList.add("curre");
+}
+// 循环绑定
+for(let i = 0; i<page.length; i++){
+    // onmouseenter 事件在鼠标指针移动到元素上时触发。
+    page[i].onmouseenter = function(){
+        // 所有图片隐藏
+        items.forEach((item,_idx) => {
+            item.classList.remove("curre");
+            page[_idx].classList.remove("curre");
+        })
+        // idx当前页面加载序号与点击的page序号对应
+        idx = i;
+        // 当前进入的序号，对应的idx的图片和分页分别添加
+        con[idx].classList.add("curre");
+        page[idx].classList.add("curre");
+
+    }
+}
+
+</script>

@@ -753,7 +753,154 @@ console.log(sum); */
 //  = prompt('请输入您要存入的钱数:');//存钱
 // var draw = prompt('请输入您要取走的钱数:');//取钱
 
+// function grtSum(sum1,sum2){
+// console.log(getSum);
+// }
+// getSum(1,4)
 
+
+// function getArrMax(arr){
+//   var max = arr[0];
+//   for(var i = 1;i <= arr.length; i++){
+//     if(arr[i]>max){
+//       max = arr[i];
+//     }
+//   }
+//   return max;
+// }
+// console.log(getArrMax([5,23,96,88,15,0,10,5]));
+
+
+// 冒泡排序
+
+// var arr = [5,8,6,7,3,9,4,1,2];
+// for(var i = 0; i <= arr.length-1; i++){
+//   for(var j = 0; j <= arr.length - i - 1; j++){
+//     if(arr[j] < arr[j+1]){
+//       var temp = arr[j];
+//       arr[j] = arr[j+1];
+//       arr[j+1] = temp;
+//     }
+//   }
+// }
+// alert(arr);
+
+
+
+// 封装
+// function reverse(arr){
+//   var newArr = [];
+//   for(var i = arr.length-1;i >= 0; i--){
+//     newArr[newArr.length]=arr[i];
+//   }
+//   return newArr;
+// }
+
+// function sort(arr){
+//   for(i = 0; i <= arr.length-1; i++){
+//     for(j = 0; j <= arr.lengt - i - 1; j++){
+//       if(arr[j] > arr[j+1]){
+//         var temp = arr[j];
+//         arr[j] = arr[j+1];
+//         arr[j+1] = arr[j];
+
+//       }
+//     }
+//   }
+//   return arr;
+// }
+// var arr1 = sort([1,45,8,94]);
+// console.log(arr1);
+
+
+
+
+// 用户输入年份，输出当前年份2月份的天数
+
+
+// function fun1(){
+// console.log('你是猪');
+//  fun2();
+// }
+
+// function fun2(){
+// console.log('不，我不是');
+// }
+// fun1();
+
+  // var num1 = 20;
+  // function sum(){
+//   num2 = 50;
+ // }
+// console.log(num1);
+ 
+
+// f1();
+// console.log(c);
+// console.log(b);
+// console.log(a);
+// function f1(){
+//   var a = b = c = 9;
+// //相当于 var a = 9; b = 9; c = 9;    b和c直接赋值没有var声明当全局变量看
+// // 集体声明 var a = 9,b = 9，C = 9;
+
+
+//   console.log(a);
+//   console.log(b);
+//   console.log(c);
+// }
+//相当于如下代码
+// function f1(){
+//   var a;
+//   a = b = c = 9;
+//   console.log(a);
+//   console.log(b);
+//   console.log(c);
+// }
+// f1();
+// console.log(c);
+// console.log(b);
+// console.log(a);
+
+// var dog = {
+//   uname:'可可',
+//   type:'阿拉斯加',
+//   age:5+'岁',
+//   color:'棕红色',
+//   bark:function(){
+//     console.log('汪汪');
+//   },
+//   showFilm:function(){
+//     console.log('演电影');
+//   }
+// }
+// dog.bark();
+// console.log(dog['uname']);
+
+
+// var ren = new Object();
+// ren.uname = '鸣人';
+// ren.sex = '男';
+// ren.age = 19;
+// ren.skill = function(){
+//   console.log('影分身术');
+// }
+// console.log(ren.uname);
+
+
+// function Star(uname,type,blood){
+//   this.name = uname;
+//   this.type = type;
+//   this.blood = blood;
+//   this.attack = function(attack){
+//     console.log(attack);
+//   }
+// }
+// var lp = new Star('廉颇','坦克','500血量');
+// var hy = new Star('后羿','射手','500血量');
+
+// console.log(lp.name);
+// console.log(hy[blood]);
 
 
 

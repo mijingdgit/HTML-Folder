@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>智能搜索</title>
+</head>
+<body>
+    <div class="capacity">
+        <input type="text" class="text1" placeholder="请输入您想要查询的内容">
+        <button>搜索</button>
+        <ul class="con"></ul>  
+        <div class="ability"></div>
+    </div>
+</body>
+</html>
+<script>
+    var arr = [
+            "让世界共享创新经济成果 四中全会",
+            "开放的中国，梦想的模样",
+            "新华社评论员：顺应时代潮流，坚持改革开放",
+            "驻港公署：美方倒行逆施将遭到全体中国人民迎头痛击",
+            "特朗普签署“香港人权与民主法案” 港府回应：强烈反对",
+            "严禁设置人为障碍！工信部组织503人监督携号转网",
+            "国家安全部最后一位红军战士、硬核“国安爷爷”走了",
+            "浙江卫视回应高以翔去世：深感遗憾，愿意承担责任",
+            "高以翔猝死：你是否也吃了“虐星”节目的人血馒头？",
+            "四川女子网上邂逅“高富帅” 两月被骗70余万元",
+            "四川省人民医院原党委常委、纪委书记马昌礼被查",
+    ];
+    // 获取页面元素
+    var znInput = document.querySelector('.text1');
+    var znUl = document.querySelector('.con');
+    // 添加事件监听准备触发操作
+    znInput.oninput = function(){
+        // 在ul,li中添加内容之前应该清理空内容
+        znUl.innerHTML = "";
+        // 获取用户输入的内容，处理关键字
+        // 1.去除前后多余的空格(trim())
+        var keys = this.value;
+        keys = keys.trim();
+        // 2.去除文本中间多余的空格 保留一个作为间隔；-1是找不到其中i的值是就是-1;
+        for(var i = keys.indexOf("  ");i != -1; i = keys.indexOf(" ")){
+            keys = keys.replace("  "," ");
+        }
+        // 判空操作 判断当前input内容是是否为空
+        if(znInput.value == ''){
+            znUl.innerHTML = '';
+            return; 
+        }
+        // 3.切分关键字   split() 方法用于把一个字符串分割成字符串数组。
+        // separator	必需。字符串或正则表达式，从该参数指定的地方分割 stringObject。
+        var keysArr = keys.split(" ");
+        // 4.关键字去重  对用户输入的内容进行去重
+
+        // var newkeyArr = [...new Set(keysArr)];
+        // var newkeysArr = [];
+
+        keysArr = Array.from(new Set(keysArr));
+
+        // for(let j = 0;j < keysArr.length; j++){
+        //     if(newkeysArr.indexOf(keysArr[j]) == -1){
+        //        // push() 方法可向数组的末尾添加一个或多个元素，并返回新的长度。
+        //         newkeysArr.push(keysArr[j]);
+        //     }
+        // }
+
+        //5.根据关键字数组，在数据源中搜索匹配数据
+            //约定：数据源中的数据必须包含所有关键字，才能展示
+                //5.1 遍历数据源，每一个数据源都要完成匹配
+
+            //ps:resultArr数组存放了所有满足匹配条件的数据
+        var resultArr = [];
+                //5.2 每一条数据都要匹配【关键字个数】次数
+                // 只要有一个关键字不包含，此条信息就不显示
+                
+                //ps：假设每一个条目都包含了所有关键字
+                //只要有一个关键字不包含，就把flag变成false
+
+
+    }
+</script>

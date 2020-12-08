@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>轮播dome02(1.0)</title>
+  </head>
+  <style>
+    html {
+      margin: 0;
+      padding: 0;
+    }
+    .warpper {
+      width: 200px;
+      height: 100px;
+      margin: 100px auto;
+      border: 1px solid red;
+      position: relative;
+    }
+    .items {
+      /* width: 100%; */
+      height: 100px;
+      /* margin-left: -200px; */
+      transition: all 0.5s;
+    }
+    .con {
+      float: left;
+      width: 200px;
+      height: 100px;
+      /* margin: 100px auto; */
+      border: 1px solid #000;
+      text-align: center;
+      line-height: 100px;
+
+      opacity: 0;
+    }
+    .con.curr {
+      opacity: 1;
+    }
+    .btn {
+      width: 20px;
+      height: 20px;
+      border-radius: 50%;
+      font-size: 2px;
+      text-align: center;
+      line-height: 20px;
+      border: 2px solid pink;
+      position: absolute;
+      top: 40%;
+    }
+    .btnright {
+      right: 0;
+    }
+  </style>
+  <body>
+    <div class="warpper">
+      <div class="items">
+        <div class="con">1</div>
+        <div class="con">2</div>
+        <div class="con">3</div>
+        <div class="con">4</div>
+      </div>
+      <div class="btn btnleft">左</div>
+      <div class="btn btnright">右</div>
+    </div>
+  </body>
+</html>
+<script>
+  function $(selector) {
+    let elment = document.querySelectorAll(selector);
+    if (elment.length === 1) {
+      return elment[0];
+    } else {
+      return elment;
+    }
+  }
+  var leftBtn = $(".btnleft");
+  var rightBtn = $(".btnright");
+  var cons = $(".con");
+  //   console.log(items);
+  var idx = 1;
+  var items = $(".items");
+  //   console.log(items.offsetWidth);
+  cons[0].classList.add("curr");
+  items.style.width = cons[0].offsetWidth * cons.length + "px";
+  leftBtn.onclick = function () {
+    // console.log(idx);
+    // items.style.marginLeft = "100px"
+    // console.log(cons[idx].offsetWidth);
+
+    cons.forEach((cons, idx) => {
+      cons.classList.remove("curr");
+    });
+
+    if (idx >= 0 && idx < cons.length) {
+      items.style.marginLeft = -cons[idx].offsetWidth * idx + "px";
+      // items.style.marginLeft = "100px";
+    } else if (idx >= cons.length) {
+      idx = 0;
+      items.style.marginLeft = -cons[idx].offsetWidth * idx + "px";
+    }
+    idx++;
+    
+  };
+
+  rightBtn.onclick = function () {
+    // console.log(idx);
+    // items.style.marginLeft = "100px"
+    // console.log(cons[idx].offsetWidth);
+
+    cons.forEach((cons, idx) => {
+      cons.classList.remove("curr");
+    });
+
+    if (idx <= 3) {
+      items.style.marginLeft = -cons[idx].offsetWidth * idx + "px";
+      // items.style.marginLeft = "100px";
+    } else if (idx >= cons.length) {
+      idx = 0;
+      items.style.marginLeft = -cons[idx].offsetWidth * idx + "px";
+    }
+    idx++;
+  };
+  // console.log(box.style.width);
+</script>
