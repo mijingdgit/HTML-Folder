@@ -21,7 +21,7 @@
       /* width: 100%; */
       height: 100px;
       /* margin-left: -200px; */
-      transition: all 0.5s;
+      transition: all 0.2s;
     }
     .con {
       float: left;
@@ -32,7 +32,7 @@
       text-align: center;
       line-height: 100px;
 
-      opacity: 0;
+      /* opacity: 0; */
     }
     .con.curr {
       opacity: 1;
@@ -78,48 +78,44 @@
   var rightBtn = $(".btnright");
   var cons = $(".con");
   //   console.log(items);
-  var idx = 1;
   var items = $(".items");
-  //   console.log(items.offsetWidth);
+  var idx = 0;
+
   cons[0].classList.add("curr");
+
   items.style.width = cons[0].offsetWidth * cons.length + "px";
   leftBtn.onclick = function () {
-    // console.log(idx);
-    // items.style.marginLeft = "100px"
-    // console.log(cons[idx].offsetWidth);
-
     cons.forEach((cons, idx) => {
       cons.classList.remove("curr");
     });
 
-    if (idx >= 0 && idx < cons.length) {
-      items.style.marginLeft = -cons[idx].offsetWidth * idx + "px";
-      // items.style.marginLeft = "100px";
-    } else if (idx >= cons.length) {
-      idx = 0;
-      items.style.marginLeft = -cons[idx].offsetWidth * idx + "px";
-    }
-    idx++;
-    
-  };
+if(idx == 0){
+  idx = cons.length-1;
+}else if(idx > 0){
+  idx--;
+}
+items.style.marginLeft = -cons[idx].offsetWidth*idx+"px";
+cons[idx].classList.add("curr");
 
-  rightBtn.onclick = function () {
-    // console.log(idx);
-    // items.style.marginLeft = "100px"
-    // console.log(cons[idx].offsetWidth);
 
+  }      
+console.log(rightBtn);
+rightBtn.onclick = function () {
     cons.forEach((cons, idx) => {
       cons.classList.remove("curr");
     });
 
-    if (idx <= 3) {
-      items.style.marginLeft = -cons[idx].offsetWidth * idx + "px";
-      // items.style.marginLeft = "100px";
-    } else if (idx >= cons.length) {
-      idx = 0;
-      items.style.marginLeft = -cons[idx].offsetWidth * idx + "px";
-    }
-    idx++;
-  };
-  // console.log(box.style.width);
+if(idx == cons.length-1){
+  idx = 0;
+}else if(idx < cons.length){
+  idx++;
+}else{
+  idx = 0;
+}
+items.style.marginLeft = -cons[idx].offsetWidth*idx+"px";
+cons[idx].classList.add("curr");
+
+
+  }      
+  
 </script>
