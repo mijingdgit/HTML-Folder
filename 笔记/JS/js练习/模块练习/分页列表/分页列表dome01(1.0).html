@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>分页列表dome01(1.0)</title>
+  </head>
+  <style>
+    /* 2.css给页面添加样式    1)设宽高，设弹性布局*/
+    .ul {
+      margin: 0;
+      padding: 0;
+    }
+    .content {
+      margin-top: 100px;
+    }
+    .content2 {
+      margin-top: -18px;
+      display: none;
+    }
+    .content2.curr {
+      display: block;
+    }
+    .con {
+      width: 500px;
+      height: 40px;
+      list-style: none;
+      border-bottom: 1px solid #ccc;
+      font-size: 16px;
+      line-height: 40px;
+      display: flex;
+      justify-content: space-between;
+      overflow: hidden;
+      margin: 0 auto;
+    }
+    .con:hover {
+      background: #f1f1f1;
+    }
+    .btn {
+      width: 150px;
+      height: 40px;
+      margin: 50px auto;
+      font-size: 18px;
+      text-align: center;
+      color: #fff;
+      line-height: 40px;
+      background: orangered;
+    }
+    .btn.curr {
+      width: 300px;
+      height: 40px;
+      margin: 50px auto;
+      font-size: 18px;
+      text-align: center;
+      color: #000;
+      line-height: 40px;
+      background: pink;
+    }
+  </style>
+  <body>
+    <!-- 1.html构建列表框架   1）建立一个ul li列表 2)在里面添加内容 -->
+    <div class="warpper">
+      <ul class="content">
+        <li class="con">
+          <span>新闻列表1</span>
+          <span>2018-11-23</span>
+        </li>
+        <li class="con">
+          <span>新闻列表2</span>
+          <span>2018-11-23</span>
+        </li>
+        <li class="con">
+          <span>新闻列表3</span>
+          <span>2018-11-23</span>
+        </li>
+        <li class="con">
+          <span>新闻列表4</span>
+          <span>2018-11-23</span>
+        </li>
+      </ul>
+      <ul class="content2">
+        <li class="con">
+          <span>新闻列表5</span>
+          <span>2018-11-23</span>
+        </li>
+        <li class="con">
+          <span>新闻列表6</span>
+          <span>2018-11-23</span>
+        </li>
+        <li class="con">
+          <span>新闻列表7</span>
+          <span>2018-11-23</span>
+        </li>
+        <li class="con">
+          <span>新闻列表8</span>
+          <span>2018-11-23</span>
+        </li>
+      </ul>
+      <div class="btn"></div>
+    </div>
+  </body>
+</html>
+<script>
+  // 3.js操作页面中元素
+  // 1）获取页面节点
+  function $(selestor) {
+    let element = document.querySelectorAll(selestor);
+    if (element.length === 1) {
+      return element[0];
+    } else {
+      return element;
+    }
+  }
+
+  var con = $(".con");
+  var btn = $(".btn");
+  var content2 = $(".content2");
+  // 初始化页面
+  btn.innerHTML = "加载更多";
+
+  // 2）添加点击事件onclick
+  btn.onclick = function () {
+    // p1当点击按钮时增加了一组列表
+    content2.classList.add("curr");
+    // p2当再次点击时就显示没有更多数据
+    if (con.length >= 8) {
+      btn.innerHTML = "没有更多数据了";
+      btn.classList.add("curr");
+    }
+  }
+</script>
