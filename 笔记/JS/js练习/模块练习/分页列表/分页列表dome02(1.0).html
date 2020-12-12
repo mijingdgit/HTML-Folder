@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>分页列表dome01(1.0)</title>
+  </head>
+  <style>
+    html {
+      margin: 0;
+      padding: 0;
+    }
+    ul li {
+      list-style: none;
+    }
+    .warpper {
+      /* width: 500px; */
+      margin: 100px auto;
+      /* border: 1px solid #000; */
+    }
+    li {
+      width: 500px;
+      height: 50px;
+      margin: 0 auto;
+      border-bottom: 1px solid #ccc;
+      display: flex;
+      justify-content: space-between;
+    }
+    li:hover {
+      background: #f1f1f1;
+    }
+    .btn {
+      width: 150px;
+      margin: 50px auto;
+      background: orangered;
+      font-size: 24px;
+      text-align: center;
+      line-height: 40px;
+      color: #fff;
+    }
+    .btn.curr {
+      width: 200px;
+      background: rgb(255, 136, 156);
+      color: #000;
+    }
+  </style>
+  <body>
+    <div class="warpper">
+      <ul class="content"></ul>
+      <div class="btn">加载更多</div>
+    </div>
+    <script src="./js/jQure.js"></script>
+    <script src="./js/data.js"></script>
+    <script>
+      var ul = $(".content");
+      var btn = $(".btn");
+      var pages = 4;
+      // var idx = 1;
+      var idx = localStorage.getItem("idx");
+      var temp = idx * pages;
+      var cons = data.length;
+      if (!idx) {
+        idx = localStorage.setItem("idx", 1);
+      }
+      // idx = localStorage.getItem("idx");
+
+      for (let i = 0; i < temp; i++) {
+        var li = $C("li");
+        var p1 = $C("p");
+        var p2 = $C("p");
+        p1.innerHTML = data[i].title;
+        p2.innerHTML = data[i].time;
+        ul.appendChild(li);
+        li.appendChild(p1);
+        li.appendChild(p2);
+      }
+
+      btn.onclick = function () {
+        ul.innerHTML = "";
+        idx++;
+        localStorage.setItem("idx", idx);
+        var temp = pages *idx ;
+        if (temp > cons) {
+          temp = cons;
+          btn.innerHTML = "没有更多数据加载";
+          btn.classList.add("curr");
+          
+
+        }
+
+        for (let i = 0; i < temp; i++) {
+          var li = $C("li");
+          var p1 = $C("p");
+          var p2 = $C("p");
+          p1.innerHTML = data[i].title;
+          p2.innerHTML = data[i].time;
+          ul.appendChild(li);
+          li.appendChild(p1);
+          li.appendChild(p2);
+        }
+      };
+    </script>
+  </body>
+</html>
