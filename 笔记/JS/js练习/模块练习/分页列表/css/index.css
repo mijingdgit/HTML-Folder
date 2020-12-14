@@ -1,0 +1,24 @@
+a { 
+    color: #333;
+     text-decoration: none;
+    }
+.newsbox { 
+    width: 400px;
+     padding: 20px;
+      margin: 0 auto;
+       text-align: center;
+        background: #f9f9f9;
+    }
+.list { margin: 0 auto; list-style: none; padding: 0;}
+.list li { padding: 10px 0; line-height: 160%; text-align: left; border-bottom: 1px #f1f1f1 solid;}
+.list li .date { float: right;}
+.list li .delbtn { display: none; float: right; color: #f30; cursor: pointer;}
+.list li:hover { background: #f1f1f1;}
+.list li:hover .delbtn { display: inline-block;}
+.page { text-align: center; margin: 30px auto; display: inline-block;}
+.page a { float: left; border: 1px #f60 solid; color: #f60; text-align: center; padding: 0 .5em; min-width: 1em; font-size: 12px; line-height: 2em; margin-left: -1px; position: relative; z-index: 3;}
+.page a:first-child { border-top-left-radius: 3px; border-bottom-left-radius: 3px;}
+.page a:last-child { border-top-right-radius: 3px; border-bottom-right-radius: 3px;}
+.page a.curr { background: #f60; border-color: #f60; color: #fff;}
+.page a.nolink { color: #ddd; border-color: #ddd; cursor: no-drop; z-index: 1;}
+.page a:hover:not(.nolink) { background: #f30; border-color: #f30; color: #fff; z-index: 4;}
