@@ -3,28 +3,139 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>分页加载</title>
-    <link rel="stylesheet" href="./css/index.css" />
+    <title>分页列表</title>
   </head>
+  <link rel="stylesheet" href="./css/分页dome3.css" />
   <body>
-    <div class="newsbox">
-      <ul class="list" id="list"></ul>
-      <div class="page" id="page">
-        <!-- <a class="nolink">首页</a>
-            <a class="nolink">上一页</a>
-            <a class="curr" href="">1</a>
-            <a href="">2</a>
-            <a href="">3</a>
-            <a href="">4</a>
-            <a href="">下一页</a>
-            <a href="">尾页</a> -->
+    <div class="warpper">
+      <!-- 列表容器 -->
+      <ul class="cons">
+        <!-- <li class="con">
+            <p class="p1">新闻列表1</p>
+            <p class="p2">2020-12-14</p>
+          </li>
+          <li class="con">
+            <p class="p1">新闻列表2</p>
+            <p class="p2">2020-12-14</p>
+          </li>
+          <li class="con">
+            <p class="p1">新闻列表3</p>
+            <p class="p2">2020-12-14</p>
+          </li>
+          <li class="con">
+            <p class="p1">新闻列表4</p>
+            <p class="p2">2020-12-14</p>
+          </li> -->
+      </ul>
+      <!-- 按钮容器 -->
+      <div class="pages">
+        <!-- <a href="#" class="nolink" >首页</a>
+        <a href="#" class="nolink">上一页</a>
+        <a href="#" class="curr">1</a>
+        <a href="#" >2</a>
+        <a href="#" >3</a>
+        <a href="#" >4</a>
+        <a href="#" >下一页</a>
+        <a href="#" >尾页</a> -->
       </div>
     </div>
-
     <script src="./js/data.js"></script>
-    <script src="./js/jQure.js"></script>
+    <!-- <script src="./js/jQure.js"></script> -->
     <script>
+      // 获取列表容器
+      var listBox = document.querySelector(".cons");
+      // 获取按钮容器
+      var btnBox = document.querySelector(".pages");
+      // 获取数据源
+      var database = data.listArr;
+      // 数据长度
+      var dataLength = database.length;
+      // 当前页数
+      var page = 1;
+      // 每一页的总条数
+      var items = 4;
+      //总页数
+      var pagesNum = Math.ceil(dataLength / items);
+      // 页面初始化 
       
+      // var argArgs = getUrlArgs();
+
+      showList(page);
+      showPage(page);
+     
+      // 列表初始
+      function showList(_page) {
+        var sIdx = (_page - 1) * items;
+        var eIdx = page * items;
+        for (let i = sIdx; i < eIdx && dataLength; i++) {
+          let li = document.createElement("li");
+          li.innerHTML = ` 
+        <li class="con">
+            <p class="p1">${database[i].title}</p>
+            <p class="p2">${database[i].time}</p>
+       </li>
+       `;
+          listBox.appendChild(li);
+        }
+      }
+     
+    // 显示页码
+     function showPage(_page) {
+      // 首页1
+      // 上一页pagesIdx-1
+      if(_page == 1){
+      btnBox.innerHTML = 
+      `<a href="#" class="nolink" >首页</a>
+      <a href="#" class="nolink">上一页</a>`;
+}else{
+  btnBox.innerHTML +=  `<a href="?pageIdx=1" >首页</a>
+      <a href="?pageIdx=${_page-1}">上一页</a>`
+}
+      // 中间的页码
+      for (let i = 1; i <= pagesNum; i++) {
+        if(i == _page){
+        let btn = document.createElement("a");
+        btn.innerHTML = `${i}`;
+        btn.classList.add("curr");
+        btnBox.appendChild(btn);
+      }else{
+        let btn = document.createElement("a");
+        btn.innerHTML = `${i}`;
+        btnBox.appendChild(btn);
+      }
+      }
+
+      // 尾页
+      // 下一页pagesIdx+1
+      if(_page == pagesNum){
+      btnBox.innerHTML += `
+      <a href="#" class="nolink">下一页</a>
+      <a href="#" class="nolink">尾页</a>
+      `;
+    }else{
+      btnBox.innerHTML += `
+      <a href="?page=${_page+1}">下一页</a>
+      <a href="?page=${pagesNum}">尾页</a>
+      `;
+    }
+    }
+    // function getUrlArgs() {
+    //   var url = window.location.href;
+      
+    //   url = url.split("?")[1];
+    //   url = url.split("=");
+      
+    //   // var obj = {
+    //   //   "":""
+    //   // };
+    //   // obj.index = 1;
+    //   // obj. = url[1];
+    //   obj.page = url[1];
+    //   // obj.page = url[0];
+    //   console.log(obj.index);
+    // }
+
+    // ?index=2&perNum=4
     </script>
   </body>
 </html>

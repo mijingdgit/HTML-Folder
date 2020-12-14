@@ -1,14 +1,5 @@
-a { 
-    color: #333;
-     text-decoration: none;
-    }
-.newsbox { 
-    width: 400px;
-     padding: 20px;
-      margin: 0 auto;
-       text-align: center;
-        background: #f9f9f9;
-    }
+a { color: #333; text-decoration: none;}
+.newsbox { width: 400px; padding: 20px; margin: 0 auto; text-align: center; background: #f9f9f9;}
 .list { margin: 0 auto; list-style: none; padding: 0;}
 .list li { padding: 10px 0; line-height: 160%; text-align: left; border-bottom: 1px #f1f1f1 solid;}
 .list li .date { float: right;}
