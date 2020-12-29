@@ -1,0 +1,28 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+ul li {
+  list-style: none;
+}
+header {
+  width: 1920px;
+  height: 898px;
+  background-image: url(/img/banner.jpg);
+  background-size: cover;
+  /* background-repeat: no-repeat, repeat; */
+}
+.nav {
+  width: 1400px;
+  height: 58px;
+  margin: 0 auto;
+  padding-top: 35px;
+}
+.nav img {
+  float: left;
+}
+
+.nav-1 {
+  float: right;
+  margin-right: 45px;
+}

@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ajax</title>
+  </head>
+  <body>
+    <style>
+      div,
+      ul,
+      li,
+      span {
+        margin: 0;
+        padding: 0;
+        /* border: 1px solid #000; */
+      }
+      .content {
+        width: 1200px;
+        border: 1px solid #000;
+        margin: 50px auto;
+      }
+      .conter {
+        display: flex;
+        justify-content: space-between;
+      }
+      .cont {
+        /* float: left; */
+        width: 600px;
+        height: 50px;
+        margin: 10px;
+        font-size: 25px;
+        /* color: #fff; */
+        text-align: center;
+        line-height: 50px;
+
+        background: springgreen;
+      }
+      .cont:hover {
+        background: greenyellow;
+      }
+      a {
+        text-decoration: none;
+        color: #fff;
+      }
+      .list {
+        width: 100%;
+        list-style: none;
+      }
+      li {
+        display: flex;
+        justify-content: space-between;
+        font-size: 20px;
+        text-align: center;
+        margin-top: 10px;
+      }
+      li span {
+        display: inline-block;
+        width: 300px;
+        background: pink;
+        border: 1px solid #000;
+      }
+    </style>
+
+    <div class="content">
+      <div class="conter">
+        <div class="cont meat"><a href="#">荤菜</a></div>
+        <div class="cont vagetable"><a href="#">素菜</a></div>
+      </div>
+      <ul class="list">
+        <!-- <li class="title">
+          <span>id</span>
+          <span>菜品</span>
+          <span>菜价</span>
+        </li>
+        <li class="con">
+          <span>1</span>
+          <span>麻辣牛肉</span>
+          <span>35</span>
+        </li>
+        <li class="con">
+          <span>2</span>
+          <span>大刀毛肚</span>
+          <span>20</span>
+        </li>
+        <li class="con">
+          <span>3</span>
+          <span>虾滑</span>
+          <span>25</span>
+        </li>
+        <li class="con">
+          <span>4</span>
+          <span>蟹肉</span>
+          <span>25</span>
+        </li>
+        <li class="con">
+          <span>5</span>
+          <span>脆皮肠</span>
+          <span>15</span>
+        </li>
+        <li class="con">
+          <span>6</span>
+          <span>千层肚</span>
+          <span>25</span>
+        </li> -->
+      </ul>
+    </div>
+    <script>
+      let btn1 = document.querySelector(".meat");
+
+      let btn2 = document.querySelector(".vagetable");
+      let listDOM = document.querySelector(".list");
+      let html = "";
+      let xmlHttp = new XMLHttpRequest();
+      xmlHttp.open("get", "./dataSQL02.php", true);
+      xmlHttp.send();
+      xmlHttp.onreadystatechange = function () {
+        if (this.readyState == 4 && this.status == 200) {
+          html = this.responseText;
+          html = JSON.parse(html);
+          // console.log(html);
+
+          for (let i = 0; i < html.length; i++) {
+            let rou = html[i].category;
+            // console.log(rou);
+          }
+          btn1.onclick = function () {
+              console.log(rou);
+              for (let i = 0; i < html.length; i++) {
+                tmp += `<li class="con"><span>${html[i].id}</span><span>${html[i].cname}</span><span>${html[i].cprice}</span></li>`;
+              }
+              listDOM.innerHTML = tmp;
+            
+          };
+        }
+      };
+    </script>
+
+    <!-- <style>
+      ul {
+        list-style: none;
+      }
+      span {
+        display: inline-block;
+        text-align: center;
+        width: 200px;
+        border: 1px solid #000;
+        margin: 10px;
+      }
+    </style> -->
+    <!-- <ul class="list"></ul> -->
+    <!-- <script>
+      let listDOM = document.querySelector(".list");
+      let html = "";
+      let xmlHttp = new XMLHttpRequest();
+      xmlHttp.open("get", "./dataSQL.php", true);
+      xmlHttp.send();
+      xmlHttp.onreadystatechange = function () {
+        if (this.readyState === 4 && this.status === 200) {
+          console.log(JSON.parse(this.response));
+          html = this.responseText;
+          html = JSON.parse(html);
+          let tmp = "";
+          // tmp = `<li><span>序号</span><span>菜品</span><span>单价</span><span>数量</span></li>`;
+          for (let i = 0; i < html.length; i++) {
+            tmp += `<li><span>${html[i].id}</span><span>${html[i].name}</span><span>${html[i].pice}</span><span>${html[i].sum}</span></li>`;
+          }
+          listDOM.innerHTML = tmp;
+          console.log(html);
+        }
+      };
+
+      // 5、ajax访问dataapi.php，输出一个产品列表，data里面的数据是数组通过json_encode转换后的JSON字符串，数据格式{“state”:true,”code”:1,”msg”:”成功”,”data”:[...]}。
+      // html = this.responseText;
+      // // console.log(html);
+      // html = JSON.parse(html);
+      // console.log(html);
+      // let tmp = "";
+      // tmp = `<li><span>品牌</span><span>价格</span></li>`
+      // for(let i = 0;i<html.data.length;i++){
+      //   tmp += `<li><span>${html.data[i].title}</span><span>${html.data[i].price}</span></li>`
+      // }
+      // listDOM.innerHTML = tmp;
+
+      //4、 ajax访问datalist.php，输出一个产品列表，data里面的数据是数组通过json_encode转换后的JSON字符串，数据格式[{“title”:”耐克520鞋”,”price”:430,...},{“title”:”卡宾红色格子外套”,”price”:1350,...},...]。
+
+      // html = this.responseText;
+      // console.log(html);
+      // html = JSON.parse(html);
+      // console.log(html);
+      // let tmp = "";
+      // tmp = `<li><span>品牌</span><span>价格</span></li>`
+
+      // for(let i = 0;i<html.length;i++){
+      //   tmp += `<li><span>${html[i].title}</span><span>${html[i].price}</span></li>`
+      // }
+      // listDOM.innerHTML = tmp;
+
+      //   }
+      // }
+    </script> -->
+  </body>
+</html>

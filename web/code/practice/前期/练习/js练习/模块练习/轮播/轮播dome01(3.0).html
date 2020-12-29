@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>轮播dome01(3.0)</title>
+  </head>
+  <style>
+    html {
+      margin: 0;
+      padding: 0;
+    }
+    .warpper {
+      width: 900px;
+      height: 600px;
+      /* background-color: rgb(220, 255, 167); */
+      /* border: 2px solid green; */
+      margin: 100px auto;
+      position: relative;
+    }
+    .items {
+      width: 100%;
+      height: 100%;
+    }
+    .con {
+      width: 100%;
+      height: 100%;
+      font-size: 200px;
+      text-align: center;
+      line-height: 600px;
+      position: absolute;
+      opacity: 0;
+    }
+    .con img{
+        width: 100%;
+        height: 100%;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+    .con.curr {
+      opacity: 1;
+    }
+    .btn {
+      width: 100px;
+      height: 100px;
+      background-color: pink;
+      color: powderblue;
+      font-size: 24px;
+      text-align: center;
+      line-height: 100px;
+      border-radius: 50%;
+      position: absolute;
+      top: 40%;
+    }
+    .rightbtn {
+      right: 0;
+    }
+    .pages {
+      list-style: none;
+      position: absolute;
+      left: 40%;
+      bottom: 20px;
+    }
+    .pages-con {
+      width: 20px;
+      height: 20px;
+      border-radius: 50%;
+      background-color: slateblue;
+      float: left;
+      margin-right: 20px;
+    }
+    .pages-con.curr {
+      background-color: skyblue;
+    }
+  </style>
+  <body>
+    <div class="warpper">
+      <div class="items">
+        <div class="con"><img src="./img/pic1.jpeg" alt=""></div>
+        <div class="con"><img src="./img/pic2.jpeg" alt=""></div>
+        <div class="con"><img src="./img/pic3.jpeg" alt=""></div>
+        <div class="con"><img src="./img/pic4.jpeg" alt=""></div>
+      </div>
+      <div class="btn leftbtn">上一页</div>
+      <div class="btn rightbtn">下一页</div>
+      <ul class="pages">
+        <li class="pages-con"></li>
+        <li class="pages-con"></li>
+        <li class="pages-con"></li>
+        <li class="pages-con"></li>
+      </ul>
+    </div>
+  </body>
+</html>
+<script>
+  // 框架
+  function $(selector) {
+    let elment = document.querySelectorAll(selector);
+    if (elment.length === 1) {
+      return elment[0];
+    } else {
+      return elment;
+    }
+  }
+  // 获取页面元素
+  var items = $(".con");
+  var pages = $(".pages-con");
+  var leftBtn = $(".leftbtn");
+  var rightBtn = $(".rightbtn");
+  // idx是页面序号idx等于0页面为第一个页面
+  var idx = 0;
+  // 显示第一个页面元素
+  items[0].classList.add("curr");
+  pages[0].classList.add("curr");
+
+  // 添加点击事件左
+  leftBtn.onclick = function () {
+    items.forEach((items, _idx) => {
+      items.classList.remove("curr");
+      pages[_idx].classList.remove("curr");
+    });
+    if (idx <= 0) {
+      idx = 3;
+    } else {
+      idx--;
+    }
+    items[idx].classList.add("curr");
+    pages[idx].classList.add("curr");
+  };
+  // 添加点击事件右
+
+  rightBtn.onclick = function () {
+    items.forEach((items, _idx) => {
+      items.classList.remove("curr");
+      pages[_idx].classList.remove("curr");
+    });
+    if (idx >= 3) {
+      idx = 0;
+    } else {
+      idx++;
+    }
+    items[idx].classList.add("curr");
+    pages[idx].classList.add("curr");
+  };
+//   // 循环绑定
+//   for (let i = 0; i < pages.length; i++) {
+//     pages[i].onmouseenter = function () {
+//       items.forEach((item, _idx) => {
+//         item.classList.remove("curr");
+//         pages[_idx].classList.remove("curr");
+//       });
+//       idx = i;
+//       items[idx].classList.add("curr");
+//       pages[idx].classList.add("curr");
+//     };
+//   }
+
+
+// 循环绑定
+for(let i = 0; i<pages.length; i++){
+    pages[i].onmouseenter = function(){
+        items.forEach((itme,_idx)=>{
+            itme.classList.remove("curr");
+            pages[_idx].classList.remove("curr");
+        })
+        idx = i;
+        items[idx].classList.add("curr");
+        pages[idx].classList.add("curr");
+        
+    }
+}
+
+
+
+
+
+
+</script>

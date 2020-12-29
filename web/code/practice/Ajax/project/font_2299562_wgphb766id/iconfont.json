@@ -1,0 +1,23 @@
+{
+  "id": "2299562",
+  "name": "dome3",
+  "font_family": "iconfont",
+  "css_prefix_text": "icon-",
+  "description": "",
+  "glyphs": [
+    {
+      "icon_id": "13654584",
+      "name": "闭眼",
+      "font_class": "biyan",
+      "unicode": "e600",
+      "unicode_decimal": 58880
+    },
+    {
+      "icon_id": "374857",
+      "name": "眼睛",
+      "font_class": "yanjing",
+      "unicode": "e69c",
+      "unicode_decimal": 59036
+    }
+  ]
+}

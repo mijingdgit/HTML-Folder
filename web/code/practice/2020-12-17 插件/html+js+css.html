@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>html+js+js生成css</title>
+  </head>
+  <body>
+    <style>
+      body {
+        background: pink;
+      }
+      .btn {
+        width: 100px;
+        height: 50px;
+        background: #ccc;
+        margin: 100px auto;
+        border-radius: 25px;
+      }
+      .anniu {
+        display: inline-block;
+        width: 50px;
+        height: 50px;
+        background: #f1f1f1;
+        border-radius: 50%;
+      }
+    </style>
+    <div class="btn btn1">
+        <span class="anniu anniu1"></span>
+    </div>
+      <div class="btn btn2">
+        <span class="anniu anniu2"></span>
+      </div>
+    <script>
+
+        // var btn = document.querySelector(".btn");
+        // console.log(btn.childNodes[1]);
+
+        // var body = document.querySelector("body");
+        // console.log(body.childNodes);
+
+    var btn = new  BtnCut(".btn1",".anniu1");
+    var btn1 = new BtnCut(".btn2",".anniu2");
+    function BtnCut(selector,selector1) {
+        this.btn = document.querySelector(selector);
+        this.anniu = document.querySelector(selector1)
+        this.body = document.querySelector("body");
+        console.log(this.anniu)
+    // var btn = document.querySelector(".btn");
+    // var anniu = document.querySelector(".anniu");
+    // var body = document.querySelector("body");
+        this.flag = true;
+        this.show= function(){
+            if (this.flag) {
+            this.flag = false;
+            this.btn.style.background = "yellowgreen";
+            this.anniu.style.float = "right";
+            this.body.style.background = "skyblue";
+            } else {
+            this.flag = true;
+            this.btn.style.background = "#ccc";
+            this.anniu.style.float = "left";
+            this.body.style.background = "pink";
+            }
+        };
+
+      this.btn.addEventListener("click",this.show.bind(this))
+    }
+     
+    </script>
+  </body>
+</html>

@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ajax</title>
+  </head>
+  <body>
+    <ul class="list"></ul>
+    <script>
+      var listDOM = document.querySelector(".list");
+      // console.log(listDOM);
+      var html = "";
+      //浏览器提供的接口  XMLHttpRequest()系统自带
+      var xmlHttp = new XMLHttpRequest();
+      var slip = {"404":"你好，你的页面走丢了，快去找管理员找找吧!","-1":"你好，你还没有登录哦，不要偷偷进来呦"}
+
+      // 请求打开一个链接的方式  true是否异步 打开链接的方式 请求数据内容
+      //   xmlhttp.open("get获取网址", "api_app.text要获取的页面",true异步);
+      // 异步：当点击页面其中一个内容时只请求这个内容中数据，其他不影响
+      // 同步：当点击页面其中一个内容时请求这个页面中所有数据内容，只能等请求完了才能操作容易卡死
+      xmlHttp.open("get", "data01.html", true);
+      
+      // 规范
+      xmlHttp.setRequestHeader(
+        "Content-Type",
+        "application/x-www-form-urlencoded"
+      );
+      
+      //   发送
+      xmlHttp.send();
+      // 在这之前是不会输出的是看不到的；
+
+      //通过onreadystatechange来监听Ajax的最终完成情况
+      // 有两个属性表示状态readyState和status
+      xmlHttp.onreadystatechange = function () {
+        // 1.readyState
+        // 在AJAX实际运行当中，对于访问XMLHttpRequest（XHR）时
+        // 并不是一次完成的，而是分别经历了多种状态后取得的结果，
+        // 对于这种状态在AJAX中共有5种，分别是。
+
+        // 0 - (未初始化)还没有调用send()方法
+        // 1 - (载入)已调用send()方法，正在发送请求
+        // 2 - (载入完成)send()方法执行完成，
+        // 3 - (交互)正在解析响应内容
+        // 4 - (完成)响应内容解析完成，可以在客户端调用了
+        //前两个是看不到的只有2,3,4才能看到到
+        // console.log(this.readyState);
+        //2.status
+        // status是XMLHttpRequest对象的一个属性，表示响应的HTTP状态码
+        // console.log(this.status);
+        // console.log( this.responseText);
+
+        // 如果页面完成解析 readyState=4，并且交易成功status=200
+        if(this.readyState === 4 && this.status === 200){
+          // this.responseText，为data页面
+          html = this.responseText;
+          console.log(html);
+          // 转换为JSON对象的形式
+          html = JSON.parse(html);
+          console.log(html);
+          let tmp= "";
+          // 如果status为success就执行以下操作
+          if(html.status === "success"){
+            for(let i = 0; i < html.data.length; i++){
+              tmp += `<li><a href="">${html.data[i].title}</a><span>${html.data[i].time}</span></li>`
+            }
+          }else{
+            if(html.code == -1){
+             window.location.href = "login.html";
+            }
+            if(html.code == 404){
+              tmp = `<li>${slip[404]}</li>`;
+            }else{
+              tmp = `<li>${html.msg}</li>`;
+
+            }
+          }
+          listDOM.innerHTML = tmp;
+        }
+      }
+    </script>
+  </body>
+</html>

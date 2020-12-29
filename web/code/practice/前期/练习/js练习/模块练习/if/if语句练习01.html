@@ -1,0 +1,193 @@
+ <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS 条件作业</title>
+</head>
+<style>
+    .text2{
+        width: 200px;
+    }
+</style>
+<body>
+    
+ <!-- 1、输入框，输入0~24的数字，点击按钮在ID为box1的盒子里面输出早上、中午、下午、晚上中的一个。 -->
+<input type="text" class="text1">
+<input type="text" class="text2">
+<button class="btn1">显示</button>
+<script>
+    var text1 = document.querySelector('.text1');
+    var text2 = document.querySelector('.text2');
+    var btn1 = document.querySelector('.btn1');
+    btn1.addEventListener("click",function(){
+/* // （1）嵌套(从大到小、从小到大)
+      if(text1.value >= 0 && text1.value <= 24){
+          if(text1.value > 11){
+            if(text1.value > 14){
+                if(text1.value > 19){
+                    if(text1.value > 25){
+
+                    }else{
+                        text2.value = '晚上';
+                        }
+                }else{
+                    text2.value = '下午';
+                    }
+            }else{
+                text2.value = '中午';
+                }
+          }else{
+              text2.value = '上午';
+          }
+      }else{
+          text2.value = '不在时区内';
+      } */
+
+
+
+
+/* // （2）独立分段(从大到小、从小到大)；
+
+    if(text1.value < 0 || text1.value > 24){
+
+    text2.value = '你好，您输入的时间不在时区内';
+    }
+    if(text1.value >= 0 && text1.value < 11){
+
+        text2.value = '你好现在是上午'+text1.value+'时';
+    }
+    if(text1.value >= 11 && text1.value < 14){
+        text2.value = '你好现在是中午'+text1.value+'时';
+    }
+    if(text1.value >= 14 && text1.value < 19){
+        text2.value = '你好现在是下午'+text1.value+'时';
+    }
+    if(text1.value >= 19 && text1.value <= 24){
+        text2.value = '你好现在是晚上'+text1.value+'时';
+    } */
+
+
+
+
+/* // （3）复式分段(从大到小、从小到大)；
+    if(text1.value >= 0 && text1.value < 11){
+
+        text2.value = '你好现在是上午'+text1.value+'时';
+
+    }else if(text1.value >= 11 && text1.value < 14){
+
+        text2.value = '你好现在是中午'+text1.value+'时';
+
+    }else if(text1.value >= 14 && text1.value < 19){
+
+        text2.value = '你好现在是下午'+text1.value+'时';
+
+    }else if(text1.value >= 19 && text1.value <= 24){
+
+        text2.value = '你好现在是晚上'+text1.value+'时';
+
+    }else{
+
+    text2.value = '你好，您输入的时间不在时区内';
+
+    } */
+
+
+/* // （4）三目运算(从大到小、从小到大)。
+ text1.value >= 0 && text1.value <= 24 ? (
+     text1.value >= 0 && text1.value < 11 ? text2.value = '早上':(
+         text1.value >= 11 && text1.value < 14 ? text2.value = '中午':(
+             text1.value >= 14 && text1.value < 19 ?text2.value = '下午':(
+                 text2.value = '晚上'
+              
+             )
+         )
+        )
+     ):
+    text2.value = '不在时区内'; */
+
+
+
+//  2、输入框，输入0~110的数字，点击按钮在ID为box2的盒子里面输出婴儿、儿童、少年、青年、中年、老年中的一个。
+//分别使用下列方式完成 -->
+//  （1）嵌套(从大到小、从小到大)； 
+if(text1.value >= 0 && text1.value <= 110){
+    if(text1.value > 3){
+        if(text1.value > 13){
+            if(text1.value > 24){
+                if(text1.value > 61){
+                    if(text1.value > 111){
+
+                            }else{
+
+                            text2.value = '老年';
+                                
+                            }
+                        }else{
+
+                        text2.value = '中年';
+                            
+                        }
+                }else{
+
+                text2.value = '青年';
+                    
+                }
+        }else{
+
+        text2.value = '儿童';
+            
+        }
+    }else{
+        text2.value = '婴儿';
+    }
+}else{
+    text2.value = '你已经去世';
+}
+
+//  （2）独立分段(从大到小、从小到大)；
+
+
+
+//  （3）复式分段(从大到小、从小到大)；
+
+
+//  （4）三目运算(从大到小、从小到大)。 
+
+
+ })
+
+
+</script>
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- 3、产品打折活动。
+界面有四组表单分别对应4种优惠：
+每组表单内容：一个价格输入框，一个数量输入框，一个最终价显示框，一个按钮。
+优惠一：满300元且满3件，减50;
+优惠二：满500元或满3件，打七折;
+优惠三：满1000元打七折,如果满5件再减100;
+优惠四：满5件打八折,如果满1500元再减300; -->
+
+
+
+
+
+
+<!-- 4、扩展一
+已知 new Date().getHours() 能获取到当前时间的小时数字。
+[例如早上11:20 获取到的就是11, 下午18:22获取到的就是18]。
+点击按钮，把当前小时定位到早上(0-11)、中午(11-13)、下午(13-18)、晚上(18-24)中的一个输出到界面。 -->
+</body>
+</html>

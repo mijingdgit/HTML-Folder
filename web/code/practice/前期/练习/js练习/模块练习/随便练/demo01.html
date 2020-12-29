@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>随便练1</title>
+    <style>
+        .con {
+            width: 300px;
+            border: 4px solid pink;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="con"></div>
+</body>
+
+</html>
+<script>
+    // 1.封装自己的数学对象
+    /*     var myMath = {
+            PI :3.141592653,
+            max: function(){
+                var max = arguments[0];
+                for (var i = 1;i <arguments.length; i++){
+                    if(arguments[i] >max){
+                        max = arguments[i];
+                    }
+                }
+                return max;
+            } ,
+            min: function(){
+                var min = arguments[0];
+                for(var j = 1; j < arguments.length; j++  ){
+                    if(arguments[j] < min){
+                        min = arguments[j];
+                    }
+                }
+                return min;
+            }
+        }
+    console.log(myMath.PI);
+    console.log(myMath.max(1,9,10,5));
+    console.log(myMath.min(1,8,2,6,4));
+     */
+
+
+    //  2.绝对值方法
+    // console.log(Math.abs(1)); // 1
+    // console.log(Math.abs(-1)); // 1
+    // // 特殊方法
+    // console.log(Math.abs('-1')); // 隐式转换 会把字符串型 ‘-1’转换为数字型1
+    // console.log(Math.abs('pink'));// 不能转换为数字型返回为NAN
+
+    // // 3.三个取整方法
+    // console.log(Math.round(-1.7));
+
+    // 4.猜数字
+    // function getRandom(min, max) {
+    //     return Math.floor(Math.random() * (max - min + 1)) + min;
+    // }
+    // var random = getRandom(1,10);
+    // while(true){//死循环
+    //     var num = prompt('你来猜？输入1~10之间的一个数字');
+    //     if(num > random){
+    //         alert('大了哦，请重新输入');
+    //     }else if(num < random){
+    //         alert('小了哟，请重新输入');
+    //     }else{
+    //         alert('恭喜你答对了');
+    //         break;
+    //     }
+    // }
+
+
+    /* //要求用户猜1~50之间的一个数字但是只有10次猜的机会
+
+    // var random1 = getRandom(1,50);
+    // console.log(random1);
+    //     for(var i = 1; i <= 10; i++){
+    //         var num = prompt('你来猜？输入1~50之间的一个数字，只有十次机会哦');
+    //         if(i == 10){
+    //             alert('您好，您的次数已经用完');
+    //             break;
+    //         }
+    //         if(num > random1){
+    //             alert('猜大了哦，再试试');
+    //         }else if(num < random1){
+    //             alert('猜小了哦，再试试');
+    //         } else{
+    //             alert('恭喜你，猜对了');
+    //             break;
+    //         }
+
+
+    //     }    */
+
+    // 倒计时
+//     var con = document.querySelector('.con');
+
+//     function countDown(time) {
+//         var nowTime = +new Date(); //当前毫秒数
+//         console.log(nowTime);
+//         var inputTime = +new Date(time); //返回用户输入的毫秒数
+//         var times = (inputTime - nowTime) / 1000; //times是剩余事件总秒数
+//         var d = parseInt(times / 60 / 60 / 24); //天
+//         d = d < 10 ? '0' + d : d;
+//         var h = parseInt(times / 60 / 60 % 24); //时
+//         h = h < 10 ? '0' + h : h;
+//         var m = parseInt(times / 60 % 60); //分
+//         m = m < 10 ? '0' + m : m;
+//         var s = parseInt(times % 60); //秒
+//         s = s < 10 ? '0' + s : s;
+//         return d + '天' + h + '时' + m + '分' + s + '秒';
+//     }
+
+//     con.innerHTML = countDown('2021-3-15 18:00:00');
+//     var date = new Date();
+//     console.log(date);
+
+
+// var arr = [13,3,8,4,11,1,2];
+// arr.reverse();
+// console.log(arr);
+
+
+// 数组去重
+// function unique(arr){
+// var newArr = [];
+// for(var i = 0; i < arr.length; i++){
+//     if(newArr.indexOf(arr[i]) === -1){
+//         newArr.push(arr[i]);
+//     }
+// }
+//  return newArr;
+// }
+// var demo = unique(['a','c','a','b','v','b','y','c']);
+// console.log(demo);
+
+
+
+
+</script>

@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        .box{
+            float: left;
+            width: 400px;
+            height: 400px;
+            border: 1px solid black;
+            background: url("./img/zh_CN-f3f750bc-0436-476e-8ec8-dd77e9f42054.jpeg") no-repeat;
+            background-size: 100% 100%;
+            position: relative;
+        }
+        .fangdajing{
+            width: 100px;
+            height: 100px;
+            background: rgba(150, 0, 150, .5);
+            display: none;
+            position: absolute;
+        }
+        .chuanghu{
+            float: left;
+            width: 400px;
+            height: 400px;
+            border: 1px solid black;
+            display: none;
+            position: relative;
+            overflow: hidden;
+        }
+        img{
+            width: 800px;
+            height: 800px;
+            position: absolute;
+        }
+
+    </style>
+    <div class="box">
+        <div class="fangdajing"></div>
+    </div>
+    <div class="chuanghu">
+        <img src="./img/zh_CN-f3f750bc-0436-476e-8ec8-dd77e9f42054.jpeg" alt="">
+    </div>
+    <script>
+        function $(selName){
+            return document.querySelector(selName);
+        }        
+        var box = $(".box");
+        var fangdajing = $(".fangdajing");
+        var chuanghu = $(".chuanghu");
+        var img = $("img");
+
+        // 触发
+        box.onmouseenter = function (){
+            fangdajing.style.display = "block";
+            chuanghu.style.display = "block";
+        };
+        box.onmouseleave = function (){
+            fangdajing.style.display = "none";
+            chuanghu.style.display = "none";
+        };
+        box.onmousemove = function (){
+            //获取鼠标坐标
+            var mouseX = event.clientX;
+            var mouseY = event.clientY;
+
+            if(mouseX < 50){ mouseX = 50; }
+            if(mouseX > 350){ mouseX = 350; }
+            if(mouseY < 50){ mouseY = 50; }
+            if(mouseY > 350){ mouseY = 350; }
+
+            fangdajing.style.left = mouseX - 50 + 'px';
+            fangdajing.style.top = mouseY - 50 + 'px';
+            img.style.left = (mouseX * (-2))+50 + "px";
+            img.style.top = (mouseY * (-2))+50+ "px";
+            console.log(mouseX, mouseY);
+        };
+
+    </script>
+</body>
+</html>

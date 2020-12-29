@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <style>
+        body,
+        ul,
+        li,
+        a,
+        span {
+          margin: 0;
+          padding: 0;
+        }
+        .list {
+          list-style: none;
+          margin: 100px auto;
+          width: 500px;
+          border: 1px solid pink;
+          /* overflow: hidden; */
+        }
+        li {
+          width: 100%;
+  
+          padding: 10px 30px;
+          margin: 10px 0;
+          box-sizing: border-box;
+          border-bottom: 1px solid #ccc;
+          display: flex;
+          justify-content: space-between;
+        }
+        a {
+          text-decoration: none;
+          color: #000;
+        }
+      </style>
+    <!-- 2、ajax访问datalist.txt, 输出一个新闻列表。datalist.txt里面只有JSON数据。 -->
+    <ul class="list"></ul>
+    <script>
+        // 获取页面节点
+        let listDOM = document.querySelector(".list");
+        // let html = "";
+        // 创建一个对象系统自带
+        let xmlHtp = new XMLHttpRequest();
+        // 请求一个打开链接的方式
+        xmlHtp.open("get","datalist.txt",true);
+        // 发送链接
+        xmlHtp.send();
+        // 监听完成
+        xmlHtp.onreadystatechange = function(){
+            // 监听完成两种状态 
+            if(this.readyState == 4 && this.status == 200){
+                let html = this.responseText;
+                html = JSON.parse(html);
+                // console.log(html);
+                let tmp = "";
+                for(let i=0;i<html.data.length;i++){
+                    tmp += `<li><a href = "">${html.data[i].title}</a><span>${html.data[i].time}<span></li>`
+                }
+                listDOM.innerHTML = tmp;
+            
+            }
+        }
+
+    </script>
+  </body>
+</html>

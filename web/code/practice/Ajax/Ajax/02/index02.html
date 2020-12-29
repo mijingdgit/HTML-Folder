@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ajax</title>
+</head>
+<body>
+    <style>
+        body,ul,li,a,span{
+            margin: 0;
+            padding: 0;
+        }
+        .list{
+            list-style: none;
+            margin: 100px auto;
+            width: 500px;
+            border: 1px solid pink;
+            /* overflow: hidden; */
+        }
+        li{
+        width: 100%;
+
+        padding: 10px 30px;
+        margin:10px 0 ;
+        box-sizing: border-box;
+        border-bottom:1px solid #ccc ;
+        display: flex;
+        justify-content: space-between;
+        }
+        a{
+            text-decoration: none;
+            color: #000;
+        }
+        
+    </style>
+    <ul class="list"></ul>
+    <script src="data02.js"></script>
+    <script>
+
+
+        let listDOM = document.querySelector(".list");
+        // console.log(listDOM);
+        // // 创建系统自带对象
+        // let xmlHttp = new XMLHttpRequest();
+        // let html = "";
+        // // 请求打开一个数据的方式（看不到） true是异步处理
+        // xmlHttp.open("get","data02.html",true);
+        // // 发送这个数据（看不到）
+        // xmlHttp.send();
+        // // 添加监听事件
+        // xmlHttp.onreadystatechange = function(){
+        // if(this.status === 200 && this.readyState === 4){
+        //     html = this.responseText;
+        //     console.log(html);
+        //     html = JSON.parse(html);
+        //     console.log(html);
+        //     let tmp = "";
+        //     for(let i = 0;i<html.length;i++){
+        //         tmp += `<li><a href="">${html[i].title}</a><span>${html[i].time}</span></li>`
+        //     }
+        //     listDOM.innerHTML = tmp;
+        // }
+        
+        // }
+        let username = "邵湛";
+        let sex = "男";
+        ajax({
+            methor:"get",
+            url:"data02.html",
+            data:{sex,username},
+            success:function(data){
+                console.log(data);
+                if(data.status == "success"){
+                    // data是JSON格式
+                    let tmp = "";        
+                    for(let i = 0;i<data.data.length;i++){
+                        tmp += `<li><a href="">${data.data[i].title}</a><span>${data.data[i].time}</span></li>`;
+                        // console.log(data);
+                    }
+                    console.log(data);
+                    listDOM.innerHTML = tmp; 
+                }else{
+                    errorContral(data.code);
+                }
+            }
+
+        })
+    </script>
+</body>
+</html>

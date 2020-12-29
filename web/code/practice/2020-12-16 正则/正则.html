@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>正则</title>
+  </head>
+  <body>
+    <div class="content">
+    <a href="#">首页</a>
+    <a href="https://www.baidu.com/">新闻列表</a>
+    <a href="https://www.jd.com/">关于我们</a>
+  </div>
+    <script>
+      // var bg = /^a?$/
+      // console.log(bg.test("aaaa"));
+      // var bg2 = /^[1-9]{1}[0-9]{14}$|^[1-9]{1}[0-9]{16}([0-9]xX){1}$/;
+      // console.log(bg2.test("485233154685914"));
+      // var bg3 = /^(13)[0-9]{9}|(15)[0-9]{9}|(18)[0-9]|(147)[0-9]{8}$/;
+      // console.log(bg3.test(15339393497));
+
+      // let con = document.querySelector(".content");
+      // let a1 = con.innerHTML;
+      // // let a1 = /^<[^>]*a href="[^"]*"[^>]*>[^<]*<\/a>$/ ;
+      // let a2 = /<^[^>]*a href="([^>])">([^<]*)<\/a>/ig;
+      // console.log(a2.exec(a1));
+      // let arr = []
+
+      // let str = "456阿飞789朱雀12";
+      // let str2 =/456/;
+      // let str3 =/789/;
+      // let str4 =/12/;
+      // let str5 = /阿飞/;
+      // let str6 = /朱雀/;
+      // console.log(str2.exec(str));
+      // console.log(str3.exec(str));
+      // console.log(str4.exec(str));
+      // console.log(str5.exec(str));
+      // console.log(str6.exec(str));
+
+
+
+      // let a = "456阿飞789朱雀12"; //需要得到["456","789","12"]
+      // let reg = /\d+/g;
+      // let str = /\D+/g;
+      // console.log(a.match(reg));
+      // console.log(a.match(str));
+
+// 单词边界
+      // let str1 = "Bob is a sBob.";
+      // let str2 = /\bBob\b/g;
+      // console.log(str1.match(str2));
+
+
+
+    </script>
+  </body>
+</html>

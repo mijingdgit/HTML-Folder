@@ -1,0 +1,214 @@
+// * Start All of element body
+* {
+  margin: 0;
+  padding: 0;
+  user-select: none;
+  /* border-box 告诉浏览器：你想要设置的边框和内边距的值是包含在width内的 */
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+}
+body {
+  background: #f2f2f2;
+}
+
+// .page2  nav
+// * Atsrt All of element body
+.page2 {
+  display: flex;
+  justify-content: center;
+  background: #1b1b1b;
+
+  // * show btn, .icon, .input
+  .show,
+  .icon,
+  input {
+    display: none;
+  }
+
+  .fa-plus {
+    font-size: 0.9375rem;
+    margin-left: 2.5rem;
+  }
+}
+.page2::after {
+  content: "";
+  clear: both;
+  // display like <table>
+  display: table;
+}
+// * END All of element body
+
+// * Start logo
+.page2 .logo {
+  float: left;
+  color: white;
+  font-size: 1.6875rem;
+  font-weight: 600;
+  line-height: 4.375rem;
+  padding-left: 3.75rem;
+}
+// * End logo
+
+// * Start Nav ul
+// ! 一级菜单
+.page2 ul {
+  width: 75rem;
+  // text-align: center;
+  float: left;
+  margin-right: 2.5rem;
+  // * Start Nav ul li
+  list-style: none;
+
+  li {
+    float: left;
+    display: inline-block;
+    background: #1b1b1b;
+    margin: 0 0.3125rem;
+
+    a {
+      color: white;
+      line-height: 4.375rem;
+      text-decoration: none;
+      font-size: 1.125rem;
+      padding: 0.5rem 0.9375rem;
+    }
+    a:hover {
+      color: cyan;
+      border-radius: 0.3125rem;
+      // 渐变色
+      box-shadow: 0 0 0.3125rem #33ffff, 0 0 0.625rem #66ffff;
+    }
+  }
+
+  li:hover > ul {
+    top: 4.375rem;
+    opacity: 1;
+    visibility: visible;
+  }
+  // * End nav ul li
+
+  // ! 二级菜单
+  // * Start nav ul ul
+  ul {
+    width: 9.4rem;
+    position: absolute;
+    top: 5.625rem;
+    border-top: 0.1875rem solid cyan;
+    opacity: 0;
+    visibility: hidden;
+    transition: top 0.3s;
+
+    li {
+      position: relative;
+      margin: 0rem;
+      width: 9.375rem;
+      // clear float
+      float: none;
+      display: list-item;
+      border-bottom: 0.0625rem solid rgba(0, 0, 0, 0.3);
+    }
+
+    li a {
+      line-height: 3.125rem;
+    }
+    li a:hover {
+      box-shadow: none;
+    }
+  }
+  // * End nav ul ul
+
+  // ! 三级菜单
+  // * Start nav ul ul ul
+  ul ul {
+    border-top: none;
+    margin-top: -0.625rem;
+
+    li {
+      position: relative;
+      top: -3.75rem;
+      left: 9.375rem;
+    }
+  }
+  // * End nav ul ul ul
+}
+// * End Nav ul
+
+// * Start Content
+.content {
+  text-align: center;
+  margin-top: 1.25rem;
+}
+// * End Content
+
+// TODO @media all and (max-width: 968px) {}
+
+@media all and (max-width: 968px) {
+  nav ul {
+    margin-right: 0px;
+    float: left;
+  }
+  nav .logo {
+    padding-left: 30px;
+    width: 100%;
+  }
+  .show + a,
+  ul {
+    display: none;
+  }
+  nav ul li,
+  nav ul ul li {
+    display: block;
+    width: 100%;
+  }
+  nav ul li a:hover {
+    box-shadow: none;
+  }
+  .show {
+    display: block;
+    color: white;
+    font-size: 18px;
+    padding: 0 20px;
+    line-height: 70px;
+    cursor: pointer;
+  }
+  .show:hover {
+    color: cyan;
+  }
+  .icon {
+    display: block;
+    color: white;
+    position: absolute;
+    top: 0;
+    right: 40px;
+    line-height: 70px;
+    cursor: pointer;
+    font-size: 25px;
+  }
+  nav ul ul {
+    top: 70px;
+    border-top: 0px;
+    float: none;
+    position: static;
+    display: none;
+    opacity: 1;
+    visibility: visible;
+  }
+  nav ul ul a {
+    padding-left: 40px;
+  }
+  nav ul ul ul a {
+    padding-left: 80px;
+  }
+  nav ul ul ul li {
+    position: static;
+  }
+  [id^="btn"]:checked + ul {
+    display: block;
+  }
+  nav ul ul li {
+    border-bottom: 0px;
+  }
+  span.cancel:before {
+    content: "\f00d";
+  }
+}

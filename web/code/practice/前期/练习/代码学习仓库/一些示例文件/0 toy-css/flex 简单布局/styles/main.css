@@ -1,0 +1,606 @@
+.main-num1 {
+  margin: 0 auto;
+  width: 1200px;
+  border: 1px solid #333333;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+.main-num1 > section {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-flex: 3;
+      -ms-flex: 3;
+          flex: 3;
+  border: 1px solid red;
+}
+
+.main-num1 > section > div {
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  border: 1px solid #666666;
+  border-radius: 50%;
+  width: 8em;
+  height: 8em;
+  background-color: pink;
+}
+
+.main-num1 > section > p {
+  border: 1px solid #6666;
+  font-size: 0.81em;
+  text-align: center;
+  color: orange;
+}
+
+.main-num1 > section > text {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: auto;
+  text-align: center;
+  width: 70em;
+  border: 1px solid #6666;
+  font-size: 0.3em;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  color: black;
+}
+
+.main-num2 {
+  margin: auto;
+  margin-top: 5em;
+  border: 2px solid #000;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 1200px;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.main-num2 section {
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  border: 2px solid #016b96;
+  margin: 2em;
+  width: 260px;
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+  height: 260px;
+}
+
+.main-num2 section div {
+  width: 3em;
+  height: 3em;
+  text-align: center;
+  margin: 0 auto;
+  margin-top: -2em;
+  margin-right: 2em;
+  background-color: #1cc9ac;
+}
+
+.main-num2 section p {
+  font-weight: 900;
+  margin-left: 2em;
+  margin-top: 2em;
+}
+
+.main-num2 section text {
+  margin-left: 2em;
+}
+
+#clear-border {
+  border: 0px;
+}
+
+.main-num3 {
+  border: 1px solid #000;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 1200px;
+  margin: 5em auto;
+}
+
+.main-num3 section {
+  margin-top: 1rem;
+  border-radius: 0% 0% 20% 20%;
+  border: 1px solid orange;
+  background-color: #02025a;
+  width: 18em;
+  height: 18em;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-shadow: 0 0.5em #d6c20e;
+          box-shadow: 0 0.5em #d6c20e;
+}
+
+.main-num3 section div {
+  background-color: white;
+  width: 6em;
+  height: 6em;
+  border-radius: 25%;
+  margin-top: 1em;
+}
+
+.main-num3 section p {
+  background-color: white;
+  width: 80%;
+  height: 4em;
+  border-radius: 8em;
+}
+
+.page-2-main {
+  background-color: orange;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 1200px;
+  height: 360px;
+  margin: 0 auto;
+  text-align: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.page-2-main div {
+  border: 1px solid red;
+  width: 800px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.page-2-main div div {
+  border: 1px solid #6666;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.page-2-main div div section {
+  width: 9em;
+  height: 9em;
+  background-color: white;
+  border-radius: 50%;
+}
+
+.page-2-main div div section p {
+  margin: 40% auto;
+}
+
+.page3-main {
+  width: 1000px;
+  height: 800px;
+  border: 1px solid red;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin: 0 auto;
+  -webkit-box-pack: top;
+      -ms-flex-pack: top;
+          justify-content: top;
+}
+
+.page3-main section {
+  border: 1px solid black;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.page3-main section div {
+  -webkit-box-flex: 6;
+      -ms-flex: 6;
+          flex: 6;
+  height: 180px;
+  border: 3px solid green;
+}
+
+.page3-main section section {
+  -webkit-box-flex: 6;
+      -ms-flex: 6;
+          flex: 6;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.page3-main section section h2 {
+  margin-left: 2em;
+}
+
+.page3-main section section p {
+  margin-left: 2em;
+}
+
+.page3-main section section button {
+  width: 120px;
+  margin-left: 2em;
+  background-color: red;
+}
+
+.page3-main2 {
+  margin: 5em auto;
+  width: 800px;
+  height: 600px;
+  border: 1px solid red;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.page3-main2 div {
+  -webkit-box-flex: 6;
+      -ms-flex: 6;
+          flex: 6;
+  border: 1px solid red;
+}
+
+.page3-main2 div div {
+  width: 9em;
+  height: 9em;
+  border-radius: 50%;
+  border: 1px solid red;
+  margin: 2em auto;
+}
+
+.page3-main2 div p {
+  border: 1px solid red;
+  width: 12em;
+  height: 2em;
+  margin: auto auto;
+}
+
+.page3-main2 div text {
+  margin-top: 2em;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  text-align: center;
+}
+
+.page3-main2 div button {
+  width: 120px;
+  height: 20px;
+  border: 1px solid red;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  text-align: center;
+  margin: 2em auto;
+}
+
+.page4-main {
+  width: 1200px;
+  border: 1px solid #6666;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin: 0 auto;
+  background-color: #ffc861;
+}
+
+.page4-main .title {
+  text-align: center;
+  border: 1px solid red;
+}
+
+.page4-main .lines {
+  margin: auto;
+  width: 120px;
+  height: 0px;
+  border: 1px solid red;
+}
+
+.page4-main .text {
+  margin: auto;
+  border: 1px solid red;
+  width: 220px;
+  text-align: center;
+}
+
+.page4-main .buttons {
+  margin: auto;
+  margin-top: 2em;
+  border: 1px solid red;
+}
+
+.page4-main .buttons button {
+  margin: 0 2em 0 2em;
+  width: 8em;
+  border: 0;
+  height: 2em;
+  background-color: white;
+}
+
+.page4-main .buttons button:hover {
+  background-color: black;
+  color: white;
+}
+
+.page4-main .images {
+  -webkit-box-flex: 6;
+      -ms-flex: 6;
+          flex: 6;
+  margin: 2em auto;
+  border: 1px solid red;
+  width: 1200px;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (22%)[4];
+      grid-template-columns: repeat(4, 22%);
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  grid-gap: 40px;
+}
+
+.page4-main .images div {
+  height: 120px;
+  border: 1px solid red;
+}
+
+.page4-main2 {
+  width: 1200px;
+  height: 800px;
+  margin: 2em auto;
+  border: 1px solid red;
+}
+
+.page4-main2 .title {
+  text-align: center;
+}
+
+.page4-main2 .lines {
+  width: 120px;
+  height: 0;
+  border: 1px solid red;
+  margin: 0 auto;
+}
+
+.page4-main2 .text {
+  text-align: center;
+  margin-top: 1em;
+  color: gray;
+}
+
+.page4-main2 .img-box {
+  border: 1px solid red;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-top: 2em;
+}
+
+.page4-main2 .img-box * {
+  margin-left: 3em;
+}
+
+.page4-main2 .img-box .img-text-left {
+  text-align: right;
+}
+
+.page4-main2 .img-box .img-text-left text {
+  color: gray;
+}
+
+.page4-main2 .img-box .img-text-right {
+  text-align: left;
+}
+
+.page4-main2 .img-box .img-text-right text {
+  color: gray;
+}
+
+.page4-main2 .img-box .img {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  border: 1px solid red;
+}
+
+.page5-main {
+  border: 1px solid red;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 1200px;
+  margin: 0 auto;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.page5-main .layer {
+  border: 1px solid blue;
+}
+
+.page5-main .layer:hover {
+  background-color: black;
+}
+
+.page5-main .header {
+  border: 1px solid red;
+  width: 200px;
+}
+
+.page5-main .header div {
+  margin: 0.1em auto;
+  border: 1px solid red;
+  width: 120px;
+  height: 20px;
+}
+
+.page5-main .container {
+  margin-top: 1em;
+  border: 1px solid red;
+  width: 200px;
+  height: 400px;
+}
+
+.page5-main .container .container-body {
+  border: 1px solid red;
+  margin: 1em auto;
+  height: 60px;
+}
+
+.page5-main .container .container-body div {
+  margin-left: 1em;
+}
+
+.page5-main .container .container-body h2 {
+  border: 1px solid red;
+  width: 80px;
+  height: 20px;
+  margin-top: 2px;
+}
+
+.page5-main .container .container-body p {
+  width: 120px;
+  height: 20px;
+  margin-top: -1em;
+  border: 1px solid red;
+}
+
+.page5-form {
+  background-color: #041014;
+  color: white;
+  margin: 2rem auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 1200px;
+  height: 460px;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+.page5-form .container {
+  margin: 3em;
+}
+
+.page5-form .input-group {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.page5-form .input-group input {
+  width: 240px;
+  height: 48px;
+  border-radius: 9px;
+  margin: 2em 2em 0 0;
+  border: none;
+}
+
+.page5-form .text {
+  margin-top: 2em;
+  border-radius: 9px;
+}
+
+.page5-form .buttons {
+  margin-top: 2em;
+}
+
+.page5-form .buttons button {
+  width: 12em;
+  height: 4em;
+  font-weight: 800;
+  font-size: 14px;
+  background-color: black;
+  color: white;
+  border: 1px solid gray;
+}
+
+.page5-form .buttons .active {
+  background-color: #b81dab;
+  color: white;
+  border: none;
+}
+
+.page5-form .menu-section {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  margin-top: 4em;
+  height: 20em;
+}
+
+.page5-form .menu-section .icon {
+  width: 3em;
+  height: 3em;
+  border-radius: 50%;
+  background-color: gray;
+}
+
+.page5-form .menu-section .icon-body {
+  margin-top: -1.2em;
+  margin-left: 2em;
+  width: 12em;
+  height: 8em;
+}
+
+.page5-form .menu-section .icon-body h2 {
+  color: #800044;
+}
+
+.page5-form .menu-section .icon-body text {
+  color: gray;
+}
+/*# sourceMappingURL=main.css.map */

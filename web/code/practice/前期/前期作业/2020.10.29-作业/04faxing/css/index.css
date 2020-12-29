@@ -1,0 +1,41 @@
+*{
+  margin: 0;
+  padding: 0;
+}
+.body{
+  width:343px ;
+  height: 392px;
+  margin: 0 auto;
+  /* border:1px solid #000000 ; */
+  box-shadow: 5px 5px 10px 0 #eaeaea;
+  padding-top: 24px;
+}
+.body-1{
+  width: 302px;
+  height: 350px;
+  margin: auto auto;
+  border: 1px solid #eaeaea;
+}
+.body-1 .img{
+  width:305px ;
+  height: 128px;
+}
+.body-1 .wenzi{
+  width:256px ;
+  height:227px ;
+  margin: 20px 0 0 30px;
+
+}
+.wenzi .biaoti{
+  font-size:10px ;
+  margin-bottom: 20px;
+}
+.wenzi .jiameng{
+  font-size:12px ;
+  color: #9a9a99;
+  margin-bottom: 20px;
+}
+.wenzi .duan{
+  font-size:12px ;
+  color: #999999;
+}

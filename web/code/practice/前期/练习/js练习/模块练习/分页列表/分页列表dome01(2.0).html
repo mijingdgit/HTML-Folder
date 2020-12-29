@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>分页列表dome01(2.0)</title>
+  </head>
+  <style>
+    ul li{
+        list-style: none;
+
+    }
+    .warpper{
+        width: 500px;
+        margin: 100px auto;
+    }
+    li{
+        width: 100%;
+        height: 40px;
+        line-height:5px;
+        font-size: 18px;
+        border-bottom: 1px solid #f1f1f1;
+        display: flex;
+        justify-content: space-between;
+    }
+
+
+    
+    li:hover{
+        background: #fcfcfc;
+    }
+
+
+    .btn{
+        margin: 0 auto;
+        width: 100px;
+        height: 40px;
+        background:orangered ;
+        text-align: center;
+        line-height: 40px;
+        font-size: 18px;
+        color: #fff;
+    }
+    .btn.curr{
+        width: 200px;
+        background:pink ;
+        color: #000;
+    }
+  </style>
+  <body>
+    <div class="warpper">
+      <ul class="content"></ul>
+      <div class="btn">加载更多</div>
+    </div>
+    <script>
+      // 给数据源
+      var data = [
+        { title: "新闻列表1", time: "2020-12-10" },
+        { title: "新闻列表2", time: "2020-12-10" },
+        { title: "新闻列表3", time: "2020-12-10" },
+        { title: "新闻列表4", time: "2020-12-10" },
+        { title: "新闻列表5", time: "2020-12-10" },
+        { title: "新闻列表6", time: "2020-12-10" },
+        { title: "新闻列表7", time: "2020-12-10" },
+        { title: "新闻列表8", time: "2020-12-10" },
+        { title: "新闻列表9", time: "2020-12-10" },
+        { title: "新闻列表10", time: "2020-12-10" },
+        { title: "新闻列表11", time: "2020-12-10" },
+        { title: "新闻列表12", time: "2020-12-10" },
+        { title: "新闻列表13", time: "2020-12-10" }
+      ];
+      // 框架获取节点
+      function $(selector) {
+        let element = document.querySelectorAll(selector);
+        if (element.length === 1) {
+          return element[0];
+        } else {
+          return element;
+        }
+      }
+      // 在js中使用createElement创建HTML对象和元素
+      function $C(elename) {
+        return document.createElement(elename);
+      }
+
+      // 获取页面元素
+      var ul = $(".content");
+      var btn = $(".btn");
+      // 当前页面加载的页数
+      var pageIdx = 1; 
+      // 每一页加载的信息
+      var numPerPage = 4;
+      // 数据的总条目
+      var dataAllNum = data.length;
+      // 阔值判断，判断加载的条目大不大于总条目如果大于就换按钮样式文字
+      var tmpNum = pageIdx * numPerPage;
+    //   if (tmpNum > dataAllNum) {
+    //     tmpNum = dataAllNum;
+    //     btn.innerHTML = "没有更多数据了";
+    //     btn.classList.add("curr");
+    //   }
+      // 循环创建
+      for (let i = 0; i < tmpNum; i++) {
+        var li = $C("li");
+        var p1 = $C("p");
+        var p2 = $C("p");
+        p1.innerHTML = data[i].title;
+        p2.innerHTML = data[i].time;
+        ul.appendChild(li);
+        li.appendChild(p1);
+        li.appendChild(p2);
+      }
+      
+    //   添加点击事件
+    btn.onclick = function(){
+        // 页面初始化数据
+        ul.innerHTML = "";
+        // 页面增加
+        pageIdx++;
+              // 阔值判断，判断加载的条目大不大于总条目如果大于就换按钮样式文字
+      var tmpNum = pageIdx * numPerPage;
+      if (tmpNum > dataAllNum) {
+        tmpNum = dataAllNum;
+        btn.innerHTML = "没有更多数据了";
+        btn.classList.add("curr");
+      }
+      // 循环创建
+      for (let i = 0; i < tmpNum; i++) {
+        var li = $C("li");
+        var p1 = $C("p");
+        var p2 = $C("p");
+        p1.innerHTML = data[i].title;
+        p2.innerHTML = data[i].time;
+        ul.appendChild(li);
+        li.appendChild(p1);
+        li.appendChild(p2);
+      }
+
+
+    };
+    </script>
+  </body>
+</html>

@@ -1,0 +1,69 @@
+
+【登录页面】
+1、登录的时候卡号记录在缓存
+2、点下一步，ajax发送数据请求登录接口
+
+3、PHP接受参数、拼接查询字符串、
+(1)成功，PHP缓存当前卡信息，返回相应值  {"state":"success","msg":"成功","data":"...."}
+(2)没有值，不做处理，返回错误提示。 {"state":"error","msg":"没有数据"}
+
+4、前端ajax获取后端传来的数据，
+(1)没有数据，提示该卡号不存在，密码不正确
+{"state":"error","msg":"密码不正确"}
+
+(2)有数据，记录相关数据到缓存，跳转到下一个环节的页面。
+{"state":"success","msg":"成功","data":"...."}
+
+
+【卡信息录入页面】
+1、获取缓存里面的卡号
+2、其他用户填写的信息数据组装好，通过ajax访问写卡信息接口。
+2、PHP，获取参数，组装插入字符串
+insert into card('carnumber','bb_name','bb_birthday') values('wx0001','赖永康','2020-04-13')
+3、前端ajax获取到相关数据，记录数据到缓存，页面跳转
+
+
+【卡信息显示页面】
+1、获取缓存里面的卡号
+2、ajax发送卡号到卡信息查询接口
+3、PHP
+(1) 验证：获取传过来的卡号，对比PHP缓存的卡号是否一致
+(2) 根据卡号拼接查询语句，执行查询，返回对应值。
+4、前端ajax获取后端传来的数据，
+(1)没有数据，提示该卡号不存在，密码不正确
+{"state":"error","msg":"密码不正确"}
+(2)有数据，记录相关数据到缓存。
+{"state":"success","msg":"成功","data":"...."}
+
+【理赔查询】
+列表 claimlist.html
+1、使用卡号[wx0001]查询理赔列表
+<a href="claim.html?id=1">看美女撞电线杆</a>
+<a href="claim.html?id=2">看美女撞电线杆</a>
+
+详细页claim.html
+通过网址?id=xxx 获取ID
+1、使用理赔ID查询
+
+
+
+PHP
+	//设置缓存
+	//$_SESSION['cardnumber'] = "wx0001";
+	$_SESSION['cardnumber'] = null;
+
+	//判断是否有
+	isset($_POST['cardnumber'])
+
+	//清除缓存
+	unset($_SESSION['cardnumber'])
+
+	// PHP缓存可以存各种数据类型
+	// $_SESSION['card'] = array(
+	// 	'cardnumber'=>"wx0001",
+	// 	'password'=>"123456"
+	// )
+
+	// 输出特殊数据类型
+	// print_r( $_SESSION ); 
+

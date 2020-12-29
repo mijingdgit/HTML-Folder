@@ -1,0 +1,101 @@
+@import url("https://fonts.googleapis.com/css?family=Gochi+Hand");
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  width: 100vw;
+  height: 100vh;
+  margin: 0;
+  background-color: #291642;
+  font-family: sans-serif;
+  font-size: 100%;
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  background: linear-gradient(to right, #fff 0%, #fff 80%, #fff 1000%)
+      no-repeat,
+    url("https://lh4.googleusercontent.com/-3eBjuQpOGFw/U47yh_-OycI/AAAAAAAAI2U/uaU5pK49N1w/s1600/normal.jpg")
+      no-repeat fixed;
+  background-size: cover;
+
+  /* background-blend-mode CSS属性定义该元素的背景图片，以及背景色如何混合。
+
+    混合模式应该按background-image CSS属性同样的顺序定义。
+    如果混合模式数量与背景图像的数量不相等，它会被截取至相等的数量。 */
+
+  /* 图片滤镜 */
+  background-blend-mode: hue;
+}
+.flex__container{
+    inline-size: 50vw;
+    min-block-size: 50vh;
+    min-inline-size: 30vw;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 5px;
+    box-shadow: 0 20px 30px rgba(0, 0, 0, 0.6);
+    border: 1px solid rgba(255, 255, 255, 0.4);
+    padding: 4vh;
+    text-shadow: 0 1px 1px rgba(0, 0, 0, 0.4);
+    transition: box-shadow 0.3s ease;
+
+
+    overflow: hidden;
+    /* 拉伸 */
+    resize: both;
+
+    /* 玻璃效果 */
+    background-image: linear-gradient(
+        0deg
+        rgba(255,255,255,0.5),
+        rgba(255,255,255,0.5)
+    );
+    backdrop-filter: blur(3px);
+}
+.lfex__container > *{
+    flex-shrink: 0;
+}
+.avatar{
+    inline-size: 64px;
+    block-size: 64px;
+    background-color: #8078ec;
+    border-radius: 50%;
+
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 1.8rem;
+}
+
+.media__heading{
+    height: 32px;
+    width: 30%;
+    background-color: #78e4ec;
+    border-radius: 4px;
+    margin-bottom: 0.75rem;
+}
+
+.media__content{
+    height: 32px;
+    width: 60%;
+    background-color: #78e4ec;
+    border-radius: 4px;
+    margin-bottom: 1rem;
+}
+
+.action{
+    width: 136px;
+    height: 38px;
+    background-color: #291642;
+    border-radius: 4px;
+}

@@ -1,0 +1,31 @@
+// ! all global config data, global color width and more
+
+$global-blue: #14916a;
+$global-white: #fff;
+$global-gray-05: rgba(0, 0, 0, 0.5);
+$global-gray-07:rgba(0, 0, 0, 0.7);
+$global-white-f3: #f3f3f3;
+$global-border-white-211: rgba(211, 211, 211, 0.9);
+$global-gray-55: #555555;
+$phone-border: rgba(236,236,236,0.3);
+$phone-color: #ececec;
+
+$nav-top-gray: rgba(85, 85, 85, 0.89);
+// ! Global Body Dom Config
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  
+  border: 1px solid red;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+a {
+  text-decoration: none;
+}
+li {
+  list-style: none;
+}

@@ -1,0 +1,62 @@
+
+ul li{
+    list-style: none;
+}
+
+.warpper{
+    width: 500px;
+    margin: 100px auto;
+     
+}
+.con{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    font-size: 18px;
+    text-align: center;
+    line-height: 20px;
+    border-bottom: 1px solid #ccc;
+    display: flex;
+    justify-content: space-between;
+}
+.con a{
+    font-size: 18px;
+    text-align: center;
+    line-height: 20px;
+    text-decoration: none;
+    color: #000;
+    padding: 20px 0 0 0;
+}
+.con:hover{
+    background: #f1f1f1;
+}
+.pages{
+    width: 300px;
+    margin: 50px auto;
+}
+/* 初始时按钮样式 */
+.pages a{
+    padding: 4px;
+    display: inline-block;
+    text-decoration: none;
+    color: orangered;
+    border: 1px solid orangered;
+}
+/* 按钮处于高亮时的样式 */
+.pages a.curr{
+    background:#f60;
+    /* border-color: #f60; */
+    color: ivory;
+}
+/* 让按钮点击不了变为灰色鼠标变为圈斜杠 */
+.pages a.nolink{
+    border-color: #ddd;
+    color: #ddd;
+    /* 
+        cursor:no-drop       
+        是一个红色的圈加一个斜杠，表示禁止的意思
+        cursor:not-allowed
+        是一个红色的圈加一个斜杠，表示禁止的意思
+    */
+    cursor: no-drop; 
+}

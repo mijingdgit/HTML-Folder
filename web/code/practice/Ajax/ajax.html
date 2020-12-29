@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ajax</title>
+  </head>
+  <body>
+    <ul class="list"></ul>
+    <script>
+
+
+
+
+
+
+
+
+      // let listDOM = document.querySelector(".list");
+      // // 创建一个新的XMLHttpRequest对象；（）函数对象
+      // let xmlHttp = new XMLHttpRequest(); //用于请求网络资源
+      // // 准备发送  打开链接获取资源  true异步
+      // xmlHttp.open("get", "dataJSON.json", true);
+      // // 规范
+      // xmlHttp.setRequestHeader(
+      //   "Content-Type",
+      //   "application/x-www-form-urlencoded"
+      // );
+      // // 发送请求过程
+      // xmlHttp.send();
+      // // 监听请求状态 完成请求判断HTTP状态码 获取数据
+      // xmlHttp.onreadystatechange = function () {
+      //   if (this.readyState == 4 && this.status == 200) {
+      //     // 控制台输出数据
+      //     let data = this.responseText;
+      //     console.log(data);
+      //     // TODO 处理数据
+      //     listDOM.innerHTML = data;
+      //     // 解析JSON 数据
+      //     data = JSON.parse(data);
+      //     // 输出JSON 数据
+      //     console.log(data[0].id);
+      //   }
+      // };
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      // let listDOM = document.querySelector(".list");
+      // // 创建一个对象新的 XMLHttpRequest对象
+      // let xmlHttp = new XMLHttpRequest();
+      // //打开获取资源
+      // //xmlHttp.open(发送方式[post|get],访问接口的地址, 是否异步处理)
+
+      // // GET方法请求一个指定资源的表示形式. 使用GET的请求应该只被用于获取数据.
+      // // HEAD方法请求一个与GET请求的响应相同的响应，但没有响应体.
+      // // POST方法用于将实体提交到指定的资源，通常导致在服务器上的状态变化或副作用.
+      // // PUT方法用请求有效载荷替换目标资源的所有当前表示。
+      // // DELETE方法删除指定的资源。
+      // // CONNECT方法建立一个到由目标资源标识的服务器的隧道。
+      // // OPTIONS方法用于描述目标资源的通信选项。
+      // // TRACE方法沿着到目标资源的路径执行一个消息环回测试。
+      // // PATCH方法用于对资源应用部分修改。
+
+      // xmlHttp.open("get", "data.html", true);
+      // // 规范大多数情况下可以不用修改
+      // xmlHttp.setRequestHeader(
+      //   "Content-Type",
+      //   "application/x-www-form-urlencoded"
+      // );
+      // // 发送请求的过程
+      // xmlHttp.send();
+      // // 监听请求状态 完成请求判断HTTP状态码 获取数据
+      // xmlHttp.onreadystatechange = function () {
+      //   if (this.readyState == 4 && this.status == 200) {
+      //     let data = this.responseText;
+
+      //     // let we try try, must cath, should be finally!!!
+      //     // 尝试的代码，在危险的边缘疯狂试探
+      //     try {
+      //       data = JSON.parse(datasdsd);
+      //       listDOM.innerHTML = data.data[0].title;
+      //       console.log(typeof data);
+      //     } catch (error) {
+      //       // 万一出错了呢
+      //       // console.error(error)
+      //       console.table(error);
+      //     } finally {
+      //       // 不管错没错，都要做的事情
+      //       console.log(12);
+      //     }
+      //   }
+      // };
+      // 捕获页面异常 try {} catch(e) {}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        //获取页面节点
+        
+        let listDOM = document.querySelector(".list");
+        //创建一个新的对象
+        let xmlhttp = new XMLHttpRequest();
+        // 打开网页
+        xmlhttp.open("get","data.html",true);
+        // 规范不用修改
+        xmlhttp.setRequestHeader(
+        "Content-Type",
+        "application/x-www-form-urlencoded"
+      );
+      // 过程
+      xmlhttp.send();
+      xmlhttp.onreadystatchange = function(){
+        if (this.readyState == 4 && this.status == 200) {
+
+          try{
+          let data = this.responseText;
+          listDOM.innerHTML = data.data[0].title;
+          
+        
+        }catch{
+
+        }
+        }
+        
+
+      }
+      
+    </script>
+  </body>
+</html>

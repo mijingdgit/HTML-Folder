@@ -1,0 +1,9 @@
+vhosts.conf  找到对应站点
+
+location / {
+	index  index.html index.htm index.php;
+
+	#添加下面这句代码
+	error_page 405 =200 $uri; 
+}
+

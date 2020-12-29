@@ -1,0 +1,35 @@
+
+表字段
+id int
+contact varchar 50
+phone varchar 50
+addtime datetime
+sex varchar 4
+age int
+
+select * from student /* 查询表的所有信息 */
+select contact,phone from student /* 显示contact,phone字段信息 */
+select contact as a, phone as b from student /* 查询所有信息 contact显示为a,phone显示为b */
+select count(*) as num from student /* 查询数据条数 num */
+select * from student where contact='吕亮' /* 查询contact字段值为吕亮的所有信息 */
+select * from student where contact='吕亮' and age>16 /* 查询 contact值为吕亮且年龄大于16的所有信息*/
+select * from student where contact='吕亮' or contact= '张智深' /* 查询 contact值为吕亮或者张智深 的所有信息 */
+select * from student where contact in('吕亮','张智深') /* 查询 contact值为吕亮或者张智深 的所有信息 */
+select * from student where contact like '%吕%' /* 查询contact值中包含"吕"的所有信息 */
+
+select * from student limit 0,2 /* 查询表 从第0条后面,取2条 */
+select * from student limit 2,2 /* 查询表 从第2条后面,取2条 */
+select * from student order by age desc /* order by 字段名 desc 表示降序 */
+select * from student order by age asc /*  order by 字段名 asc 表示升序 */
+select * from student order by age desc limit 0,2 /* 查询 最大年龄的两条信息 */
+select * from student order by age asc limit 0,2 /* 查询 最小年龄的两条信息 */
+select * from student order by age asc, id asc limit 0,2 /* 当年龄一致时,再通过id升序排列 */
+select * from student order by age desc limit 6,6 /* 每页6条,这里取的就是第二页的信息 */
+select * from student order by age desc limit 12,6 /* 每页6条,这里取的就是第三页的信息 */
+
+
+
+select score,career from score where studentid in(select id from student where `name`='沈雅娇')
+
+-- 联合查询
+select a.name, a.age, a.address, b.score, b.career from student as a left join score as b on a.id = b.studentid where a.name = '沈雅娇'

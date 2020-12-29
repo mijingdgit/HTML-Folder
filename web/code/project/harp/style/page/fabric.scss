@@ -1,0 +1,266 @@
+// TODO 导入公共样式
+@import "../config/_config";
+@import "../header/_header";
+@import "../footer/_footer";
+
+
+
+main {
+    width: 100%;
+
+    // height: 1272px;
+    .cont {
+        width: 1400px;
+        // height:1272px;
+        margin: 0 auto 82px;
+        .navy{
+            color: #939393;
+        }
+
+        .con-nav {
+            width: 100%;
+            height: 77px;
+            margin-top: 52px;
+
+            li {
+                width: 669px;
+                height: 77px;
+                float: left;
+                background-color: #af1415;
+                
+
+                .one {
+                    width: 100%;
+                    height: 65px;
+                    background-color: #f3f2f3;
+                    font-size: 18px;
+                    text-align: center;
+                    line-height: 65px;
+
+                    a {
+                        color: #626162;
+                    }
+                }
+                
+                .two {
+                    width: 100%;
+                    height: 65px;
+                    background-color: #242424;
+                    font-size: 18px;
+                    text-align: center;
+                    line-height: 65px;
+
+                    a {
+                        color: #dfdfdf;
+                    }
+                }
+            }
+
+            li:hover .one,
+            li:hover a {
+                background-color: #242424;
+                color: #dfdfdf;
+            }
+
+            .to {
+                margin-right: 10px;
+
+            }
+
+        }
+
+        .top {
+            width: 121px;
+            height: 50px;
+            margin: 0 auto;
+            margin-top: 120px;
+            border-left: 4px solid #000;
+            margin-bottom: 143px;
+
+            p {
+                margin-left: 15px;
+            }
+
+            .cn {
+                font-size: 25px;
+                color: #292929;
+                margin-bottom: 6px;
+
+            }
+
+            .en {
+                font-size: 13px;
+                color: #d2d2d2;
+                margin-bottom: 70px;
+            }
+        }
+
+        .main {
+            width: 1400px;
+            margin: 0 auto;
+
+            ul {
+                margin-bottom: 10px;
+                overflow: hidden;
+
+                // background-color: rgb(23, 224, 16);
+                li {
+                    box-sizing: content-box;
+                    float: left;
+                    width: 454px;
+                    height: 290px;
+                    border: 1px solid #e5e5e5;
+                    margin-right: 10px;
+                    position: relative;
+                    background-color: #f3f3f3;
+                    // z-index: 1;
+                    // margin-right: 11px;
+
+                    img {
+                        display: block;
+                        width: 190px;
+                        height: 190px;
+                        margin: 50px auto;
+                    }
+
+                    .shady {
+                        // display: block;
+                        width: 454px;
+                        height: 290px;
+                        background-color: #fff;
+                        position: absolute;
+                        // z-index: 2;
+                        top: 0;
+                        left: 0;
+                        display: none;
+
+                        .con-p {
+                            width: 121px;
+                            height: 167px;
+                            margin: 0 auto;
+                            margin-top: 67px;
+                            text-align: center;
+
+                            p {
+                                color: #434343;
+                            }
+
+                            .p-1 {
+                                font-size: 25px;
+                                font-weight: 600;
+                                margin-bottom: 12px;
+                            }
+
+                            .p-2 {
+                                font-size: 13px;
+                                font-weight: 600;
+                                margin-bottom: 72px;
+                            }
+
+                            .btn-e {
+                                width: 121px;
+                                height: 46px;
+                                border: 1px solid #000;
+                                font-size: 17px;
+                                font-weight: 600;
+                                color: #424242;
+                                line-height: 46px;
+
+
+                            }
+
+                        }
+                    }
+
+
+                }
+
+                li:hover .shady {
+                    display: block;
+                }
+            }
+        }
+    }
+
+}
+
+
+
+// ul {
+//     margin-bottom: 10px;
+//     overflow: hidden;
+
+//     // background-color: rgb(23, 224, 16);
+//     li {
+//         box-sizing: content-box;
+//         float: left;
+//         width: 454px;
+//         height: 290px;
+//         border: 1px solid #e5e5e5;
+//         margin-right: 10px;
+//         position: relative;
+//         // z-index: 1;
+//         // margin-right: 11px;
+
+//         img {
+//             display: block;
+//             width: 454px;
+//             height: 290px;
+//         }
+
+//         .shady {
+//             // display: block;
+//             width: 454px;
+//             height: 290px;
+//             background-color: #fff;
+//             position: absolute;
+//             // z-index: 2;
+//             top: 0;
+//             left: 0;
+//             display: none;
+
+//             .con-p {
+//                 width: 121px;
+//                 height: 167px;
+//                 margin: 0 auto;
+//                 margin-top: 67px;
+//                 text-align: center;
+
+//                 p {
+//                     color: #434343;
+//                 }
+
+//                 .p-1 {
+//                     font-size: 25px;
+//                     font-weight: 600;
+//                     margin-bottom: 12px;
+//                 }
+
+//                 .p-2 {
+//                     font-size: 13px;
+//                     font-weight: 600;
+//                     margin-bottom: 72px;
+//                 }
+
+//                 .btn-e {
+//                     width: 121px;
+//                     height: 46px;
+//                     border: 1px solid #000;
+//                     font-size: 17px;
+//                     font-weight: 600;
+//                     color: #424242;
+//                     line-height: 46px;
+
+
+//                 }
+
+//             }
+//         }
+
+
+//     }
+
+//     li:hover .shady {
+//         display: block;
+//     }
+// }

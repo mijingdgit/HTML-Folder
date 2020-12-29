@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>轮播dome02(1.0)</title>
+  </head>
+  <style>
+    html {
+      margin: 0;
+      padding: 0;
+    }
+    .warpper {
+      width: 1226px;
+      height: 460px;
+      
+      margin: 100px auto;
+      position: relative;
+    }
+    .items {
+      /* width: 100%; */
+      height: 100%;
+    }
+    .con {
+      width: 1226px;
+      height: 460px;
+      font-size: 150px;
+      color: pink;
+      text-align: center;
+      line-height: 460px;
+      float: left;
+      opacity: 0;
+      transition: all .5s;
+    }
+    .con img{
+      width: 100%;
+      height: 100%;
+      background-size:cover;
+    }
+    .con.curr {
+      opacity: 1;
+    }
+    .btn {
+      width: 50px;
+      height: 50px;
+      background-color: pink;
+      /* font-size: 24px; */
+      font-weight: 600;
+      color: powderblue;
+      text-align: center;
+      line-height: 50px;
+      border-radius: 50%;
+      position: absolute;
+      top: 40%;
+    }
+    .rightbtn {
+      right: 0;
+    }
+    .pages {
+      list-style: none;
+      position: absolute;
+      left: 25%;
+      bottom: 18px;
+    }
+    .pages-con {
+      width: 120px;
+      height: 10px;
+      border-radius: 15px;
+      background: #000;
+      float: left;
+    }
+    .pages-con.curr {
+      background: rgb(255, 166, 0);
+    }
+  </style>
+  <body>
+    <div class="warpper">
+      <div class="items">
+        <div class="con"><img src="./img/pic1.jpeg" alt=""></div>
+        <div class="con"><img src="./img/pic2.jpeg" alt=""></div>
+        <div class="con"><img src="./img/pic3.jpeg" alt=""></div>
+        <div class="con"><img src="./img/pic4.jpeg" alt=""></div>
+      </div>
+      <div class="btn leftbtn">左</div>
+      <div class="btn rightbtn">右</div>
+      <ul class="pages">
+        <li class="pages-con"></li>
+        <li class="pages-con"></li>
+        <li class="pages-con"></li>
+        <li class="pages-con"></li>
+      </ul>
+    </div>
+  </body>
+</html>
+<script>
+  function $(selector) {
+    let elment = document.querySelectorAll(selector);
+    if (elment.length === 1) {
+      return elment[0];
+    } else {
+      return elment;
+    }
+  }
+  var cons = $(".con");
+  var pages = $(".pages-con");
+  var leftBtn = $(".leftbtn");
+  var rightBtn = $(".rightbtn");
+  var items = $(".items");
+  // idx[0]是第一个页面
+  var idx = 0;
+  // 页面初始化
+  cons[0].classList.add("curr");
+  pages[0].classList.add("curr");
+  items.style.width = cons[0].offsetWidth*cons.length+"px";
+  // 创建点击事件左
+leftBtn.onclick = function(){
+   cons.forEach((cons,idx) => {
+     cons.classList.remove("curr");
+     pages[idx].classList.remove("curr");
+   });
+   if(idx == 0){
+     idx = cons.length-1;
+   }else if(idx > 0){
+     idx--;
+   }
+   items.style.marginLeft = -cons[idx].offsetWidth*idx+"px";
+  cons[idx].classList.add("curr");
+  pages[idx].classList.add("curr");
+
+
+} 
+// 创建点击事件右
+rightBtn.onclick = function(){
+   cons.forEach((cons,idx) => {
+     cons.classList.remove("curr");
+     pages[idx].classList.remove("curr");
+   });
+   if(idx == cons.length-1){
+     idx = 0;
+   }else if(idx < cons.length){
+     idx++;
+   }else{
+     idx = 0;
+   }
+   items.style.marginLeft = -cons[idx].offsetWidth*idx+"px";
+  cons[idx].classList.add("curr");
+  pages[idx].classList.add("curr");
+}
+
+// 循环绑定
+for(let i = 0; i<pages.length; i++){
+    pages[i].onmouseenter = function(){
+
+        // cons.forEach((cons,idx)=>{
+        //     cons[idx].classList.remove("curr");
+        //     pages[idx].classList.remove("curr");
+        // })
+        for(let i=0; i<pages.length; i++){
+          cons[i].classList.remove("curr");
+          pages[i].classList.remove("curr");
+
+        }
+        idx = i;
+        items.style.marginLeft = -cons[idx].offsetWidth*idx+"px";
+        cons[idx].classList.add("curr");
+        pages[idx].classList.add("curr");
+        
+    }
+}
+
+</script>   

@@ -1,0 +1,92 @@
+@import url("https://fonts.googleapis.com/css?family=Gochi+Hand");
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  width: 100vw;
+  min-height: 100vh;
+  margin: 0;
+  background-color: #291642;
+  font-family: "Gochi Hand", sans-serif;
+  font-size: 100%;
+  letter-spacing: 0.1rem;
+  color: #fff;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background: -webkit-gradient(linear, left top, right top, from(#2a6b3e), to(#0c3074)) no-repeat, url("https://lh4.googleusercontent.com/-3eBjuQpOGFw/U47yh_-OycI/AAAAAAAAI2U/uaU5pK49N1w/s1600/normal.jpg") no-repeat fixed;
+  background: linear-gradient(to right, #2a6b3e 0%, #0c3074 100%) no-repeat, url("https://lh4.googleusercontent.com/-3eBjuQpOGFw/U47yh_-OycI/AAAAAAAAI2U/uaU5pK49N1w/s1600/normal.jpg") no-repeat fixed;
+  background-size: cover;
+  background-blend-mode: color;
+}
+
+.grid__container {
+  inline-size: 50vw;
+  min-block-size: 50vh;
+  min-inline-size: 30vw;
+  display: -ms-grid;
+  display: grid;
+  place-items: center;
+  border-radius: 5px;
+  -webkit-box-shadow: 0 20px 30px rgba(0, 0, 0, 0.6);
+          box-shadow: 0 20px 30px rgba(0, 0, 0, 0.6);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  padding: 4vh;
+  text-shadow: 0 1px 1px rgba(0, 0, 0, 0.4);
+  -webkit-transition: -webkit-box-shadow 0.3s ease;
+  transition: -webkit-box-shadow 0.3s ease;
+  transition: box-shadow 0.3s ease;
+  transition: box-shadow 0.3s ease, -webkit-box-shadow 0.3s ease;
+  overflow: hidden;
+  resize: both;
+  background-image: -webkit-gradient(linear, left bottom, left top, from(rgba(255, 255, 255, 0.5)), to(rgba(255, 255, 255, 0.5)));
+  background-image: linear-gradient(0deg, rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.5));
+  -webkit-backdrop-filter: blur(3px);
+          backdrop-filter: blur(3px);
+}
+
+.avatar {
+  width: 100%;
+  height: 100%;
+  background-color: #291642;
+  border-radius: 5px;
+  display: -ms-inline-grid;
+  display: inline-grid;
+  place-content: center;
+}
+
+.media__heading {
+  height: 100%;
+  width: 100%;
+  background-color: #0c3074;
+  border-radius: 5px;
+}
+
+.media__content {
+  width: 100%;
+  height: 100%;
+  background-color: #2a6b3e;
+  border-radius: 5px;
+}
+
+.action {
+  width: 100%;
+  height: 100%;
+  background-color: #fff;
+  border-radius: 5px;
+}
+/*# sourceMappingURL=2.css.map */

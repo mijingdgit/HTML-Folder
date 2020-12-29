@@ -1,0 +1,125 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+.clock {
+  width: 400px;
+  height: 400px;
+  border-radius: 50%;
+  border: 16px solid pink;
+  margin: 100px auto;
+  position: relative;
+  background-image: url(https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1604750554252&di=d44123cc6c6eb36157f10078b28f81a1&imgtype=0&src=http%3A%2F%2Fb-ssl.duitang.com%2Fuploads%2Fitem%2F201812%2F17%2F20181217212511_grgpo.jpg);
+  background-size: cover;
+}
+.top-left {
+  width: 100px;
+  height: 100px;
+  border: 16px solid pink;
+  border-radius: 20px;
+  position: absolute;
+  left: 0;
+  z-index: -2;
+  animation: top-left 1s infinite;
+}
+@keyframes top-left {
+  0% {
+    transform: rotate(-30deg);
+  }
+  50% {
+    transform: rotate(30deg);
+  }
+  100% {
+    transform: rotate(-30deg);
+  }
+}
+
+.top-right {
+  width: 100px;
+  height: 100px;
+  border: 16px solid pink;
+  border-radius: 20px;
+  position: absolute;
+  right: 0;
+  z-index: -2;
+  animation: top-right 1s infinite;
+}
+@keyframes top-right {
+  0% {
+    transform: rotate(30deg);
+  }
+  50% {
+    transform: rotate(-30deg);
+  }
+  100% {
+    transform: rotate(30deg);
+  }
+}
+
+.mian-left {
+  width: 100px;
+  height: 100px;
+  border-bottom: 16px solid pink;
+  /* border: 1px solid pink; */
+  position: absolute;
+  left: -108px;
+  top: 100px;
+  transform-origin: 100px 100px;
+  animation: mian-left 1s infinite;
+}
+@keyframes mian-left {
+  0% {
+    transform: rotate(-30deg);
+  }
+  50% {
+    transform: rotate(30deg);
+  }
+  100% {
+    transform: rotate(-30deg);
+  }
+}
+
+.mian-rigth {
+  width: 100px;
+  height: 100px;
+  border-bottom: 16px solid pink;
+  /* border: 1px solid pink; */
+  position: absolute;
+  right: -108px;
+  top: 100px;
+  transform-origin: 0px 100px;
+  animation: mian-right 1s infinite;
+}
+@keyframes mian-right {
+  0% {
+    transform: rotate(30deg);
+  }
+  50% {
+    transform: rotate(-30deg);
+  }
+  100% {
+    transform: rotate(30deg);
+  }
+}
+.bottom {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  position: absolute;
+  background-color: pink;
+  left: 180px;
+  bottom: -112px;
+  transform-origin: center -200px;
+  animation: bottom 1s infinite;
+}
+@keyframes bottom {
+  0% {
+    transform: rotate(-30deg);
+  }
+  50% {
+    transform: rotate(30deg);
+  }
+  100% {
+    transform: rotate(-30deg);
+  }
+}

@@ -1,0 +1,149 @@
+@import "_layout";
+
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    padding: 0 20px 0 20px;
+
+    .main-cont-tit {
+        margin-top: 50px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        position: relative;
+
+        .main-tit {
+            font-weight: 400;
+        }
+
+        p {
+            color: rgba(0, 0, 0, 0.4);
+            font-size: 18px;
+            width: 386px;
+            height: 44px;
+            border: 2px solid rgba(0, 0, 0, 0.1);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border-top-left-radius: 25px;
+            border-bottom-right-radius: 25px;
+            margin-top: 16px;
+            margin-bottom: 40px;
+        }
+
+        .main-tit::after {
+            position: absolute;
+            content: "";
+            width: 115px;
+            border: 1px solid $global-green;
+            // float: left;
+            left: 38%;
+            top: 56px;
+        }
+    }
+
+
+    .main-cont {
+        width: 100%;
+        height: 180px;
+        overflow: hidden;
+        font-size: 24px;
+    }
+
+    .main-contact-area {
+        display: flex;
+        height: 190px;
+        width: 100%;
+        background: $global-green;
+
+        img {
+            width: 287px;
+        }
+
+        .main-contact {
+            width: 100%;
+        }
+
+        .main-contact {
+            display: flex;
+            flex-direction: column;
+            // justify-content: flex-start;
+            // align-items: flex-start;
+            width: 90%;
+            // border: 1px solid #000;
+            margin: 20px;
+        }
+
+        .main-contact .ph {
+            display: flex;
+            // justify-content: center;
+            align-items: center;
+            color: #ffffff;
+        }
+
+        .main-contact .ph img {
+            width: 27px;
+            height: 27px;
+        }
+
+        .main-contact h1 {
+            margin-left: 20px;
+        }
+
+        .main-contact .main-ph-btn {
+            justify-content: flex-end;
+            align-self: flex-end;
+
+            width: 175px;
+            line-height: 50px;
+            background: #fff;
+            font-size: 24px;
+            color: $global-green;
+            text-align: center;
+            border-radius: 25px 0 25px 0;
+            margin-top: 10px;
+        }
+    }
+
+    .main-img-list {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+
+
+        position: relative;
+    }
+
+    .main-img-list .img-list {
+        position: relative;
+        margin-left: 10px;
+        margin-top: 10px;
+    }
+
+    .main-img-list img {
+        width: 345px;
+        height: 234px;
+    }
+
+    .main-img-list .img-list h2 {
+        // float: left;
+
+        position: absolute;
+        top: 30%;
+        left: 28%;
+        // margin: 0 auto;
+        width: 165px;
+        height: 87px;
+        background: rgba(0, 0, 0, 0.5);
+        color: #fff;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+
+
+}

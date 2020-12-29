@@ -1,0 +1,221 @@
+header {
+  width: 100%;
+  height: 858px;
+  background-image: url(../../img/banner.jpg);
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  // position: relative;
+  margin-bottom:170px ;
+
+  .wrepper {
+    width: 1400px;
+    margin: 0 auto;
+
+    nav {
+      height: 60px;
+      padding-top: 35px;
+
+      .logo {
+        float: left;
+      }
+
+      ul {
+        float: right;
+
+        a {
+          font-size: 16px;
+          color: #fff;
+          // text-decoration: underline;
+        }
+
+        li {
+          height: 25px;
+          float: left;
+          // border: 1px solid #fff;
+          padding-bottom: 5px;
+          margin-right: 46px;
+        }
+        .s{
+          border-bottom: 1px solid #fff;
+        }
+        .c{
+          border-bottom: 1px solid #fff;
+
+        }
+        .z{
+          border-bottom: 1px solid #fff;
+
+        }
+        .f{
+          border-bottom: 1px solid #fff;
+
+        }
+        .g{
+          border-bottom: 1px solid #fff;
+
+        }
+
+        li:hover {
+          border-bottom: 1px solid #fff;
+        }
+      }
+    }
+
+    .content {
+      margin-top: 165px;
+      margin-left: 116px;
+
+      .con-title {
+
+        // margin-bottom: 35px;
+        .sharp {
+          font-size: 48px;
+          color: #fff;
+          // margin-bottom: 20px;
+        }
+
+        .en {
+          font-size: 13px;
+          color: #d6a6a1;
+        }
+      }
+
+      .con-id {
+        font-size: 90px;
+        color: #fff;
+        margin-bottom: 10px;
+      }
+
+      .con-name {
+        width: 354px;
+        height: 58px;
+        font-size: 34px;
+        color: #fff;
+        text-align: center;
+        line-height: 54px;
+        border-top: 2px solid #fff;
+        border-bottom: 2px solid #fefefe;
+        margin-bottom: 13px;
+      }
+
+      .con-news {
+        font-size: 12px;
+        color: #fff;
+        margin-bottom: 32px;
+
+        li {
+          margin-bottom: 6px;
+          color: #d8a4a3;
+          span {
+            margin-right: 9px;
+            
+          }
+        }
+      }
+
+      .con-check {
+        width: 154px;
+
+        height: 40px;
+        border-radius: 12px;
+        background-color: #fff;
+        font-size: 23px;
+        text-align: center;
+        line-height: 40px;
+
+        a {
+          color: #a90e10;
+        }
+      }
+    }
+
+    .icon {
+      width: 50px;
+      height: 120px;
+      position: fixed;
+      top: 65%;
+      right: 0;
+      background-color: #333;
+      color: #fff;
+
+      li {
+        span {
+          font-size: 28px;
+          width: 50px;
+          height: 50px;
+          margin-left: 10px;
+          line-height: 60px;
+        }
+      }
+
+      .phone {
+        border-bottom: 2px solid #fff;
+        position: relative;
+        .number{
+          width: 170px;
+          height: 60px;
+          background-color: #333;
+          color: #fff;
+          font-size: 16px;
+          position: absolute;
+          top:0 ;
+          right: 50px;
+          line-height: 60px;
+          text-align: center;
+          display: none;
+        }
+      }
+      .phone:hover .number{
+        display: block;
+      }
+      a{
+        color: #fff;
+      }
+      .taobao {
+        // border-bottom: 2px solid #fff;
+        position: relative;
+        .tao{
+          width: 170px;
+          height: 58px;
+          background-color: #333;
+          color: #fff;
+          font-size: 16px;
+          position: absolute;
+          top:0 ;
+          right: 50px;
+          line-height: 60px;
+          text-align: center;
+          display: none;
+        }
+      }
+      .taobao:hover .tao{
+        display: block;
+      }
+    }
+  }
+
+  .round {
+      width: 216px;
+      height: 10px;
+      margin: 254px auto;
+      li {
+        float: left;
+        width: 10px;
+        height: 10px;
+        border-radius: 50%;
+        // border: 1px solid #000;
+        background-color:#d1d1d1;
+        margin-right: 44px;
+
+      }
+      .po{
+        border: 2px solid #000;
+        background-color: #fff;
+      }
+      li:hover{
+        border: 2px solid #4d4d4d;
+        background-color: #fff;
+      }
+    
+  }
+}

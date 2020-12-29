@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>分页列表</title>
+  </head>
+  <link rel="stylesheet" href="./css/分页dome3.css" />
+  <body>
+    <div class="warpper">
+      <!-- 列表容器 -->
+      <ul class="cons">
+        <!-- <li class="con">
+            <p class="p1">新闻列表1</p>
+            <p class="p2">2020-12-14</p>
+          </li>
+          <li class="con">
+            <p class="p1">新闻列表2</p>
+            <p class="p2">2020-12-14</p>
+          </li>
+          <li class="con">
+            <p class="p1">新闻列表3</p>
+            <p class="p2">2020-12-14</p>
+          </li>
+          <li class="con">
+            <p class="p1">新闻列表4</p>
+            <p class="p2">2020-12-14</p>
+          </li> -->
+      </ul>
+      <!-- 按钮容器 -->
+      <div class="pages">
+        <!-- <a href="#" class="nolink" >首页</a>
+        <a href="#" class="nolink">上一页</a>
+        <a href="#" class="curr">1</a>
+        <a href="#" >2</a>
+        <a href="#" >3</a>
+        <a href="#" >4</a>
+        <a href="#" >下一页</a>
+        <a href="#" >尾页</a> -->
+      </div>
+    </div>
+    <script src="./js/data.js"></script>
+    <!-- <script src="./js/jQure.js"></script> -->
+    <script>
+      // 获取列表容器
+      var listBox = document.querySelector(".cons");
+      // 获取按钮容器
+      var btnBox = document.querySelector(".pages");
+      // 获取数据源
+      var database = data.listArr;
+      // console.log(database[0].url);
+      // 数据长度
+      var dataLength = database.length;
+      // 当前页数
+      var page = 1;
+      // 每一页的总条数
+      var items = 4;
+      //总页数
+      var pagesNum = Math.ceil(dataLength / items);
+      
+      // 网页打开或刷新时获取参数
+      var argArgs = getUrlArgs();
+      // 检查页面url中参数合法性
+      checkArgs(argArgs);
+      // 页面初始化
+      showList(page);
+      showPage(page);
+
+
+  //TODO 获取网址中的参数
+ function getUrlArgs() {
+        
+        var url = window.location.href;
+        let args = {};
+        // url = url.split("?")[1];
+        // console.log(url);
+        if(url.includes("?")){
+          url = url.split("?")[1];
+          url = url.split("=");
+          args.page = url[1];
+          
+         }
+         return args;
+        // url = url.split("=");
+        // console.log(url);
+      }
+
+
+
+      //TODO 检查页面url中参数的合法性
+      function checkArgs(_args) {
+        //替换网址传入的页码
+        if(_args.page){
+          //把这个对象里的参数转化为数字型
+          page = parseInt(_args.page)
+          //如果输入的不是数字
+          if(isNaN(page)){
+            page = 1;
+          }
+          //如果输入的数字小于1
+          if(page < 1){
+            page = 1
+          }
+        //如果大于最大页码数那么就等于它
+          if(page > pagesNum){
+            page = pagesNum;
+          }
+        
+        }
+      }
+
+
+
+      //TODO 列表初始
+      function showList(_page) {
+        var sIdx = (_page - 1) * items;
+        var eIdx = page * items;
+        for (let i = sIdx; i < eIdx && dataLength; i++) {
+          let li = document.createElement("li");
+          li.innerHTML = ` 
+        <li class="con">
+            <a href="${database[i].url}">${database[i].title}</a>
+            <p class="p2">${database[i].time}</p>
+       </li>
+       `;
+       console.log(database.url);
+          listBox.appendChild(li);
+        }
+      }
+
+      //TODO 显示页码
+      function showPage(_page) {
+        //构建页面结构
+        // var tmp = "";
+        // 首页1
+        // 上一页pagesIdx-1
+        if (_page == 1) {
+          btnBox.innerHTML += `<a class="nolink" >首页</a>
+      <a class="nolink">上一页</a>`;
+        } else {
+          btnBox.innerHTML += `<a href="?pageIdx=1" >首页</a>
+      <a href="?pageIdx=${_page - 1}">上一页</a>`;
+        }
+        //动态构建页面数据
+        // 中间的页码
+        for (let i = 1; i <= pagesNum; i++) {
+          //如果是当前页;那么当前页设置curr样式
+          if (i == _page) {
+            // let btn;
+            btnBox.innerHTML += `<a href="?page = ${i}" >${i}</a>`;
+            btnBox.classList.add("curr");
+            // btnBox.appendChild(btn);
+          } else {
+            let btn;
+            btnBox.innerHTML += `<a href="?page = ${i}" >${i}</a>`;
+            // btnBox.appendChild(btn);
+          }
+        }
+
+        // 尾页
+        // 下一页pagesIdx+1
+        if (_page == pagesNum) {
+      //     btnBox.innerHTML += `
+      // <a href="#" class="nolink">下一页</a>
+      // <a href="#" class="nolink">尾页</a>
+      // `;
+      console.log(1);
+        } else {
+          btnBox.innerHTML += `
+      <a href="?page=${_page + 1}">下一页</a>
+      <a href="?page=${pagesNum}">尾页</a>
+      `;
+        }
+      }
+    </script>
+  </body>
+</html>

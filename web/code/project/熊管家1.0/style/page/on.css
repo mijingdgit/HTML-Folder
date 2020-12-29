@@ -1,0 +1,209 @@
+@import "../header/_header.css";
+@import "../nav/_nav.css";
+@import "../config/_config.css";
+@import"../footer/_footer.css";
+
+main .imgt img{
+    width: 100%;
+    height: 100%;
+ 
+}
+main .welcome{
+    width: 100%;
+}
+main .welcome h6{
+    font-size: 1.5625rem;
+    text-align: center;
+}
+.welcome .en{
+    width: 21.25rem;
+    height: 2.625rem;
+    margin: 1rem auto;
+    font-size: 0.9375rem;
+    color: #d3d3d3;
+    text-align: center;
+    line-height: 2.625rem;
+    border: 0.0625rem solid #d3d3d3;
+    border-top-left-radius: 1.5625rem;
+    border-bottom-right-radius: 1.5625rem;
+}
+.welcome .en .box-g{
+    width: 7.4375rem;
+    height: 0;
+    border: 0.125rem solid #149268;
+    margin: 0 auto;
+    margin-top: -0.25rem;
+    background-color: #149268;
+}
+.content{
+    position: relative;
+}
+.welcome .content img{
+    width: 100%;
+    height: 18.5rem;
+}
+.welcome .content .hovery{
+    width: 100%;
+    height: 18.5rem;
+    background-color: #fff;
+    opacity: .5;
+    position: absolute;
+    top: 0;
+    display: none;
+}
+.welcome .content:hover .hovery{
+    display: block;
+}
+.news{
+    width: 100%;
+    height: 24.75rem;
+    background-color: #f6f6f6;
+   font-size: 1.5rem;
+   padding: 0 1.5rem;
+   box-sizing: border-box;
+    margin-bottom: 3.375rem;
+
+}
+.news p{
+    margin-top: 2.875rem;
+}
+.more{
+    width: 10.875rem;
+    height: 3.125rem;
+    background-color: #14926a;
+    font-size: 1.375rem;
+    text-align: center; 
+    font-weight: 600;
+    line-height: 3.125rem;
+    border-top-left-radius: 1.5625rem;
+    border-bottom-right-radius: 1.5625rem;
+    margin-top: 1.25rem;
+    margin-left: 13.625rem;
+    float: right;
+}
+.more a{
+    color:#fff;
+}
+main .decoration h6{
+    font-size: 1.5625rem;
+    text-align: center;
+}
+.decoration .en{
+    width: 21.25rem;
+    height: 2.625rem;
+    margin: 1rem auto;
+    font-size: 0.9375rem;
+    color: #d3d3d3;
+    text-align: center;
+    line-height: 2.625rem;
+    border: 0.0625rem solid #d3d3d3;
+    border-top-left-radius: 1.5625rem;
+    border-bottom-right-radius: 1.5625rem;
+}
+.decoration .en .box-g{
+    width: 7.4375rem;
+    height: 0;
+    border: 0.125rem solid #149268;
+    margin: 0 auto;
+    margin-top: -0.25rem;
+    background-color: #149268;
+}
+.decoration .cap{
+   width: 100%;
+   height: 25.4375rem;
+   margin-top: 2.125rem;
+   position: relative;
+}
+.cap img{
+    width: 100%;
+    height: 18.25rem;
+}
+.cap .bdl{
+    width: 2.625rem;
+    height: 2.625rem;
+    background-color:#149268;
+    opacity: .5;
+    border-radius: 50%; 
+    position: absolute;
+    top: 8rem;
+    left: 1.875rem;
+    display: flex;
+    align-items: center;
+   
+}
+.cap .bdl .left{
+    width: 1.25rem;
+    height: 1.25rem;
+    border-bottom: 0.25rem solid #fff;
+    border-left: 0.25rem solid #fff;
+    margin: 0 auto;
+    transform: rotate(45deg);
+}
+.cap .bdr{
+    width: 2.625rem;
+    height: 2.625rem;
+    background-color:#149268;
+    opacity: .5;
+    border-radius: 50%; 
+    position: absolute;
+    top: 8rem;
+    right: 1.875rem;
+    display: flex;
+    align-items: center;
+   
+}
+.cap .bdr .right{
+    width: 1.25rem;
+    height: 1.25rem;
+    border-top: 0.25rem solid #fff;
+    border-right:0.25rem solid #fff;
+    margin: 0 auto;
+    transform: rotate(45deg);
+}
+
+.cap .text{
+    width: 100%;
+    height: 3.1875rem;
+    padding:1.25rem 1.5rem;
+    box-sizing: border-box;
+}
+.cap .text .cn{
+    float: left;
+    font-size:1.625rem;
+}
+.cap .text .eny{
+    float: right;
+    margin-top: 0.625rem;
+    font-size: 1.25rem;
+    color: #666666;
+}
+
+@media screen and (max-width:767px){
+*{
+    font-size: 12px;
+}
+.news{
+    width: 100%;
+    height: 18.75rem;
+    background-color: #f6f6f6;
+   font-size: 1.5rem;
+   padding: 0 1.5rem;
+   box-sizing: border-box;
+    margin-bottom: 3.375rem;
+
+}
+  footer .img img {
+    width: 50%;
+    height: 50%;
+  }
+  footer .nav-y ul {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  footer .copyright p{
+    font-size: 0.75rem;
+  }
+ coration .cap{
+      height: 22.4375;
+  }
+}

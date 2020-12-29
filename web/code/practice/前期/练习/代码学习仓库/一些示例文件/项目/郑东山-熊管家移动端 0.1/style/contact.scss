@@ -1,0 +1,160 @@
+@import "_layout";
+
+header {
+    background-image: url(../img/contact-bg.png);
+}
+
+main {
+    background-color: #f3f3f3;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    .main-cont {
+        display: flex;
+        width: 100%;
+        background-color: #f3f3f3;
+        flex-direction: column;
+
+        img {
+            height: 100%;
+        }
+
+
+        p {
+            padding: 20px;
+            font-size: 32px;
+        }
+
+        a {
+            align-self: flex-end;
+            // align-content: flex-end;/@at-root
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-top: 10px;
+            margin-bottom: 20px;
+            width: 172px;
+            height: 60px;
+            font-size: 27px;
+            color: #f3f3f3;
+            background-color: $global-green;
+            // text-align: center;
+            border-top-left-radius: 25px;
+            border-bottom-right-radius: 25px;
+        }
+    }
+
+
+    .contact-area {
+        height: 230px;
+        width: 100%;
+        background-color: $global-green;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        img {
+            width: 135px;
+            height: 135px;
+        }
+
+        .qr-cont {
+            margin-left: 50px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .qr-cont span:nth-child(1) {
+            font-size: 36px;
+            color: #fff;
+        }
+
+        .qr-cont span:nth-child(2) {
+            margin-top: 10px;
+            font-size: 24px;
+
+            // color: #fff;
+            a {
+                color: #fff;
+            }
+        }
+    }
+
+    .contact-tit {
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        // border: 1px solid #000;
+    }
+
+    .contact-tit h1 {
+        font-weight: 400;
+        margin-top: 40px;
+        margin-bottom: 40px;
+    }
+
+    .contact-form {
+        width: 100%;
+        display: flex;
+        position: relative;
+
+        .lable-area,
+        .input-area {
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-end;
+
+            gap: 20px;
+        }
+
+
+
+        .lable-area label {
+            height: 70px;
+            width: 200px;
+            font-size: 24px;
+            padding: 20px;
+        }
+
+        .input-area {
+            width: 90%;
+            margin-right: 20px;
+        }
+
+        .input-area input,
+        .input-area select {
+            width: 100%;
+            height: 70px;
+        }
+    }
+
+    .contact-btn {
+        width: 270px;
+        height: 60px;
+        font-size: 24px;
+        background-color: #000000;
+        margin-top: 52px;
+        border-radius: 50px;
+        color: #fff;
+        // margin: 0 auto;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 60px;
+    }
+
+    .map {
+        // width: 750px;
+        // height: 524px;
+
+        img {
+            width: 100%;
+            height: 100%;
+        }
+    }
+
+}

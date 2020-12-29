@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>分页列表dome01(3.0)</title>
+  </head>
+  <style>
+    ul li{
+      list-style: none;
+    }
+    .warpper{
+      margin: 100px auto;
+      /* border: 1px solid #000; */
+
+    }
+    li{
+      width: 500px;
+      height: 50px;
+      margin: 0 auto;
+      border-bottom: 1px solid #ccc;
+      display: flex;
+      justify-content: space-between;
+        
+    }
+    li:hover{
+      background: #f1f1f1;
+    }
+    .btn{
+      width: 100px;
+      font-size: 20px;
+      text-align: center;
+      line-height: 40px;
+      color: #fff;
+      background: orangered;
+      border-radius: 10px;
+      margin: 0 auto;
+    }
+    .btn.curr{
+      width: 200px;
+      background: plum;
+      color: #000;
+    }
+
+  </style>
+  <body>
+    <div class="warpper">
+      <ul class="content"></ul>
+      <div class="btn">加载更多</div>
+    </div>
+    <script src="./js/data.js"></script>
+    <script src="./js/jQure.js"></script>
+    <script>
+      // function $(selector){
+      //   let elememt = document.querySelectorAll(selector);
+      //   if(elememt.length === 1){
+      //     return elememt[0];
+      //   }else{
+      //     return elememt;
+      //   }
+      // }
+      // function $C(elename){
+      //   return document.createElement(elename);
+      // }
+      // var data = [
+      //   {title:"新闻列表1" ,time:"2020-12-10"},
+      //   {title:"新闻列表2" ,time:"2020-12-10"},
+      //   {title:"新闻列表3" ,time:"2020-12-10"},
+      //   {title:"新闻列表4" ,time:"2020-12-10"},
+      //   {title:"新闻列表5" ,time:"2020-12-10"},
+      //   {title:"新闻列表6" ,time:"2020-12-10"},
+      //   {title:"新闻列表7" ,time:"2020-12-10"},
+      //   {title:"新闻列表8" ,time:"2020-12-10"},
+      //   {title:"新闻列表9" ,time:"2020-12-10"},
+      //   {title:"新闻列表10" ,time:"2020-12-10"},
+      //   {title:"新闻列表11" ,time:"2020-12-10"},
+      //   {title:"新闻列表12" ,time:"2020-12-10"},
+      //   {title:"新闻列表13" ,time:"2020-12-10"}
+
+      // ]
+
+      var btn = $(".btn");
+      var ul = $(".content");
+      // 页数
+      var idx = 1;
+      var pages = 4;
+      var temp = idx*pages;
+      var cons = data.length;
+      // 循环创建
+      for(let i = 0; i < temp; i++){
+        var li = $C("li");
+        var p1 = $C("p");
+        var p2 = $C("p");
+        p1.innerHTML = data[i].title;
+        p2.innerHTML = data[i].time;
+        ul.appendChild(li);
+        li.appendChild(p1);
+        li.appendChild(p2);
+      }
+      // 添加点击事件
+      btn.onclick = function(){
+        
+        ul.innerHTML = "";
+        idx++;
+        var temp = idx*pages;
+        if(temp > cons){
+          temp = cons;
+           btn.innerHTML = "没有更多数据可加载";
+           btn.classList.add("curr");
+        }
+        for(let i = 0; i<temp; i++){
+          var li = $C("li");
+          var p1 = $C("p");
+          var p2 = $C("p");
+          p1.innerHTML = data[i].title;
+          p2.innerHTML = data[i].time;
+          ul.appendChild(li);
+          li.appendChild(p1);
+          li.appendChild(p2);
+        }
+      }
+    </script>
+  </body> 
+</html>

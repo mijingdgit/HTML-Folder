@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ajax03</title>
+  </head>
+  <body>
+    <style>
+      body,
+      ul,
+      li,
+      a,
+      span {
+        margin: 0;
+        padding: 0;
+      }
+      .list {
+        list-style: none;
+        margin: 100px auto;
+        width: 500px;
+        border: 1px solid pink;
+        /* overflow: hidden; */
+      }
+      li {
+        width: 100%;
+
+        padding: 10px 30px;
+        margin: 10px 0;
+        box-sizing: border-box;
+        border-bottom: 1px solid #ccc;
+        display: flex;
+        justify-content: space-between;
+      }
+      a {
+        text-decoration: none;
+        color: #000;
+      }
+    </style>
+    <ul class="list"></ul>
+    <script>
+      // 1、ajax访问data.txt, 输出一个新闻列表。data.txt里面是全部html代码。
+
+      // 获取页面元素
+      let listDOM = document.querySelector(".list");
+      // 创建对象
+      let xmlHttp = new XMLHttpRequest();
+      // 请求一个打开链接的方式
+      xmlHttp.open("get", "data.txt", true);
+      // 发送数据
+      xmlHttp.send();
+      // 通过onreadystarchange来监听Ajax的完成
+      xmlHttp.onreadystatechange = function () {
+        // 监听事件的两种状态
+        if (this.readyState == 4 && this.status == 200) {
+          let html = this.responseText;
+          listDOM.innerHTML = html;
+        }
+      };
+    </script>
+  </body>
+</html>

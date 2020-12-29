@@ -1,0 +1,151 @@
+<!--
+ * @Author: DsCode
+ * @Date: 2020-07-23 15:11:24
+ * @LastEditors: DsCode
+ * @LastEditTime: 2020-07-23 17:14:39
+ * @FilePath: \HTML-Folder\7-23\page3.html
+-->
+<!-- 
+    ! 不使用外部样式，采取内部样式，未作响应式
+
+    侧边menu 可变为JD Tmall 筛选导航
+ -->
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+        list-style: none;
+      }
+      .main {
+        height: 800px;
+
+        /* background: black; */
+      }
+      .main-menu {
+        font-weight: 600;
+        font-size: 30px;
+      }
+
+      .menu-section {
+        width: 300px;
+        margin-top: 20px;
+        margin-left: 20px;
+      }
+
+      .menu-section li {
+        cursor: pointer;
+        padding: 10px;
+        background: #3498db;
+        color: white;
+        border-bottom: 1px solid white;
+        /* border left */
+        border-left: 1px solid white;
+      }
+
+      .menu-section li:last-child {
+        border-bottom: none;
+      }
+
+      .sub-list-container {
+        /* position: relative; */
+        z-index: 1;
+      }
+
+      .sub-list-container ul {
+        margin: 20px;
+        position: absolute;
+        /*
+         opacity属性指定了一个元素的透明度
+              完全不透明
+              opacity: 1;
+              opacity: 1.0;
+
+              半透明
+              opacity: 0.6;
+
+              完全透明
+              opacity: 0.0;
+              opacity: 0;
+
+              opacity: inherit;
+               */
+        opacity: 0;
+        /*
+              z-index 属性设定了一个定位元素及其后代元素或 flex 项目的 z-order。
+               当元素之间重叠的时候， z-index 较大的元素会覆盖较小的元素在上层进行显示。
+               */
+        z-index: -1;
+        left: 300px;
+        top: 0px;
+        width: 200px;
+        transition: all 0s linear;
+      }
+
+      .sub-list-container:hover .fa-menu {
+        opacity: 1;
+        z-index: 1;
+        left: 300px;
+      }
+
+      .son-menu:hover ul {
+        opacity: 1;
+        z-index: 1;
+        left: 300px;
+        margin-left: -100px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="main">
+      <ul class="menu-section">
+        <li class="sub-list-container">
+          <div class="main-menu">Main menu</div>
+          <ul class="fa-menu">
+            <li>M11</li>
+            <li class="son-menu">
+              <div>Main menu</div>
+              <ul>
+                <li>Son 1</li>
+                <li>Son 2</li>
+                <li>Son 3</li>
+                <li>Son 4</li>
+                <li>Son 5</li>
+              </ul>
+            </li>
+            <li>M3</li>
+            <li>M4</li>
+            <li>M5</li>
+          </ul>
+        </li>
+        <li class="sub-list-container">
+          <div class="main-menu">Main menu</div>
+          <ul>
+            <li>M12</li>
+            <li>M2</li>
+            <li>M3</li>
+            <li>M4</li>
+            <li>M5</li>
+          </ul>
+        </li>
+        <li class="sub-list-container">
+          <div class="main-menu">Mian menu</div>
+          <ul>
+            <li>M13</li>
+            <li>M2</li>
+            <li>M3</li>
+            <li>M4</li>
+            <li>M5</li>
+          </ul>
+        </li>
+      </ul>
+    </div>
+  </body>
+</html>

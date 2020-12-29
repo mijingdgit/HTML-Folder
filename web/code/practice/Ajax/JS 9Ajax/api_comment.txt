@@ -1,0 +1,1 @@
+﻿[{"id":1,"username":"廖磊","text":"我真的还想再活五百年"},{"id":2,"username":"卢芙蓉","text":"ajax真的好用"},{"id":3,"username":"谷颖","text":"你们再说什么啊"},{"id":4,"username":"周江林","text":"我就静静看你们表演"},{"id":5,"username":"谷颖","text":"对，看他们表演~!"}]

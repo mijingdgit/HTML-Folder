@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <style>
+      /* 其次需要写一个样式  九宫格*/
+      ul,
+      li,
+      a {
+        margin: 0;
+        padding: 0;
+      }
+
+      ul {
+        list-style: none;
+        width: 400px;
+      }
+      li,
+      a {
+        text-decoration: none;
+        width: 100px;
+        height: 100px;
+        border: 1px solid #000;
+        float: left;
+        font-size: 20px;
+        text-align: center;
+        line-height: 100px;
+      }
+      /* 给li添加背景和字体让旋转明显并且命名为curr */
+      li.curr {
+        font-size: 30px;
+        background: skyblue;
+        color: pink;
+      }
+    </style>
+    <!-- 首先需要写一个div盒子包裹ul>li*8列表 在第四个li里放一个开始键a -->
+    <div class="warpper">
+      <ul class="cont">
+        <li class="li1">1</li>
+        <li class="li2">2</li>
+        <li class="li3">3</li>
+        <li class="li4">4</li>
+        <a href="#" class="li5">开始</a>
+        <li class="li6">5</li>
+        <li class="li7">6</li>
+        <li class="li8">7</li>
+        <li class="li9">8</li>
+      </ul>
+    </div>
+    <script src="./九宫格.js"></script>
+  </body>
+</html>

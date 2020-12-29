@@ -1,0 +1,70 @@
+@import "_config";
+@import "_icon";
+@import "_nav-head";
+@import "_footer";
+
+header{
+    background-image: url(../images/share/bg.jpg);
+}
+
+main {
+    width: 80rem;
+    margin: 0 auto;
+    margin-top: 1rem;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    position: relative;
+
+    img {
+        padding: 0.6rem;
+    }
+
+    li {
+        position: relative;
+        display: block;
+        list-style: none;
+    }
+
+    li div::before {
+
+        position: absolute;
+        content: "论·美的存在";
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        font-size: 2em;
+        color: #ffffff;
+
+        width: 34rem;
+        height: 22rem;
+        background-color: rgba(0, 0, 0, 0.4);
+        top: 2rem;
+        left: 2rem;
+        display: none;
+    }
+
+    li div::after {
+        content: "";
+        position: absolute;
+        top: -0.69rem;
+        right: -0.69rem;
+        transform: rotate(135deg);
+        border-width: 1.25rem;
+        border-style: solid;
+        border-color: transparent $global-blue transparent transparent;
+
+        // display: none;
+    }
+
+    li:hover div::before {
+        display: flex;
+        margin: auto;
+        text-align: center;
+    }
+
+    li:hover div::after {
+        display: none;
+    }
+}

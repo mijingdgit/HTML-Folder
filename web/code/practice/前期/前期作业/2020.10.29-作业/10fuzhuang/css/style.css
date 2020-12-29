@@ -1,0 +1,113 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.body{
+    width: 1351px;
+    height:715px;
+    /* border: 1px solid #000000; */
+    display: flex;
+}
+.zuo{
+   width: 628px;
+   height:659px;
+   float: left;
+   /* border: 1px solid #000000; */
+   margin: 30px 30px 27px 40px;
+   position: relative;
+}
+
+.zuo img{
+    width:628px ;
+    height: 659px;
+}
+.zuo .zi{
+    width:628px;
+    height:123px;
+    position: absolute;
+    bottom: 0;
+    background-color: #ffffff ;
+    opacity: 0.5;
+
+}
+.zuo .zi span{
+    font-size: 23px;
+    color: #000000;
+    display: block;
+    margin-top: 24px;
+    margin-left: 25px;
+}
+.zuo .zi p{
+    font-size: 13px;
+    color: #575757;
+    margin: 5px 29px 0 25px ;
+}
+.you{
+    width:628px;
+    height: 659px;
+    float: right;
+    /* border: 2px solid #000000; */
+    margin: 30px 29px 27px 0;
+}
+.you .shang{
+    position: relative;
+    width: 628px;
+    height: 314px;
+    /* border: 2px solid #000000; */
+
+}
+.shang img{
+    width: 628px;
+    height: 314px; 
+}
+.shang .zis{
+    width: 314px;
+    height: 314px;
+    position: absolute;
+    top: 0;
+    right:0;
+    /* border:2px solid #000000; */
+    background-color: #ffffff;
+    opacity: 0.5;
+} 
+.zis span{
+    font-size: 23px;
+    color: #000000;
+    display: block;
+    margin: 24px 0 5px 12px ;
+}
+.zis p{
+    font-size: 13px;
+    color: #575757;
+    margin: 0 31px 0 12px ;
+}
+.you .xia{
+    width: 628px;
+    height: 315px;
+    position: relative;
+    margin-top:30px ; 
+}
+.xia img{
+    width: 628px;
+    height: 315px;  
+}
+.xia .zix{
+    width: 314px;
+    height: 315px;
+    background-color: #ffffff;
+    opacity: 0.5;
+    position: absolute;
+    right: 0;
+    top: 0;
+}
+.zix span{
+    font-size: 23px;
+    color: #000000;
+    display: block;
+    margin: 24px 0 6px 13px;
+}
+.zix p{
+    font-size: 13px;
+    color: #575757;
+    margin-left: 12px;
+}

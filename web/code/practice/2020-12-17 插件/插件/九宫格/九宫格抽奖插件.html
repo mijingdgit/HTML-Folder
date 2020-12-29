@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <style>
+      /* 第一个 */
+      .uli {
+        list-style: none;
+        position: relative;
+        margin: 0 300px;
+      }
+
+      .uli li {
+        text-decoration: none;
+        width: 200px;
+        height: 200px;
+        border: 2px solid pink;
+        background: skyblue;
+        font-size: 25px;
+        text-align: center;
+        line-height: 200px;
+        box-sizing: border-box;
+        /* float: left; */
+      }
+      .uli li.curr {
+        background-color: yellow;
+        color: skyblue;
+        font-size: 30px;
+      }
+
+      .li1 {
+        position: absolute;
+        top: 0;
+        left: 0;
+      }
+      .li2 {
+        position: absolute;
+        top: 0;
+        left: 200px;
+      }
+      .li3 {
+        position: absolute;
+        top: 0;
+        left: 400px;
+      }
+      .li4 {
+        position: absolute;
+        top: 200px;
+        left: 400px;
+      }
+      .li5 {
+        position: absolute;
+        top: 200px;
+        left: 200px;
+        text-decoration: none;
+        width: 200px;
+        height: 200px;
+        border: 2px solid pink;
+        font-size: 25px;
+        text-align: center;
+        line-height: 200px;
+        box-sizing: border-box;
+        background-color: pink;
+        color: skyblue;
+      }
+      .li5:hover {
+        color: pink;
+        font-size: 30px;
+        background-color: skyblue;
+      }
+      .li6 {
+        position: absolute;
+        top: 400px;
+        left: 400px;
+      }
+      .li7 {
+        position: absolute;
+        top: 400px;
+        left: 200px;
+      }
+      .li8 {
+        position: absolute;
+        top: 400px;
+        left: 0;
+      }
+      .li9 {
+        position: absolute;
+        top: 200px;
+        left: 0;
+      }
+
+
+      /* 第二个盒子 */
+      .ul2 {
+        list-style: none;
+        position: relative;
+        width: 600px;
+        margin-left: 1000px;
+        
+      }
+
+      .ul2 li,a {
+        text-decoration: none;
+        width: 200px;
+        height: 200px;
+        border: 2px solid pink;
+        background: skyblue;
+        font-size: 25px;
+        text-align: center;
+        line-height: 200px;
+        box-sizing: border-box;
+        float: left;
+      }
+      .ul2 li.curr {
+        background-color: yellow;
+        color: skyblue;
+        font-size: 30px;
+      }
+      .ul2 a {
+        /* position: absolute;
+        top: 200px;
+        left: 200px; */
+        text-decoration: none;
+        /* width: 200px;
+        height: 200px; */
+        border: 2px solid pink;
+        font-size: 25px;
+        text-align: center;
+        line-height: 200px;
+        box-sizing: border-box;
+        background-color: pink;
+        color: skyblue;
+      }
+      .ul2 a:hover {
+        color: pink;
+        font-size: 30px;
+        background-color: skyblue;
+      }
+    </style>
+    <!-- 第一个 -->
+    <div class="content">
+      <ul class="uli">
+        <li class="li1">薯片</li>
+        <li class="li2">可乐</li>
+        <li class="li3">老干妈</li>
+        <li class="li4">雪碧</li>
+        <a href="#" class="li5">开始</a>
+        <li class="li6">口香糖</li>
+        <li class="li7">杯子</li>
+        <li class="li8">辣条</li>
+        <li class="li9">烤肠</li>
+      </ul>
+    </div>
+    <!-- 第二个 -->
+    <div class="cont">
+      <ul class="ul2">
+        <li>薯片</li>
+        <li >可乐</li>
+        <li>老干妈</li>
+        <li>雪碧</li>
+        <a href="#">开始</a>
+        <li>口香糖</li>
+        <li>杯子</li>
+        <li>辣条</li>
+        <li>烤肠</li>
+      </ul>
+    </div>
+    <script src="./九宫格.js"></script>
+    <script>
+    var sudo = new Sudoku(".content");
+    var sudo = new Sudoku(".cont");
+    </script>
+  </body>
+</html>

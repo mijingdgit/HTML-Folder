@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>鼠标悬停气泡</title>
+  </head>
+  <body>
+      <style>
+          .box{
+              width: 300px;
+              height: 100px;
+              font-size: 25px;
+              text-align: center;
+              line-height:100px;
+              background: pink;
+              /* display: inline-block; */
+              float: left;
+              margin: 100px 10px;
+              border-radius: 50px;
+          }
+          
+          .bbox{
+              width: 300px;
+              height: 100px;
+              font-size: 25px;
+              text-align: center;
+              line-height:inherit;
+              background: skyblue;
+              border-radius: 50%;
+              color: #f1f1f1;
+              position:relative;
+              margin-top: 10px;
+              display: none;
+
+          }
+          .bbox.curr{
+              display: block;
+          }
+          .bbox::after{
+              content: "";
+              position: absolute;
+              top: -30%;
+              left: 60px;
+              border: 20px solid #000;
+              border-color: transparent transparent skyblue transparent;
+          }
+          
+          
+      </style>
+    <div>
+      <div class="box box1">
+        <span>火锅</span>
+        <div class="bbox bbox1">麻辣牛肉</div>
+      </div>
+      <div class="box box2">
+        <span>火锅</span>
+        <div class="bbox bbox2">毛肚</div>
+      </div>
+      <div class="box box3">
+        <span>火锅</span>
+        <div class="bbox bbox3">虾滑</div>
+      </div>
+      <div class="box box4">
+        <span>火锅</span>
+        <div class="bbox bbox4">鸭肠</div>
+      </div>
+      <div class="box box5">
+        <span>火锅</span>
+        <div class="bbox bbox5">苕粉</div>
+      </div>
+      <div class="box box6">
+        <span>火锅</span>
+        <div class="bbox bbox6">豆芽</div>
+      </div>
+      <div class="box box7">
+        <span>火锅</span>
+        <div class="bbox bbox7">豆皮</div>
+      </div>
+    </div>
+    <div class="box box8">
+      <span>火锅</span> 
+       <div class="bbox bbox8">小郡肝</div>
+      </div>
+   
+    <script src="./mouse.js"></script>
+    <script>
+        var bubble = new Boxbuttle(".box1",".bbox1");
+        var bubble = new Boxbuttle(".box2",".bbox2");
+        var bubble = new Boxbuttle(".box3",".bbox3");
+        var bubble = new Boxbuttle(".box4",".bbox4");
+        var bubble = new Boxbuttle(".box5",".bbox5");
+        var bubble = new Boxbuttle(".box6",".bbox6");
+        var bubble = new Boxbuttle(".box7",".bbox7");
+        var bubble = new Boxbuttle(".box8",".bbox8");
+    </script>
+  </body>
+</html>

@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>测试</title>
+</head>
+<body>
+    <style>
+        .cont{
+            width: 200px;
+            height: 50px;
+            background-color: skyblue;
+            border-radius: 25px;
+            font-size: 20px;
+            text-align: center;
+            line-height: 50px;
+        }
+        .con{
+            
+            width: 200px;
+            height: 50px;
+            background-color: pink;
+            border-radius: 25px;
+            font-size: 20px;
+            text-align: center;
+            line-height: 50px;
+            margin-top: 10px;
+            position: relative;
+            display: none;
+        }
+        .con.curr{
+            display: block;
+        }
+        .con::after{
+            content: "";
+            position: absolute;
+            top: -40%;
+            left: 20%;
+            border: 10px solid transparent;
+            border-color:transparent transparent pink transparent;
+        }
+
+
+    </style>
+
+    
+    <div class="cont">
+        <span>川菜</span>
+    </div>
+    <div class="con">辣子鸡</div>
+    <script src="./mouse.js"></script>
+    <script>
+        var bot = new Boxbuttle(".cont",".con");
+    </script>
+</body>
+</html>

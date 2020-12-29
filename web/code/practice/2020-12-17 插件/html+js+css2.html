@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>html+js+js生成css(大佬)</title>
+  </head>
+  <body>
+    <style>
+      body {
+        background: pink;
+      }
+      .btn {
+        width: 100px;
+        height: 50px;
+        background: #ccc;
+        margin: 100px auto;
+        border-radius: 25px;
+      }
+      .anniu {
+        display: inline-block;
+        width: 50px;
+        height: 50px;
+        background: #f1f1f1;
+        border-radius: 50%;
+      }
+    </style>
+    <div class="btn btn1">
+        <span class="anniu anniu1"></span>
+    </div>
+      <div class="btn btn2">
+        <span class="anniu anniu2"></span>
+      </div>
+    <script>
+
+
+
+
+    function BtnCut(selector,selector1) {
+        this.selector = selector
+        this.selector1 = selector1
+        this.flag = true;
+        this.init()
+        // this.show = function () {
+        //     if (this.flag) {
+        //         this.flag = false;
+        //         this.btn.style.background = "yellowgreen";
+        //         this.anniu.style.float = "right";
+        //         this.body.style.background = "skyblue";
+        //     } else {
+        //         this.flag = true;
+        //         this.btn.style.background = "#ccc";
+        //         this.anniu.style.float = "left";
+        //         this.body.style.background = "pink";
+        //     }
+        // };
+
+        this.btn.addEventListener("click", this.show.bind(this))
+    }
+
+    BtnCut.prototype.init=function(){
+        this.btn = document.querySelector(this.selector);
+        this.anniu = document.querySelector(this.selector1);
+        this.body = document.querySelector("body");
+    }
+
+    BtnCut.prototype.show=function(){
+        if (this.flag) {
+            this.flag = false;
+            this.btn.style.background = "yellowgreen";
+            this.anniu.style.float = "right";
+            this.body.style.background = "skyblue";
+        } else {
+            this.flag = true;
+            this.btn.style.background = "#ccc";
+            this.anniu.style.float = "left";
+            this.body.style.background = "pink";
+        }
+    }
+        var btn = new  BtnCut(".btn1",".anniu1");
+        var btn1 = new BtnCut(".btn2",".anniu2");
+    </script>
+  </body>
+</html>

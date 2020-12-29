@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>分页列表dome03（2.0）</title>
+</head>
+<link rel="stylesheet" href="./css/分页dome3.css">
+<body>
+    <div class="warpper">
+        <ul class="content">
+            <!-- <li class="con"></li> -->
+        </ul>
+        <div class="pages">
+            <!-- <a href="#">首页</a>
+            <a href="#">上一页</a>
+            <a href="#">1</a>
+            <a href="#">2</a>
+            <a href="#">3</a>
+            <a href="#">4</a>
+            <a href="#">下一页</a>
+            <a href="#">尾页</a>     -->
+        </div>
+    </div>
+    <script src="./js/data.js"></script>
+    <!-- <script src="./js/jQure.js"></script> -->
+    <script>
+        //  1.获取容器
+                // 1）获取列表容器
+                var  ul = document.querySelector("content");
+                // 2）获取页码容器
+                var pages = document.querySelector("pages");
+        //  2.获取数据源
+        var dataSum = data.listArr;
+        //  3.初始页码
+        var pageIdx = 1;
+        //  4.规定每个页面有几条数据
+        var sdata = 4;
+        //  5.数据总长度
+        var dataNum = dataSum.length;
+        //  6.总页数
+        var pageNum = Math.ceil(dataNum/sdata);
+
+
+
+        // 函数调用
+        //  8.为了能够跳转到其他页需要在刷新页面的同时将页码也要跳转
+        var obj = getIdx();
+        //  9.检查参数的合法性
+        checkIdx(obj);
+        //  7.页面初始化
+                // 1）列表初始
+                // listUl(pageIdx);
+                // 2）页码初始
+                // listPages(pageIdx);
+            // 获取网址，并将pageIdx提炼出来
+        function getIdx(){
+            // 获取页面网址
+            let url = window.location.href;
+            console.log(url);
+            let obj = {};
+            if(url.includes("?")){
+                let page1 = url.split("?")[1];
+                let key = page1.split("=")[0];
+                let val = page1.split("=")[1];
+                obj[key] = val; 
+            }
+            return obj;
+        }
+
+        // 判断当前这个url中参数的合法性;
+        function checkIdx(_idx) {
+            // 替换网址传入页码
+            if(_obj.pageIdx){
+                pageIdx = parseInt(_obj.pageIdx);
+                if(isNaN(pageIdx)||pageIdx<1){
+                    pageIdx = 1
+                }
+                if(pageIdx > pageNum){
+                    pageIdx = pageNum;
+                }
+            }
+        }
+    </script>
+</body>
+</html>
