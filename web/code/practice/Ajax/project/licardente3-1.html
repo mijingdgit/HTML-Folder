@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>3理赔登录</title>
+  </head>
+  <script src="https://cdn.bootcdn.net/ajax/libs/axios/0.20.0/axios.min.js"></script>
+  <link rel="stylesheet" href="./css/claim3/licardente3-1.css" />
+  <link rel="stylesheet" href="./font_2299562_pzbd81pwhje/iconfont.css">
+  <body>
+    <div class="content">
+      <ul>
+        <li><span class="num num1">1</span><span>服务卡登录</span></li>
+        <li><span class="num">2</span><span>查看服务卡理赔信息</span></li>
+       
+      </ul>
+      <div class="cont">
+        <div class="text">
+          <input type="text" class="text1" placeholder="卡号" /><br />
+          <div class="carder"></div>
+          <div class="pass">
+            <input type="password" class="password" placeholder="密码" /> <br />
+            <span class="iconfont iconopen">&#xe69c;</span><br />
+            <span class="iconfont iconclose">&#xe65e;</span><br />
+          </div>
+          <div class="passer"></div>
+          <div class="codeinput">
+            <input type="text" class="code" placeholder="验证码" />
+            <div id="goudan"></div>
+          </div>
+          <div class="codeerr"></div>
+        </div>
+        <div class="btn">下一步</div>
+      </div>
+    </div>
+    <div class="hint"></div>
+  </body>
+  <script src="./js/3-claim/3-1licardente.js"></script>
+  <script src="./js/common/password.js"></script>
+  <script src="./js/common/eyeopenorclose.js"></script>
+  <script src="./js/3-claim/3-1-1btnclick.js"></script>
+</html>

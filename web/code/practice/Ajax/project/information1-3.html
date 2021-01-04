@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>1信息录入（信息填写）</title>
+  </head>
+  <link rel="stylesheet" href="./css/pactivate1/information1-3.css" />
+  <link rel="stylesheet" href="./font_2299562_pzbd81pwhje/iconfont.css" />
+  <body>
+    <div class="content">
+      <ul class="title">
+        <li><span class="num">1</span><span>卡号密码</span></li>
+        <li><span class="num">2</span><span>阅读条款</span></li>
+        <li><span class="num num3">3</span><span>信息填写</span></li>
+        <li><span class="num">4</span><span>完成激活</span></li>
+      </ul>
+      <div class="conter">
+        <div class="card">卡号：<span class="cardtext"></span></div>
+        <div class="astrict">被保人年龄区间：18至70周岁</div>
+        <!-- 投保人 -->
+        <div class="applicant">
+            <div class="ap">投保人信息</div>
+            <ul class="apul">
+                <li><span class="num">姓名</span><input type="text"></li>
+                <li><span class="num">证件类型</span><select name="" id="">
+                    <option value="idcard">身份证</option>
+                    <option value="idcard">护照</option>
+                </select></li>
+                <li><span class="num">证件号码</span><input type="text"></li>
+                <li><span class="num">性别</span><input type="radio" name="sex1" class="sex" value="男">男<input type="radio" name="sex1" class="sex" value="女">女</li>
+                <li><span class="num">出生日期</span><input type="date" class="birthday1"></li>
+                <li><span class="num">本卡生效时年龄</span><span class="operant1"></span><span>周岁</span></li>
+                <li><span class="num">电子邮件</span><input type="email"></li>
+                <li><span class="num">手机号码</span><input type="tel"></li>
+                <li><span class="num">联系地址</span><input type="text"></li>
+            </ul>
+        </div>
+        <!-- 被保人 -->
+        <div class="recognizee">
+            <div class="rp">被保人信息</div>
+            <ul class="rpul">
+                <li><span class="num">是被保人</span>
+                    <select name="" id="">
+                    <option value="">本人</option>
+                    <option value="">子女</option>
+                    <option value="">父母</option>
+                    </select>
+                </li>
+                <li><span class="num">姓名</span><input type="text"></li>
+                <li><span class="num">证件类型</span>
+                    <select name="" id="">
+                    <option value="idcard">身份证</option>
+                    <option value="idcard">护照</option>
+                </select></li>
+                <li><span class="num">证件号码</span><input type="text"></li>
+                <li><span class="num">性别</span><input type="radio" name="sex1" class="sex">男<input type="radio" name="sex1" class="sex">女</li>
+                <li><span class="num">出生日期</span><input type="date" class="birthday2"></li>
+                <li><span class="num">本卡生效时年龄</span><span class="operant2"></span><span>周岁</span></li>
+                <li><span class="num">电子邮件</span><input type="email"></li>
+                <li><span class="num">手机号码</span><input type="tel"></li>
+                <li><span class="num">联系地址</span><input type="text"></li>
+            </ul>
+        </div>     
+           <!-- 受益人 -->
+        <div class="beneficiary">
+            <div class="bp">受益人信息</div>
+            <div class="text1">受益人为法定继承人</div>
+            <div class="text2">生效期限选择：2019-07-10至2019-10-10</div>
+            <div class="date">
+                <span>生效日期</span>
+                <select name="" id="" class="text3">
+                    <option value="time1">2019-07-10</option>
+                    <option value="time2">2019-08-10</option>
+                    <option value="time3">2019-09-10</option>
+                    <option value="time4">2019-10-10</option>
+                </select>
+                <span class="btn">选择</span>
+            </div>
+        </div>
+        <div class="statement">
+        <div class="btn1"><a href="activtionend1-4.html">下一步</a></div>
+        <div class="btn2"><a href="index.html">安全退出</a></div>
+        </div>
+    </div>
+    <script src="./js/common/frame.js"></script>
+    <script src="./js/1-act/1-3information.js"></script>
+  </body>
+</html>

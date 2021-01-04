@@ -1,0 +1,16 @@
+{
+  "id": "2301856",
+  "name": "demo4",
+  "font_family": "iconfont",
+  "css_prefix_text": "icon-",
+  "description": "",
+  "glyphs": [
+    {
+      "icon_id": "3315975",
+      "name": "28_人头",
+      "font_class": "_rentou",
+      "unicode": "e744",
+      "unicode_decimal": 59204
+    }
+  ]
+}

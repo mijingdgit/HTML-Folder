@@ -1,0 +1,72 @@
+* {
+    margin: 0;
+    padding: 0;
+  }
+  html {
+    font-size: 100%;
+    background: #efeff4;
+  }
+  .nav{
+    list-style: none;
+    border-bottom: 0.0625rem solid #c0bebe;
+    padding:1.25rem;
+  }
+  .conter{
+    padding:1.25rem;
+    background: #fff;
+}  
+.contery{
+  padding: 1.25rem;
+}
+.btn1{
+    margin: 1.25rem 2.5rem;
+    padding: .625rem;
+    background: #1bac05;
+    text-align: center;
+}
+.btn1 a{
+    font-size: 1.25rem;
+    text-decoration: none;
+    color: #fff;
+
+}
+.btn2{
+    margin: 1.25rem 2.5rem;
+    padding:.625rem;
+    background: #8a8a8a;
+    text-align: center;
+}
+.btn2 a{
+    font-size: 1.25rem;
+    text-decoration: none;
+    color: #fff;
+
+}
+
+
+  @media screen and (min-width: 220px) {
+    html {
+      font-size: 0.75rem;
+    }
+  }
+  @media screen and (min-width: 320px) {
+    html {
+      font-size: 0.8125rem;
+    }
+  }
+  @media screen and (min-width: 640px) {
+    html {
+      font-size: 1rem;
+    }
+  }
+  @media screen and (min-width: 960px) {
+    html {
+      font-size: 1.2rem;
+    }
+  }
+  @media screen and (min-width: 1200px) {
+    html {
+      font-size: 1.5rem;
+    }
+  }
+  

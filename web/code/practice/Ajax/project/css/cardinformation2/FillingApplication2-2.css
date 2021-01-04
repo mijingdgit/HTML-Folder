@@ -1,0 +1,143 @@
+* {
+    margin: 0;
+    padding: 0;
+  }
+  html {
+    font-size: 100%;
+    background: #efeff4;
+  }
+  .title{
+    padding: 1.25rem;
+    border-bottom: 0.0625rem solid #ccc;
+  }
+  .card {
+    padding: 0.9375rem 1.25rem;
+    background: #fff;
+  }
+  .cardB {
+    font-size: 1.5rem;
+    margin-right: 2.5rem;
+  }
+  .money {
+    font-size: 1.25rem;
+    color: #f9b508;
+  }
+  .ps {
+    padding: 1.25rem;
+  }
+  .inform {
+    background: #fff;
+    padding: 1.25rem;
+  }
+  .minsurancey {
+    padding: 1.25rem;
+  }
+  .medicarey {
+    background: #fff;
+    padding: 1.25rem;
+  }
+  .minsurance {
+    padding: 1.25rem;
+  }
+  .minsurance span {
+    margin-left: 1.25rem;
+    font-size: 1.25rem;
+    color: #f9b508;
+  }
+  .medicare {
+    background: #fff;
+    padding: 1.25rem;
+  }
+  .medicare span {
+    margin-left: 1.25rem;
+    font-size: 1.25rem;
+    color: #f9b508;
+  }
+
+  .button{
+    list-style: none;
+    padding: 1.25rem;
+    display: flex;
+    justify-content: space-around;
+  }
+  .button li{
+      float: left;
+      color: #1bac05;
+      background: #fff;
+      padding: .3125rem .625rem;
+      border-radius: .625rem;
+  }
+  .statement .tan {
+      list-style: none;
+  }
+  .statement .tan li{
+      padding: 1.25rem;
+
+}
+.tan li .sp1{
+    display: inline-block;
+    width: 40%;
+}
+
+
+
+
+
+
+
+
+
+  .statement {
+    padding: 1.875rem;
+  }
+
+  .btn1{
+    margin: 1.25rem 0;
+    padding: .625rem;
+    background: #1bac05;
+    text-align: center;
+  }
+  .btn1 a{
+    font-size: 1.25rem;
+    text-decoration: none;
+    color: #fff;
+  
+  }
+  .btn2{
+    margin: 1.25rem 0;
+    padding:.625rem;
+    background: #8a8a8a;
+    text-align: center;
+  }
+  .btn2 a{
+    font-size: 1.25rem;
+    text-decoration: none;
+    color: #fff;
+  
+  }
+  @media screen and (min-width: 220px) {
+    html {
+      font-size: 0.75rem;
+    }
+  }
+  @media screen and (min-width: 320px) {
+    html {
+      font-size: 0.8125rem;
+    }
+  }
+  @media screen and (min-width: 640px) {
+    html {
+      font-size: 1rem;
+    }
+  }
+  @media screen and (min-width: 960px) {
+    html {
+      font-size: 1.2rem;
+    }
+  }
+  @media screen and (min-width: 1200px) {
+    html {
+      font-size: 1.5rem;
+    }
+  }
+  
