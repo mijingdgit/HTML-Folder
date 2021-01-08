@@ -21,9 +21,11 @@ ul li .num {
   text-align: center;
   background: #999;
   color: #fff;
+  margin-right: .625rem;
+
 }
 ul li .num1 {
-  background: green;
+  background:#1bac05;
 }
 .cont{
     width: 100%;
@@ -100,10 +102,15 @@ input {
   text-align: center;
   line-height: 5vh;
   position: absolute;
-  bottom: 0;
+  top: 0;
   display: none;
 }
-
+.index{
+  text-decoration: none;
+  color: red;
+  margin-left: 1.25rem;
+  font-size: 1.25rem;
+}
 @media screen and (min-width: 220px) {
   html {
     font-size: 0.75rem;

@@ -53,7 +53,7 @@
  }
  .apul .num{
      display: inline-block;
-     width: 40%;
+     width: 30%;
  }
  .apul input{
      padding: .5rem;
@@ -124,13 +124,12 @@
 }
 .date{
     padding: 1.25rem;
+    text-align: center;
 }
 .date span{
-    margin-right: 2.5rem;
+    margin-left: 2.5rem;
 }
-.date input{
-    color: #666666;
-}
+
 .date .text3{
     padding: .625rem 2.5rem;
     border: .0625rem solid #acacac;
@@ -153,14 +152,10 @@
 .btn1{
     margin: 1.25rem 0;
     padding: .625rem;
-    background: #1bac05;
-    text-align: center;
-  }
-  .btn1 a{
+    background: #ccc;
+    text-align: center; 
     font-size: 1.25rem;
-    text-decoration: none;
     color: #fff;
-  
   }
   .btn2{
     margin: 1.25rem 0;
@@ -174,6 +169,18 @@
     color: #fff;
   
   }
+  /* 用户提示 */
+
+  .box{
+    color: red;
+    text-align: center;
+  }
+.fill{
+  margin-left: .625rem;
+  color: red;
+  font-size: 1.125rem;
+}
+
   @media screen and (min-width: 220px) {
     html {
       font-size: 0.75rem;

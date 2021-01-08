@@ -17,6 +17,20 @@
 }  
 .contery{
   padding: 1.25rem;
+  list-style: none;
+}
+.contery li{
+  margin:.625rem .625rem;
+  display: flex;
+  justify-content: space-between;
+}
+.contery li .sp3{
+  color: blue;
+  font-size: 1.125rem;
+}
+.contery li .sp4{
+  color: red;
+  font-size: 1.125rem;
 }
 .btn1{
     margin: 1.25rem 2.5rem;

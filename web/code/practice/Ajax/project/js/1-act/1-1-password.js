@@ -1,18 +1,18 @@
 // 封装
 window.onload = ()=>{
   // TODO 获取页面所需节点
-  let textCard = document.querySelector(".text1");
-  let passWord = document.querySelector(".password");
-  let pass = document.querySelector(".pass");
-  let icon1 = document.querySelector(".iconopen");
-  let icon2 = document.querySelector(".iconclose");
-  let btn = document.querySelector(".btn");
-  let carder = document.querySelector(".carder");
-  let passer = document.querySelector(".passer");
-  let codeArr = document.querySelector("#goudan");
-  let code = document.querySelector(".code");
-  let codeerr = document.querySelector(".codeerr");
-  let hint = document.querySelector(".hint");
+  let textCard = $(".text1");
+  let passWord = $(".password");
+  let pass = $(".pass");
+  let icon1 = $(".iconopen");
+  let icon2 = $(".iconclose");
+  let btn = $(".btn");
+  let carder = $(".carder");
+  let passer = $(".passer");
+  let codeArr = $("#goudan");
+  let code = $(".code");
+  let codeerr = $(".codeerr");
+  let hint = $(".hint");
   
 
   
@@ -26,5 +26,7 @@ window.onload = ()=>{
   eye(icon1,icon2,passWord);
 
   // TODO验证码验证
-  codes(codeArr,code,btn,textCard,passWord,codeerr,hint);
+  codes(codeArr,code,btn,textCard,passWord,carder,passer,codeerr,hint);
+  // TODO 验证码的判空
+  yan(code,codeerr);
 }

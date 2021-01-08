@@ -1,6 +1,6 @@
 // TODO验证码验证
 //初始化验证码图像
-function codes(_codeArr,_code,_btn,_textCard,_passWord,_codeerr,_hint) {
+function codes(_codeArr,_code,_btn,_textCard,_passWord,_carder,_passer,_codeerr,_hint) {
   axios
     .post(
       "http://192.168.0.9:3000/svg", //url
@@ -14,6 +14,29 @@ function codes(_codeArr,_code,_btn,_textCard,_passWord,_codeerr,_hint) {
       _hint.style.display = "none";
       // TODO 点击切换下一步按钮时
       _btn.addEventListener("click", function () {
+        // 利用正则让用户填写正确的卡号
+        let card = /^[1-9]{1}\d{11}$/;
+        let cardValue = _textCard.value;
+        let tmp1 = card.test(cardValue);
+        if (cardValue === "") {
+          _carder.innerHTML = "您还没有输入卡号，快去输入吧!";
+        } else if (tmp1 === false) {
+          _carder.innerHTML = "请输入正确的12位数卡号！";
+        } else {
+          _carder.innerHTML = "";
+        }
+        // 利用正则让用户填写正确的密码
+        let pass = /^\d{6}$/;
+        let passVaule = _passWord.value;
+        let tmp2 = pass.test(passVaule);
+        if (passVaule === "") {
+          _passer.innerHTML = "您还没有输入密码，快去输入吧!";
+        } else if (tmp2 === false) {
+          _passer.innerHTML = "请输入正确的6位数密码！";
+        } else {
+          _passer.innerHTML = "";
+        }
+
         // 判断用户输入验证码和后端传过来的验证码是否一致
         if (_code.value == res.data.code) {
           // 再将用户输入的卡号和密码传入数据库进行后端判断
@@ -35,16 +58,16 @@ function codes(_codeArr,_code,_btn,_textCard,_passWord,_codeerr,_hint) {
             // 正确
             .then((res) => {
               console.log(res);
-              if(res.data.state === 1){
-              window.localStorage.setItem("cardNum",_textCard.value);
-              window.localStorage.setItem("passNum",_passWord.value);
-              window.location.href = " ./protocol1-2.html";
-              }else if(res.data.state === 2){
+              if (res.data.state === 1) {
+                window.localStorage.setItem("cardNum", _textCard.value);
+                window.localStorage.setItem("passNum", _passWord.value);
+                window.location.href = " ./protocol1-2.html";
+              } else if (res.data.state === 2) {
                 _hint.style.display = "block";
-                _hint.innerHTML = "您好，您的"+res.data.msg+"，请勿重复激活";
-              }else{
-                _hint.style.display = "block";
-                _hint.innerHTML = "您好，您的"+res.data.msg+"，请检查后重新输入";
+                _hint.innerHTML ="您好，您的" + res.data.msg + "，请勿重复激活"+`<a href = "./index.html" class = "index">返回首页</a>`;
+              } else {
+                // _hint.style.display = "block";
+                // _hint.innerHTML = "您好，您的"+res.data.msg+"，请检查后重新输入";
               }
             })
             // 错误
@@ -52,7 +75,11 @@ function codes(_codeArr,_code,_btn,_textCard,_passWord,_codeerr,_hint) {
               console.log(err);
             });
         } else {
-          _codeerr.innerHTML = "您好，您的验证码输入错误";
+          if (_code.value === "") {
+            _codeerr.innerHTML = "您还没有输入验证码，快去输入吧";
+          } else {
+            _codeerr.innerHTML = "您好，您的验证码输入错误";
+          }
         }
       });
     })

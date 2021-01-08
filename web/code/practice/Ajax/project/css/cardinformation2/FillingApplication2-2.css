@@ -19,6 +19,7 @@
     margin-right: 2.5rem;
   }
   .money {
+    margin-left: 1.25rem;
     font-size: 1.25rem;
     color: #f9b508;
   }
@@ -39,27 +40,17 @@
   .minsurance {
     padding: 1.25rem;
   }
-  .minsurance span {
-    margin-left: 1.25rem;
-    font-size: 1.25rem;
-    color: #f9b508;
-  }
   .medicare {
     background: #fff;
     padding: 1.25rem;
   }
-  .medicare span {
-    margin-left: 1.25rem;
-    font-size: 1.25rem;
-    color: #f9b508;
-  }
-
   .button{
     list-style: none;
     padding: 1.25rem;
     display: flex;
     justify-content: space-around;
   }
+  
   .button li{
       float: left;
       color: #1bac05;
@@ -78,15 +69,6 @@
     display: inline-block;
     width: 40%;
 }
-
-
-
-
-
-
-
-
-
   .statement {
     padding: 1.875rem;
   }
@@ -114,6 +96,16 @@
     text-decoration: none;
     color: #fff;
   
+  }
+  .statement .bbtn1{
+    background:#1bac05;
+    color: #fff;
+  }
+  .beneficiary{
+    margin: 10rem 0;
+    font-size: 1.25rem;
+    color: red;
+    text-align: center;
   }
   @media screen and (min-width: 220px) {
     html {

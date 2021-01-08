@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>1信息录入（信息填写）</title>
   </head>
+  <script src="https://cdn.bootcdn.net/ajax/libs/axios/0.20.0/axios.min.js"></script>
   <link rel="stylesheet" href="./css/pactivate1/information1-3.css" />
   <link rel="stylesheet" href="./font_2299562_pzbd81pwhje/iconfont.css" />
   <body>
@@ -22,64 +23,79 @@
         <div class="applicant">
             <div class="ap">投保人信息</div>
             <ul class="apul">
-                <li><span class="num">姓名</span><input type="text"></li>
-                <li><span class="num">证件类型</span><select name="" id="">
-                    <option value="idcard">身份证</option>
-                    <option value="idcard">护照</option>
-                </select></li>
-                <li><span class="num">证件号码</span><input type="text"></li>
-                <li><span class="num">性别</span><input type="radio" name="sex1" class="sex" value="男">男<input type="radio" name="sex1" class="sex" value="女">女</li>
-                <li><span class="num">出生日期</span><input type="date" class="birthday1"></li>
+                <li><span class="num">姓名</span><input type="text" class="name1"><span class="fill">*</span></li>
+                <div class="box nametext1"></div>
+                <li>
+                    <span class="num">证件类型</span>
+                    <select name="" id="cardtype1">
+                        <option value="1">身份证</option>
+                        <option value="2">护照</option>
+                    </select>
+                    <span class="fill">*</span>
+            </li>
+                <li><span class="num">证件号码</span><input type="text" class="idnum1"><span class="fill">*</span></li>
+                <div class="box idnumtext1"></div>
+                <li><span  class="num">性别</span><input  id='mytest' type="radio" name="sex1" class="sex sex1" value="1" >男<input type="radio" name="sex1" class="sex sex1" value="2">女</li>
+                <div class="box sexbox1"></div>
+                
+                <li><span class="num">出生日期</span><span class="birthday1"></span></li>
+                <div class="box birbox1"></div>
                 <li><span class="num">本卡生效时年龄</span><span class="operant1"></span><span>周岁</span></li>
-                <li><span class="num">电子邮件</span><input type="email"></li>
-                <li><span class="num">手机号码</span><input type="tel"></li>
-                <li><span class="num">联系地址</span><input type="text"></li>
+                <li><span class="num">电子邮件</span><input type="email" class="email1"></li>
+                <div class="box emailtext1"></div>
+                <li><span class="num">手机号码</span><input type="tel" class="telephone1"><span class="fill">*</span></li>
+                <div class="box phonetext1"></div>
+                <li><span class="num">联系地址</span><input type="text" class="add1"></li>
+                <div class="box addbox1"></div>
             </ul>
         </div>
         <!-- 被保人 -->
         <div class="recognizee">
             <div class="rp">被保人信息</div>
             <ul class="rpul">
-                <li><span class="num">是被保人</span>
-                    <select name="" id="">
-                    <option value="">本人</option>
-                    <option value="">子女</option>
-                    <option value="">父母</option>
+                <li><span class="num">是投保人</span>
+                    <select name="" id="relaship">
+                    <option value="1">本人</option>
+                    <option value="2">子女</option>
+                    <option value="3">父母</option>
+                    <option value="4">恋人</option>
                     </select>
+                    <span class="fill">*</span>
                 </li>
-                <li><span class="num">姓名</span><input type="text"></li>
+                <li><span class="num">姓名</span><input type="text" class="name2"><span class="fill">*</span></li>
+                <div class="box nametext2"></div> 
                 <li><span class="num">证件类型</span>
-                    <select name="" id="">
-                    <option value="idcard">身份证</option>
-                    <option value="idcard">护照</option>
-                </select></li>
-                <li><span class="num">证件号码</span><input type="text"></li>
-                <li><span class="num">性别</span><input type="radio" name="sex1" class="sex">男<input type="radio" name="sex1" class="sex">女</li>
-                <li><span class="num">出生日期</span><input type="date" class="birthday2"></li>
+                    <select name="" id="cardtype2">
+                    <option value="1">身份证</option>
+                    <option value="2">护照</option>
+                </select><span class="fill">*</span></li>
+                <li><span class="num">证件号码</span><input type="text"  class="idnum2"><span class="fill">*</span></li>
+                <div class="box idnumtext2"></div>
+                <li><span class="num">性别</span><input type="radio" name="sex2" class="sex sex2" value="1" >男<input type="radio" name="sex2" class="sex sex2" value="2">女</li>
+                <li><span class="num">出生日期</span><span class="birthday2"></span></li>
+                <div class="box birbox2"></div>
                 <li><span class="num">本卡生效时年龄</span><span class="operant2"></span><span>周岁</span></li>
-                <li><span class="num">电子邮件</span><input type="email"></li>
-                <li><span class="num">手机号码</span><input type="tel"></li>
-                <li><span class="num">联系地址</span><input type="text"></li>
+                <li><span class="num">电子邮件</span><input type="email" class="email2"></li>
+                <div class="box emailtext2"></div>
+                <li><span class="num">手机号码</span><input type="tel" class="telephone2"><span class="fill">*</span></li>
+                <div class="box phonetext2"></div>
+                <li><span class="num">联系地址</span><input type="text" class="add2"></li>
+                <div class="box addbox2"></div>
+
             </ul>
         </div>     
            <!-- 受益人 -->
         <div class="beneficiary">
             <div class="bp">受益人信息</div>
             <div class="text1">受益人为法定继承人</div>
-            <div class="text2">生效期限选择：2019-07-10至2019-10-10</div>
+            <div class="text2">生效期限选择：<span class="now"></span> 至 <span class="last"></span></div>
             <div class="date">
-                <span>生效日期</span>
-                <select name="" id="" class="text3">
-                    <option value="time1">2019-07-10</option>
-                    <option value="time2">2019-08-10</option>
-                    <option value="time3">2019-09-10</option>
-                    <option value="time4">2019-10-10</option>
-                </select>
-                <span class="btn">选择</span>
+                生效日期：<input type="date" class="tedtoadate"><span class="fill">*</span>
             </div>
+            <div class="box datebox"></div>
         </div>
         <div class="statement">
-        <div class="btn1"><a href="activtionend1-4.html">下一步</a></div>
+        <div class="btn1">您还有必填信息没有填哦</div>
         <div class="btn2"><a href="index.html">安全退出</a></div>
         </div>
     </div>

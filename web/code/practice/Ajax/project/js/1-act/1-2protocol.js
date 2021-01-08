@@ -1,13 +1,13 @@
 // check
-let check = document.querySelectorAll(".check");
+let check = $(".check");
 // 全选按钮
-let checkall = document.querySelector(".checkall");
+let checkall = $(".checkall");
 // 跳转页面
-let btn1 = document.querySelector(".btn1");
-let cardtype = document.querySelector(".cardtype");
-let money1 = document.querySelector(".money1");
-let money2 = document.querySelector(".money2");
-let money3 = document.querySelector(".money3");
+let btn1 = $(".btn1");
+let cardtype = $(".cardtype");
+let money1 = $(".money1");
+let money2 = $(".money2");
+let money3 = $(".money3");
 let checkarr = [0, 0, 0];
 checkall.onclick = function () {
   if (checkall.checked) {
@@ -38,9 +38,11 @@ function checker() {
   if (checkarr.includes(0)) {
     checkall.checked = "";
     btn1.style.background = "#ccc";
+    btn1.innerHTML = "您还有没有阅读全部条款哦";
   } else {
     checkall.checked = "checked";
     btn1.style.background = " #1bac05";
+    btn1.innerHTML = "我已阅读并同意上述产品内容及相关条款";
     btn1.onclick = function () {
       window.location.href = "./information1-3.html";
     };
