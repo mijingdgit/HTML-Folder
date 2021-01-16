@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>jQuery插件</title>
+</head>
+<body>
+    <div class="box">box1</div>
+    <div class="box">box2</div>
+    <div class="box">box3</div>
+</body>
+<script src="./jQuery.js"></script>
+<script>
+    // miQ(".box").css({
+    //     color:"red"
+    // });
+    // miQ(".box").color("skyblue");
+    miQ(".box").eq(0).on("click",function(index){
+        miQ(".box").eq(1).color("blue");
+    });
+
+</script>
+</html>

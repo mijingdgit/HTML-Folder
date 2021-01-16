@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>三级联动</title>
+</head>
+<style>
+.content{
+    width: 700px;
+    margin: 100px auto;
+    display: flex;
+    justify-content: space-around;
+}
+div{
+    display: inline-block;
+}
+    select{
+        width: 100px;
+    }
+</style>
+<body>
+    <div class="content">
+
+        国家：<div class="statey">
+            <!-- 国家 -->
+            <select name="" id="state">
+                <option value="1">中国</option>
+                <option value="2">美国</option>
+                <option value="3">日本</option>
+                <option value="4">韩国</option>
+            </select>  
+        </div>
+        <!-- 每个国家所属省 -->
+       省份： <div class="province">
+                <select name="" id="china"></select>
+                <select name="" id="USA"></select>
+                <select name="" id="japan"></select>
+                <select name="" id="Korea"></select>  
+        </div>
+        <!-- 中国所属省的所属市 -->
+            市区：<div class="chinacity">
+            <select name="" id="gan"></select>
+            <select name="" id="chuan"></select>
+            <select name="" id="su"></select>
+            <select name="" id="shan"></select>
+        </div>
+        <!-- 美国所属省的所属市 -->
+            <div class="USAcity">
+                <select name="" id="niu"></select>
+                <select name="" id="hua"></select>
+                <select name="" id="jia"></select>
+                <select name="" id="a"></select>
+            </div> 
+        <!-- 日本所属省的所属市 -->
+            <div class="japancity">
+                <select name="" id="dong"></select>
+                <select name="" id="bei"></select>
+                <select name="" id="da"></select>
+                <select name="" id="fu"></select>
+            </div> 
+        <!-- 韩国所属省的所属市 -->
+            <div class="Koreacity">
+                <select name="" id="shou"></select>
+                <select name="" id="fushan"></select>
+                <select name="" id="daqiu"></select>
+                <select name="" id="jiang"></select>
+            </div> 
+    </div>
+          
+
+<script src="./js/remove.js"></script>
+</body>
+
+</html>
