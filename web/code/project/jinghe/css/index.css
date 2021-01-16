@@ -1,0 +1,781 @@
+/* 首页中部 */
+/* main{
+    width: 100%;
+    height: 1000vh;
+    background-color: skyblue;
+} */
+/* TODO 大轮播样式 */
+.swiper-container {
+  max-height: 780px;
+}
+.swiper-wrapper img {
+  width: 100%;
+  height: 100%;
+}
+
+.swiper-pagination-bullet {
+  width: 0.9375rem;
+  height: 0.9375rem;
+  background-color: rgba(256, 255, 255, 0.8);
+}
+.swiper-pagination-bullet-active {
+  width: 0.9375rem;
+  height: 0.9375rem;
+  background-color: red;
+}
+/* TODO 关于锦和 */
+main .inheight {
+  height: 7.5rem;
+  width: 100%;
+}
+main .incontent {
+  max-width: 1200px;
+  margin: 0 auto;
+  color: #090909;
+  position: relative;
+}
+main .top h1 {
+  font-weight: 500;
+  font-size: 1.75rem;
+  line-height: 1.75rem;
+  position: relative;
+}
+main .top h1::after {
+  content: "";
+  position: absolute;
+  left: -3.75rem;
+  width: 1.75rem;
+  height: 1.75rem;
+  background: url(../images/index_person.png) no-repeat center center;
+  background-size: 1.75rem 1.75rem;
+}
+main .top h1::before {
+  content: "";
+  position: absolute;
+  left: -0.9375rem;
+  width: .125rem;
+  height: 100%;
+  background-color: #e3141f;
+}
+main .incontent .top p {
+  font-size: 1.25rem;
+  line-height: 2.125rem;
+  margin: 1.25rem 0 5.5625rem;
+}
+main .index-sec1 {
+  display: flex;
+  position: relative;
+}
+main .index-sec1-banner {
+  overflow: hidden;
+  width: 720px;
+  box-shadow: .3125rem .3125rem 1.125rem .3125rem rgba(0, 0, 0, 0.33);
+}
+main .left .swiper-container1 {
+  margin-left: auto;
+  margin-right: auto;
+  position: relative;
+  overflow: hidden;
+  list-style: none;
+  padding: 0;
+  z-index: 1;
+}
+.samllwrapper {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+  display: flex;
+  transition-property: transform;
+  box-sizing: content-box;
+}
+.index-sec1-banner img{
+  width: 100%;
+  height: 100%;
+}
+.index-sec1-news {
+  padding-left: 3.125rem;
+  width: 450px;
+  color: #090909;
+  /* position: relative; */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.index-sec1-news h3 {
+  font-size: 1.625rem;
+  font-weight: 500;
+  line-height: 1.75rem;
+  padding: .9375rem 0;
+}
+.index-sec1-news .incontion {
+  border-top: .125rem solid #e3141f;
+  max-height: 17.8125rem;
+  padding: .625rem 0;
+  overflow: hidden;
+}
+.index-sec1-news .incontion p {
+  font-size: 1.25rem;
+  color: #333;
+  margin-top: 1.25rem;
+  line-height: 2.5rem;
+  text-align: left;
+  font-family: "微软雅黑";
+}
+.index-sec1-news .incontion span {
+  display: inline-block;
+  max-width: 3.75rem;
+}
+.index-sec1-news .btn-bg {
+  text-decoration: none;
+  position: absolute;
+  right: .625rem;
+  bottom: -3.125rem;
+  float: right;
+  color: #090909;
+  font-size: 1rem;
+  border: .0625rem #090909 solid;
+  padding: .6875rem 1.75rem;
+}
+.index-sec1-news .btn-bg-change {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 0%;
+  height: 100%;
+  background: #e3141f;
+  transition: all 0.5s;
+  z-index: -1;
+}
+.btn-bg:hover{
+
+  color: #fff;
+}
+.btn-bg:hover .btn-bg-change{
+  width: 100%;
+  height: 100%;
+  background: #e3141f;
+}
+
+
+/* 企业使命文字样式 */
+.swiper-button-prev,
+.swiper-button-next {
+  position: absolute;
+  height: 2.875rem;
+  line-height: 2.875rem;
+  right: 45%;
+  bottom: -5rem;
+  transition: color 0.2s;
+}
+.swiper-button-prev,
+.swiper-container-rtl .swiper-button-next {
+  left: 45%;
+  right: auto;
+}
+.swiper-button-next,
+.swiper-button-prev {
+  top: auto;
+  bottom: -5rem;
+  transition: color 0.2s;
+}
+.swiper-button-prev:hover {
+  color: #e3141f;
+}
+main .bg {
+  position: absolute;
+  left: -23.125rem;
+  bottom: -5.3125rem;
+  width: 52.375rem;
+  height: 23.75rem;
+  background: #e3141f;
+}
+/* TODO 锦和好车 */
+main .incontent2 {
+  max-width: 75rem;
+  margin: 0 auto;
+  color: #090909;
+  position: relative;
+}
+main .top2 h1 {
+  font-weight: 500;
+  font-size: 1.75rem;
+  line-height: 1.75rem;
+  position: relative;
+}
+main .top2 h1::after {
+  content: "";
+  position: absolute;
+  left: -3.75rem;
+  width: 1.75rem;
+  height: 1.75rem;
+  background: url(../images/index_home.png) no-repeat center center;
+  background-size: 1.75rem 1.75rem;
+}
+main .top2 h1::before {
+  content: "";
+  position: absolute;
+  left: -0.9375rem;
+  width: .125rem;
+  height: 100%;
+  background-color: #e3141f;
+}
+main .bg-car {
+  position: relative;
+  height: 29.0625rem;
+  overflow: hidden;
+  background: url(../images/0f1cfad0a82df46791ac5a3f6cae09ef.jpg);
+}
+main .bg-imgcar img {
+  width: 100%;
+  height: 100%;
+}
+main .bg-content {
+  position: absolute;
+  top: 0;
+  left: 0;
+  max-width: 30rem;
+  height: 100%;
+  background-color: rgba(1, 1, 1, 0.7);
+  padding: 0 2.5rem 0 3.5rem;
+  color: #fff;
+}
+main .bg-content h3 {
+  font-size: 1.625rem;
+  line-height: 1.875rem;
+  position: relative;
+  margin-top: 6.25rem;
+  font-weight: 400;
+}
+main .bg-car .btn-bg2 {
+  position: relative;
+  text-decoration: none;
+  display: inline-block;
+  color: #fff;
+  border: .0625rem solid #fff;
+  padding: .9375rem 4.5625rem;
+  transition: border-color 0.5s;
+  z-index: 10;
+}
+.btn-bg2 .btn-bg-change2 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 0%;
+  height: 100%;
+  background: #e3141f;
+  z-index: -1;
+  transition: all 0.5s;
+}
+
+ .btn-bg2:hover{
+
+  color: #fff;
+}
+ .btn-bg2:hover .btn-bg-change2{
+  width: 100%;
+  height: 100%;
+  background: #e3141f;
+}
+/* TODO 锦和诚信保障体系 */
+main .warpcentre{
+  position: relative;
+}
+main .incontent3 {
+  max-width: 75rem;
+  margin: 0 auto;
+  color: #090909;
+  position: relative;
+
+}
+main .top3 h1 {
+  font-weight: 500;
+  font-size: 1.75rem;
+  line-height: 1.75rem;
+  position: relative;
+}
+main .top3 h1::after {
+  content: "";
+  position: absolute;
+  left: -3.75rem;
+  width: 1.75rem;
+  height: 1.75rem;
+  background: url(../images/index_dom.png) no-repeat center center;
+  background-size: 1.75rem 1.75rem;
+}
+main .top3 h1::before {
+  content: "";
+  position: absolute;
+  left: -0.9375rem;
+  width: .125rem;
+  height: 100%;
+  background-color: #e3141f;
+}
+main .top3 p{
+    font-size: 1.25rem;
+    line-height: 2.1875rem;
+    padding: .3125rem 0;
+}
+.contion-centre {
+  position: relative;
+}
+
+main .middleee{
+    position: relative;
+    max-width: 28.125rem;
+    height: 28.125rem;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    border: 1.25rem solid #2f2f2f;
+}
+main .middleee img{
+      width: 18.75rem;
+      height: 17.5rem;
+      
+    }
+    main .middleee .mid{
+    position: absolute;
+    width: 4.125rem;
+    height: 4.125rem;
+    text-align: center;
+    line-height: 4.125rem;
+    font-weight: 600;
+    border: .625rem solid #fff;
+    background-color:#2f2f2f ;
+    border-radius: 50%;
+    font-size: 2rem;
+    color: #fff;
+    
+}
+main .middleee .mid01{
+    top: -3.375rem;
+} 
+main .middleee .mid02{
+    right: -3.375rem;
+}
+main .middleee .mid03{
+    bottom: -3.375rem;
+}
+main .middleee .mid04{
+    left: -3.375rem;
+}
+
+/* 圆外的 */
+.centreleft {
+  position: absolute;
+  left: 12.1875rem;
+  top: 45%;
+  margin-top: -3.75rem;
+  width: 7.6875rem;
+  font-size: 1.25rem;
+  color: #090909;
+  line-height: 1.625rem;
+}
+.centreleft a {
+  text-decoration: none;
+  color: #090909;
+  position: relative;
+}
+.centreleft a::after {
+  content: "";
+  position: absolute;
+  left: -3.75rem;
+  top: 0;
+  width: 1.75rem;
+  height: 1.75rem;
+  background: url(../images/index_guanji.png) no-repeat center center;
+  background-size: 1.25rem 1.25rem;
+}
+.centreright {
+    position: absolute;
+    right:3.75rem;
+    top: 45%;
+    margin-top: -3.75rem;
+    width: 10.625rem;
+    font-size: 1.25rem;
+    color: #090909;
+    line-height: 1.625rem;
+  }
+  .centreright a {
+    text-decoration: none;
+    color: #090909;
+    position: relative;
+  }
+  .centreright a::after {
+    content: "";
+    position: absolute;
+    left: -3.75rem;
+    top: 0;
+    width: 1.75rem;
+    height: 1.75rem;
+    background: url(../images/index_err.png) no-repeat center center;
+    background-size: 1.25rem 1.25rem;
+  }
+.centretop {
+    position: absolute;
+    right: 40%;
+    top: -1.875rem;
+    margin-top: -3.75rem;
+    width: 10.625rem;
+    font-size: 1.25rem;
+    color: #090909;
+    line-height: 1.625rem;
+  }
+  .centretop a {
+    text-decoration: none;
+    color: #090909;
+    position: relative;
+  }
+  .centretop a::after {
+    content: "";
+    position: absolute;
+    left: -3.75rem;
+    top: 0;
+    width: 1.75rem;
+    height: 1.75rem;
+    background: url(../images/index_zhendong.png) no-repeat center center;
+    background-size: 1.25rem 1.25rem;
+  }
+
+  .centrebottom {
+    position: absolute;
+    right:40%;
+    bottom: 2.5rem;
+    margin-top: -3.75rem;
+    width: 10.625rem;
+    font-size: 1.25rem;
+    color: #090909;
+    line-height: 1.625rem;
+  }
+  .centrebottom a {
+    text-decoration: none;
+    color: #090909;
+    position: relative;
+  }
+  .centrebottom a::after {
+    content: "";
+    position: absolute;
+    left: -3.75rem;
+    top: 0;
+    width: 1.75rem;
+    height: 1.75rem;
+    background: url(../images/index_peifu.png) no-repeat center center;
+    background-size: 1.25rem 1.25rem;
+  }
+  .contion-centre .btn-bg {
+    text-decoration: none;
+    position: absolute;
+    right: .625rem;
+    bottom: -3.125rem;
+    float: right;
+    color: #090909;
+    font-size: 1rem;
+    border: .0625rem #090909 solid;
+    padding: .6875rem 1.75rem;
+  }
+  .contion-centre .btn-bg-chang{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0%;
+    height: 100%;
+    background: #e3141f;
+    transition: all 0.5s;
+    z-index: -1;
+  }
+  .contion-centre .btn-bg:hover{
+    color: #fff;
+  }
+  .contion-centre .btn-bg:hover .btn-bg-chang{
+    width: 100%;
+    height: 100%;
+    background: #e3141f;
+  }
+
+  .bg-box{
+    position: absolute;
+    bottom: 0;
+    z-index: -2;
+    width: 55%;
+  }
+  .bg-box img{
+    width:100%;
+  }
+ .bg-left{
+    left: 0;
+  }
+ .bg-right{
+    right: 0;
+  }
+ /* 移动端端保障 */
+ .mb-incontent4{
+   position: relative;
+   display: none;
+ }
+ .mb-incontent4 .mb-box{
+  position: relative;
+  width: 25rem;
+  height: 22.5rem;
+  border: .9375rem #2f2f2f solid;
+  border-bottom-right-radius: 15.625rem;
+  border-top-right-radius: 15.625rem;
+  left: -1.875rem;
+ }
+ .mb-incontent4 .mb-box img{
+   width: 15.625rem;
+   margin-left: 3.125rem;
+   margin-top: 3.75rem;
+ }
+ .mb-incontent4 .mb-set{
+   position: absolute;
+ }
+ .mb-incontent4 .set1{
+  top: -1.25rem;
+  left: 13.75rem;
+ }
+ .mb-incontent4 .set2{
+  top: 6.5625rem;
+  left: 21.875rem;
+ }
+ .mb-incontent4 .set3{
+  top: 15.625rem;
+  left: 21rem;
+ }
+ .mb-incontent4 .set4{
+  bottom: 6.9rem;
+  left: 13.75rem;
+ }
+ .mb-incontent4 .mbbtn{
+  display: inline-block;
+  width: 3.125rem;
+  height: 3.125rem;
+  border-radius: 50%;
+  background: #2f2f2f;
+  color: #fff;
+  font-size: 1.25rem;
+  font-weight: bold;
+  text-align: center;
+  line-height: 3.125rem;
+  border: .3125rem #fff solid;
+  box-sizing: content-box;
+  margin-right: 4.0625rem;
+ }
+ .mb-incontent4 .mb-set .sp{
+   position: relative;
+ }
+ .mb-incontent4 .mb-set .sp01::after{
+  content: "";
+  position: absolute;
+  left: -2.5rem;
+  top: -0.25rem;
+  width: 1.75rem;
+  height: 1.75rem;
+  background: url(../images/index_zhendong.png) no-repeat center center;
+  background-size: 1.25rem 1.5rem;
+ }
+ .mb-incontent4 .mb-set .sp02::after{
+  content: "";
+  position: absolute;
+  left: -2.5rem;
+  top: -0.25rem;
+  width: 1.75rem;
+  height: 1.75rem;
+  background: url(../images/index_guanji.png) no-repeat center center;
+  background-size: 1.25rem 1.25rem;
+ }
+ .mb-incontent4 .mb-set .sp03::after{
+  content: "";
+  position: absolute;
+  left: -2.5rem;
+  top: -0.25rem;
+  width: 1.75rem;
+  height: 1.75rem;
+  background: url(../images/index_err.png) no-repeat center center;
+  background-size: 1.25rem 1.25rem;
+ }
+ .mb-incontent4 .mb-set .sp04::after{
+  content: "";
+  position: absolute;
+  left: -2.5rem;
+  top: -0.25rem;
+  width: 1.75rem;
+  height: 1.75rem;
+  background: url(../images/index_peifu.png) no-repeat center center;
+  background-size: 1.5rem 1.5rem;
+ }
+  .mb-incontent4 .btn-bg {
+    text-decoration: none;
+    position: absolute;
+    right: .625rem;
+    bottom: -3.125rem;
+    float: right;
+    color: #090909;
+    font-size: 1rem;
+    border: .0625rem #090909 solid;
+    padding: .6875rem 1.75rem;
+    z-index: 1;
+  }
+  .mb-incontent4 .btn-bg-chang {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0%;
+    height: 100%;
+    background: #e3141f;
+    z-index: -1;
+    transition: all 0.5s;
+  }
+  .mb-incontent4 .btn-bg:hover{
+    color: #fff;
+  }
+  .mb-incontent4 .btn-bg:hover .btn-bg-chang{
+    width: 100%;
+    height: 100%;
+    background: #e3141f;
+  }
+
+
+  @media (min-width:100px) and (max-width: 770px){
+    main .bg{
+      display: none;
+    }
+    .index-sec1{
+        flex-wrap: wrap;
+    }
+    main .index-sec1-banner{
+      width: 100%;
+      /* height: 450px; */
+     margin-bottom: 20px;
+    }
+    main .index-sec1-banner img{
+      width: 100%;
+      height: 100%;
+    }
+    main .index-sec1-news{
+      width: 100%;
+      overflow: hidden;
+      
+    }
+    .swiper-button-prev,.swiper-button-next{
+      display: none;
+    }
+    .middle img{
+      width: 80px;
+      height: 80px;
+    }
+  }
+  @media (min-width:100px) and (max-width: 550px){
+    .mb-incontent4{
+      display: block;
+    }
+    .contion-centre{
+      display: none;
+    }
+
+    .mb-incontent4 .mb-box{
+      width: 150px;
+      height: 200px;
+    }
+    .mb-incontent4 .mb-box img{
+      width: 80px;
+      margin-top: 63px;
+      margin-left: 30px;
+
+    }
+    .mb-set .mbbtn{
+    width: 30px;
+    height: 30px;
+    font-size: 18px;
+    line-height: 30px;
+    }
+    .mb-incontent4 .set1{
+      top: -11px;
+      left: 45px;
+    }
+    .mb-incontent4 .set2{
+      top: 55px;
+      left: 118px;
+    }
+    .mb-incontent4 .set3{
+      top: 130px;
+      left: 118px;
+    }
+    .mb-incontent4 .set4{
+      bottom:95px;
+      left: 45px;
+
+    }
+    .nav-uli li .a2{
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      text-decoration: none;
+      /* display: block; */
+      font-size: 16px;
+      /* line-height: 0; */
+      color: #fff;
+      padding: 20px 0;
+    }
+    .nav-uli li .sp-s::after{
+      content: "";
+      display: inline-block;
+      width: 8px;
+      height: 8px;
+      border: 3px solid #fff;
+      border-color: #fff #fff transparent transparent;
+      transform: rotate(45deg);
+    
+    }
+    .nav-uli .a1 {
+      display: block;
+      text-decoration: none;
+      display: block;
+      font-size: 16px;
+      line-height: 0;
+      color: #fff;
+      padding: 47px 0 20px 0;
+    }
+    .nav-uli .iconfont{
+      display: inline-block;
+      font-size: 16px;
+      color: #fff;
+      padding: 50px 20px;
+    }
+
+
+
+  }
+
+  @media (min-width:550px) and (max-width: 770px){
+    .mb-incontent4{
+      display: block;
+    }
+    .contion-centre{
+      display: none;
+    }
+
+
+  }
+  @media (min-width:770px) and (max-width: 1200px){
+    main .bg{
+      display: none;
+    }
+    main .index-sec1-banner{
+      width: 60%;
+    }
+    main .index-sec1-news{
+      width: 40%;
+      padding-left: 10px;
+      overflow: hidden;
+    }
+    .mb-incontent4{
+      display: block;
+    }
+    .contion-centre{
+      display: none;
+    }
+
+  }

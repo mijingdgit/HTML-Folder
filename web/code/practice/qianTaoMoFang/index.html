@@ -1,0 +1,235 @@
+<!-- <!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            background-color: rgb(22, 21, 21);
+        }
+        /* 全模块定位和总布局 用定位top/left,没有margin但不脱标调位置 */
+        
+        .container {
+            position: relative;
+            top: 200px;
+            left: 200px;
+        }
+        /* 主要用来装功能块在容器内保证定位 相当于该功能块的padding*/
+        
+        .container .wrap {
+            width: 100px;
+            height: 100px;
+            top: 150px;
+            left: 150px;
+            margin: 0;
+        }
+        /* 功能块 */
+        
+        .container .wrap .cube {
+            width: 100px;
+            height: 100px;
+            transform-style: preserve-3d;
+            /* perspective: 500px; */
+            transform: rotateX(-30deg) rotateY(-80deg);
+            animation: ziZhuan linear 20s infinite;
+            animation-direction: alternate-reverse;
+            transition: all 0.5s;
+        }
+        
+        @keyframes ziZhuan {
+            0% {
+                transform: rotateX(0deg) rotateY(0deg);
+            }
+            100% {
+                transform: rotateX(360deg) rotateY(360deg);
+            }
+        }
+        
+        .container .wrap .cube div {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 200px;
+            height: 200px;
+            background-color: rgb(0, 183, 255);
+            z-index: -1;
+            transition: all 0.5s;
+            opacity: 0.45;
+            outline: rgb(40, 226, 240) solid thick;
+            box-shadow: rgba(17, 123, 194, 0.712) 0 0 50px 50px;
+        }
+        
+        .container .wrap .cube div img {
+            width: 100%;
+            height: 100%;
+        }
+        
+        .container .wrap .cube span {
+            position: absolute;
+            top: 50px;
+            left: 50px;
+            display: block;
+            width: 100px;
+            height: 100px;
+            outline: rgba(21, 40, 211, 0.664) solid thin;
+            background-color: rgba(11, 96, 224, 0.295);
+        }
+        
+        .container .wrap .cube span img {
+            width: 100%;
+            height: 100%;
+        }
+        
+        .container .wrap .cube .out-front {
+            transform: rotateY(0deg) translateZ(100px);
+        }
+        
+        .container .wrap .cube .out-back {
+            transform: translateZ(-100px);
+        }
+        /* //y正方向逆时针 */
+        
+        .container .wrap .cube .out-left {
+            transform: rotateY(-90deg) translateZ(100px);
+        }
+        
+        .container .wrap .cube .out-right {
+            transform: rotateY(90deg) translateZ(100px);
+        }
+        /*  x->正-上*/
+        
+        .container .wrap .cube .out-top {
+            transform: rotateX(90deg) translateZ(100px);
+        }
+        
+        .container .wrap .cube .out-bottom {
+            background-color: rgba(36, 238, 80, 0.253);
+            transform: rotateX(-90deg) translateZ(100px);
+        }
+        
+        .container .wrap .cube .in-left {
+            transform: rotateY(-90deg) translateZ(50px);
+        }
+        
+        .container .wrap .cube .in-right {
+            transform: rotateY(90deg) translateZ(50px);
+        }
+        
+        .container .wrap .cube .in-back {
+            transform: translateZ(-50px);
+        }
+        
+        .container .wrap .cube .in-front {
+            transform: translateZ(50px);
+        }
+        
+        .container .wrap .cube .in-top {
+            transform: rotateX(90deg) translateZ(50px);
+        }
+        
+        .container .wrap .cube .in-bottom {
+            transform: rotateX(-90deg) translateZ(50px);
+        }
+        
+        .container .wrap .cube:hover .out-front {
+            transform: rotateY(0deg) translateZ(200px);
+        }
+        
+        .container .wrap .cube:hover .out-back {
+            transform: rotateY(0deg) translateZ(-200px);
+        }
+        
+        .container .wrap .cube:hover .out-top {
+            transform: rotateX(90deg) translateZ(200px);
+        }
+        
+        .container .wrap .cube:hover .out-bottom {
+            transform: rotateX(-90deg) translateZ(200px);
+        }
+        
+        .container .wrap .cube:hover .out-right {
+            transform: rotateY(90deg) translateZ(200px);
+        }
+        
+        .container .wrap .cube:hover .out-left {
+            transform: rotateY(-90deg) translateZ(200px);
+        }
+    </style>
+    <script src="../../jquery.min.js"></script>
+</head>
+
+<body>
+    <div class="container">
+        <div class="wrap">
+            <div class="cube">
+                <div class="out-front">
+                    <img src="./images/t1.png" alt="">
+                </div>
+                <div class="out-back">
+                    <img src="./images/t2.png" alt="">
+                </div>
+                <div class="out-left">
+                    <img src="./images/t3.png" alt="">
+                </div>
+                <div class="out-right">
+                    <img src="./images/t4.png" alt="">
+                </div>
+                <div class="out-top">
+                    <img src="./images/t5.png" alt="">
+                </div>
+                <div class="out-bottom">
+                    <img src="./images/t6.png" alt="">
+                </div>
+
+                <span class="in-front">
+                    <img src="./images/t7.png" alt="">
+                </span>
+                <span class="in-back">
+                    <img src="./images/t8.png" alt="">
+                </span>
+                <span class="in-left">
+                    <img src="./images/t1.png" alt="">
+                </span>
+                <span class="in-right">
+                    <img src="./images/t2.png" alt="">
+                </span>
+                <span class="in-top">
+                    <img src="./images/t3.png" alt="">
+                </span>
+                <span class="in-bottom">
+                    <img src="./images/t4.png" alt="">
+                </span>
+
+
+
+            </div>
+        </div>
+    </div>
+    <script>
+        //数据修改
+        $(function() {
+            //获取默认尺寸
+            var outWidth = $(" .container .wrap .cube div").width();
+            var inWidth = $(" .container .wrap .cube span").width();
+            var inOffset = 0.25 * outWidth;
+            var outOffset = 0.5 * outWidth;
+            //修改尺寸  okk但offset还要改
+            function set(outWidth, inWidth) {
+                inWidth = inWidth || 0.5 * outWidth;
+                $(" .container .wrap .cube div").width(outWidth);
+                $(" .container .wrap .cube span").width(inWidth);
+
+            }
+
+
+
+
+        })
+    </script>
+
+</body>
+
+
+</html> -->

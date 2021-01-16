@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div id="app">demo</div>
+    <script>
+      // 面向对象 编程范式
+      class JQ {
+        getEle(e) {
+          let name = document.querySelectorAll(e);
+          return name;
+        }
+        hello() {
+          console.log("Hello world!");
+        }
+        css(val){
+          
+        }
+      }
+      window.jq = new JQ();
+
+      //   ====================================================
+      // 函数式 编程范式
+      // function JQ2() {
+      //   this.hello = function () {
+      //     console.log("Hello");
+      //   };
+      //   this.getEle = function (e) {
+      //     let name = document.querySelectorAll(e);
+      //     return name;
+      //   };
+      // }
+      // window.jq2 = new JQ2();
+      
+    // ====================================================
+    // 命令式 编程范式
+    // let a = document.getElementById("app")
+    // console.log(a);
+    // a.innerHTML = "111"
+    </script>
+  </body>
+</html>

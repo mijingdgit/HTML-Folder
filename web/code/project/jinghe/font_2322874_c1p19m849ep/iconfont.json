@@ -1,0 +1,51 @@
+{
+  "id": "2322874",
+  "name": "dome10",
+  "font_family": "iconfont",
+  "css_prefix_text": "icon-",
+  "description": "",
+  "glyphs": [
+    {
+      "icon_id": "1236804",
+      "name": "电话",
+      "font_class": "dianhua-copy-copy-copy",
+      "unicode": "e601",
+      "unicode_decimal": 58881
+    },
+    {
+      "icon_id": "2634731",
+      "name": "微博",
+      "font_class": "weibo",
+      "unicode": "e600",
+      "unicode_decimal": 58880
+    },
+    {
+      "icon_id": "7824884",
+      "name": "电话",
+      "font_class": "dianhua",
+      "unicode": "e6f8",
+      "unicode_decimal": 59128
+    },
+    {
+      "icon_id": "13287430",
+      "name": "电话 (1)",
+      "font_class": "dianhua1",
+      "unicode": "e65f",
+      "unicode_decimal": 58975
+    },
+    {
+      "icon_id": "17015320",
+      "name": "微信",
+      "font_class": "weixin",
+      "unicode": "e63e",
+      "unicode_decimal": 58942
+    },
+    {
+      "icon_id": "18852682",
+      "name": "地图",
+      "font_class": "ditu",
+      "unicode": "e7f3",
+      "unicode_decimal": 59379
+    }
+  ]
+}
