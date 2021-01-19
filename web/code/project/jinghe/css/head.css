@@ -330,3 +330,25 @@ nav .logo {
     }
     
   }
+
+  @media (min-width:100px) and (max-width: 500px) {
+    .mb-leftbg {
+      top: -3.6rem;
+    }
+    .header2 .bg-imglogo {
+      width: 5.375rem;
+      height: 4.5rem;
+      left: 0.5rem;
+      top: 39%;
+    }
+    .bg-red{
+    width:16rem;
+    height:13.625rem;
+    }
+  }
+  @media (max-width: 320px) and (min-width: 100px){
+
+    .mb-leftbg {
+        top: -4.6rem;
+    }
+  }

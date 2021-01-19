@@ -39,6 +39,7 @@ main .top h1 {
   font-size: 1.75rem;
   line-height: 1.75rem;
   position: relative;
+  
 }
 main .top h1::after {
   content: "";
@@ -150,6 +151,8 @@ main .left .swiper-container1 {
 .btn-bg:hover{
 
   color: #fff;
+  border: 1px solid  #e3141f;
+
 }
 .btn-bg:hover .btn-bg-change{
   width: 100%;
@@ -268,9 +271,9 @@ main .bg-car .btn-bg2 {
   transition: all 0.5s;
 }
 
- .btn-bg2:hover{
-
+main .bg-car .btn-bg2:hover{
   color: #fff;
+  border: 1px solid #e3141f;
 }
  .btn-bg2:hover .btn-bg-change2{
   width: 100%;
@@ -488,6 +491,8 @@ main .middleee .mid04{
   }
   .contion-centre .btn-bg:hover{
     color: #fff;
+    border: 1px solid  #e3141f;
+
   }
   .contion-centre .btn-bg:hover .btn-bg-chang{
     width: 100%;
@@ -630,6 +635,7 @@ main .middleee .mid04{
   }
   .mb-incontent4 .btn-bg:hover{
     color: #fff;
+    border: 1px solid  #e3141f;
   }
   .mb-incontent4 .btn-bg:hover .btn-bg-chang{
     width: 100%;
@@ -665,6 +671,18 @@ main .middleee .mid04{
     .middle img{
       width: 80px;
       height: 80px;
+    }
+    main .incontent .top{
+      padding: 0 20px ;
+    }
+    main .incontent .top h1{
+      margin-left: 50px;
+     }
+    main .top2{
+      padding-left:60px;
+    }
+    main .incontent3 .top3{
+      padding-left: 60px;
     }
   }
   @media (min-width:100px) and (max-width: 550px){
@@ -778,4 +796,16 @@ main .middleee .mid04{
       display: none;
     }
 
+    main .incontent .top{
+      padding: 0 20px ;
+    }
+    main .incontent .top h1{
+      margin-left: 50px;
+     }
+    main .top2 {
+      padding-left:60px;
+    }
+    main .incontent3 .top3{
+      padding-left: 60px;
+    }
   }

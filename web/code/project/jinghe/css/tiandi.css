@@ -1,7 +1,5 @@
 /* 顶图 */
-a{
-    text-decoration: none;
-}
+
 *{
     box-sizing: border-box;
 }
@@ -83,11 +81,15 @@ a{
     flex-wrap: wrap;
     position: relative;
   }
+
   .news-list li .news-left{
     width: 50%;
     height: 14.6875rem;
     padding: 0;
     overflow: hidden;
+  }
+  .news-list li .news-left:hover {
+    width: 51%;
   }
   .news-list li .news-left img{
     width: 100%;
@@ -95,13 +97,32 @@ a{
     object-fit: cover;
     transition: .5s;
   }
+
   .news-list li .news-right{
-    width: 50%;
+     width: 50%;
       height: 14.6875rem;
       padding: 0;
       padding: 2.125rem 2.8125rem;
-      border-bottom: .1875rem solid #E3141F;
+      border-bottom: 3px solid #E3141F;
       position: relative;
+    }
+    .news-list li:hover .news-right{
+      width: 49%;
+    }
+    .news-list li .news-right::before{
+      content: "";
+      position: absolute;
+      left: 0px;
+      bottom: -3px;
+      width: 0%;
+      height: 3px;
+      background: #eee;
+      z-index: 10;
+      opacity: .5;
+      transition: .5s;
+    }
+    .news-list li:hover .news-right::before{
+      width: 100%;
     }
     .news-list li .news-right-title a h3{
         color: #1a1a1a;
@@ -111,17 +132,40 @@ a{
         overflow: hidden;
         transition: .3s;
     }
+    .news-right-title a{
+      text-decoration: none;
+    }
+    .news-list li .news-right-title a h3:hover {
+      color: #E3141F;
+    }
     .news-list li .news-right-text{
         margin-top:1rem;
     }
-    .news-list  .news-right-text a p{
+    .news-list  .news-right-text a{
+      text-decoration: none;
+    }
+ .news-right-text a p{
         color: #1A1A1A;
         font-size: 1rem;
         line-height: 1.4375rem;
         opacity: 0.8;
         text-indent: 2em;
         overflow: hidden;
+        position: relative;
     }
+  .news-right-text a p:hover::after{
+    content: "";
+    width: 325px;
+    height: 1px;
+    position: absolute;
+     bottom: 0;
+    left: 29px;
+    background-color: #999;
+  }
+
+
+
+
 .news-list  .news-right-other{
   font-size: .75rem;
   color: #E3141F;
@@ -135,10 +179,23 @@ a{
   left: 0;
 }
 .news-list  .news-right-other a{ 
-  
+  text-decoration: none;
   font-size: .75rem;
   color: #E3141F;
+  position: relative;
+
 }
+.news-righ-more a:hover::after{
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 1px;
+    bottom: 0;
+    left: 0;
+    background: #E3141F;
+
+}
+
   .page{
     display: flex;
     justify-content: center;
@@ -161,13 +218,19 @@ a{
     border: none;
 }
 .page .pagination li a{
-    color: #000;
-
+  text-decoration: none;
+  color: #000;
+  padding: 5px;
 }
 .page .pagination li a:hover{
     color: #fff;
     background-color: #E3141F;
 }
+
+
+
+
+
 @media (min-width:100px) and (max-width: 770px) {
   .news-list li .news-left {
     width: 100%;
@@ -189,5 +252,158 @@ a{
       width: 80px;
       height: 80px;
     }
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+@media (min-width:100px) and (max-width: 770px){
+  main .bg{
+    display: none;
+  }
+  .index-sec1{
+      flex-wrap: wrap;
+  }
+  main .index-sec1-banner{
+    width: 100%;
+    /* height: 450px; */
+   margin-bottom: 20px;
+  }
+  main .index-sec1-banner img{
+    width: 100%;
+    height: 100%;
+  }
+  main .index-sec1-news{
+    width: 100%;
+    overflow: hidden;
+    
+  }
+  .swiper-button-prev,.swiper-button-next{
+    display: none;
+  }
+  .middle img{
+    width: 80px;
+    height: 80px;
+  }
+}
+@media (min-width:100px) and (max-width: 550px){
+  .mb-incontent4{
+    display: block;
+  }
+  .contion-centre{
+    display: none;
+  }
+
+  .mb-incontent4 .mb-box{
+    width: 150px;
+    height: 200px;
+  }
+  .mb-incontent4 .mb-box img{
+    width: 80px;
+    margin-top: 63px;
+    margin-left: 30px;
+
+  }
+  .mb-set .mbbtn{
+  width: 30px;
+  height: 30px;
+  font-size: 18px;
+  line-height: 30px;
+  }
+  .mb-incontent4 .set1{
+    top: -11px;
+    left: 45px;
+  }
+  .mb-incontent4 .set2{
+    top: 55px;
+    left: 118px;
+  }
+  .mb-incontent4 .set3{
+    top: 130px;
+    left: 118px;
+  }
+  .mb-incontent4 .set4{
+    bottom:95px;
+    left: 45px;
+
+  }
+  .nav-uli li .a2{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-decoration: none;
+    /* display: block; */
+    font-size: 16px;
+    /* line-height: 0; */
+    color: #fff;
+    padding: 20px 0;
+  }
+  .nav-uli li .sp-s::after{
+    content: "";
+    display: inline-block;
+    width: 8px;
+    height: 8px;
+    border: 3px solid #fff;
+    border-color: #fff #fff transparent transparent;
+    transform: rotate(45deg);
+  
+  }
+  .nav-uli .a1 {
+    display: block;
+    text-decoration: none;
+    display: block;
+    font-size: 16px;
+    line-height: 0;
+    color: #fff;
+    padding: 47px 0 20px 0;
+  }
+  .nav-uli .iconfont{
+    display: inline-block;
+    font-size: 16px;
+    color: #fff;
+    padding: 50px 20px;
+  }
+
+
+
+}
+
+@media (min-width:550px) and (max-width: 770px){
+  .mb-incontent4{
+    display: block;
+  }
+  .contion-centre{
+    display: none;
+  }
+
+
+}
+@media (min-width:770px) and (max-width: 1200px){
+  main .bg{
+    display: none;
+  }
+  main .index-sec1-banner{
+    width: 60%;
+  }
+  main .index-sec1-news{
+    width: 40%;
+    padding-left: 10px;
+    overflow: hidden;
+  }
+  .mb-incontent4{
+    display: block;
+  }
+  .contion-centre{
+    display: none;
+  }
 
 }
