@@ -1,0 +1,100 @@
+{
+  "id": "",
+  "name": "",
+  "font_family": "iconfont",
+  "css_prefix_text": "icon-",
+  "description": "",
+  "glyphs": [
+    {
+      "icon_id": "348451",
+      "name": "dribbble",
+      "font_class": "dribbble",
+      "unicode": "eaa4",
+      "unicode_decimal": 60068
+    },
+    {
+      "icon_id": "348895",
+      "name": "twitter",
+      "font_class": "twitter",
+      "unicode": "ec5f",
+      "unicode_decimal": 60511
+    },
+    {
+      "icon_id": "401005",
+      "name": "phone",
+      "font_class": "phone",
+      "unicode": "e7f4",
+      "unicode_decimal": 59380
+    },
+    {
+      "icon_id": "588997",
+      "name": "email-2",
+      "font_class": "email2",
+      "unicode": "e67b",
+      "unicode_decimal": 59003
+    },
+    {
+      "icon_id": "702366",
+      "name": "facebook",
+      "font_class": "facebook",
+      "unicode": "e801",
+      "unicode_decimal": 59393
+    },
+    {
+      "icon_id": "749775",
+      "name": "地址",
+      "font_class": "dizhi",
+      "unicode": "e609",
+      "unicode_decimal": 58889
+    },
+    {
+      "icon_id": "880294",
+      "name": "时钟",
+      "font_class": "shizhongclock77",
+      "unicode": "e60d",
+      "unicode_decimal": 58893
+    },
+    {
+      "icon_id": "5226591",
+      "name": "pinterest",
+      "font_class": "pinterest",
+      "unicode": "e636",
+      "unicode_decimal": 58934
+    },
+    {
+      "icon_id": "7090060",
+      "name": "双箭头 右",
+      "font_class": "shuangjiantouyou",
+      "unicode": "e713",
+      "unicode_decimal": 59155
+    },
+    {
+      "icon_id": "11177805",
+      "name": "播放",
+      "font_class": "ziyuan",
+      "unicode": "e633",
+      "unicode_decimal": 58931
+    },
+    {
+      "icon_id": "14835595",
+      "name": "右箭头",
+      "font_class": "arrowRight",
+      "unicode": "e65d",
+      "unicode_decimal": 58973
+    },
+    {
+      "icon_id": "14835597",
+      "name": "左箭头",
+      "font_class": "arrowLeft-fill",
+      "unicode": "e65e",
+      "unicode_decimal": 58974
+    },
+    {
+      "icon_id": "14835600",
+      "name": "上箭头",
+      "font_class": "arrowTop-fill",
+      "unicode": "e65f",
+      "unicode_decimal": 58975
+    }
+  ]
+}

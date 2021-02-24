@@ -1,0 +1,183 @@
+body {
+  background: linear-gradient(to left, skyblue, #f19fff);
+}
+body .row {
+    margin-right: 0;
+    margin-left: 0;
+}
+header .head {
+  background: rgba(0, 0, 0, 0.5);
+  border-bottom: 2px solid rgb(255, 255, 255);
+  padding: 10px 0;
+}
+header .head .logo h5 {
+  font-size: 18px;
+  text-align: center;
+  color: #fff;
+}
+
+header .head .event a {
+  text-decoration: none;
+  text-align: center;
+  color: #fff;
+  font-size: 14px;
+  line-height: 35px;
+}
+header .head .event a:hover {
+  color: rgb(10, 2, 58);
+}
+.content {
+  border-bottom: 1px solid #fff;
+}
+.nav {
+  background: rgba(0, 0, 0, 0.5);
+  border-right: 1px solid #fff;
+}
+.jinhecontent{
+  height: 370px;
+  overflow: auto;
+}
+.nav ul {
+  list-style: none;
+  color: #fff;
+}
+.nav ul li {
+  position: relative;
+  padding: 20px;
+  cursor: pointer;
+}
+
+.nav ul li::after {
+  content: "";
+  width: 0;
+  height: 2px;
+  background: #fff;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  transition: all 0.3s;
+}
+.nav ul li:hover::after {
+  width: 100%;
+}
+main .row {
+  padding: 5px 0;
+}
+main .row .add {
+  border: 1px dashed #eee;
+  color: #17003d;
+  font-size: 16px;
+  text-align: center;
+  padding: 5px 0;
+  cursor: pointer;
+}
+main .row .add:hover {
+  border: 1px dashed #0093f5;
+  color: #0093f5;
+}
+main .row .amend {
+  color: #17003d;
+  font-size: 16px;
+  text-align: center;
+  padding: 5px 0;
+  cursor: pointer;
+}
+main .row .amend:hover {
+  color: #00db00;
+}
+main .row .delete {
+  color: #17003d;
+  font-size: 16px;
+  text-align: center;
+  padding: 5px 0;
+  cursor: pointer;
+}
+main .row .delete:hover {
+  color: red;
+}
+main .row .id,
+.color {
+  text-align: center;
+  color: #17003d;
+  font-size: 16px;
+}
+main .row .alldelete {
+  color: #17003d;
+  font-size: 16px;
+  text-align: center;
+  padding: 5px 0;
+  cursor: pointer;
+}
+main .row .alldelete:hover {
+  color: red;
+}
+.addbox {
+  height:100%;
+  position: absolute;
+  top: 30%;
+  left: 30%;
+  z-index: 1;
+  display: none;
+
+}
+.adddiv {
+  border-radius: 10px;
+  background: rgb(134, 141, 241);
+  padding: 50px 20px;
+}
+.addbox .sp1 {
+  border: 1px solid #000;
+  float: right;
+  margin-top: -100px;
+  cursor: pointer;
+}
+.addbox .sp1::after {
+  content: "";
+  width: 20px;
+  height: 2px;
+  background: #fff;
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  transform: rotate(45deg);
+}
+.addbox .sp1::before {
+  content: "";
+  width: 20px;
+  height: 2px;
+  background: #fff;
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  transform: rotate(-45deg);
+}
+.ad {
+  padding: 20px 0;
+}
+.adddiv span {
+  float: right;
+  color: 0;
+  padding: 5px 20px;
+  background: #626cf0;
+  border-radius: 5px;
+  color: #fff;
+  cursor: pointer;
+}
+.adddiv span:hover{
+    background: #c7cbff;
+    color: #17003d;
+}
+.adddiv select{
+    padding: 5px 10px;
+    border-radius: 5px;
+    border: 1px dashed #626cf0;
+
+}
+.alter{
+  text-align: center;
+}
+#abouttext{
+  width: 1000px;
+  /* height: 100px; */
+
+}

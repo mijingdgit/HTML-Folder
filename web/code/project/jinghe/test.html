@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>本地存储</title>
+	</head>
+	<body>
+		<ul></ul>
+		<script>
+			function $(selName) {
+				return document.querySelector(selName);
+			}
+			function $$(selName) {
+				return document.querySelectorAll(selName);
+			}
+			function $C(tagName) {
+				return document.createElement(tagName);
+			}
+			// var newsData = [
+			//     { title: '新闻列表1', date: '2018-11-23' },
+			//     { title: '新闻列表2', date: '2018-11-23' },
+			//     { title: '新闻列表3', date: '2018-11-23' },
+			//     { title: '新闻列表4', date: '2018-11-23' },
+			//     { title: '新闻列表5', date: '2020-11-23' },
+			//     { title: '新闻列表6', date: '2020-11-23' },
+			//     { title: '新闻列表7', date: '2020-11-23' },
+			//     { title: '新闻列表8', date: '2018-11-23' },
+			//     { title: '新闻列表9', date: '2018-11-23' },
+			//     { title: '新闻列表10', date: '2018-11-23' },
+			//     { title: '新闻列表11', date: '2018-11-23' },
+			//     { title: '新闻列表12', date: '2018-11-23' },
+			//     { title: '新闻列表13', date: '2018-11-23' },
+			//     { title: '新闻列表14', date: '2018-11-23' },
+			//     { title: '新闻列表15', date: '2018-11-23' },
+			//     { title: '新闻列表16', date: '2018-11-23' },
+			//     { title: '新闻列表17', date: '2018-11-23' },
+			// ];
+			// // 把对象变成字符串
+			// var dataStr = JSON.stringify(newsData);
+			// window.localStorage.setItem("nData", dataStr);
+
+			//把字符串变成对象
+			var newsData = JSON.parse(window.localStorage.getItem('nData'));
+			var ul = $('ul');
+			var lis = [];
+			for (let i = 0; i < newsData.length; i++) {
+				var li = $C('li');
+				li.innerHTML = `${newsData[i].title}`;
+				lis.push(li);
+				ul.appendChild(li);
+				//
+				var button = $C('button');
+				button.innerHTML = '删除';
+				button.onclick = function () {
+					//x代表当前点击这个li在页面中的真实顺序
+					var x = lis.indexOf(this.parentNode);
+					//点击哪个，干掉哪个
+					lis[x].remove();
+					lis.splice(x, 1);
+					//数据修改
+					newsData.splice(x, 1);
+					//每次修改都要存入本地
+					var dataStr = JSON.stringify(newsData);
+					window.localStorage.setItem('nData', dataStr);
+				};
+				li.appendChild(button);
+			}
+
+			// var tmpArr = [1,2,3,4];
+			// tmpArr.splice(2, 1);
+			// console.log(tmpArr);
+		</script>
+	</body>
+</html>

@@ -1,0 +1,281 @@
+  body .row {
+      margin-right: 0;
+      margin-left: 0;
+  }
+  header .head {
+    background: rgb(0, 0, 0);
+    border-bottom: 2px solid rgb(255, 255, 255);
+    padding: 10px 0;
+  }
+  header .head .logo a {
+    text-decoration: none;
+    font-size: 18px;
+    text-align: center;
+    color: #fff;
+  }
+  
+  header .head .event a {
+    text-decoration: none;
+    text-align: center;
+    color: #fff;
+    font-size: 14px;
+    line-height: 35px;
+  }
+  /* header .head .event a:hover {
+    color: rgb(10, 2, 58);
+  } */
+  header .register,.login{
+    text-align: center;
+    border-radius: 10px;
+  } 
+  header .register:hover,.login:hover{
+    
+  background:#ff3300;
+  box-shadow: 0px 5px 10px  #ff724e;
+
+  }
+
+  .content {
+    border-bottom: 1px solid #fff;
+  }
+  .nav {
+    /* background: rgba(0, 0, 0, 0.5); */
+    background: rgb(0, 0, 0);
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+  }
+  /* .jinhecontent{
+    height: 370px;
+    overflow: auto;
+  } */
+  .nav ul {
+    list-style: none;
+    color: #fff;
+    padding-inline-start: 0;
+    padding-left: 15px;
+    margin-bottom: 50px;
+
+  }
+  .nav ul li {
+    text-align: center;
+    position: relative;
+    padding: 10px 20px;
+    margin: 20px 0;
+    cursor: pointer;
+    border-radius: 10px;
+  }
+  .nav ul li:hover {
+  background: #ff6600;
+  box-shadow: 5px 1px 10px #ff9f60;
+
+  }
+  .preview{
+    background: #ff3300;
+  }
+  .preview a{
+    text-decoration: none;
+    color: #fff;
+  }
+  .nav ul .preview:hover{
+    background: #ff3300;
+    box-shadow: 5px 1px 10px #ff724e;
+
+
+  }
+  .preview:hover a{
+    text-decoration: none;
+    color: #fff;
+  }
+
+  
+  /* .nav ul li::after {
+    content: "";
+    width: 0;
+    height: 2px;
+    background: #fff;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    transition: all 0.3s;
+  }
+  .nav ul li:hover::after {
+    width: 100%;
+  } */
+  /* main .row {
+    padding: 5px 0;
+  } */
+
+  main .row .add {
+    font-size: 16px;
+    text-align: center;
+    padding: 5px 0;
+    cursor: pointer;
+    border-radius: 5px;
+    background: #fff;
+    color: #000;
+  }
+  main .row .add:hover {
+    border: 1px dashed #000;
+    /* background: #000; */
+    /* box-shadow: 5px 1px 10px #ff9f60,5px 1px 5px #ff9f60; */
+    color: #ff3300;
+
+
+  }
+  main .row .amend {
+    /* color: #17003d; */
+    font-size: 16px;
+    text-align: center;
+    cursor: pointer;
+  }
+  main .row .amend:hover {
+    color: #ff3300;
+  }
+  main .row .delete {
+    color: #48ff00;
+    font-size: 16px;
+    text-align: center;
+    padding: 5px 0;
+    cursor: pointer;
+    
+  }
+
+
+  main .row .delete:hover {
+    color: #ff3300;
+  }
+  main .row .id,
+  .color {
+    text-align: center;
+    /* color: #17003d; */
+    font-size: 16px;
+  }
+  main .row .alldelete {
+    color: #17003d;
+    font-size: 16px;
+    text-align: center;
+    padding: 5px 0;
+    cursor: pointer;
+  }
+  main .row .alldelete:hover {
+    color: red;
+  }
+  .addbox {
+    height:100%;
+    position: absolute;
+    top: 30%;
+    left: 30%;
+    z-index: 1;
+    display: none;
+    color: #fff;
+  
+  }
+  .addbox h4{
+    margin: 20px 0;
+  }
+  .adddiv {
+    border-radius: 10px;
+    background: rgb(0, 0, 0);
+    padding:10px 20px 50px;
+  }
+  .addbox .sp1 {
+    border: 1px solid #000;
+    float: right;
+    margin-top: -100px;
+    cursor: pointer;
+
+  }
+  .addbox .sp1::after {
+    content: "";
+    width: 20px;
+    height: 2px;
+    background: #fff;
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    transform: rotate(45deg);
+  }
+  .addbox .sp1::before {
+    content: "";
+    width: 20px;
+    height: 2px;
+    background: #fff;
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    transform: rotate(-45deg);
+    color: #ff6600;
+  }
+
+  .amenddiv input{
+    color: #000;
+  }
+  .amenddiv select{
+    color: #000;
+    width: 150px;
+    height: 25px;
+
+  }
+  .ad {
+    padding: 10px 0;
+  }
+  .adddiv a {
+    text-decoration: none;
+    float: right;
+    color: 0;
+    padding: 5px 20px;
+    background:#ff3300;
+    border-radius: 5px;
+    color: #fff;
+    cursor: pointer;
+  }
+  .adddiv a:hover{
+    text-decoration: none;
+    box-shadow: 2px 2px 10px  #ff724e;
+    color: #fff;
+  }
+  .alter{
+    text-align: center;
+  }
+  #abouttext{
+    width: 1000px;
+    /* height: 100px; */
+  
+  }
+ /* .toptitle{
+   margin-bottom: 20px;
+ } */
+ .con1{
+   padding: 10px 0;
+   background: #000;
+   color: #fff;
+   border-bottom-left-radius:10px ;
+   border-bottom-right-radius:10px ;
+   
+ }
+ .edit{
+   /* margin: 10px 0; */
+   padding: 5px 0;
+
+ }
+ /* 奇数 */
+ .edit:nth-child(odd){
+   background: #fff;
+   color: #000;
+ }
+ 
+ /* 偶数 */
+ .con2 .edit:nth-child(even){
+   background: #000;
+   color: #fff;
+  }
+  
+
+.amendinput{
+  margin: 10px 0;
+}
+/* .add{
+  margin-bottom: 10px;
+  background: #fff;
+  color: #000;
+} */

@@ -1,0 +1,84 @@
+footer{
+
+    background: #feeee7;
+}
+.foot{
+    max-width: 1140px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    padding: 15px;
+}
+.foot .left{
+    font-size: 14px;
+    color: #0a0626;
+    font-weight: 400;
+}
+.foot .left a{
+    color: #007bff;
+    text-decoration: none;
+}
+.foot .left a:hover{
+    color: #fff;
+}
+.foot .right a{
+    font-size: 14px;
+    font-weight: 400;
+    color: #0a0626;
+    text-decoration: none;
+    padding: 0 5px;
+}
+.foot .right a:hover{
+    color: #ff702a;
+}
+.foot .right .a1{
+    border-left: 1px solid #000;
+}
+@media screen and (max-width:768px){
+    .foot{
+        flex-wrap: wrap;
+        text-align: center;
+        justify-content: center;
+    }
+    .foot .left{
+        margin-bottom: 10px;
+    }
+}
+@media screen and (max-width:320px){
+    .sli-wrap .swiper-container .swiper-button-prev{
+        left: 0;
+    }
+    .sli-wrap .swiper-container .swiper-button-next{
+        right: 0;
+    }
+}
+
+
+.fl{
+    text-decoration: none;
+    display:block;
+    float:left;
+    width:50px;
+    height:50px;
+    text-align:center;
+    border-radius: 10px;
+    background: linear-gradient(to right, #f65f26, #d41c18);
+    position: relative;
+}
+.fl span{
+    font-size: 20px;
+    font-weight: 700;
+    text-align: center;
+    line-height: 50px;
+    color: #fff;
+}
+#Fixed {
+    position: fixed;
+    z-index: 100;
+    bottom: 10%;
+    right: 3%;
+    transition: all 0.3s;
+
+}
+
+/*置顶 end*/

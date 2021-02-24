@@ -8,9 +8,16 @@
 .swiper-container {
   max-height: 780px;
 }
+.slideii1{
+  /* width: 100%; */
+  height: 780px;
+}
+
 .swiper-wrapper img {
   width: 100%;
   height: 100%;
+
+  
 }
 
 .swiper-pagination-bullet {

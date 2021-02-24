@@ -1,0 +1,16 @@
+{
+  "id": "2334393",
+  "name": "dome11",
+  "font_family": "iconfont",
+  "css_prefix_text": "icon-",
+  "description": "",
+  "glyphs": [
+    {
+      "icon_id": "936795",
+      "name": "列表",
+      "font_class": "liebiao1",
+      "unicode": "e6af",
+      "unicode_decimal": 59055
+    }
+  ]
+}
